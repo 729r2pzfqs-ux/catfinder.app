@@ -1,0 +1,246 @@
+#!/usr/bin/env python3
+"""
+Generate cat breed HTML pages from breeds.json
+"""
+
+import json
+from pathlib import Path
+
+def generate_breed_html(breed):
+    """Generate HTML for a single breed page"""
+    name = breed['name']
+    slug = breed['id']
+    origin = breed.get('origin', 'Unknown')
+    lifespan = breed.get('lifespan', '12-15 years')
+    weight = breed['size'].get('weight_kg', '4-6')
+    size_cat = breed['size']['category']
+    coat_type = breed['coat']['type']
+    coat_pattern = breed['coat']['pattern']
+    description = breed.get('description', '')
+    
+    ratings = breed.get('ratings', {})
+    temperament = breed.get('temperament', [])
+    verdict = breed.get('verdict', {})
+    best_for = verdict.get('best_for', [])
+    not_ideal = verdict.get('not_ideal', [])
+    
+    # Rating labels
+    rating_labels = {
+        'affection': 'Affection',
+        'activity': 'Activity Level',
+        'grooming': 'Grooming Needs',
+        'vocality': 'Vocality',
+        'independence': 'Independence',
+        'kid_friendly': 'Kid Friendly',
+        'dog_friendly': 'Dog Friendly',
+        'intelligence': 'Intelligence'
+    }
+    
+    # Generate rating bars HTML
+    ratings_html = ''
+    for key, label in rating_labels.items():
+        val = ratings.get(key, 3)
+        ratings_html += f'''
+                <div>
+                    <div class="flex justify-between mb-2"><span class="text-slate-600">{label}</span><span class="font-medium">{val}/5</span></div>
+                    <div class="rating-bar rating-{val}"></div>
+                </div>'''
+    
+    # Temperament pills
+    temp_html = ''.join([f'<span class="bg-gradient-to-r from-fuchsia-100 to-purple-100 text-slate-700 px-4 py-2 rounded-full text-sm font-medium">{t.capitalize()}</span>' for t in temperament[:6]])
+    
+    # Best for / Not ideal lists
+    best_for_html = ''.join([f'<li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>{item}</span></li>' for item in best_for])
+    not_ideal_html = ''.join([f'<li class="flex items-start gap-2"><svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg><span>{item}</span></li>' for item in not_ideal])
+    
+    # Size display
+    size_display = {'small': 'Small', 'medium': 'Medium', 'large': 'Large', 'extra-large': 'Extra Large'}.get(size_cat, 'Medium')
+    
+    html = f'''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{name} - Cat Breed Info | CatFinder</title>
+    <meta name="description" content="Learn about the {name}: temperament, care, health, and whether this breed is right for you.">
+    <link rel="canonical" href="https://catfinder.app/breeds/{slug}/">
+    <meta property="og:title" content="{name} - Cat Breed Info">
+    <meta property="og:description" content="{description[:150]}">
+    <meta property="og:image" content="https://catfinder.app/images/breeds/{slug}.webp">
+    <meta property="og:url" content="https://catfinder.app/breeds/{slug}/">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {{ font-family: 'Plus Jakarta Sans', sans-serif; }}
+        .rating-bar {{ height: 8px; background: #e2e8f0; border-radius: 4px; overflow: hidden; }}
+        .rating-bar::after {{ content: ''; display: block; height: 100%; border-radius: 4px; background: linear-gradient(90deg, #d946ef, #a855f7); }}
+        .rating-1::after {{ width: 20%; }}
+        .rating-2::after {{ width: 40%; }}
+        .rating-3::after {{ width: 60%; }}
+        .rating-4::after {{ width: 80%; }}
+        .rating-5::after {{ width: 100%; }}
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+    <nav class="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center gap-2">
+                    <span class="text-2xl">🐱</span>
+                    <span class="font-bold text-xl bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent">CatFinder</span>
+                </a>
+                <div class="flex items-center gap-6">
+                    <a href="/breeds/" class="text-slate-600 hover:text-slate-900 font-medium hidden sm:block">Breeds</a>
+                    <a href="/quiz/" class="text-slate-600 hover:text-slate-900 font-medium hidden sm:block">Quiz</a>
+                    <a href="/compare/" class="text-slate-600 hover:text-slate-900 font-medium hidden sm:block">Compare</a>
+                    <a href="/search/" class="text-slate-600 hover:text-slate-900 font-medium">Search</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-4 py-8">
+        <nav class="text-sm text-slate-500 mb-6">
+            <a href="/" class="hover:text-fuchsia-600">Home</a>
+            <span class="mx-2">/</span>
+            <a href="/breeds/" class="hover:text-fuchsia-600">Breeds</a>
+            <span class="mx-2">/</span>
+            <span class="text-slate-700">{name}</span>
+        </nav>
+
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden mb-8">
+            <div class="md:flex">
+                <div class="md:w-2/5">
+                    <img src="/images/breeds/{slug}.webp" alt="{name}" class="w-full h-72 md:h-full object-cover object-top">
+                </div>
+                <div class="md:w-3/5 p-6 md:p-8">
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-fuchsia-100 text-fuchsia-700 px-3 py-1 rounded-full text-sm font-medium">{coat_type.capitalize()}</span>
+                        <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium">{size_display}</span>
+                    </div>
+                    <h1 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{name}</h1>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center gap-3 p-3 bg-slate-50 rounded-xl">
+                            <svg class="w-6 h-6 text-fuchsia-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <div>
+                                <p class="text-xs text-slate-500">Origin</p>
+                                <p class="font-semibold text-slate-700">{origin}</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-slate-50 rounded-xl">
+                            <svg class="w-6 h-6 text-fuchsia-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <div>
+                                <p class="text-xs text-slate-500">Lifespan</p>
+                                <p class="font-semibold text-slate-700">{lifespan}</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-slate-50 rounded-xl">
+                            <svg class="w-6 h-6 text-fuchsia-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
+                            <div>
+                                <p class="text-xs text-slate-500">Weight</p>
+                                <p class="font-semibold text-slate-700">{weight} kg</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-slate-50 rounded-xl">
+                            <svg class="w-6 h-6 text-fuchsia-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
+                            <div>
+                                <p class="text-xs text-slate-500">Coat</p>
+                                <p class="font-semibold text-slate-700">{coat_pattern.capitalize()}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 md:p-8 mb-8">
+            <h2 class="text-xl font-bold text-slate-900 mb-6">Breed Ratings</h2>
+            <div class="grid md:grid-cols-2 gap-x-12 gap-y-4">
+                {ratings_html}
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 md:p-8 mb-8">
+            <h2 class="text-xl font-bold text-slate-900 mb-4">Temperament</h2>
+            <div class="flex flex-wrap gap-2">
+                {temp_html}
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 md:p-8 mb-8">
+            <h2 class="text-xl font-bold text-slate-900 mb-4">About the {name}</h2>
+            <p class="text-slate-600 leading-relaxed">{description}</p>
+        </section>
+
+        <section class="bg-gradient-to-br from-fuchsia-50 via-purple-50 to-pink-50 rounded-2xl p-6 md:p-8 mb-8">
+            <h2 class="text-xl font-bold text-slate-900 mb-6">Is This Breed Right for You?</h2>
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                <div class="bg-white rounded-xl p-5 shadow-sm">
+                    <h3 class="font-semibold text-green-700 mb-3 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Best For
+                    </h3>
+                    <ul class="space-y-2 text-slate-600">
+                        {best_for_html}
+                    </ul>
+                </div>
+                <div class="bg-white rounded-xl p-5 shadow-sm">
+                    <h3 class="font-semibold text-red-700 mb-3 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Not Ideal For
+                    </h3>
+                    <ul class="space-y-2 text-slate-600">
+                        {not_ideal_html}
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="flex items-center gap-2">
+                    <span class="text-2xl">🐱</span>
+                    <span class="font-bold text-white">CatFinder</span>
+                </div>
+                <div class="flex gap-6 text-sm">
+                    <a href="/breeds/" class="hover:text-white">Breeds</a>
+                    <a href="/quiz/" class="hover:text-white">Quiz</a>
+                    <a href="/compare/" class="hover:text-white">Compare</a>
+                    <a href="/about/" class="hover:text-white">About</a>
+                </div>
+                <p class="text-sm">&copy; 2026 CatFinder</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>'''
+    return html
+
+def main():
+    script_dir = Path(__file__).parent
+    project_dir = script_dir.parent
+    data_file = project_dir / 'data' / 'breeds.json'
+    breeds_dir = project_dir / 'breeds'
+    
+    with open(data_file, 'r', encoding='utf-8') as f:
+        breeds = json.load(f)
+    
+    print(f"Generating {len(breeds)} cat breed pages...")
+    
+    for breed in breeds:
+        html = generate_breed_html(breed)
+        breed_dir = breeds_dir / breed['id']
+        breed_dir.mkdir(parents=True, exist_ok=True)
+        
+        with open(breed_dir / 'index.html', 'w', encoding='utf-8') as f:
+            f.write(html)
+        
+        print(f"  ✓ {breed['name']}")
+    
+    print(f"\n✅ Generated {len(breeds)} cat breed pages")
+
+if __name__ == '__main__':
+    main()
