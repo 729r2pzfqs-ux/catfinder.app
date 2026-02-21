@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatFinder | Quiz, Compare & Find Your Perfect Cat Breed</title>
+    <meta name="description" content="Find your perfect cat breed with our quiz, compare tool & expert guides. 75+ breeds rated for families, apartments, allergies & more.">
+    <meta name="keywords" content="cat breeds, cat breed finder, cat breed quiz, compare cat breeds, best cat breeds, family cats, apartment cats, hypoallergenic cats">
+    <link rel="canonical" href="https://catfinder.app/">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://catfinder.app/">
+    <meta property="og:title" content="CatFinder — Find Your Perfect Cat Breed">
+    <meta property="og:description" content="Discover the perfect cat breed for your lifestyle. Compare 75+ breeds, read expert guides, and find your ideal feline companion.">
+    <meta property="og:site_name" content="CatFinder">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CatFinder — Find Your Perfect Cat Breed">
+    <meta name="twitter:description" content="Discover the perfect cat breed for your lifestyle. Compare 75+ breeds and find your ideal feline companion.">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "CatFinder",
+      "url": "https://catfinder.app/",
+      "description": "Find your perfect cat breed. Compare 75+ breeds with expert guides.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://catfinder.app/breeds/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        .card-shadow {
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);
+        }
+        .card-shadow:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06), 0 8px 24px rgba(0,0,0,0.05);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #fdf4ff 0%, #faf5ff 50%, #f0fdf4 100%);
+        }
+    </style>
+</head>
+<body class="bg-white min-h-screen text-slate-800">
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="./" class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-fuchsia-500 to-purple-600 rounded-xl flex items-center justify-center text-white text-xl shadow-lg shadow-fuchsia-500/20">
+                    🐱
+                </div>
+                <span class="text-xl font-bold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">CatFinder</span>
+            </a>
+            <nav class="flex items-center gap-6 text-sm font-medium">
+                <a href="search/" class="text-slate-600 hover:text-fuchsia-600 transition">Browse Breeds</a>
+                <a href="quiz/" class="bg-gradient-to-r from-fuchsia-500 to-purple-600 text-white px-5 py-2.5 rounded-xl font-semibold hover:shadow-lg hover:shadow-fuchsia-500/25 transition">Take Quiz</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero-gradient py-20 px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-flex items-center gap-2 bg-white/80 backdrop-blur px-4 py-2 rounded-full text-sm font-medium text-slate-600 mb-6 border border-slate-200/50">
+                    <i data-lucide="sparkles" class="w-4 h-4 text-fuchsia-500"></i>
+                    Over 75 cat breeds to explore
+                </div>
+                
+                <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
+                    Find Your<br>
+                    <span class="bg-gradient-to-r from-fuchsia-500 via-purple-500 to-emerald-500 bg-clip-text text-transparent">Purrfect Cat Breed</span>
+                </h1>
+                
+                <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+                    Discover which cat breed matches your lifestyle perfectly. Compare traits, take our quiz, and find your ideal feline companion.
+                </p>
+                
+                <!-- Search -->
+                <div class="max-w-xl mx-auto mb-8">
+                    <div class="relative">
+                        <input type="text" id="home-search" placeholder="Search breeds..." class="w-full bg-white border border-slate-200 rounded-2xl px-6 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-fuchsia-500/20 focus:border-fuchsia-400 shadow-sm">
+                        <button class="absolute right-2 top-1/2 -translate-y-1/2 bg-slate-100 hover:bg-slate-200 p-3 rounded-xl transition">
+                            <i data-lucide="search" class="w-5 h-5 text-slate-500"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="quiz/" class="inline-flex items-center gap-2 bg-gradient-to-r from-fuchsia-500 to-purple-600 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:shadow-xl hover:shadow-fuchsia-500/25 transition transform hover:-translate-y-0.5">
+                        <i data-lucide="target" class="w-5 h-5"></i>
+                        Take the Breed Quiz
+                    </a>
+                    <a href="compare/" class="inline-flex items-center gap-2 bg-white text-slate-700 border border-slate-200 px-8 py-4 rounded-2xl font-semibold text-lg hover:border-slate-300 hover:shadow-lg transition transform hover:-translate-y-0.5">
+                        <i data-lucide="scale" class="w-5 h-5"></i>
+                        Compare Breeds
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Breeds -->
+        <section class="py-16 px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-2xl font-bold text-slate-900 mb-2">Popular Breeds</h2>
+                <p class="text-slate-500 mb-8">Most loved cat breeds worldwide</p>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+                    <a href="breeds/persian.html" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
+                        <div class="w-16 h-16 rounded-2xl mx-auto mb-3 overflow-hidden bg-slate-100 flex items-center justify-center text-3xl">
+                            🐱
+                        </div>
+                        <div class="font-semibold text-slate-800 text-center">Persian</div>
+                        <div class="text-xs text-slate-500 text-center mt-1">Gentle • Calm • Fluffy</div>
+                    </a>
+                    <a href="breeds/maine-coon.html" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
+                        <div class="w-16 h-16 rounded-2xl mx-auto mb-3 overflow-hidden bg-slate-100 flex items-center justify-center text-3xl">
+                            🦁
+                        </div>
+                        <div class="font-semibold text-slate-800 text-center">Maine Coon</div>
+                        <div class="text-xs text-slate-500 text-center mt-1">Gentle Giant • Friendly</div>
+                    </a>
+                    <a href="breeds/ragdoll.html" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
+                        <div class="w-16 h-16 rounded-2xl mx-auto mb-3 overflow-hidden bg-slate-100 flex items-center justify-center text-3xl">
+                            💙
+                        </div>
+                        <div class="font-semibold text-slate-800 text-center">Ragdoll</div>
+                        <div class="text-xs text-slate-500 text-center mt-1">Docile • Affectionate</div>
+                    </a>
+                    <a href="breeds/british-shorthair.html" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
+                        <div class="w-16 h-16 rounded-2xl mx-auto mb-3 overflow-hidden bg-slate-100 flex items-center justify-center text-3xl">
+                            🇬🇧
+                        </div>
+                        <div class="font-semibold text-slate-800 text-center">British Shorthair</div>
+                        <div class="text-xs text-slate-500 text-center mt-1">Easygoing • Loyal</div>
+                    </a>
+                    <a href="breeds/siamese.html" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
+                        <div class="w-16 h-16 rounded-2xl mx-auto mb-3 overflow-hidden bg-slate-100 flex items-center justify-center text-3xl">
+                            💬
+                        </div>
+                        <div class="font-semibold text-slate-800 text-center">Siamese</div>
+                        <div class="text-xs text-slate-500 text-center mt-1">Vocal • Social • Smart</div>
+                    </a>
+                    <a href="breeds/bengal.html" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
+                        <div class="w-16 h-16 rounded-2xl mx-auto mb-3 overflow-hidden bg-slate-100 flex items-center justify-center text-3xl">
+                            🐆
+                        </div>
+                        <div class="font-semibold text-slate-800 text-center">Bengal</div>
+                        <div class="text-xs text-slate-500 text-center mt-1">Athletic • Wild Look</div>
+                    </a>
+                    <a href="breeds/sphynx.html" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
+                        <div class="w-16 h-16 rounded-2xl mx-auto mb-3 overflow-hidden bg-slate-100 flex items-center justify-center text-3xl">
+                            👽
+                        </div>
+                        <div class="font-semibold text-slate-800 text-center">Sphynx</div>
+                        <div class="text-xs text-slate-500 text-center mt-1">Hairless • Cuddly</div>
+                    </a>
+                    <a href="breeds/russian-blue.html" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
+                        <div class="w-16 h-16 rounded-2xl mx-auto mb-3 overflow-hidden bg-slate-100 flex items-center justify-center text-3xl">
+                            💎
+                        </div>
+                        <div class="font-semibold text-slate-800 text-center">Russian Blue</div>
+                        <div class="text-xs text-slate-500 text-center mt-1">Elegant • Shy • Loyal</div>
+                    </a>
+                </div>
+                
+                <div class="text-center mt-8">
+                    <a href="breeds/" class="inline-flex items-center gap-2 text-fuchsia-600 font-semibold hover:text-fuchsia-700 transition">
+                        View all 75+ breeds
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Browse by Trait -->
+        <section class="py-16 px-4 bg-slate-50">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-2xl font-bold text-slate-900 mb-2">Browse by Trait</h2>
+                <p class="text-slate-500 mb-8">Find cats that match your lifestyle</p>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <a href="search/?lap=1" class="bg-gradient-to-br from-pink-50 to-rose-50 hover:from-pink-100 hover:to-rose-100 rounded-2xl p-6 text-center transition border border-pink-100 group">
+                        <div class="w-12 h-12 bg-white rounded-xl mx-auto mb-3 flex items-center justify-center shadow-sm group-hover:scale-110 transition text-2xl">
+                            🛋️
+                        </div>
+                        <div class="font-semibold text-slate-800">Lap Cats</div>
+                        <div class="text-sm text-slate-500">Love to cuddle</div>
+                    </a>
+                    <a href="search/?shedding=low" class="bg-gradient-to-br from-emerald-50 to-teal-50 hover:from-emerald-100 hover:to-teal-100 rounded-2xl p-6 text-center transition border border-emerald-100 group">
+                        <div class="w-12 h-12 bg-white rounded-xl mx-auto mb-3 flex items-center justify-center shadow-sm group-hover:scale-110 transition text-2xl">
+                            ✨
+                        </div>
+                        <div class="font-semibold text-slate-800">Low Shedding</div>
+                        <div class="text-sm text-slate-500">Less fur, less mess</div>
+                    </a>
+                    <a href="search/?quiet=1" class="bg-gradient-to-br from-blue-50 to-indigo-50 hover:from-blue-100 hover:to-indigo-100 rounded-2xl p-6 text-center transition border border-blue-100 group">
+                        <div class="w-12 h-12 bg-white rounded-xl mx-auto mb-3 flex items-center justify-center shadow-sm group-hover:scale-110 transition text-2xl">
+                            🤫
+                        </div>
+                        <div class="font-semibold text-slate-800">Quiet Breeds</div>
+                        <div class="text-sm text-slate-500">Not too talkative</div>
+                    </a>
+                    <a href="search/?independent=1" class="bg-gradient-to-br from-amber-50 to-yellow-50 hover:from-amber-100 hover:to-yellow-100 rounded-2xl p-6 text-center transition border border-amber-100 group">
+                        <div class="w-12 h-12 bg-white rounded-xl mx-auto mb-3 flex items-center justify-center shadow-sm group-hover:scale-110 transition text-2xl">
+                            😎
+                        </div>
+                        <div class="font-semibold text-slate-800">Independent</div>
+                        <div class="text-sm text-slate-500">Okay alone</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="py-20 px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-slate-900 mb-4">Find Your Purrfect Match</h2>
+                    <p class="text-lg text-slate-500 max-w-2xl mx-auto">Everything you need to choose the right feline companion for your home</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center p-8 rounded-3xl bg-gradient-to-br from-fuchsia-50 to-fuchsia-100/50 border border-fuchsia-100">
+                        <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-lg text-3xl">
+                            🎯
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3">Breed Quiz</h3>
+                        <p class="text-slate-600">Answer a few questions about your lifestyle and we'll suggest cat breeds that fit you perfectly.</p>
+                    </div>
+                    <div class="text-center p-8 rounded-3xl bg-gradient-to-br from-purple-50 to-purple-100/50 border border-purple-100">
+                        <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-lg text-3xl">
+                            ⚖️
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3">Compare Breeds</h3>
+                        <p class="text-slate-600">Put breeds side-by-side to compare size, personality, grooming needs, and more.</p>
+                    </div>
+                    <div class="text-center p-8 rounded-3xl bg-gradient-to-br from-emerald-50 to-emerald-100/50 border border-emerald-100">
+                        <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-lg text-3xl">
+                            📖
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3">Expert Guides</h3>
+                        <p class="text-slate-600">Honest recommendations on who each breed is best for—and who should consider other options.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-fuchsia-500 to-purple-600 rounded-xl flex items-center justify-center text-xl">
+                        🐱
+                    </div>
+                    <span class="text-xl font-bold">CatFinder</span>
+                </div>
+                <div class="flex gap-8 text-sm text-slate-400">
+                    <a href="quiz/" class="hover:text-white transition">Breed Quiz</a>
+                    <a href="compare/" class="hover:text-white transition">Compare</a>
+                    <a href="articles/" class="hover:text-white transition">Guides</a>
+                    <a href="about/" class="hover:text-white transition">About</a>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 mt-8 pt-8 text-center text-sm text-slate-500">
+                <p>© 2026 CatFinder. Made with 😻 for cat lovers everywhere.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        
+        const homeSearch = document.getElementById('home-search');
+        if (homeSearch) {
+            homeSearch.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter' && this.value.trim()) {
+                    window.location.href = 'search/?q=' + encodeURIComponent(this.value.trim());
+                }
+            });
+        }
+    </script>
+</body>
+</html>
