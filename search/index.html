@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Breeds | CatFinder</title>
+    <meta name="description" content="Search and filter 75+ cat breeds by size, activity level, grooming needs, and more. Find the perfect cat breed for your lifestyle.">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .breed-card { transition: transform 0.2s, box-shadow 0.2s; }
+        .breed-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.1); }
+        .filter-section { border-bottom: 1px solid #e2e8f0; }
+        .filter-section:last-child { border-bottom: none; }
+        input[type="range"] { -webkit-appearance: none; height: 6px; border-radius: 3px; background: #e2e8f0; }
+        input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 18px; height: 18px; border-radius: 50%; background: #d946ef; cursor: pointer; }
+        .tag { display: inline-block; padding: 2px 8px; border-radius: 9999px; font-size: 12px; font-weight: 500; }
+        input[type="checkbox"]:checked { background-color: #d946ef; border-color: #d946ef; }
+    </style>
+</head>
+<body class="bg-slate-50 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="../" class="flex items-center gap-2">
+                    <span class="text-3xl">🐱</span>
+                    <span class="font-bold text-xl text-slate-800">CatFinder</span>
+                </a>
+                <nav class="hidden md:flex items-center gap-6">
+                    <a href="../" class="text-slate-600 hover:text-slate-900">Home</a>
+                    <a href="./" class="text-fuchsia-600 font-medium">Browse Breeds</a>
+                    <a href="../quiz/" class="text-slate-600 hover:text-slate-900">Quiz</a>
+                    <a href="../compare/" class="text-slate-600 hover:text-slate-900">Compare</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        <!-- Hero Section -->
+        <div class="text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-slate-800 mb-3">Find Your Perfect Cat Breed</h1>
+            <p class="text-slate-600 text-lg">Filter by size, activity level, grooming needs & more</p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="max-w-2xl mx-auto mb-8">
+            <div class="relative">
+                <i data-lucide="search" class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400"></i>
+                <input type="text" id="searchInput" placeholder="Search breeds... (e.g. Persian, playful, fluffy)" 
+                    class="w-full pl-12 pr-4 py-4 rounded-xl border border-slate-200 bg-white shadow-sm focus:ring-2 focus:ring-fuchsia-500 focus:border-fuchsia-500 text-lg">
+                <button id="clearSearch" class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 hidden">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Filters Sidebar -->
+            <aside class="lg:w-72 flex-shrink-0">
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 sticky top-24">
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="font-semibold text-slate-800 flex items-center gap-2">
+                            <i data-lucide="sliders-horizontal" class="w-5 h-5"></i>
+                            Filters
+                        </h2>
+                        <button id="resetFilters" class="text-sm text-fuchsia-600 hover:text-fuchsia-700">Reset</button>
+                    </div>
+
+                    <!-- Size Filter -->
+                    <div class="filter-section py-4">
+                        <h3 class="font-medium text-slate-700 mb-3">Size</h3>
+                        <div class="space-y-2">
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" value="small" class="size-filter rounded text-fuchsia-600">
+                                <span class="text-slate-600">Small</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" value="medium" class="size-filter rounded text-fuchsia-600">
+                                <span class="text-slate-600">Medium</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" value="large" class="size-filter rounded text-fuchsia-600">
+                                <span class="text-slate-600">Large</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Activity Level -->
+                    <div class="filter-section py-4">
+                        <h3 class="font-medium text-slate-700 mb-3">Activity Level</h3>
+                        <div class="flex items-center gap-3">
+                            <span class="text-xs text-slate-500">Low</span>
+                            <input type="range" id="activityFilter" min="1" max="5" value="1" class="flex-1">
+                            <span class="text-xs text-slate-500">High</span>
+                        </div>
+                        <div class="text-center text-sm text-slate-600 mt-1">
+                            <span id="activityValue">Any</span>+
+                        </div>
+                    </div>
+
+                    <!-- Grooming Needs -->
+                    <div class="filter-section py-4">
+                        <h3 class="font-medium text-slate-700 mb-3">Grooming Needs</h3>
+                        <div class="flex items-center gap-3">
+                            <span class="text-xs text-slate-500">Low</span>
+                            <input type="range" id="groomingFilter" min="1" max="5" value="5" class="flex-1">
+                            <span class="text-xs text-slate-500">High</span>
+                        </div>
+                        <div class="text-center text-sm text-slate-600 mt-1">
+                            <span id="groomingValue">Any</span> or less
+                        </div>
+                    </div>
+
+                    <!-- Toggles -->
+                    <div class="filter-section py-4">
+                        <h3 class="font-medium text-slate-700 mb-3">Good For</h3>
+                        <div class="space-y-3">
+                            <label class="flex items-center justify-between cursor-pointer">
+                                <span class="text-slate-600">Kids</span>
+                                <input type="checkbox" id="kidFriendly" class="toggle-filter rounded text-fuchsia-600">
+                            </label>
+                            <label class="flex items-center justify-between cursor-pointer">
+                                <span class="text-slate-600">Dogs</span>
+                                <input type="checkbox" id="dogFriendly" class="toggle-filter rounded text-fuchsia-600">
+                            </label>
+                            <label class="flex items-center justify-between cursor-pointer">
+                                <span class="text-slate-600">Apartments</span>
+                                <input type="checkbox" id="apartmentOk" class="toggle-filter rounded text-fuchsia-600">
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Vocality -->
+                    <div class="py-4">
+                        <h3 class="font-medium text-slate-700 mb-3">Vocality</h3>
+                        <div class="space-y-2">
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" value="quiet" class="vocal-filter rounded text-fuchsia-600">
+                                <span class="text-slate-600">Quiet</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" value="moderate" class="vocal-filter rounded text-fuchsia-600">
+                                <span class="text-slate-600">Moderate</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" value="vocal" class="vocal-filter rounded text-fuchsia-600">
+                                <span class="text-slate-600">Vocal</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Results Grid -->
+            <div class="flex-1">
+                <div class="flex items-center justify-between mb-4">
+                    <p class="text-slate-600"><span id="resultCount">0</span> breeds found</p>
+                    <select id="sortBy" class="px-3 py-2 rounded-lg border border-slate-200 bg-white text-sm">
+                        <option value="name">Sort by Name</option>
+                        <option value="size">Sort by Size</option>
+                        <option value="activity">Sort by Activity</option>
+                        <option value="affection">Sort by Affection</option>
+                    </select>
+                </div>
+
+                <div id="resultsGrid" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
+                    <!-- Breed cards will be inserted here -->
+                </div>
+
+                <div id="noResults" class="hidden text-center py-16">
+                    <i data-lucide="search-x" class="w-16 h-16 text-slate-300 mx-auto mb-4"></i>
+                    <h3 class="text-xl font-semibold text-slate-700 mb-2">No breeds found</h3>
+                    <p class="text-slate-500">Try adjusting your filters or search terms</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white py-8 mt-16">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="flex items-center justify-center gap-2 mb-4">
+                <span class="text-2xl">🐱</span>
+                <span class="font-semibold">CatFinder</span>
+            </div>
+            <p class="text-slate-400 text-sm">Find your perfect cat breed match</p>
+            <div class="flex justify-center gap-6 mt-4 text-sm">
+                <a href="../" class="text-slate-400 hover:text-white">Home</a>
+                <a href="../quiz/" class="text-slate-400 hover:text-white">Breed Quiz</a>
+                <a href="../compare/" class="text-slate-400 hover:text-white">Compare</a>
+            </div>
+            <p class="text-slate-500 text-xs mt-6">© 2026 CatFinder. Made with care for cat lovers.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // State
+        let allBreeds = [];
+        let fuse = null;
+
+        // Load breed data
+        async function loadBreeds() {
+            try {
+                const response = await fetch('../data/breeds.json');
+                allBreeds = await response.json();
+                
+                // Initialize Fuse.js for fuzzy search
+                fuse = new Fuse(allBreeds, {
+                    keys: ['name', 'aliases', 'temperament', 'group', 'description.overview'],
+                    threshold: 0.4,
+                    includeScore: true
+                });
+            } catch (error) {
+                console.error('Error loading breeds:', error);
+            }
+        }
+
+        // Render breed card
+        function renderBreedCard(breed) {
+            const imageUrl = `../images/breeds/${breed.id}.webp`;
+            const fallbackUrl = `../images/heads/${breed.id}.webp`;
+            
+            const sizeColors = {
+                small: 'bg-fuchsia-100 text-fuchsia-700',
+                medium: 'bg-violet-100 text-violet-700',
+                large: 'bg-purple-100 text-purple-700'
+            };
+
+            const temperamentTags = breed.temperament.slice(0, 3).map(t => 
+                `<span class="tag bg-slate-100 text-slate-600">${t}</span>`
+            ).join('');
+
+            return `
+                <a href="../breeds/${breed.id}.html" class="breed-card bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden block">
+                    <div class="aspect-[4/5] bg-slate-100 relative overflow-hidden">
+                        <img src="${imageUrl}" alt="${breed.name}" 
+                            class="w-full h-full object-cover object-top"
+                            onerror="this.onerror=null; this.src='${fallbackUrl}'; this.onerror=function(){this.parentElement.innerHTML='<div class=\\'w-full h-full flex items-center justify-center\\'><i data-lucide=\\'cat\\' class=\\'w-16 h-16 text-slate-300\\'></i></div>'; lucide.createIcons();}">
+                        <span class="absolute top-2 right-2 tag ${sizeColors[breed.size.category] || 'bg-slate-100 text-slate-600'}">
+                            ${breed.size.category}
+                        </span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-slate-800 text-lg mb-1">${breed.name}</h3>
+                        <p class="text-slate-500 text-sm mb-3">${breed.origin} · ${breed.lifespan}</p>
+                        <div class="flex flex-wrap gap-1 mb-3">
+                            ${temperamentTags}
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 text-center text-xs">
+                            <div class="bg-slate-50 rounded-lg py-2">
+                                <div class="text-slate-500">Activity</div>
+                                <div class="font-semibold text-slate-700">${'●'.repeat(breed.ratings.activity)}${'○'.repeat(5-breed.ratings.activity)}</div>
+                            </div>
+                            <div class="bg-slate-50 rounded-lg py-2">
+                                <div class="text-slate-500">Groom</div>
+                                <div class="font-semibold text-slate-700">${'●'.repeat(breed.ratings.grooming)}${'○'.repeat(5-breed.ratings.grooming)}</div>
+                            </div>
+                            <div class="bg-slate-50 rounded-lg py-2">
+                                <div class="text-slate-500">Affection</div>
+                                <div class="font-semibold text-slate-700">${'●'.repeat(breed.ratings.affection)}${'○'.repeat(5-breed.ratings.affection)}</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            `;
+        }
+
+        // Apply all filters
+        function applyFilters() {
+            const searchQuery = document.getElementById('searchInput').value.trim();
+            const activityMin = parseInt(document.getElementById('activityFilter').value);
+            const groomingMax = parseInt(document.getElementById('groomingFilter').value);
+            const kidFriendly = document.getElementById('kidFriendly').checked;
+            const dogFriendly = document.getElementById('dogFriendly').checked;
+            const apartmentOk = document.getElementById('apartmentOk').checked;
+            const sortBy = document.getElementById('sortBy').value;
+
+            // Get selected sizes
+            const selectedSizes = Array.from(document.querySelectorAll('.size-filter:checked')).map(cb => cb.value);
+            
+            // Get selected vocality levels
+            const selectedVocal = Array.from(document.querySelectorAll('.vocal-filter:checked')).map(cb => cb.value);
+
+            // Start with search results or all breeds
+            let results = searchQuery && fuse 
+                ? fuse.search(searchQuery).map(r => r.item)
+                : [...allBreeds];
+
+            // Apply filters
+            results = results.filter(breed => {
+                // Size filter
+                if (selectedSizes.length > 0 && !selectedSizes.includes(breed.size.category)) return false;
+                
+                // Activity filter (minimum)
+                if (activityMin > 1 && breed.ratings.activity < activityMin) return false;
+                
+                // Grooming filter (maximum)
+                if (groomingMax < 5 && breed.ratings.grooming > groomingMax) return false;
+                
+                // Kid friendly
+                if (kidFriendly && breed.ratings.kid_friendly < 4) return false;
+                
+                // Dog friendly
+                if (dogFriendly && breed.ratings.dog_friendly < 4) return false;
+                
+                // Apartment ok (most cats are fine, so check if explicitly rated)
+                if (apartmentOk && breed.ratings.apartment_ok && breed.ratings.apartment_ok < 3) return false;
+                
+                // Vocality
+                if (selectedVocal.length > 0 && !selectedVocal.includes(breed.characteristics?.vocality)) return false;
+
+                return true;
+            });
+
+            // Sort results
+            results.sort((a, b) => {
+                switch (sortBy) {
+                    case 'size': return (a.ratings.size || 2) - (b.ratings.size || 2);
+                    case 'activity': return b.ratings.activity - a.ratings.activity;
+                    case 'affection': return b.ratings.affection - a.ratings.affection;
+                    default: return a.name.localeCompare(b.name);
+                }
+            });
+
+            // Render results
+            const grid = document.getElementById('resultsGrid');
+            const noResults = document.getElementById('noResults');
+            const resultCount = document.getElementById('resultCount');
+
+            resultCount.textContent = results.length;
+
+            if (results.length === 0) {
+                grid.innerHTML = '';
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+                grid.innerHTML = results.map(renderBreedCard).join('');
+                lucide.createIcons();
+            }
+
+            // Update clear button visibility
+            document.getElementById('clearSearch').classList.toggle('hidden', !searchQuery);
+        }
+
+        // Update slider labels
+        function updateSliderLabels() {
+            const activityVal = document.getElementById('activityFilter').value;
+            const groomingVal = document.getElementById('groomingFilter').value;
+            
+            document.getElementById('activityValue').textContent = activityVal === '1' ? 'Any' : activityVal;
+            document.getElementById('groomingValue').textContent = groomingVal === '5' ? 'Any' : groomingVal;
+        }
+
+        // Reset filters
+        function resetFilters() {
+            document.getElementById('searchInput').value = '';
+            document.getElementById('activityFilter').value = 1;
+            document.getElementById('groomingFilter').value = 5;
+            document.getElementById('kidFriendly').checked = false;
+            document.getElementById('dogFriendly').checked = false;
+            document.getElementById('apartmentOk').checked = false;
+            document.querySelectorAll('.size-filter, .vocal-filter').forEach(cb => cb.checked = false);
+            document.getElementById('sortBy').value = 'name';
+            updateSliderLabels();
+            applyFilters();
+        }
+
+        // Event listeners
+        document.getElementById('searchInput').addEventListener('input', applyFilters);
+        document.getElementById('clearSearch').addEventListener('click', () => {
+            document.getElementById('searchInput').value = '';
+            applyFilters();
+        });
+        document.getElementById('activityFilter').addEventListener('input', () => { updateSliderLabels(); applyFilters(); });
+        document.getElementById('groomingFilter').addEventListener('input', () => { updateSliderLabels(); applyFilters(); });
+        document.getElementById('kidFriendly').addEventListener('change', applyFilters);
+        document.getElementById('dogFriendly').addEventListener('change', applyFilters);
+        document.getElementById('apartmentOk').addEventListener('change', applyFilters);
+        document.getElementById('sortBy').addEventListener('change', applyFilters);
+        document.getElementById('resetFilters').addEventListener('click', resetFilters);
+        document.querySelectorAll('.size-filter, .vocal-filter').forEach(cb => cb.addEventListener('change', applyFilters));
+
+        // Initialize
+        loadBreeds().then(() => {
+            applyFilters();
+        });
+    </script>
+</body>
+</html>
