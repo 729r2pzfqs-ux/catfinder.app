@@ -41,6 +41,56 @@
     }
     </script>
     
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I choose the right cat breed for my lifestyle?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Consider your living space, activity level, time for grooming, and family situation. Our Breed Quiz asks these questions and matches you with compatible breeds based on your answers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the best cat breeds for apartments?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Persian, Ragdoll, British Shorthair, Russian Blue, and Scottish Fold are excellent apartment cats. They're calm, quiet, and adapt well to smaller spaces. Avoid high-energy breeds like Bengals or vocal breeds like Siamese."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there hypoallergenic cat breeds?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No cat is 100% hypoallergenic, but some produce less of the Fel d 1 protein that causes allergies. Siberian, Balinese, Russian Blue, Bengal, and Sphynx are often recommended for allergy sufferers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which cat breeds are best for families with children?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ragdoll, Maine Coon, Birman, Abyssinian, and Burmese are great family cats. They're patient, playful, and typically good with kids. Always teach children to handle cats gently."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What cats shed the least?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sphynx (hairless), Cornish Rex, Devon Rex, Siamese, and Bengal are low-shedding breeds. Regular brushing helps reduce shedding in all breeds."
+          }
+        }
+      ]
+    }
+    </script>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -308,6 +358,41 @@
                 <div class="text-center mt-8">
                     <a href="articles/" class="inline-flex items-center gap-2 text-fuchsia-600 font-semibold hover:text-fuchsia-700 transition">
                         View all guides
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-16 px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl font-bold text-slate-900 mb-8 text-center">Frequently Asked Questions</h2>
+                <div class="space-y-4">
+                    <div class="bg-white rounded-xl p-6 card-shadow border border-slate-100">
+                        <h3 class="font-semibold text-slate-900 text-lg">How do I choose the right cat breed for my lifestyle?</h3>
+                        <p class="text-slate-600 mt-2">Consider your living space, activity level, time for grooming, and family situation. Our <a href="quiz/" class="text-fuchsia-600 hover:underline">Breed Quiz</a> asks these questions and matches you with compatible breeds based on your answers.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 card-shadow border border-slate-100">
+                        <h3 class="font-semibold text-slate-900 text-lg">What are the best cat breeds for apartments?</h3>
+                        <p class="text-slate-600 mt-2"><a href="breeds/persian/" class="text-fuchsia-600 hover:underline">Persian</a>, <a href="breeds/ragdoll/" class="text-fuchsia-600 hover:underline">Ragdoll</a>, <a href="breeds/british-shorthair/" class="text-fuchsia-600 hover:underline">British Shorthair</a>, <a href="breeds/russian-blue/" class="text-fuchsia-600 hover:underline">Russian Blue</a>, and <a href="breeds/scottish-fold/" class="text-fuchsia-600 hover:underline">Scottish Fold</a> are excellent apartment cats. They're calm, quiet, and adapt well to smaller spaces.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 card-shadow border border-slate-100">
+                        <h3 class="font-semibold text-slate-900 text-lg">Are there hypoallergenic cat breeds?</h3>
+                        <p class="text-slate-600 mt-2">No cat is 100% hypoallergenic, but some produce less of the Fel d 1 protein that causes allergies. <a href="breeds/siberian/" class="text-fuchsia-600 hover:underline">Siberian</a>, <a href="breeds/balinese/" class="text-fuchsia-600 hover:underline">Balinese</a>, <a href="breeds/russian-blue/" class="text-fuchsia-600 hover:underline">Russian Blue</a>, and <a href="breeds/sphynx/" class="text-fuchsia-600 hover:underline">Sphynx</a> are often recommended for allergy sufferers.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 card-shadow border border-slate-100">
+                        <h3 class="font-semibold text-slate-900 text-lg">Which cat breeds are best for families with children?</h3>
+                        <p class="text-slate-600 mt-2"><a href="breeds/ragdoll/" class="text-fuchsia-600 hover:underline">Ragdoll</a>, <a href="breeds/maine-coon/" class="text-fuchsia-600 hover:underline">Maine Coon</a>, <a href="breeds/birman/" class="text-fuchsia-600 hover:underline">Birman</a>, and <a href="breeds/burmese/" class="text-fuchsia-600 hover:underline">Burmese</a> are great family cats. They're patient, playful, and typically good with kids.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 card-shadow border border-slate-100">
+                        <h3 class="font-semibold text-slate-900 text-lg">What cats shed the least?</h3>
+                        <p class="text-slate-600 mt-2"><a href="breeds/sphynx/" class="text-fuchsia-600 hover:underline">Sphynx</a> (hairless), <a href="breeds/cornish-rex/" class="text-fuchsia-600 hover:underline">Cornish Rex</a>, <a href="breeds/devon-rex/" class="text-fuchsia-600 hover:underline">Devon Rex</a>, <a href="breeds/siamese/" class="text-fuchsia-600 hover:underline">Siamese</a>, and <a href="breeds/bengal/" class="text-fuchsia-600 hover:underline">Bengal</a> are low-shedding breeds. Regular brushing helps reduce shedding in all breeds.</p>
+                    </div>
+                </div>
+                <div class="text-center mt-8">
+                    <a href="faq/" class="inline-flex items-center gap-2 text-fuchsia-600 font-semibold hover:text-fuchsia-700 transition">
+                        View all FAQs
                         <i data-lucide="arrow-right" class="w-4 h-4"></i>
                     </a>
                 </div>
