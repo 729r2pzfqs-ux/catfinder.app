@@ -519,8 +519,57 @@
         document.getElementById('resetFilters').addEventListener('click', resetFilters);
         document.querySelectorAll('.size-filter, .coat-filter').forEach(cb => cb.addEventListener('change', applyFilters));
 
+        // Apply URL parameters
+        function applyUrlParams() {
+            const params = new URLSearchParams(window.location.search);
+            
+            // Search query
+            const q = params.get('q');
+            if (q) {
+                document.getElementById('searchInput').value = q;
+            }
+            
+            // Lap cats (high affection)
+            if (params.get('lap') === '1') {
+                document.getElementById('affectionEnabled').checked = true;
+                document.getElementById('affectionFilter').value = 4;
+            }
+            
+            // Quiet breeds (low vocality)
+            if (params.get('quiet') === '1') {
+                document.getElementById('vocalityEnabled').checked = true;
+                document.getElementById('vocalityFilter').value = 2;
+            }
+            
+            // Low shedding (low grooming)
+            if (params.get('shedding') === 'low') {
+                document.getElementById('groomingEnabled').checked = true;
+                document.getElementById('groomingFilter').value = 2;
+            }
+            
+            // Independent (low affection need)
+            if (params.get('independent') === '1') {
+                document.getElementById('affectionEnabled').checked = true;
+                document.getElementById('affectionFilter').value = 2;
+            }
+            
+            // Kid friendly
+            if (params.get('kids') === '1') {
+                document.getElementById('kidFriendly').checked = true;
+            }
+            
+            // Dog friendly
+            if (params.get('dogs') === '1') {
+                document.getElementById('dogFriendly').checked = true;
+            }
+            
+            toggleFilterControls();
+            updateSliderLabels();
+        }
+
         // Initialize
         loadBreeds().then(() => {
+            applyUrlParams();
             applyFilters();
         });
     </script>
