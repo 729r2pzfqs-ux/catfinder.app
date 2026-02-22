@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Razas de Gatos | CatFinder</title>
+    <meta name="description" content="Busca y filtra más de 70 razas de gatos por tamaño, nivel de actividad, necesidades de aseo y más. Encuentra la raza de gato perfecta para tu estilo de vida.">
+    <link rel="canonical" href="https://catfinder.app/es/search/">
+    
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="en" href="https://catfinder.app/search/">
+    <link rel="alternate" hreflang="es" href="https://catfinder.app/es/search/">
+    <link rel="alternate" hreflang="x-default" href="https://catfinder.app/search/">
+    
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .breed-card { transition: transform 0.2s, box-shadow 0.2s; }
+        .breed-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.1); }
+        .filter-section { border-bottom: 1px solid #e2e8f0; }
+        .filter-section:last-child { border-bottom: none; }
+        input[type="range"] { -webkit-appearance: none; height: 6px; border-radius: 3px; background: #e2e8f0; }
+        input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 18px; height: 18px; border-radius: 50%; background: linear-gradient(135deg, #d946ef, #a855f7); cursor: pointer; }
+        .tag { display: inline-block; padding: 2px 8px; border-radius: 9999px; font-size: 12px; font-weight: 500; }
+        input[type="checkbox"]:checked { background-color: #d946ef; border-color: #d946ef; }
+    </style>
+</head>
+<body class="bg-slate-50 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/es/" class="flex items-center gap-2">
+                    <svg class="w-8 h-8 text-fuchsia-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3-9-7.56c0-1.25.5-2.4 1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z"/><path d="M8 14v.5"/><path d="M16 14v.5"/><path d="M11.25 16.25h1.5L12 17l-.75-.75Z"/></svg>
+                    <span class="font-bold text-xl bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent">CatFinder</span>
+                </a>
+                <nav class="flex items-center gap-6">
+                    <a href="/es/breeds/" class="text-slate-600 hover:text-slate-900 font-medium hidden sm:block">Razas</a>
+                    <a href="/es/quiz/" class="text-slate-600 hover:text-slate-900 font-medium hidden sm:block">Quiz</a>
+                    <a href="/es/compare/" class="text-slate-600 hover:text-slate-900 font-medium hidden sm:block">Comparar</a>
+                    <a href="/es/search/" class="text-fuchsia-600 font-medium">Buscar</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        <!-- Hero Section -->
+        <div class="text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-slate-800 mb-3">Encuentra tu Raza de Gato Perfecta</h1>
+            <p class="text-slate-600 text-lg">Filtra por tamaño, nivel de actividad, necesidades de aseo y más</p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="max-w-2xl mx-auto mb-8">
+            <div class="relative">
+                <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                <input type="text" id="searchInput" placeholder="Buscar razas... (ej. Persa, peludo, tranquilo)" 
+                    class="w-full pl-12 pr-4 py-4 rounded-xl border border-slate-200 bg-white shadow-sm focus:ring-2 focus:ring-fuchsia-500 focus:border-fuchsia-500 text-lg" autocomplete="off">
+                <button id="clearSearch" class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 hidden">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+                <!-- Autocomplete dropdown -->
+                <div id="search-dropdown" class="absolute top-full left-0 right-0 mt-2 bg-white border border-slate-200 rounded-2xl shadow-xl z-50 hidden max-h-80 overflow-y-auto">
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Filters Sidebar -->
+            <aside class="lg:w-72 flex-shrink-0">
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5">
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="font-semibold text-slate-800 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+                            Filtros
+                        </h2>
+                        <button id="resetFilters" class="text-sm text-fuchsia-600 hover:text-fuchsia-700">Restablecer</button>
+                    </div>
+
+                    <!-- Size Filter -->
+                    <div class="filter-section py-4">
+                        <h3 class="font-medium text-slate-700 mb-3">Tamaño</h3>
+                        <div class="space-y-2">
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" value="small" class="size-filter rounded text-fuchsia-600">
+                                <span class="text-slate-600">Pequeño</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" value="medium" class="size-filter rounded text-fuchsia-600">
+                                <span class="text-slate-600">Mediano</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" value="large" class="size-filter rounded text-fuchsia-600">
+                                <span class="text-slate-600">Grande</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" value="extra-large" class="size-filter rounded text-fuchsia-600">
+                                <span class="text-slate-600">Extra Grande</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Activity Level -->
+                    <div class="filter-section py-4">
+                        <label class="flex items-center justify-between mb-3 cursor-pointer">
+                            <h3 class="font-medium text-slate-700">Nivel de Actividad</h3>
+                            <input type="checkbox" id="activityEnabled" class="rounded text-fuchsia-600">
+                        </label>
+                        <div id="activityControls" class="hidden">
+                            <div class="flex items-center gap-3">
+                                <span class="text-xs text-slate-500">Bajo</span>
+                                <input type="range" id="activityFilter" min="1" max="5" value="3" class="flex-1">
+                                <span class="text-xs text-slate-500">Alto</span>
+                            </div>
+                            <div class="text-center text-sm text-slate-600 mt-1">
+                                <span id="activityValue">3</span> o menos
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grooming Needs -->
+                    <div class="filter-section py-4">
+                        <label class="flex items-center justify-between mb-3 cursor-pointer">
+                            <h3 class="font-medium text-slate-700">Necesidades de Aseo</h3>
+                            <input type="checkbox" id="groomingEnabled" class="rounded text-fuchsia-600">
+                        </label>
+                        <div id="groomingControls" class="hidden">
+                            <div class="flex items-center gap-3">
+                                <span class="text-xs text-slate-500">Bajo</span>
+                                <input type="range" id="groomingFilter" min="1" max="5" value="3" class="flex-1">
+                                <span class="text-xs text-slate-500">Alto</span>
+                            </div>
+                            <div class="text-center text-sm text-slate-600 mt-1">
+                                <span id="groomingValue">3</span> o menos
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vocality -->
+                    <div class="filter-section py-4">
+                        <label class="flex items-center justify-between mb-3 cursor-pointer">
+                            <h3 class="font-medium text-slate-700">Vocalidad</h3>
+                            <input type="checkbox" id="vocalityEnabled" class="rounded text-fuchsia-600">
+                        </label>
+                        <div id="vocalityControls" class="hidden">
+                            <div class="flex items-center gap-3">
+                                <span class="text-xs text-slate-500">Silencioso</span>
+                                <input type="range" id="vocalityFilter" min="1" max="5" value="3" class="flex-1">
+                                <span class="text-xs text-slate-500">Vocal</span>
+                            </div>
+                            <div class="text-center text-sm text-slate-600 mt-1">
+                                <span id="vocalityValue">3</span> o menos
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Affection -->
+                    <div class="filter-section py-4">
+                        <label class="flex items-center justify-between mb-3 cursor-pointer">
+                            <h3 class="font-medium text-slate-700">Nivel de Afecto</h3>
+                            <input type="checkbox" id="affectionEnabled" class="rounded text-fuchsia-600">
+                        </label>
+                        <div id="affectionControls" class="hidden">
+                            <div class="flex items-center gap-3">
+                                <span class="text-xs text-slate-500">Bajo</span>
+                                <input type="range" id="affectionFilter" min="1" max="5" value="3" class="flex-1">
+                                <span class="text-xs text-slate-500">Alto</span>
+                            </div>
+                            <div class="text-center text-sm text-slate-600 mt-1">
+                                <span id="affectionValue">3</span>+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Good For -->
+                    <div class="filter-section py-4">
+                        <h3 class="font-medium text-slate-700 mb-3">Bueno Para</h3>
+                        <div class="space-y-3">
+                            <label class="flex items-center justify-between cursor-pointer">
+                                <span class="text-slate-600">Niños</span>
+                                <input type="checkbox" id="kidFriendly" class="toggle-filter rounded text-fuchsia-600">
+                            </label>
+                            <label class="flex items-center justify-between cursor-pointer">
+                                <span class="text-slate-600">Perros</span>
+                                <input type="checkbox" id="dogFriendly" class="toggle-filter rounded text-fuchsia-600">
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Coat Type -->
+                    <div class="py-4">
+                        <h3 class="font-medium text-slate-700 mb-3">Tipo de Pelaje</h3>
+                        <div class="space-y-2">
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" value="shorthair" class="coat-filter rounded text-fuchsia-600">
+                                <span class="text-slate-600">Pelo corto</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" value="longhair" class="coat-filter rounded text-fuchsia-600">
+                                <span class="text-slate-600">Pelo largo</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" value="semi-longhair" class="coat-filter rounded text-fuchsia-600">
+                                <span class="text-slate-600">Pelo semi-largo</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" value="hairless" class="coat-filter rounded text-fuchsia-600">
+                                <span class="text-slate-600">Sin pelo</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" value="rex" class="coat-filter rounded text-fuchsia-600">
+                                <span class="text-slate-600">Rex (rizado)</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Results Grid -->
+            <div class="flex-1">
+                <div class="flex items-center justify-between mb-4">
+                    <p class="text-slate-600"><span id="resultCount">0</span> razas encontradas</p>
+                    <select id="sortBy" class="px-3 py-2 rounded-lg border border-slate-200 bg-white text-sm focus:ring-2 focus:ring-fuchsia-500">
+                        <option value="name">Ordenar por Nombre</option>
+                        <option value="size">Ordenar por Tamaño</option>
+                        <option value="activity">Ordenar por Actividad</option>
+                        <option value="affection">Ordenar por Afecto</option>
+                    </select>
+                </div>
+
+                <div id="resultsGrid" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
+                    <!-- Breed cards will be inserted here -->
+                </div>
+
+                <div id="noResults" class="hidden text-center py-16">
+                    <svg class="w-16 h-16 text-slate-300 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    <h3 class="text-xl font-semibold text-slate-700 mb-2">No se encontraron razas</h3>
+                    <p class="text-slate-500">Intenta ajustar tus filtros o términos de búsqueda</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 mt-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="flex items-center gap-2">
+                    <svg class="w-6 h-6 text-fuchsia-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3-9-7.56c0-1.25.5-2.4 1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z"/><path d="M8 14v.5"/><path d="M16 14v.5"/><path d="M11.25 16.25h1.5L12 17l-.75-.75Z"/></svg>
+                    <span class="font-bold text-white">CatFinder</span>
+                </div>
+                <div class="flex gap-6 text-sm">
+                    <a href="/es/breeds/" class="hover:text-white">Razas</a>
+                    <a href="/es/quiz/" class="hover:text-white">Quiz</a>
+                    <a href="/es/compare/" class="hover:text-white">Comparar</a>
+                </div>
+                <p class="text-sm">&copy; 2026 CatFinder</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // State
+        let allBreeds = [];
+        let fuse = null;
+
+        // Load breed data
+        async function loadBreeds() {
+            try {
+                const response = await fetch('/data/breeds.json');
+                allBreeds = await response.json();
+                
+                // Initialize Fuse.js for fuzzy search
+                fuse = new Fuse(allBreeds, {
+                    keys: ['name', 'temperament', 'origin', 'description'],
+                    threshold: 0.4,
+                    includeScore: true
+                });
+            } catch (error) {
+                console.error('Error loading breeds:', error);
+            }
+        }
+
+        // Render breed card
+        function renderBreedCard(breed) {
+            const imageUrl = `/images/breeds/${breed.id}.webp`;
+            
+            const sizeColors = {
+                small: 'bg-purple-100 text-purple-700',
+                medium: 'bg-fuchsia-100 text-fuchsia-700',
+                large: 'bg-pink-100 text-pink-700',
+                'extra-large': 'bg-rose-100 text-rose-700'
+            };
+            
+            const sizeLabels = {
+                small: 'pequeño',
+                medium: 'mediano',
+                large: 'grande',
+                'extra-large': 'extra grande'
+            };
+
+            const temperamentTags = breed.temperament.slice(0, 3).map(t => 
+                `<span class="tag bg-slate-100 text-slate-600">${t}</span>`
+            ).join('');
+
+            return `
+                <a href="/es/breeds/${breed.id}/" class="breed-card bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden block">
+                    <div class="aspect-[4/5] bg-slate-100 relative overflow-hidden">
+                        <img src="${imageUrl}" alt="${breed.name}" 
+                            class="w-full h-full object-cover object-top"
+                            onerror="this.parentElement.innerHTML='<div class=\\'w-full h-full flex items-center justify-center bg-gradient-to-br from-fuchsia-50 to-purple-50\\'><svg class=\\'w-16 h-16 text-fuchsia-200\\' viewBox=\\'0 0 24 24\\' fill=\\'none\\' stroke=\\'currentColor\\' stroke-width=\\'2\\'><path d=\\'M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3-9-7.56c0-1.25.5-2.4 1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z\\'/></svg></div>'">
+                        <span class="absolute top-2 right-2 tag ${sizeColors[breed.size.category] || 'bg-slate-100 text-slate-600'}">
+                            ${sizeLabels[breed.size.category] || breed.size.category}
+                        </span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-slate-800 text-lg mb-1">${breed.name}</h3>
+                        <p class="text-slate-500 text-sm mb-3">${breed.origin} · ${breed.lifespan}</p>
+                        <div class="flex flex-wrap gap-1 mb-3">
+                            ${temperamentTags}
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 text-center text-xs">
+                            <div class="bg-slate-50 rounded-lg py-2">
+                                <div class="text-slate-500">Actividad</div>
+                                <div class="font-semibold text-slate-700">${'●'.repeat(breed.ratings.activity)}${'○'.repeat(5-breed.ratings.activity)}</div>
+                            </div>
+                            <div class="bg-slate-50 rounded-lg py-2">
+                                <div class="text-slate-500">Aseo</div>
+                                <div class="font-semibold text-slate-700">${'●'.repeat(breed.ratings.grooming)}${'○'.repeat(5-breed.ratings.grooming)}</div>
+                            </div>
+                            <div class="bg-slate-50 rounded-lg py-2">
+                                <div class="text-slate-500">Afecto</div>
+                                <div class="font-semibold text-slate-700">${'●'.repeat(breed.ratings.affection)}${'○'.repeat(5-breed.ratings.affection)}</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            `;
+        }
+
+        // Apply all filters
+        function applyFilters() {
+            const searchQuery = document.getElementById('searchInput').value.trim();
+            const activityEnabled = document.getElementById('activityEnabled').checked;
+            const groomingEnabled = document.getElementById('groomingEnabled').checked;
+            const vocalityEnabled = document.getElementById('vocalityEnabled').checked;
+            const affectionEnabled = document.getElementById('affectionEnabled').checked;
+            const activityMax = parseInt(document.getElementById('activityFilter').value);
+            const groomingMax = parseInt(document.getElementById('groomingFilter').value);
+            const vocalityMax = parseInt(document.getElementById('vocalityFilter').value);
+            const affectionMin = parseInt(document.getElementById('affectionFilter').value);
+            const kidFriendly = document.getElementById('kidFriendly').checked;
+            const dogFriendly = document.getElementById('dogFriendly').checked;
+            const sortBy = document.getElementById('sortBy').value;
+
+            // Get selected sizes
+            const selectedSizes = Array.from(document.querySelectorAll('.size-filter:checked')).map(cb => cb.value);
+            
+            // Get selected coat types
+            const selectedCoats = Array.from(document.querySelectorAll('.coat-filter:checked')).map(cb => cb.value);
+
+            // Start with search results or all breeds
+            let results = searchQuery && fuse 
+                ? fuse.search(searchQuery).map(r => r.item)
+                : [...allBreeds];
+
+            // Apply filters
+            results = results.filter(breed => {
+                // Size filter
+                if (selectedSizes.length > 0 && !selectedSizes.includes(breed.size.category)) return false;
+                
+                // Activity filter (maximum) - only if enabled
+                if (activityEnabled && breed.ratings.activity > activityMax) return false;
+                
+                // Grooming filter (maximum) - only if enabled
+                if (groomingEnabled && breed.ratings.grooming > groomingMax) return false;
+                
+                // Vocality filter (maximum) - only if enabled
+                if (vocalityEnabled && breed.ratings.vocality > vocalityMax) return false;
+                
+                // Affection filter (minimum) - only if enabled
+                if (affectionEnabled && breed.ratings.affection < affectionMin) return false;
+                
+                // Kid friendly
+                if (kidFriendly && breed.ratings.kid_friendly < 4) return false;
+                
+                // Dog friendly
+                if (dogFriendly && breed.ratings.dog_friendly < 4) return false;
+                
+                // Coat type
+                if (selectedCoats.length > 0 && !selectedCoats.includes(breed.coat.type)) return false;
+
+                return true;
+            });
+
+            // Sort results
+            const sizeOrder = { small: 1, medium: 2, large: 3, 'extra-large': 4 };
+            results.sort((a, b) => {
+                switch (sortBy) {
+                    case 'size': return (sizeOrder[a.size.category] || 2) - (sizeOrder[b.size.category] || 2);
+                    case 'activity': return b.ratings.activity - a.ratings.activity;
+                    case 'affection': return b.ratings.affection - a.ratings.affection;
+                    default: return a.name.localeCompare(b.name);
+                }
+            });
+
+            // Render results
+            const grid = document.getElementById('resultsGrid');
+            const noResults = document.getElementById('noResults');
+            const resultCount = document.getElementById('resultCount');
+
+            resultCount.textContent = results.length;
+
+            if (results.length === 0) {
+                grid.innerHTML = '';
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+                grid.innerHTML = results.map(renderBreedCard).join('');
+            }
+
+            // Update clear button visibility
+            document.getElementById('clearSearch').classList.toggle('hidden', !searchQuery);
+        }
+
+        // Toggle filter controls visibility
+        function toggleFilterControls() {
+            const activityEnabled = document.getElementById('activityEnabled').checked;
+            const groomingEnabled = document.getElementById('groomingEnabled').checked;
+            const vocalityEnabled = document.getElementById('vocalityEnabled').checked;
+            const affectionEnabled = document.getElementById('affectionEnabled').checked;
+            
+            document.getElementById('activityControls').classList.toggle('hidden', !activityEnabled);
+            document.getElementById('groomingControls').classList.toggle('hidden', !groomingEnabled);
+            document.getElementById('vocalityControls').classList.toggle('hidden', !vocalityEnabled);
+            document.getElementById('affectionControls').classList.toggle('hidden', !affectionEnabled);
+        }
+        
+        // Update all slider labels
+        function updateSliderLabels() {
+            document.getElementById('activityValue').textContent = document.getElementById('activityFilter').value;
+            document.getElementById('groomingValue').textContent = document.getElementById('groomingFilter').value;
+            document.getElementById('vocalityValue').textContent = document.getElementById('vocalityFilter').value;
+            document.getElementById('affectionValue').textContent = document.getElementById('affectionFilter').value;
+        }
+
+        // Reset filters
+        function resetFilters() {
+            document.getElementById('searchInput').value = '';
+            document.getElementById('activityEnabled').checked = false;
+            document.getElementById('groomingEnabled').checked = false;
+            document.getElementById('vocalityEnabled').checked = false;
+            document.getElementById('affectionEnabled').checked = false;
+            document.getElementById('activityFilter').value = 3;
+            document.getElementById('groomingFilter').value = 3;
+            document.getElementById('vocalityFilter').value = 3;
+            document.getElementById('affectionFilter').value = 3;
+            document.getElementById('kidFriendly').checked = false;
+            document.getElementById('dogFriendly').checked = false;
+            document.querySelectorAll('.size-filter, .coat-filter').forEach(cb => cb.checked = false);
+            document.getElementById('sortBy').value = 'name';
+            toggleFilterControls();
+            updateSliderLabels();
+            applyFilters();
+        }
+
+        // Autocomplete functionality
+        const searchInput = document.getElementById('searchInput');
+        const searchDropdown = document.getElementById('search-dropdown');
+        
+        function showAutocomplete(query) {
+            if (!query || query.length < 1 || allBreeds.length === 0) {
+                searchDropdown.classList.add('hidden');
+                return;
+            }
+            
+            const matches = allBreeds.filter(b => 
+                b.name.toLowerCase().includes(query.toLowerCase())
+            ).slice(0, 8);
+            
+            if (matches.length === 0) {
+                searchDropdown.classList.add('hidden');
+                return;
+            }
+            
+            const sizeLabels = {
+                small: 'pequeño',
+                medium: 'mediano',
+                large: 'grande',
+                'extra-large': 'extra grande'
+            };
+            
+            searchDropdown.innerHTML = matches.map(b => `
+                <a href="/es/breeds/${b.id}/" class="flex items-center gap-3 px-4 py-3 hover:bg-slate-50 transition first:rounded-t-2xl last:rounded-b-2xl border-b border-slate-100 last:border-0">
+                    <img src="/images/heads/${b.id}.webp" alt="${b.name}" class="w-10 h-10 rounded-xl object-cover object-top" onerror="this.style.display='none'">
+                    <div>
+                        <div class="font-medium text-slate-800">${b.name}</div>
+                        <div class="text-sm text-slate-500">${b.origin} · ${sizeLabels[b.size.category] || b.size.category}</div>
+                    </div>
+                </a>
+            `).join('');
+            searchDropdown.classList.remove('hidden');
+        }
+        
+        // Hide dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!searchInput.contains(e.target) && !searchDropdown.contains(e.target)) {
+                searchDropdown.classList.add('hidden');
+            }
+        });
+
+        // Event listeners
+        searchInput.addEventListener('input', function() {
+            showAutocomplete(this.value.trim());
+            applyFilters();
+        });
+        searchInput.addEventListener('focus', function() {
+            if (this.value.trim()) showAutocomplete(this.value.trim());
+        });
+        document.getElementById('clearSearch').addEventListener('click', () => {
+            searchInput.value = '';
+            searchDropdown.classList.add('hidden');
+            applyFilters();
+        });
+        document.getElementById('activityEnabled').addEventListener('change', () => { toggleFilterControls(); applyFilters(); });
+        document.getElementById('groomingEnabled').addEventListener('change', () => { toggleFilterControls(); applyFilters(); });
+        document.getElementById('vocalityEnabled').addEventListener('change', () => { toggleFilterControls(); applyFilters(); });
+        document.getElementById('affectionEnabled').addEventListener('change', () => { toggleFilterControls(); applyFilters(); });
+        document.getElementById('activityFilter').addEventListener('input', () => { updateSliderLabels(); applyFilters(); });
+        document.getElementById('groomingFilter').addEventListener('input', () => { updateSliderLabels(); applyFilters(); });
+        document.getElementById('vocalityFilter').addEventListener('input', () => { updateSliderLabels(); applyFilters(); });
+        document.getElementById('affectionFilter').addEventListener('input', () => { updateSliderLabels(); applyFilters(); });
+        document.getElementById('kidFriendly').addEventListener('change', applyFilters);
+        document.getElementById('dogFriendly').addEventListener('change', applyFilters);
+        document.getElementById('sortBy').addEventListener('change', applyFilters);
+        document.getElementById('resetFilters').addEventListener('click', resetFilters);
+        document.querySelectorAll('.size-filter, .coat-filter').forEach(cb => cb.addEventListener('change', applyFilters));
+
+        // Apply URL parameters
+        function applyUrlParams() {
+            const params = new URLSearchParams(window.location.search);
+            
+            // Search query
+            const q = params.get('q');
+            if (q) {
+                document.getElementById('searchInput').value = q;
+            }
+            
+            // Lap cats (high affection)
+            if (params.get('lap') === '1') {
+                document.getElementById('affectionEnabled').checked = true;
+                document.getElementById('affectionFilter').value = 4;
+            }
+            
+            // Quiet breeds (low vocality)
+            if (params.get('quiet') === '1') {
+                document.getElementById('vocalityEnabled').checked = true;
+                document.getElementById('vocalityFilter').value = 2;
+            }
+            
+            // Low shedding (low grooming)
+            if (params.get('shedding') === 'low') {
+                document.getElementById('groomingEnabled').checked = true;
+                document.getElementById('groomingFilter').value = 2;
+            }
+            
+            // Independent (low affection need)
+            if (params.get('independent') === '1') {
+                document.getElementById('affectionEnabled').checked = true;
+                document.getElementById('affectionFilter').value = 2;
+            }
+            
+            // Kid friendly
+            if (params.get('kids') === '1') {
+                document.getElementById('kidFriendly').checked = true;
+            }
+            
+            // Dog friendly
+            if (params.get('dogs') === '1') {
+                document.getElementById('dogFriendly').checked = true;
+            }
+            
+            toggleFilterControls();
+            updateSliderLabels();
+        }
+
+        // Initialize
+        loadBreeds().then(() => {
+            applyUrlParams();
+            applyFilters();
+        });
+    </script>
+</body>
+</html>
