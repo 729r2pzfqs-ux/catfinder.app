@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katzenrassen-Quiz — Finde deine perfekte Katze | CatFinder</title>
+    <meta name="description" content="Mach unser kurzes Quiz, um die perfekte Katzenrasse für deinen Lebensstil zu finden. Beantworte ein paar Fragen und entdecke deinen idealen Fellbegleiter.">
+    <link rel="canonical" href="https://catfinder.app/de/quiz/">
+    <link rel="alternate" hreflang="en" href="https://catfinder.app/quiz/">
+    <link rel="alternate" hreflang="es" href="https://catfinder.app/es/quiz/">
+    <link rel="alternate" hreflang="de" href="https://catfinder.app/de/quiz/">
+    
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon-192.png">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://catfinder.app/de/quiz/">
+    <meta property="og:title" content="Katzenrassen-Quiz — Finde deine perfekte Katze">
+    <meta property="og:description" content="Mach unser kurzes Quiz, um die perfekte Katzenrasse für deinen Lebensstil zu finden.">
+    <meta property="og:site_name" content="CatFinder">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-fuchsia-50 via-white to-purple-50 min-h-screen text-slate-800">
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="../" class="flex items-center gap-2">
+                <svg class="w-8 h-8 text-fuchsia-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3-9-7.56c0-1.25.5-2.4 1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z"/><path d="M8 14v.5"/><path d="M16 14v.5"/><path d="M11.25 16.25h1.5L12 17l-.75-.75Z"/></svg>
+                <span class="text-xl font-bold bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent">CatFinder</span>
+            </a>
+            <nav class="flex items-center gap-6 text-sm font-medium">
+                <a href="../search/" class="text-slate-600 hover:text-fuchsia-600 transition">Alle Rassen</a>
+                <a href="./" class="bg-gradient-to-r from-fuchsia-500 to-purple-600 text-white px-5 py-2.5 rounded-xl font-semibold shadow-lg shadow-fuchsia-500/25">Quiz starten</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-2xl mx-auto px-4 py-12">
+        <!-- Quiz Container -->
+        <div id="quiz-container">
+            <!-- Intro -->
+            <div id="quiz-intro" class="text-center">
+                <div class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-slate-100 text-sm text-slate-600 mb-6">
+                    <span>🎯</span>
+                    <span>6 schnelle Fragen</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+                    Finde deine
+                    <span class="bg-gradient-to-r from-fuchsia-500 to-purple-600 bg-clip-text text-transparent">perfekte Katze</span>
+                </h1>
+                <p class="text-lg text-slate-600 mb-8">Beantworte ein paar Fragen über deinen Lebensstil und wir finden die idealen Rassen für dich.</p>
+                <button onclick="startQuiz()" class="bg-gradient-to-r from-fuchsia-500 to-purple-600 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:shadow-xl hover:shadow-fuchsia-500/25 transition transform hover:scale-105">
+                    Quiz starten →
+                </button>
+            </div>
+
+            <!-- Questions -->
+            <div id="quiz-questions" class="hidden">
+                <div class="bg-white rounded-3xl shadow-xl shadow-slate-200/50 p-8">
+                    <!-- Progress -->
+                    <div class="mb-8">
+                        <div class="flex justify-between text-sm text-slate-500 mb-2">
+                            <span>Frage <span id="current-q">1</span> von 6</span>
+                            <span id="progress-pct">17%</span>
+                        </div>
+                        <div class="h-2 bg-slate-100 rounded-full overflow-hidden">
+                            <div id="progress-bar" class="h-full bg-gradient-to-r from-fuchsia-500 to-purple-600 transition-all duration-300" style="width: 17%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Question -->
+                    <h2 id="question-text" class="text-2xl font-bold mb-6"></h2>
+                    
+                    <!-- Options -->
+                    <div id="options-container" class="space-y-3"></div>
+                </div>
+            </div>
+
+            <!-- Results -->
+            <div id="quiz-results" class="hidden">
+                <div class="text-center mb-8">
+                    <span class="text-6xl mb-4 block">😻</span>
+                    <h2 class="text-3xl font-bold mb-2">Deine besten Treffer!</h2>
+                    <p class="text-slate-600">Basierend auf deinen Antworten sind diese Rassen ideal für dich:</p>
+                </div>
+                <div id="results-container" class="space-y-4"></div>
+                <div class="text-center mt-8">
+                    <button onclick="restartQuiz()" class="text-fuchsia-600 font-semibold hover:text-fuchsia-700">← Quiz nochmal machen</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-100 mt-16 py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center text-slate-500 text-sm">
+            <p>© 2026 CatFinder. Mit 😻 gemacht für Katzenliebhaber überall.</p>
+        </div>
+    </footer>
+
+    <script>
+        const questions = [
+            {
+                q: "Wie aktiv ist dein Haushalt?",
+                options: [
+                    { text: "🏃 Sehr aktiv — Wir lieben Spielzeit!", criteria: { activity: 5 } },
+                    { text: "🚶 Mäßig aktiv — Etwas Spielen täglich", criteria: { activity: 3 } },
+                    { text: "🛋️ Entspannt — Wir bevorzugen ruhige Abende", criteria: { activity: 1 } }
+                ]
+            },
+            {
+                q: "Wie stehst du zur Fellpflege?",
+                options: [
+                    { text: "✂️ Bürste gerne täglich", criteria: { grooming: 5 } },
+                    { text: "🧹 Wöchentliches Bürsten ist okay", criteria: { grooming: 3 } },
+                    { text: "⚡ Möglichst wenig Pflege bitte!", criteria: { grooming: 1 } }
+                ]
+            },
+            {
+                q: "Wie findest du gesprächige Katzen?",
+                options: [
+                    { text: "🗣️ Liebe es! Ich möchte Unterhaltungen", criteria: { vocality: 5 } },
+                    { text: "💬 Etwas Miauen ist nett", criteria: { vocality: 3 } },
+                    { text: "🤫 Bevorzuge einen ruhigen Begleiter", criteria: { vocality: 1 } }
+                ]
+            },
+            {
+                q: "Möchtest du eine Schoßkatze?",
+                options: [
+                    { text: "🧸 Ja! Ständiges Kuscheln bitte", criteria: { affection: 5, independence: 1 } },
+                    { text: "🤝 Anhänglich, aber nicht aufdringlich", criteria: { affection: 3, independence: 3 } },
+                    { text: "🐱 Unabhängig ist in Ordnung", criteria: { affection: 2, independence: 5 } }
+                ]
+            },
+            {
+                q: "Hast du Kinder oder andere Haustiere?",
+                options: [
+                    { text: "👶 Ja, kleine Kinder", criteria: { kid_friendly: 5 } },
+                    { text: "🐕 Ja, Hunde oder andere Katzen", criteria: { dog_friendly: 5, kid_friendly: 4 } },
+                    { text: "🏠 Nein, nur Erwachsene", criteria: { kid_friendly: 3, dog_friendly: 3 } }
+                ]
+            },
+            {
+                q: "Was ist dir am wichtigsten?",
+                options: [
+                    { text: "🧠 Klug & trainierbar", criteria: { intelligence: 5 } },
+                    { text: "💖 Lieb & anhänglich", criteria: { affection: 5 } },
+                    { text: "😎 Unkompliziert & pflegeleicht", criteria: { grooming: 1, independence: 4 } },
+                    { text: "🎭 Verspielt & unterhaltsam", criteria: { activity: 5, intelligence: 4 } }
+                ]
+            }
+        ];
+
+        let breeds = [];
+        let currentQuestion = 0;
+        let selectedCriteria = {};
+
+        // Load breeds from JSON
+        fetch('../../data/breeds.json')
+            .then(r => r.json())
+            .then(data => {
+                breeds = data;
+                console.log(`Loaded ${breeds.length} breeds`);
+            })
+            .catch(e => console.error('Failed to load breeds:', e));
+
+        function startQuiz() {
+            document.getElementById('quiz-intro').classList.add('hidden');
+            document.getElementById('quiz-questions').classList.remove('hidden');
+            showQuestion(0);
+        }
+
+        function showQuestion(index) {
+            const q = questions[index];
+            document.getElementById('question-text').textContent = q.q;
+            document.getElementById('current-q').textContent = index + 1;
+            const pct = Math.round(((index + 1) / questions.length) * 100);
+            document.getElementById('progress-pct').textContent = pct + '%';
+            document.getElementById('progress-bar').style.width = pct + '%';
+
+            const container = document.getElementById('options-container');
+            container.innerHTML = '';
+            
+            q.options.forEach((opt, i) => {
+                const btn = document.createElement('button');
+                btn.className = 'w-full text-left p-4 rounded-xl border-2 border-slate-200 hover:border-fuchsia-400 hover:bg-fuchsia-50 transition font-medium';
+                btn.textContent = opt.text;
+                btn.onclick = () => selectOption(opt.criteria);
+                container.appendChild(btn);
+            });
+        }
+
+        function selectOption(criteria) {
+            // Merge criteria
+            for (const [key, value] of Object.entries(criteria)) {
+                if (!selectedCriteria[key]) selectedCriteria[key] = [];
+                selectedCriteria[key].push(value);
+            }
+            
+            currentQuestion++;
+            
+            if (currentQuestion < questions.length) {
+                showQuestion(currentQuestion);
+            } else {
+                showResults();
+            }
+        }
+
+        function showResults() {
+            document.getElementById('quiz-questions').classList.add('hidden');
+            document.getElementById('quiz-results').classList.remove('hidden');
+
+            // Average the criteria
+            const avgCriteria = {};
+            for (const [key, values] of Object.entries(selectedCriteria)) {
+                avgCriteria[key] = values.reduce((a, b) => a + b, 0) / values.length;
+            }
+
+            // Score breeds based on how close they match
+            const scored = breeds.map(breed => {
+                let score = 0;
+                let factors = 0;
+                
+                for (const [key, targetValue] of Object.entries(avgCriteria)) {
+                    if (breed.ratings && breed.ratings[key] !== undefined) {
+                        // Higher score for closer matches
+                        const breedValue = breed.ratings[key];
+                        const diff = Math.abs(breedValue - targetValue);
+                        score += (5 - diff); // Max 5 points per criteria
+                        factors++;
+                    }
+                }
+                
+                return { 
+                    ...breed, 
+                    score: factors > 0 ? score / factors : 0 
+                };
+            });
+
+            // Sort and get top 5
+            scored.sort((a, b) => b.score - a.score);
+            const top5 = scored.slice(0, 5);
+
+            const container = document.getElementById('results-container');
+            container.innerHTML = '';
+
+            top5.forEach((breed, i) => {
+                const match = Math.min(100, Math.round((breed.score / 5) * 100));
+                const div = document.createElement('a');
+                div.href = '../breeds/' + breed.id + '/';
+                div.className = 'block bg-white rounded-2xl p-6 shadow-lg shadow-slate-200/50 hover:shadow-xl transition';
+                div.innerHTML = `
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-fuchsia-100 to-purple-100 rounded-xl flex items-center justify-center text-2xl font-bold text-fuchsia-600">${i + 1}</div>
+                            <div>
+                                <h3 class="text-xl font-bold">${breed.name}</h3>
+                                <p class="text-slate-500 text-sm">${match}% Übereinstimmung</p>
+                            </div>
+                        </div>
+                        <div class="text-fuchsia-600 font-semibold">Ansehen →</div>
+                    </div>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function restartQuiz() {
+            currentQuestion = 0;
+            selectedCriteria = {};
+            document.getElementById('quiz-results').classList.add('hidden');
+            document.getElementById('quiz-intro').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
