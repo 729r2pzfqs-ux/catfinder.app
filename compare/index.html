@@ -100,31 +100,42 @@
 
         <!-- Popular Comparisons -->
         <div class="mt-16">
-            <h2 class="text-2xl font-bold mb-6">Popular Comparisons</h2>
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="text-2xl font-bold">Popular Comparisons</h2>
+                <a href="comparisons/" class="text-fuchsia-600 hover:text-fuchsia-700 font-medium text-sm flex items-center gap-1">
+                    View all comparisons
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </a>
+            </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <button onclick="setBreeds('persian', 'ragdoll')" class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-left">
-                    <span class="font-semibold">Persian vs Ragdoll</span>
+                <div class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-left">
+                    <button onclick="setBreeds('persian', 'ragdoll')" class="font-semibold hover:text-fuchsia-600">Persian vs Ragdoll</button>
                     <p class="text-sm text-slate-500">Fluffy lap cat showdown</p>
-                </button>
-                <button onclick="setBreeds('maine-coon', 'norwegian-forest-cat')" class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-left">
-                    <span class="font-semibold">Maine Coon vs Norwegian Forest</span>
+                    <a href="comparisons/persian-vs-ragdoll.html" class="text-xs text-fuchsia-500 hover:underline">Read full comparison →</a>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-left">
+                    <button onclick="setBreeds('maine-coon', 'norwegian-forest-cat')" class="font-semibold hover:text-fuchsia-600">Maine Coon vs Norwegian Forest</button>
                     <p class="text-sm text-slate-500">Gentle giants compared</p>
-                </button>
-                <button onclick="setBreeds('siamese', 'burmese')" class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-left">
-                    <span class="font-semibold">Siamese vs Burmese</span>
-                    <p class="text-sm text-slate-500">Social butterflies</p>
-                </button>
+                    <a href="comparisons/maine-coon-vs-norwegian-forest-cat.html" class="text-xs text-fuchsia-500 hover:underline">Read full comparison →</a>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-left">
+                    <button onclick="setBreeds('siamese', 'bengal')" class="font-semibold hover:text-fuchsia-600">Siamese vs Bengal</button>
+                    <p class="text-sm text-slate-500">Active & intelligent</p>
+                    <a href="comparisons/siamese-vs-bengal.html" class="text-xs text-fuchsia-500 hover:underline">Read full comparison →</a>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-left">
+                    <button onclick="setBreeds('british-shorthair', 'scottish-fold')" class="font-semibold hover:text-fuchsia-600">British Shorthair vs Scottish Fold</button>
+                    <p class="text-sm text-slate-500">Calm UK companions</p>
+                    <a href="comparisons/british-shorthair-vs-scottish-fold.html" class="text-xs text-fuchsia-500 hover:underline">Read full comparison →</a>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-left">
+                    <button onclick="setBreeds('sphynx', 'devon-rex')" class="font-semibold hover:text-fuchsia-600">Sphynx vs Devon Rex</button>
+                    <p class="text-sm text-slate-500">Unique and playful</p>
+                    <a href="comparisons/sphynx-vs-devon-rex.html" class="text-xs text-fuchsia-500 hover:underline">Read full comparison →</a>
+                </div>
                 <button onclick="setBreeds('bengal', 'abyssinian')" class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-left">
                     <span class="font-semibold">Bengal vs Abyssinian</span>
                     <p class="text-sm text-slate-500">Active adventurers</p>
-                </button>
-                <button onclick="setBreeds('british-shorthair', 'russian-blue')" class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-left">
-                    <span class="font-semibold">British Shorthair vs Russian Blue</span>
-                    <p class="text-sm text-slate-500">Elegant and calm</p>
-                </button>
-                <button onclick="setBreeds('sphynx', 'devon-rex')" class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-left">
-                    <span class="font-semibold">Sphynx vs Devon Rex</span>
-                    <p class="text-sm text-slate-500">Unique and playful</p>
                 </button>
             </div>
         </div>
