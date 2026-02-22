@@ -1,19 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Main pages -->
-  <url><loc>https://catfinder.app/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- English Main pages -->
+  <url>
+    <loc>https://catfinder.app/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://catfinder.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://catfinder.app/es/"/>
+    <changefreq>weekly</changefreq><priority>1.0</priority>
+  </url>
   <url><loc>https://catfinder.app/search/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://catfinder.app/quiz/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://catfinder.app/compare/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://catfinder.app/faq/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://catfinder.app/articles/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  
-  <!-- Articles -->
   <url><loc>https://catfinder.app/articles/best-cats-for-apartments/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://catfinder.app/articles/best-cats-for-families/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://catfinder.app/articles/hypoallergenic-cats/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   
-  <!-- Breed pages -->
+  <!-- Spanish Main pages -->
+  <url>
+    <loc>https://catfinder.app/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://catfinder.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://catfinder.app/es/"/>
+    <changefreq>weekly</changefreq><priority>1.0</priority>
+  </url>
+  <url><loc>https://catfinder.app/es/search/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://catfinder.app/es/quiz/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://catfinder.app/es/compare/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://catfinder.app/es/faq/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://catfinder.app/es/articles/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://catfinder.app/es/articles/best-cats-for-apartments/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://catfinder.app/es/articles/best-cats-for-families/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://catfinder.app/es/articles/hypoallergenic-cats/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  
+  <!-- English Breed pages -->
   <url><loc>https://catfinder.app/breeds/abyssinian/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://catfinder.app/breeds/american-bobtail/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://catfinder.app/breeds/american-curl/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -88,4 +107,80 @@
   <url><loc>https://catfinder.app/breeds/turkish-angora/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://catfinder.app/breeds/turkish-van/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://catfinder.app/breeds/york-chocolate/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  
+  <!-- Spanish Breed pages -->
+  <url><loc>https://catfinder.app/es/breeds/abyssinian/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/american-bobtail/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/american-curl/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/american-shorthair/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/american-wirehair/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/aphrodite-giant/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/asian/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/australian-mist/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/balinese/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/bengal/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/birman/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/bombay/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/brazilian-shorthair/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/british-longhair/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/british-shorthair/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/burmese/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/burmilla/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/california-spangled/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/chantilly-tiffany/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/chartreux/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/chausie/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/colorpoint-shorthair/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/cornish-rex/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/cymric/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/cyprus/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/devon-rex/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/donskoy/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/dragon-li/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/egyptian-mau/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/european-shorthair/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/exotic-shorthair/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/havana-brown/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/highlander/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/himalayan/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/japanese-bobtail/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/javanese/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/khao-manee/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/korat/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/kurilian-bobtail/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/laperm/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/lykoi/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/maine-coon/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/manx/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/munchkin/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/nebelung/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/norwegian-forest-cat/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/ocicat/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/oriental-longhair/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/oriental-shorthair/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/persian/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/peterbald/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/pixie-bob/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/ragamuffin/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/ragdoll/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/russian-blue/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/savannah/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/scottish-fold/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/selkirk-rex/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/serengeti/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/siamese/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/siberian/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/singapura/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/snowshoe/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/sokoke/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/somali/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/sphynx/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/suphalak/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/thai/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/tiffanie/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/tonkinese/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/toyger/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/turkish-angora/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/turkish-van/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://catfinder.app/es/breeds/york-chocolate/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
