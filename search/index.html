@@ -60,10 +60,10 @@
         <!-- Search Bar -->
         <div class="max-w-2xl mx-auto mb-8">
             <div class="relative">
-                <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                 <input type="text" id="searchInput" placeholder="Search breeds... (e.g. Persian, Maine Coon)" 
                     class="w-full pl-12 pr-4 py-4 rounded-xl border border-slate-200 bg-white shadow-sm focus:ring-2 focus:ring-fuchsia-500 focus:border-fuchsia-500 text-lg" autocomplete="off">
-                <button id="clearSearch" class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-300 hover:text-slate-600 hidden">
+                <button id="clearSearch" class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-600 hover:text-slate-600 hidden">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                 </button>
                 <!-- Autocomplete dropdown -->
@@ -115,11 +115,11 @@
                         </label>
                         <div id="activityControls" class="hidden">
                             <div class="flex items-center gap-3">
-                                <span class="text-xs text-slate-300">Low</span>
+                                <span class="text-xs text-slate-600">Low</span>
                                 <input type="range" id="activityFilter" min="1" max="5" value="3" class="flex-1">
-                                <span class="text-xs text-slate-300">High</span>
+                                <span class="text-xs text-slate-600">High</span>
                             </div>
-                            <div class="text-center text-sm text-slate-600 mt-1">
+                            <div class="text-center text-sm text-slate-400 mt-1">
                                 <span id="activityValue">3</span> or less
                             </div>
                         </div>
@@ -133,11 +133,11 @@
                         </label>
                         <div id="groomingControls" class="hidden">
                             <div class="flex items-center gap-3">
-                                <span class="text-xs text-slate-300">Low</span>
+                                <span class="text-xs text-slate-600">Low</span>
                                 <input type="range" id="groomingFilter" min="1" max="5" value="3" class="flex-1">
-                                <span class="text-xs text-slate-300">High</span>
+                                <span class="text-xs text-slate-600">High</span>
                             </div>
-                            <div class="text-center text-sm text-slate-600 mt-1">
+                            <div class="text-center text-sm text-slate-400 mt-1">
                                 <span id="groomingValue">3</span> or less
                             </div>
                         </div>
@@ -151,11 +151,11 @@
                         </label>
                         <div id="vocalityControls" class="hidden">
                             <div class="flex items-center gap-3">
-                                <span class="text-xs text-slate-300">Quiet</span>
+                                <span class="text-xs text-slate-600">Quiet</span>
                                 <input type="range" id="vocalityFilter" min="1" max="5" value="3" class="flex-1">
-                                <span class="text-xs text-slate-300">Vocal</span>
+                                <span class="text-xs text-slate-600">Vocal</span>
                             </div>
-                            <div class="text-center text-sm text-slate-600 mt-1">
+                            <div class="text-center text-sm text-slate-400 mt-1">
                                 <span id="vocalityValue">3</span> or less
                             </div>
                         </div>
@@ -169,11 +169,11 @@
                         </label>
                         <div id="affectionControls" class="hidden">
                             <div class="flex items-center gap-3">
-                                <span class="text-xs text-slate-300">Low</span>
+                                <span class="text-xs text-slate-600">Low</span>
                                 <input type="range" id="affectionFilter" min="1" max="5" value="3" class="flex-1">
-                                <span class="text-xs text-slate-300">High</span>
+                                <span class="text-xs text-slate-600">High</span>
                             </div>
-                            <div class="text-center text-sm text-slate-600 mt-1">
+                            <div class="text-center text-sm text-slate-400 mt-1">
                                 <span id="affectionValue">3</span>+
                             </div>
                         </div>
@@ -240,16 +240,16 @@
                 </div>
 
                 <div id="noResults" class="hidden text-center py-16">
-                    <svg class="w-16 h-16 text-slate-300 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    <svg class="w-16 h-16 text-slate-600 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                     <h3 class="text-xl font-semibold text-slate-700 mb-2">No breeds found</h3>
-                    <p class="text-slate-300">Try adjusting your filters or search terms</p>
+                    <p class="text-slate-600">Try adjusting your filters or search terms</p>
                 </div>
             </div>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-300 py-12 mt-16">
+    <footer class="bg-slate-900 text-slate-600 py-12 mt-16">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center gap-4">
                 <div class="flex items-center gap-2">
@@ -315,21 +315,21 @@
                     </div>
                     <div class="p-4">
                         <h3 class="font-semibold text-slate-800 text-lg mb-1">${breed.name}</h3>
-                        <p class="text-slate-300 text-sm mb-3">${breed.origin} · ${breed.lifespan}</p>
+                        <p class="text-slate-600 text-sm mb-3">${breed.origin} · ${breed.lifespan}</p>
                         <div class="flex flex-wrap gap-1 mb-3">
                             ${temperamentTags}
                         </div>
                         <div class="grid grid-cols-3 gap-2 text-center text-xs">
                             <div class="bg-slate-50 rounded-lg py-2">
-                                <div class="text-slate-300">Activity</div>
+                                <div class="text-slate-600">Activity</div>
                                 <div class="font-semibold text-slate-700">${'●'.repeat(breed.ratings.activity)}${'○'.repeat(5-breed.ratings.activity)}</div>
                             </div>
                             <div class="bg-slate-50 rounded-lg py-2">
-                                <div class="text-slate-300">Groom</div>
+                                <div class="text-slate-600">Groom</div>
                                 <div class="font-semibold text-slate-700">${'●'.repeat(breed.ratings.grooming)}${'○'.repeat(5-breed.ratings.grooming)}</div>
                             </div>
                             <div class="bg-slate-50 rounded-lg py-2">
-                                <div class="text-slate-300">Affection</div>
+                                <div class="text-slate-600">Affection</div>
                                 <div class="font-semibold text-slate-700">${'●'.repeat(breed.ratings.affection)}${'○'.repeat(5-breed.ratings.affection)}</div>
                             </div>
                         </div>
@@ -488,7 +488,7 @@
                     <img src="/images/heads/${b.id}.webp" alt="${b.name}" class="w-10 h-10 rounded-xl object-cover object-top" onerror="this.style.display='none'">
                     <div>
                         <div class="font-medium text-slate-800">${b.name}</div>
-                        <div class="text-sm text-slate-300">${b.origin} · ${b.size.category}</div>
+                        <div class="text-sm text-slate-600">${b.origin} · ${b.size.category}</div>
                     </div>
                 </a>
             `).join('');

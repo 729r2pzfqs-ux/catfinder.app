@@ -100,7 +100,7 @@
         <div id="empty-state" class="text-center py-20">
             <div class="text-6xl mb-4">🐱</div>
             <h3 class="text-xl font-bold text-slate-700 mb-2">Selecciona razas para comparar</h3>
-            <p class="text-slate-300">Elige al menos 2 razas de los menús de arriba</p>
+            <p class="text-slate-600">Elige al menos 2 razas de los menús de arriba</p>
         </div>
 
         <!-- Popular Comparisons -->
@@ -109,27 +109,27 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <button onclick="setBreeds('persian', 'ragdoll')" class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-left">
                     <span class="font-semibold">Persa vs Ragdoll</span>
-                    <p class="text-sm text-slate-300">Duelo de gatos de regazo esponjosos</p>
+                    <p class="text-sm text-slate-600">Duelo de gatos de regazo esponjosos</p>
                 </button>
                 <button onclick="setBreeds('maine-coon', 'norwegian-forest-cat')" class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-left">
                     <span class="font-semibold">Maine Coon vs Bosque de Noruega</span>
-                    <p class="text-sm text-slate-300">Gigantes gentiles comparados</p>
+                    <p class="text-sm text-slate-600">Gigantes gentiles comparados</p>
                 </button>
                 <button onclick="setBreeds('siamese', 'burmese')" class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-left">
                     <span class="font-semibold">Siamés vs Burmés</span>
-                    <p class="text-sm text-slate-300">Mariposas sociales</p>
+                    <p class="text-sm text-slate-600">Mariposas sociales</p>
                 </button>
                 <button onclick="setBreeds('bengal', 'abyssinian')" class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-left">
                     <span class="font-semibold">Bengalí vs Abisinio</span>
-                    <p class="text-sm text-slate-300">Aventureros activos</p>
+                    <p class="text-sm text-slate-600">Aventureros activos</p>
                 </button>
                 <button onclick="setBreeds('british-shorthair', 'russian-blue')" class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-left">
                     <span class="font-semibold">British Shorthair vs Azul Ruso</span>
-                    <p class="text-sm text-slate-300">Elegantes y tranquilos</p>
+                    <p class="text-sm text-slate-600">Elegantes y tranquilos</p>
                 </button>
                 <button onclick="setBreeds('sphynx', 'devon-rex')" class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-left">
                     <span class="font-semibold">Sphynx vs Devon Rex</span>
-                    <p class="text-sm text-slate-300">Únicos y juguetones</p>
+                    <p class="text-sm text-slate-600">Únicos y juguetones</p>
                 </button>
             </div>
         </div>
@@ -137,7 +137,7 @@
 
     <!-- Footer -->
     <footer class="border-t border-slate-100 mt-16 py-8">
-        <div class="max-w-6xl mx-auto px-4 text-center text-slate-300 text-sm">
+        <div class="max-w-6xl mx-auto px-4 text-center text-slate-600 text-sm">
             <p>© 2026 CatFinder. Hecho con 😻 para amantes de los gatos en todo el mundo.</p>
         </div>
     </footer>
@@ -199,7 +199,7 @@
             const header = document.getElementById('comparison-header');
             header.innerHTML = `
                 <tr class="border-b border-slate-100">
-                    <th class="p-4 text-left text-slate-300 font-medium w-1/4">Atributo</th>
+                    <th class="p-4 text-left text-slate-600 font-medium w-1/4">Atributo</th>
                     ${selectedBreeds.map(breed => `
                         <th class="p-4 text-center">
                             <a href="../breeds/${breed.id}/" class="group">
@@ -248,13 +248,13 @@
             const filled = '●'.repeat(value);
             const empty = '○'.repeat(5 - value);
             const colors = {
-                1: 'text-slate-300',
+                1: 'text-slate-600',
                 2: 'text-amber-400',
                 3: 'text-amber-500',
                 4: 'text-fuchsia-400',
                 5: 'text-fuchsia-500'
             };
-            return `<span class="${colors[value] || 'text-slate-300'}">${filled}</span><span class="text-slate-200">${empty}</span>`;
+            return `<span class="${colors[value] || 'text-slate-600'}">${filled}</span><span class="text-slate-200">${empty}</span>`;
         }
     </script>
 <script src="https://unpkg.com/lucide@latest"></script>
