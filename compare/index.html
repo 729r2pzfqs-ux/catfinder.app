@@ -97,7 +97,7 @@
         <div id="empty-state" class="text-center py-20">
             <div class="text-6xl mb-4">🐱</div>
             <h3 class="text-xl font-bold text-slate-700 mb-2">Select breeds to compare</h3>
-            <p class="text-slate-500">Choose at least 2 breeds from the dropdowns above</p>
+            <p class="text-slate-300">Choose at least 2 breeds from the dropdowns above</p>
         </div>
 
         <!-- Popular Comparisons -->
@@ -112,32 +112,32 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-left">
                     <button onclick="setBreeds('persian', 'ragdoll')" class="font-semibold hover:text-fuchsia-600">Persian vs Ragdoll</button>
-                    <p class="text-sm text-slate-500">Fluffy lap cat showdown</p>
+                    <p class="text-sm text-slate-300">Fluffy lap cat showdown</p>
                     <a href="comparisons/persian-vs-ragdoll.html" class="text-xs text-fuchsia-500 hover:underline">Read full comparison →</a>
                 </div>
                 <div class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-left">
                     <button onclick="setBreeds('maine-coon', 'norwegian-forest-cat')" class="font-semibold hover:text-fuchsia-600">Maine Coon vs Norwegian Forest</button>
-                    <p class="text-sm text-slate-500">Gentle giants compared</p>
+                    <p class="text-sm text-slate-300">Gentle giants compared</p>
                     <a href="comparisons/maine-coon-vs-norwegian-forest-cat.html" class="text-xs text-fuchsia-500 hover:underline">Read full comparison →</a>
                 </div>
                 <div class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-left">
                     <button onclick="setBreeds('siamese', 'bengal')" class="font-semibold hover:text-fuchsia-600">Siamese vs Bengal</button>
-                    <p class="text-sm text-slate-500">Active & intelligent</p>
+                    <p class="text-sm text-slate-300">Active & intelligent</p>
                     <a href="comparisons/siamese-vs-bengal.html" class="text-xs text-fuchsia-500 hover:underline">Read full comparison →</a>
                 </div>
                 <div class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-left">
                     <button onclick="setBreeds('british-shorthair', 'scottish-fold')" class="font-semibold hover:text-fuchsia-600">British Shorthair vs Scottish Fold</button>
-                    <p class="text-sm text-slate-500">Calm UK companions</p>
+                    <p class="text-sm text-slate-300">Calm UK companions</p>
                     <a href="comparisons/british-shorthair-vs-scottish-fold.html" class="text-xs text-fuchsia-500 hover:underline">Read full comparison →</a>
                 </div>
                 <div class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-left">
                     <button onclick="setBreeds('sphynx', 'devon-rex')" class="font-semibold hover:text-fuchsia-600">Sphynx vs Devon Rex</button>
-                    <p class="text-sm text-slate-500">Unique and playful</p>
+                    <p class="text-sm text-slate-300">Unique and playful</p>
                     <a href="comparisons/sphynx-vs-devon-rex.html" class="text-xs text-fuchsia-500 hover:underline">Read full comparison →</a>
                 </div>
                 <button onclick="setBreeds('bengal', 'abyssinian')" class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-left">
                     <span class="font-semibold">Bengal vs Abyssinian</span>
-                    <p class="text-sm text-slate-500">Active adventurers</p>
+                    <p class="text-sm text-slate-300">Active adventurers</p>
                 </button>
             </div>
         </div>
@@ -145,7 +145,7 @@
 
     <!-- Footer -->
     <footer class="border-t border-slate-100 mt-16 py-8">
-        <div class="max-w-6xl mx-auto px-4 text-center text-slate-500 text-sm">
+        <div class="max-w-6xl mx-auto px-4 text-center text-slate-300 text-sm">
             <p>© 2026 CatFinder. Made with 😻 for cat lovers everywhere.</p>
         </div>
     </footer>
@@ -207,7 +207,7 @@
             const header = document.getElementById('comparison-header');
             header.innerHTML = `
                 <tr class="border-b border-slate-100">
-                    <th class="p-4 text-left text-slate-500 font-medium w-1/4">Attribute</th>
+                    <th class="p-4 text-left text-slate-300 font-medium w-1/4">Attribute</th>
                     ${selectedBreeds.map(breed => `
                         <th class="p-4 text-center">
                             <a href="../breeds/${breed.id}/" class="group">
@@ -256,13 +256,13 @@
             const filled = '●'.repeat(value);
             const empty = '○'.repeat(5 - value);
             const colors = {
-                1: 'text-slate-400',
+                1: 'text-slate-300',
                 2: 'text-amber-400',
                 3: 'text-amber-500',
                 4: 'text-fuchsia-400',
                 5: 'text-fuchsia-500'
             };
-            return `<span class="${colors[value] || 'text-slate-400'}">${filled}</span><span class="text-slate-200">${empty}</span>`;
+            return `<span class="${colors[value] || 'text-slate-300'}">${filled}</span><span class="text-slate-200">${empty}</span>`;
         }
     </script>
 <script src="https://unpkg.com/lucide@latest"></script>
