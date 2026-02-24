@@ -136,8 +136,8 @@
     }
     </script>
     
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="/styles.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -163,12 +163,66 @@
     </style>
 </head>
 <body class="bg-white min-h-screen text-slate-800">
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+  </symbol>
+  <symbol id="icon-book-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/>
+  </symbol>
+  <symbol id="icon-cat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3.1-9-7.56c0-1.25.5-2.4 1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z"/><path d="M8 14v.5"/><path d="M16 14v.5"/><path d="M11.25 16.25h1.5L12 17l-.75-.75Z"/>
+  </symbol>
+  <symbol id="icon-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m6 9 6 6 6-6"/>
+  </symbol>
+  <symbol id="icon-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>
+  </symbol>
+  <symbol id="icon-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+  </symbol>
+  <symbol id="icon-heart-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/>
+  </symbol>
+  <symbol id="icon-help-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/>
+  </symbol>
+  <symbol id="icon-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+  </symbol>
+  <symbol id="icon-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+  </symbol>
+  <symbol id="icon-scale" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/>
+  </symbol>
+  <symbol id="icon-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+  </symbol>
+  <symbol id="icon-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/>
+  </symbol>
+  <symbol id="icon-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/>
+  </symbol>
+  <symbol id="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/>
+  </symbol>
+  <symbol id="icon-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>
+  </symbol>
+  <symbol id="icon-volume-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/><line x1="22" x2="16" y1="9" y2="15"/><line x1="16" x2="22" y1="9" y2="15"/>
+  </symbol>
+</svg>
+
     <!-- Header -->
     <header class="bg-white/80 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
             <a href="../" class="flex items-center gap-2">
                 <div class="w-10 h-10 bg-gradient-to-br from-fuchsia-500 to-purple-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-fuchsia-500/20">
-                    <i data-lucide="cat" class="w-6 h-6"></i>
+                    <svg aria-hidden="true" class="w-6 h-6"><use href="#icon-cat"/></svg>
                 </div>
                 <span class="text-xl font-bold bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent">CatFinder</span>
             </a>
@@ -184,7 +238,7 @@
             <!-- Page Header -->
             <div class="text-center mb-12">
                 <div class="inline-flex items-center gap-2 bg-fuchsia-50 px-4 py-2 rounded-full text-sm font-medium text-fuchsia-600 mb-4">
-                    <i data-lucide="help-circle" class="w-4 h-4"></i>
+                    <svg aria-hidden="true" class="w-4 h-4"><use href="#icon-help-circle"/></svg>
                     Preguntas Frecuentes
                 </div>
                 <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4">FAQ sobre Razas de Gatos</h1>
@@ -198,7 +252,7 @@
                 <section>
                     <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
                         <span class="w-8 h-8 bg-fuchsia-100 rounded-lg flex items-center justify-center">
-                            <i data-lucide="search" class="w-4 h-4 text-fuchsia-600"></i>
+                            <svg aria-hidden="true" class="w-4 h-4 text-fuchsia-600"><use href="#icon-search"/></svg>
                         </span>
                         Elegir un Gato
                     </h2>
@@ -207,7 +261,7 @@
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
                             <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
                                 ¿Cómo elijo la raza de gato adecuada para mí?
-                                <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
+                                <svg aria-hidden="true" class="w-5 h-5 faq-icon transition-transform text-slate-600"><use href="#icon-chevron-down"/></svg>
                             </summary>
                             <div class="px-5 pb-5 text-slate-600 leading-relaxed">
                                 <p>Considera tu estilo de vida, espacio habitable y disponibilidad de tiempo. Los factores clave incluyen:</p>
@@ -224,7 +278,7 @@
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
                             <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
                                 ¿Debería adoptar un gatito o un gato adulto?
-                                <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
+                                <svg aria-hidden="true" class="w-5 h-5 faq-icon transition-transform text-slate-600"><use href="#icon-chevron-down"/></svg>
                             </summary>
                             <div class="px-5 pb-5 text-slate-600 leading-relaxed">
                                 <p><strong>Los gatitos</strong> son juguetones, adaptables y puedes moldear su socialización—pero requieren más tiempo, entrenamiento y supervisión.</p>
@@ -236,7 +290,7 @@
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
                             <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
                                 ¿Cuál es la diferencia entre gatos de raza pura y mestizos?
-                                <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
+                                <svg aria-hidden="true" class="w-5 h-5 faq-icon transition-transform text-slate-600"><use href="#icon-chevron-down"/></svg>
                             </summary>
                             <div class="px-5 pb-5 text-slate-600 leading-relaxed">
                                 <p><strong>Los gatos de raza pura</strong> tienen características predecibles—tamaño, temperamento, tipo de pelaje y posibles problemas de salud están bien documentados. Típicamente se compran de criadores y cuestan más.</p>
@@ -251,7 +305,7 @@
                 <section>
                     <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
                         <span class="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center">
-                            <i data-lucide="home" class="w-4 h-4 text-purple-600"></i>
+                            <svg aria-hidden="true" class="w-4 h-4 text-purple-600"><use href="#icon-home"/></svg>
                         </span>
                         Estilo de Vida y Vivienda
                     </h2>
@@ -260,7 +314,7 @@
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
                             <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
                                 ¿Cuáles son las mejores razas de gatos para apartamentos?
-                                <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
+                                <svg aria-hidden="true" class="w-5 h-5 faq-icon transition-transform text-slate-600"><use href="#icon-chevron-down"/></svg>
                             </summary>
                             <div class="px-5 pb-5 text-slate-600 leading-relaxed">
                                 <p>Los mejores gatos para apartamentos son tranquilos, silenciosos y adaptables. Las mejores opciones incluyen:</p>
@@ -279,7 +333,7 @@
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
                             <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
                                 ¿Cuáles son las mejores razas de gatos para familias con niños?
-                                <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
+                                <svg aria-hidden="true" class="w-5 h-5 faq-icon transition-transform text-slate-600"><use href="#icon-chevron-down"/></svg>
                             </summary>
                             <div class="px-5 pb-5 text-slate-600 leading-relaxed">
                                 <p>Busca razas pacientes y juguetonas que toleren ser manipuladas:</p>
@@ -298,7 +352,7 @@
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
                             <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
                                 ¿Pueden los gatos llevarse bien con los perros?
-                                <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
+                                <svg aria-hidden="true" class="w-5 h-5 faq-icon transition-transform text-slate-600"><use href="#icon-chevron-down"/></svg>
                             </summary>
                             <div class="px-5 pb-5 text-slate-600 leading-relaxed">
                                 <p>¡Sí! Muchos gatos viven felizmente con perros. Las razas conocidas por llevarse bien con perros incluyen <a href="../breeds/maine-coon/" class="text-fuchsia-600 underline">Maine Coon</a>, <a href="../breeds/ragdoll/" class="text-fuchsia-600 underline">Ragdoll</a>, <a href="../breeds/birman/" class="text-fuchsia-600 underline">Birmano</a>, <a href="../breeds/abyssinian/" class="text-fuchsia-600 underline">Abisinio</a> y <a href="../breeds/american-shorthair/" class="text-fuchsia-600 underline">American Shorthair</a>.</p>
@@ -309,7 +363,7 @@
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
                             <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
                                 ¿Cuáles son las razas de gatos de menor mantenimiento?
-                                <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
+                                <svg aria-hidden="true" class="w-5 h-5 faq-icon transition-transform text-slate-600"><use href="#icon-chevron-down"/></svg>
                             </summary>
                             <div class="px-5 pb-5 text-slate-600 leading-relaxed">
                                 <p>Las razas de bajo mantenimiento son independientes, tienen pelajes cortos y no demandan atención constante:</p>
@@ -329,7 +383,7 @@
                 <section>
                     <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
                         <span class="w-8 h-8 bg-emerald-100 rounded-lg flex items-center justify-center">
-                            <i data-lucide="heart-pulse" class="w-4 h-4 text-emerald-600"></i>
+                            <svg aria-hidden="true" class="w-4 h-4 text-emerald-600"><use href="#icon-heart-pulse"/></svg>
                         </span>
                         Salud y Alergias
                     </h2>
@@ -338,7 +392,7 @@
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
                             <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
                                 ¿Existen razas de gatos verdaderamente hipoalergénicas?
-                                <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
+                                <svg aria-hidden="true" class="w-5 h-5 faq-icon transition-transform text-slate-600"><use href="#icon-chevron-down"/></svg>
                             </summary>
                             <div class="px-5 pb-5 text-slate-600 leading-relaxed">
                                 <p><strong>Ningún gato es 100% hipoalergénico.</strong> Todos los gatos producen la proteína Fel d 1 que causa alergias. Sin embargo, algunas razas producen menos de esta proteína o mudan menos pelo:</p>
@@ -357,7 +411,7 @@
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
                             <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
                                 ¿Cuánto tiempo viven los gatos típicamente?
-                                <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
+                                <svg aria-hidden="true" class="w-5 h-5 faq-icon transition-transform text-slate-600"><use href="#icon-chevron-down"/></svg>
                             </summary>
                             <div class="px-5 pb-5 text-slate-600 leading-relaxed">
                                 <p><strong>Los gatos de interior típicamente viven 12-18 años</strong>, con muchos llegando a sus primeros 20 años. La esperanza de vida varía por raza:</p>
@@ -373,7 +427,7 @@
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
                             <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
                                 ¿Qué razas de gatos mudan menos pelo?
-                                <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
+                                <svg aria-hidden="true" class="w-5 h-5 faq-icon transition-transform text-slate-600"><use href="#icon-chevron-down"/></svg>
                             </summary>
                             <div class="px-5 pb-5 text-slate-600 leading-relaxed">
                                 <p>Las razas que mudan poco pelo incluyen:</p>
@@ -395,7 +449,7 @@
                 <section>
                     <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
                         <span class="w-8 h-8 bg-pink-100 rounded-lg flex items-center justify-center">
-                            <i data-lucide="heart" class="w-4 h-4 text-pink-600"></i>
+                            <svg aria-hidden="true" class="w-4 h-4 text-pink-600"><use href="#icon-heart"/></svg>
                         </span>
                         Personalidad y Características
                     </h2>
@@ -404,7 +458,7 @@
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
                             <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
                                 ¿Cuáles razas de gatos son las más cariñosas?
-                                <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
+                                <svg aria-hidden="true" class="w-5 h-5 faq-icon transition-transform text-slate-600"><use href="#icon-chevron-down"/></svg>
                             </summary>
                             <div class="px-5 pb-5 text-slate-600 leading-relaxed">
                                 <p>Las razas más cariñosas buscan activamente la compañía humana:</p>
@@ -423,7 +477,7 @@
                         <details class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
                             <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 hover:text-fuchsia-600 transition">
                                 ¿Cuáles son las razas de gatos más silenciosas?
-                                <i data-lucide="chevron-down" class="w-5 h-5 faq-icon transition-transform text-slate-600"></i>
+                                <svg aria-hidden="true" class="w-5 h-5 faq-icon transition-transform text-slate-600"><use href="#icon-chevron-down"/></svg>
                             </summary>
                             <div class="px-5 pb-5 text-slate-600 leading-relaxed">
                                 <p>Las razas más silenciosas rara vez vocalizan:</p>
@@ -448,11 +502,11 @@
                 <p class="text-slate-600 mb-6">Haz nuestro quiz rápido para obtener recomendaciones de razas personalizadas según tu estilo de vida.</p>
                 <div class="flex flex-wrap justify-center gap-4">
                     <a href="../quiz/" class="inline-flex items-center gap-2 bg-gradient-to-r from-fuchsia-500 to-purple-600 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:shadow-xl hover:shadow-fuchsia-500/25 transition">
-                        <i data-lucide="target" class="w-5 h-5"></i>
+                        <svg aria-hidden="true" class="w-5 h-5"><use href="#icon-target"/></svg>
                         Hacer el Quiz de Razas
                     </a>
                     <a href="../compare/" class="inline-flex items-center gap-2 bg-white text-slate-700 border border-slate-200 px-8 py-4 rounded-2xl font-semibold text-lg hover:border-slate-300 hover:shadow-lg transition">
-                        <i data-lucide="scale" class="w-5 h-5"></i>
+                        <svg aria-hidden="true" class="w-5 h-5"><use href="#icon-scale"/></svg>
                         Comparar Razas
                     </a>
                 </div>
@@ -482,7 +536,6 @@
     </footer>
 
     <script>
-        lucide.createIcons();
-    </script>
+        </script>
 </body>
 </html>
