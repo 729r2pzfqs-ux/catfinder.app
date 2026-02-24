@@ -102,7 +102,7 @@
     }
     </script>
     
-    <link rel="stylesheet" href="/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -188,7 +188,7 @@
         <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
             <a href="./" class="flex items-center gap-2">
                 <div class="w-10 h-10 bg-gradient-to-br from-fuchsia-500 to-purple-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-fuchsia-500/20">
-                    <svg aria-hidden="true" class="w-6 h-6"><use href="#icon-cat"/></svg>
+                    <svg aria-hidden="true" style="width:1.5rem;height:1.5rem;" class="w-6 h-6"><use href="#icon-cat"/></svg>
                 </div>
                 <span class="text-xl font-bold bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent">CatFinder</span>
             </a>
@@ -198,7 +198,7 @@
                 <!-- Language selector -->
                 <div class="relative group">
                     <button class="flex items-center gap-1 text-slate-600 hover:text-fuchsia-600 py-2">
-                        <svg aria-hidden="true" class="w-4 h-4"><use href="#icon-globe"/></svg>
+                        <svg aria-hidden="true" style="width:1rem;height:1rem;" class="w-4 h-4"><use href="#icon-globe"/></svg>
                         <span>ES</span>
                     </button>
                     <div class="absolute right-0 top-full bg-white border border-slate-200 rounded-xl shadow-xl hidden group-hover:block min-w-[120px] py-2 z-50">
@@ -216,7 +216,7 @@
         <section class="hero-gradient py-20 px-4">
             <div class="max-w-4xl mx-auto text-center">
                 <div class="inline-flex items-center gap-2 bg-white/80 backdrop-blur px-4 py-2 rounded-full text-sm font-medium text-slate-600 mb-6 border border-slate-200/50">
-                    <svg aria-hidden="true" class="w-4 h-4 text-fuchsia-500"><use href="#icon-sparkles"/></svg>
+                    <svg aria-hidden="true" style="width:1rem;height:1rem;" class="w-4 h-4 text-fuchsia-500"><use href="#icon-sparkles"/></svg>
                     Más de 70 razas de gatos para explorar
                 </div>
                 
@@ -234,7 +234,7 @@
                     <div class="relative">
                         <input type="text" id="home-search" placeholder="Buscar razas..." autocomplete="off" class="w-full bg-white border border-slate-200 rounded-2xl px-6 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-fuchsia-500/20 focus:border-fuchsia-400 shadow-sm">
                         <button aria-label="Search" class="absolute right-2 top-1/2 -translate-y-1/2 bg-slate-100 hover:bg-slate-200 p-3 rounded-xl transition">
-                            <svg aria-hidden="true" class="w-5 h-5 text-slate-600"><use href="#icon-search"/></svg>
+                            <svg aria-hidden="true" style="width:1.25rem;height:1.25rem;" class="w-5 h-5 text-slate-600"><use href="#icon-search"/></svg>
                         </button>
                         <!-- Autocomplete dropdown -->
                         <div id="search-dropdown" class="absolute top-full left-0 right-0 mt-2 bg-white border border-slate-200 rounded-2xl shadow-xl z-50 hidden max-h-80 overflow-y-auto">
@@ -244,11 +244,11 @@
 
                 <div class="flex flex-wrap justify-center gap-4">
                     <a href="quiz/" class="inline-flex items-center gap-2 bg-gradient-to-r from-fuchsia-500 to-purple-600 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:shadow-xl hover:shadow-fuchsia-500/25 transition transform hover:-translate-y-0.5">
-                        <svg aria-hidden="true" class="w-5 h-5"><use href="#icon-target"/></svg>
+                        <svg aria-hidden="true" style="width:1.25rem;height:1.25rem;" class="w-5 h-5"><use href="#icon-target"/></svg>
                         Hacer el Quiz de Razas
                     </a>
                     <a href="compare/" class="inline-flex items-center gap-2 bg-white text-slate-700 border border-slate-200 px-8 py-4 rounded-2xl font-semibold text-lg hover:border-slate-300 hover:shadow-lg transition transform hover:-translate-y-0.5">
-                        <svg aria-hidden="true" class="w-5 h-5"><use href="#icon-scale"/></svg>
+                        <svg aria-hidden="true" style="width:1.25rem;height:1.25rem;" class="w-5 h-5"><use href="#icon-scale"/></svg>
                         Comparar Razas
                     </a>
                 </div>
@@ -323,7 +323,7 @@
                 <div class="text-center mt-8">
                     <a href="search/" class="inline-flex items-center gap-2 text-fuchsia-600 font-semibold hover:text-fuchsia-700 transition">
                         Ver las más de 70 razas
-                        <svg aria-hidden="true" class="w-4 h-4"><use href="#icon-arrow-right"/></svg>
+                        <svg aria-hidden="true" style="width:1rem;height:1rem;" class="w-4 h-4"><use href="#icon-arrow-right"/></svg>
                     </a>
                 </div>
             </div>
@@ -338,28 +338,28 @@
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                     <a href="search/?lap=1" class="bg-fuchsia-50 hover:bg-fuchsia-100 rounded-2xl p-6 text-center transition border border-fuchsia-200 group">
                         <div class="w-12 h-12 bg-white rounded-xl mx-auto mb-3 flex items-center justify-center shadow-sm group-hover:scale-110 transition">
-                            <svg aria-hidden="true" class="w-6 h-6 text-fuchsia-500"><use href="#icon-heart"/></svg>
+                            <svg aria-hidden="true" style="width:1.5rem;height:1.5rem;" class="w-6 h-6 text-fuchsia-500"><use href="#icon-heart"/></svg>
                         </div>
                         <div class="font-semibold text-slate-800">Gatos Falderos</div>
                         <div class="text-sm text-slate-600">Les encanta acurrucarse</div>
                     </a>
                     <a href="search/?shedding=low" class="bg-fuchsia-50 hover:bg-fuchsia-100 rounded-2xl p-6 text-center transition border border-fuchsia-200 group">
                         <div class="w-12 h-12 bg-white rounded-xl mx-auto mb-3 flex items-center justify-center shadow-sm group-hover:scale-110 transition">
-                            <svg aria-hidden="true" class="w-6 h-6 text-fuchsia-500"><use href="#icon-sparkles"/></svg>
+                            <svg aria-hidden="true" style="width:1.5rem;height:1.5rem;" class="w-6 h-6 text-fuchsia-500"><use href="#icon-sparkles"/></svg>
                         </div>
                         <div class="font-semibold text-slate-800">Poca Pérdida de Pelo</div>
                         <div class="text-sm text-slate-600">Menos pelo, menos lío</div>
                     </a>
                     <a href="search/?quiet=1" class="bg-fuchsia-50 hover:bg-fuchsia-100 rounded-2xl p-6 text-center transition border border-fuchsia-200 group">
                         <div class="w-12 h-12 bg-white rounded-xl mx-auto mb-3 flex items-center justify-center shadow-sm group-hover:scale-110 transition">
-                            <svg aria-hidden="true" class="w-6 h-6 text-fuchsia-500"><use href="#icon-volume-x"/></svg>
+                            <svg aria-hidden="true" style="width:1.5rem;height:1.5rem;" class="w-6 h-6 text-fuchsia-500"><use href="#icon-volume-x"/></svg>
                         </div>
                         <div class="font-semibold text-slate-800">Razas Silenciosas</div>
                         <div class="text-sm text-slate-600">No muy habladores</div>
                     </a>
                     <a href="search/?independent=1" class="bg-fuchsia-50 hover:bg-fuchsia-100 rounded-2xl p-6 text-center transition border border-fuchsia-200 group">
                         <div class="w-12 h-12 bg-white rounded-xl mx-auto mb-3 flex items-center justify-center shadow-sm group-hover:scale-110 transition">
-                            <svg aria-hidden="true" class="w-6 h-6 text-fuchsia-500"><use href="#icon-sun"/></svg>
+                            <svg aria-hidden="true" style="width:1.5rem;height:1.5rem;" class="w-6 h-6 text-fuchsia-500"><use href="#icon-sun"/></svg>
                         </div>
                         <div class="font-semibold text-slate-800">Independientes</div>
                         <div class="text-sm text-slate-600">Bien solos</div>
@@ -403,7 +403,7 @@
                 <div class="text-center mt-8">
                     <a href="articles/" class="inline-flex items-center gap-2 text-fuchsia-600 font-semibold hover:text-fuchsia-700 transition">
                         Ver todas las guías
-                        <svg aria-hidden="true" class="w-4 h-4"><use href="#icon-arrow-right"/></svg>
+                        <svg aria-hidden="true" style="width:1rem;height:1rem;" class="w-4 h-4"><use href="#icon-arrow-right"/></svg>
                     </a>
                 </div>
             </div>
@@ -438,7 +438,7 @@
                 <div class="text-center mt-8">
                     <a href="faq/" class="inline-flex items-center gap-2 text-fuchsia-600 font-semibold hover:text-fuchsia-700 transition">
                         Ver todas las preguntas frecuentes
-                        <svg aria-hidden="true" class="w-4 h-4"><use href="#icon-arrow-right"/></svg>
+                        <svg aria-hidden="true" style="width:1rem;height:1rem;" class="w-4 h-4"><use href="#icon-arrow-right"/></svg>
                     </a>
                 </div>
             </div>
