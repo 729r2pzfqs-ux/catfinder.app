@@ -1,0 +1,372 @@
+{
+  "persian": {
+    "overview": "El Persa es una de las razas de gatos más antiguas y reconocibles del mundo. Con su distintiva cara plana, ojos redondos y pelaje abundante, han sido compañeros preciados durante siglos. Los Persas son el ejemplo perfecto de un gato de regazo: tranquilos, dulces y contentos de descansar con comodidad.",
+    "health": "Los Persas son propensos a la Enfermedad Renal Poliquística (PKD), problemas respiratorios debido a su cara plana (síndrome braquicefálico) y condiciones oculares como lagrimeo excesivo. Se recomiendan chequeos veterinarios regulares y pruebas genéticas. Su cara plana también puede causar problemas dentales.",
+    "care": "El cepillado diario es esencial para prevenir enredos en su pelaje largo. Sus ojos necesitan limpieza regular debido a las manchas de lágrimas. Mantenlos en interiores ya que su pelaje y cara plana los hacen vulnerables. Alimenta con una dieta de alta calidad y controla el peso ya que son propensos a la obesidad."
+  },
+  "maine-coon": {
+    "overview": "El Maine Coon es el gato nativo americano de pelo largo y una de las razas domésticas más grandes. Conocidos como 'gigantes gentiles', combinan un tamaño impresionante con una personalidad amigable similar a la de un perro. Son excelentes cazadores de ratones con una apariencia robusta adaptada a los duros inviernos de Nueva Inglaterra.",
+    "health": "Los Maine Coon pueden ser propensos a la Cardiomiopatía Hipertrófica (HCM), displasia de cadera y Atrofia Muscular Espinal (SMA). Se recomienda un examen cardíaco regular. A pesar de su tamaño, son gatos generalmente saludables con el cuidado adecuado y pueden vivir 12-15 años.",
+    "care": "Su pelaje semilargo necesita cepillado 2-3 veces por semana para evitar enredos. Disfrutan del juego interactivo y necesitan espacio para trepar y explorar. Proporciona árboles para gatos resistentes que puedan soportar su peso. ¡A menudo disfrutan del agua y pueden 'ayudar' con los platos!"
+  },
+  "ragdoll": {
+    "overview": "Los Ragdoll reciben su nombre por su tendencia a quedarse flojos y relajados cuando los levantan. Desarrollados en California en la década de 1960, son conocidos por sus impresionantes ojos azules, pelaje semilargo y temperamento increíblemente dócil. Siguen a sus dueños de habitación en habitación como cachorros.",
+    "health": "Los Ragdoll pueden ser propensos a la Cardiomiopatía Hipertrófica (HCM) y cálculos en la vejiga. También pueden desarrollar Peritonitis Infecciosa Felina (FIP). Se recomienda un examen cardíaco regular. Su naturaleza relajada significa que es importante controlar la obesidad.",
+    "care": "Su pelaje sedoso es más fácil de mantener que otros gatos de pelo largo: cepilla 2-3 veces por semana. Son estrictamente gatos de interior debido a su naturaleza confiada. Proporciona muchas camas suaves y perchas. Prosperan con compañía y no les va bien si se les deja solos por largos períodos."
+  },
+  "british-shorthair": {
+    "overview": "El British Shorthair es una de las razas de gatos inglesas más antiguas, descendiente de gatos de la era romana. Famosos por su cara redonda, pelaje denso y 'crujiente', y ojos cobrizos, a menudo se comparan con osos de peluche. Son gatos tranquilos y dignificados que se vuelven profundamente leales a sus familias.",
+    "health": "Los British Shorthair pueden ser propensos a la Cardiomiopatía Hipertrófica (HCM), Enfermedad Renal Poliquística (PKD) y obesidad. También pueden desarrollar hemofilia B. Los exámenes de salud regulares y el control del peso son importantes para esta raza robusta.",
+    "care": "Su pelaje denso necesita cepillado semanal, más durante la temporada de muda. No son exigentes de atención pero disfrutan de la rutina. Controla la ingesta de alimentos ya que ganan peso fácilmente. Proporciona juguetes interactivos ya que pueden ser menos activos que otras razas."
+  },
+  "siamese": {
+    "overview": "El Siamés es una de las razas de gatos más antiguas y reconocibles, originaria de Tailandia (anteriormente Siam). Con sus impresionantes ojos azules almendrados, coloración pointed y personalidad vocal, son imposibles de ignorar. Los Siameses forman vínculos intensos con sus humanos elegidos.",
+    "health": "Los gatos Siameses pueden ser propensos a problemas respiratorios, problemas dentales y Atrofia Progresiva de Retina (PRA). Algunos pueden desarrollar amiloidosis o ciertos cánceres. También son propensos a comportamientos compulsivos como chupar lana. Las visitas regulares al veterinario son importantes.",
+    "care": "Su pelaje corto necesita un cuidado mínimo: el cepillado semanal es suficiente. Necesitan mucha estimulación mental y juego interactivo. Considera tener dos ya que no les gusta estar solos. ¡Prepárate para su naturaleza vocal: te 'hablarán' constantemente!"
+  },
+  "abyssinian": {
+    "overview": "El Abisinio es una de las razas de gatos más antiguas conocidas, con un pelaje 'ticked' distintivo que les da una apariencia salvaje. A menudo llamado 'Aby', son increíblemente activos, curiosos e inteligentes. Estos gatos son atletas naturales que aman trepar y explorar todo.",
+    "health": "Los Abisinios pueden ser propensos a la Deficiencia de Piruvato Quinasa (PKD), Atrofia Progresiva de Retina (PRA) y amiloidosis renal. Los problemas dentales también son comunes. Las pruebas genéticas están disponibles para muchas condiciones. Con el cuidado adecuado, viven 12-15 años.",
+    "care": "Su pelaje corto y ticked necesita un cuidado mínimo. Sin embargo, necesitan mucho juego y estimulación mental: los alimentadores de rompecabezas son geniales. Proporciona árboles para gatos altos y perchas elevadas. No les va bien solos y pueden volverse destructivos si se aburren."
+  },
+  "bengal": {
+    "overview": "Los Bengalíes fueron creados cruzando gatos domésticos con Gatos Leopardo Asiáticos, dándoles su impresionante apariencia salvaje. Su pelaje manchado o marmolado se asemeja a un leopardo en miniatura, pero están completamente domesticados. Son increíblemente atléticos, inteligentes y a menudo aman el agua.",
+    "health": "Los Bengalíes pueden ser propensos a la Cardiomiopatía Hipertrófica (HCM), Atrofia Progresiva de Retina (PRA) y Síndrome del Gatito de Pecho Plano. Algunos pueden tener estómagos sensibles. Compra de criadores de renombre que prueben condiciones genéticas.",
+    "care": "Su pelaje corto y lujoso necesita un cuidado mínimo. Sin embargo, necesitan mucho juego y ejercicio: al menos 30 minutos de juego activo diario. Proporciona estructuras para trepar, juguetes de rompecabezas y considera el entrenamiento con correa. Muchos Bengalíes disfrutan jugando en el agua."
+  },
+  "sphynx": {
+    "overview": "El Sphynx parece sin pelo pero en realidad tiene una fina pelusa como de durazno. Desarrollados en Canadá en la década de 1960, son conocidos por su piel arrugada, orejas grandes y personalidad increíblemente afectuosa. No dejes que su apariencia alienígena te engañe: son totalmente amorosos.",
+    "health": "Los gatos Sphynx pueden ser propensos a la Cardiomiopatía Hipertrófica (HCM), condiciones de la piel y problemas respiratorios. También son sensibles a los extremos de temperatura. El cuidado dental regular es importante ya que son propensos a enfermedades de las encías.",
+    "care": "A pesar de ser 'sin pelo', necesitan baños regulares (semanales) ya que los aceites se acumulan en su piel. Mantenlos calientes: pueden necesitar suéteres en invierno. Limpia sus grandes orejas regularmente. Necesitan ser gatos de interior y protegidos de las quemaduras solares."
+  },
+  "scottish-fold": {
+    "overview": "Los Scottish Fold son instantáneamente reconocibles por sus orejas dobladas que les dan una apariencia de 'búho'. Originarios de un gato de granero en Escocia en 1961, son conocidos por su cara redonda y expresión dulce. A menudo se sientan en posiciones inusuales, incluyendo la 'posición de Buda'.",
+    "health": "Los Scottish Fold pueden desarrollar Osteocondrodisplasia, una condición de cartílago/hueso relacionada con el gen de la oreja doblada. Esto puede causar artritis dolorosa. Nunca cruces fold con fold. Observa signos de dolor o rigidez articular. El monitoreo veterinario regular es esencial.",
+    "care": "Su pelaje (variedad corta o larga) necesita cepillado semanal. Maneja sus orejas distintivas con cuidado y revisa la acumulación de cera. Monitorea cualquier signo de incomodidad articular. Son adaptables y tranquilos, lo que los hace buenos gatos de apartamento."
+  },
+  "russian-blue": {
+    "overview": "El Azul Ruso es conocido por su impresionante pelaje azul-plateado y vívidos ojos verdes. Se cree que se originó en el puerto ruso de Arjánguelsk, son gatos elegantes y reservados que forman vínculos profundos con sus familias mientras son tímidos con los extraños.",
+    "health": "Los Azul Ruso son generalmente saludables con pocos problemas específicos de la raza. Pueden ser propensos a la obesidad y cálculos en la vejiga. Algunos pueden desarrollar problemas oculares. Son uno de los gatos de raza pura más saludables con una esperanza de vida que a menudo alcanza 15-20 años.",
+    "care": "Su pelaje doble denso necesita cepillado semanal. Son criaturas de hábito y pueden estresarse por los cambios. Proporciona rutinas consistentes y espacios tranquilos. Son buenos para personas con alergias leves ya que producen menos proteína Fel d 1."
+  },
+  "norwegian-forest-cat": {
+    "overview": "El Bosque de Noruega, o \"Wegie\", es una raza natural de Escandinavia construida para inviernos duros. Con su grueso pelaje doble, orejas con mechones y cola tupida, están perfectamente adaptados a climas fríos. Estos gigantes gentiles son independientes pero afectuosos con sus familias.",
+    "health": "Los Bosque de Noruega pueden ser propensos a la Enfermedad de Almacenamiento de Glucógeno IV (GSD IV), displasia de cadera y Cardiomiopatía Hipertrófica (HCM). Los criadores de renombre prueban estas condiciones. Son gatos generalmente saludables con una esperanza de vida de 14-16 años.",
+    "care": "Su grueso pelaje doble necesita cepillado 2-3 veces por semana, diariamente durante la temporada de muda. Son trepadores naturales y necesitan árboles para gatos altos. A pesar de su apariencia salvaje, se adaptan bien a la vida en interiores. Mantenlos mentalmente estimulados con juguetes de rompecabezas."
+  },
+  "burmese": {
+    "overview": "El Burmés es un gato compacto y musculoso con un pelaje sedoso y expresivos ojos dorados. Originario de Birmania (Myanmar), son conocidos por su personalidad similar a un perro y devoción inquebrantable a sus humanos. A menudo se les llama \"gatos velcro\" por lo cerca que se pegan a sus dueños.",
+    "health": "Los Burmeses pueden ser propensos a la Diabetes Mellitus, hipopotasemia (bajo potasio) y deformidades craneofaciales en algunas líneas. También pueden desarrollar condiciones oculares. Los chequeos veterinarios regulares son importantes. Con buen cuidado, viven 15-18 años.",
+    "care": "Su pelaje corto y satinado necesita un cuidado mínimo: el cepillado semanal es suficiente. Son muy sociales y no les va bien solos; considera tener dos. Permanecen juguetones hasta bien entrada la edad adulta y necesitan juego interactivo diario. Controla su dieta ya que pueden ganar peso."
+  },
+  "oriental-shorthair": {
+    "overview": "El Oriental de Pelo Corto es esencialmente un Siamés en un arcoíris de colores y patrones: ¡más de 300 combinaciones! Con sus grandes orejas, ojos almendrados y cuerpo esbelto, son sorprendentemente elegantes. Como sus primos Siameses, son extremadamente vocales y forman vínculos intensos con sus humanos.",
+    "health": "Los Orientales pueden ser propensos a la Atrofia Progresiva de Retina (PRA), amiloidosis hepática y problemas cardíacos. Algunos pueden desarrollar asma o enfermedad bronquial. También son propensos a problemas dentales. Las visitas regulares al veterinario y el cuidado dental son importantes.",
+    "care": "Su pelaje corto necesita un cuidado mínimo. Sin embargo, necesitan mucha atención y estimulación mental: se deprimen si se les ignora. Proporciona alimentadores de rompecabezas, juguetes interactivos y mucho tiempo de juego. Les va mejor con un gato compañero o un dueño muy atento."
+  },
+  "devon-rex": {
+    "overview": "El Devon Rex es un gato de aspecto élfico con orejas enormes, ojos grandes y un pelaje rizado. Descubierto en Devon, Inglaterra en 1960, a menudo se les llama \"gatos pixie\" o \"gatos alienígenas\". Son traviesos, juguetones y aman ser el centro de atención.",
+    "health": "Los Devon Rex pueden ser propensos a Miopatía Hereditaria (debilidad muscular), luxación rotuliana y displasia de cadera. Algunos desarrollan condiciones de la piel. También pueden ser propensos a infecciones de levadura en sus orejas. Se recomiendan exámenes de salud regulares.",
+    "care": "Su pelaje ondulado necesita un suave limpiado semanal en lugar de cepillado. Limpia sus grandes orejas regularmente. Se enfrían fácilmente y pueden necesitar suéteres. ¡Están obsesionados con la comida y robarán de los platos: controla su dieta cuidadosamente!"
+  },
+  "exotic-shorthair": {
+    "overview": "El Exótico de Pelo Corto es esencialmente un Persa de pelo corto: la misma cara dulce y personalidad tranquila, pero con un pelaje más fácil de mantener. A menudo llamado \"el Persa del hombre perezoso\", combinan la naturaleza gentil del Persa con menores necesidades de aseo.",
+    "health": "Los Exóticos comparten problemas de salud del Persa: Enfermedad Renal Poliquística (PKD), problemas respiratorios por su cara plana y condiciones oculares. También pueden desarrollar Cardiomiopatía Hipertrófica (HCM). Los chequeos veterinarios regulares y el screening de PKD son importantes.",
+    "care": "Su pelaje denso necesita cepillado 2-3 veces por semana. Su cara plana requiere limpieza ocular diaria para prevenir manchas. Mantenlos frescos en verano ya que pueden sobrecalentarse. Están contentos con juego moderado y mucho tiempo de regazo."
+  },
+  "savannah": {
+    "overview": "El Savannah es un híbrido entre un gato doméstico y un Serval africano, resultando en un gato alto, manchado y de apariencia salvaje. Son muy activos, inteligentes y forman vínculos fuertes con sus dueños. Las primeras generaciones (F1-F3) conservan más características salvajes.",
+    "health": "Los Savannah son generalmente saludables pero pueden ser propensos a la Cardiomiopatía Hipertrófica (HCM). Algunos tienen estómagos sensibles. Nota: Pueden reaccionar de manera diferente a ciertos medicamentos y anestésicos. Encuentra un veterinario con experiencia en gatos híbridos.",
+    "care": "Necesitan mucho espacio y ejercicio: ¡no son gatos de apartamento! Proporciona árboles para gatos altos, alimentadores de rompecabezas y juego interactivo. Muchos pueden ser entrenados con correa. Pueden aprender a abrir puertas y encender grifos. ¡Asegura bien tu hogar!"
+  },
+  "siberian": {
+    "overview": "El Siberiano es el gato forestal nativo de Rusia, conocido por su grueso pelaje triple y constitución poderosa. A pesar de su tamaño, son saltadores ágiles y cazadores juguetones. También son notables por producir menos alérgeno Fel d 1, lo que los hace mejores para algunos alérgicos.",
+    "health": "Los Siberianos pueden ser propensos a la Cardiomiopatía Hipertrófica (HCM) y PKD. Algunas líneas tienen cáncer hereditario. Son gatos generalmente robustos, bien adaptados a condiciones duras. Se recomienda un screening cardíaco regular. La esperanza de vida es de 12-15 años.",
+    "care": "Su grueso pelaje necesita cepillado 2-3 veces por semana, diariamente durante la muda. ¡Aman el agua y pueden unirse a ti en la ducha! Proporciona oportunidades para trepar y jugar a cazar. Se adaptan a diversas situaciones de vida."
+  },
+  "birman": {
+    "overview": "El Birmano, o \"Gato Sagrado de Birmania\", es un gato impresionante con un pelaje largo y sedoso, ojos azules profundos y distintivos \"guantes\" blancos en sus patas. La leyenda dice que obtuvieron su coloración de una diosa del templo. Son gatos gentiles y afectuosos que aman estar con sus familias.",
+    "health": "Los Birmanos pueden ser propensos a la Cardiomiopatía Hipertrófica (HCM), enfermedad renal y una condición llamada Convulsiones de Reflejo Audiogénico Felino (desencadenadas por ciertos sonidos). Algunos pueden desarrollar dermoides corneales. Los chequeos veterinarios regulares son importantes.",
+    "care": "Su pelaje sedoso de una sola capa no se enreda fácilmente: cepilla 2-3 veces por semana. Son gatos sociales que les va bien con otras mascotas. No son demasiado exigentes pero disfrutan del juego interactivo. Mantenlos en interiores ya que son demasiado confiados para la vida al aire libre."
+  },
+  "ragamuffin": {
+    "overview": "El RagaMuffin está estrechamente relacionado con el Ragdoll pero viene en más colores y patrones. Estos gatos grandes y mimosos son conocidos por su temperamento dócil y tendencia a quedarse flojos cuando los sostienen. A menudo se les describe como \"similares a cachorros\" en su devoción.",
+    "health": "Los RagaMuffin pueden ser propensos a la Cardiomiopatía Hipertrófica (HCM) y Enfermedad Renal Poliquística (PKD). También pueden desarrollar obesidad si se les sobrealimenta. Las pruebas genéticas están disponibles. Con el cuidado adecuado, viven 12-16 años.",
+    "care": "Su pelaje sedoso resiste los enredos pero se beneficia del cepillado semanal. No son exigentes pero aman la atención. Proporciona muebles resistentes: ¡son gatos grandes! Mantenlos en interiores ya que su naturaleza confiada los hace vulnerables afuera."
+  },
+  "tonkinese": {
+    "overview": "El Tonkinés es un cruce entre Siamés y Burmés, combinando lo mejor de ambas razas. Tienen ojos aguamarina, una constitución media y un pelaje sedoso. Juguetones, sociales y habladores (pero menos que los Siameses), son el punto medio perfecto.",
+    "health": "Los Tonkineses pueden heredar problemas de salud de ambas razas parentales: infecciones respiratorias, problemas dentales y ojos cruzados (raro). También pueden ser propensos a enfermedad inflamatoria intestinal. Generalmente saludables con esperanza de vida de 12-16 años.",
+    "care": "Su pelaje sedoso solo necesita cepillado semanal. Son muy sociales y necesitan compañía: no les va bien solos. Proporciona muchos juguetes interactivos y oportunidades para trepar. Permanecen juguetones y curiosos durante toda la vida."
+  },
+  "himalayan": {
+    "overview": "El Himalayo combina el lujoso pelaje del Persa con las marcas colorpoint del Siamés. Estos impresionantes gatos tienen el temperamento tranquilo y dulce del Persa pero pueden mostrar una ocasional alegría Siamesa. Son compañeros gentiles y devotos que prefieren ambientes serenos.",
+    "health": "Los Himalayos son propensos a los mismos problemas que los Persas: PKD, problemas respiratorios, condiciones oculares y problemas dentales por su cara plana. También pueden desarrollar dermatitis de pliegues cutáneos. El aseo regular y cuidado veterinario son esenciales.",
+    "care": "El aseo diario es esencial para prevenir enredos en su pelaje largo. Limpia sus ojos diariamente. Mantenlos en espacios con aire acondicionado durante el clima caliente. Son gatos solo de interior que prefieren rutinas tranquilas y predecibles."
+  },
+  "american-shorthair": {
+    "overview": "El Americano de Pelo Corto desciende de gatos traídos a América en el Mayflower. Son los \"gatos trabajadores\" del mundo felino: resistentes, adaptables y excelentes cazadores de ratones. Con su constitución muscular y variedad de colores, son quintaesencialmente gatos americanos.",
+    "health": "Los Americanos de Pelo Corto son generalmente muy saludables con pocos problemas específicos de la raza. Algunos pueden ser propensos a la Cardiomiopatía Hipertrófica (HCM). Pueden ganar peso fácilmente, por lo que el manejo de la dieta es importante. La esperanza de vida es típicamente 15-20 años.",
+    "care": "El cepillado semanal mantiene su pelaje denso saludable. Son gatos de bajo mantenimiento que se adaptan a diversas situaciones de vida. Proporciona oportunidades para jugar a cazar para satisfacer sus instintos naturales. Controla la ingesta de alimentos ya que les encanta comer."
+  },
+  "balinese": {
+    "overview": "El Balinés es esencialmente un Siamés de pelo largo, con los mismos impresionantes ojos azules y patrón colorpoint pero con un pelaje sedoso y fluido. Nombrados por sus graciosos movimientos que recuerdan a bailarines balineses, son inteligentes, vocales y profundamente afectuosos.",
+    "health": "Los Balineses comparten preocupaciones de salud con los Siameses: Atrofia Progresiva de Retina (PRA), amiloidosis hepática y problemas respiratorios. También pueden ser propensos a problemas dentales. Los chequeos veterinarios regulares y el cuidado dental son importantes.",
+    "care": "Su pelaje de una sola capa no se enreda fácilmente: el cepillado semanal es suficiente. Necesitan mucha estimulación mental e interacción. Proporciona juguetes de rompecabezas y espacios para trepar. No les gusta estar solos y pueden volverse destructivos si se aburren."
+  },
+  "turkish-angora": {
+    "overview": "El Angora Turco es una raza antigua y natural de Turquía, conocida por su sedoso pelaje blanco y apariencia grácil. Contrariamente a su aspecto delicado, son energéticos, traviesos y muy inteligentes. A menudo se vinculan más estrechamente con una persona.",
+    "health": "Los Angora Turcos blancos con ojos azules pueden ser sordos. Pueden ser propensos a la Cardiomiopatía Hipertrófica (HCM) y Ataxia Hereditaria. Algunos pueden desarrollar sensibilidad a los anestésicos. Haz una prueba de audición si compras un gatito blanco.",
+    "care": "Su pelaje de una sola capa no se enreda fácilmente: el cepillado semanal es suficiente. Son gatos activos que necesitan mucho juego y oportunidades para trepar. Pueden ser entrenados para buscar y caminar con correa. ¡Supervisa cerca del agua: están fascinados por ella!"
+  },
+  "turkish-van": {
+    "overview": "El Van Turco es famoso por amar el agua: a menudo se les llama \"los gatos nadadores\". Originarios de la región del Lago Van en Turquía, tienen un patrón distintivo con color solo en su cabeza y cola. Son energéticos, atléticos y aman trepar.",
+    "health": "Los Van Turco son generalmente saludables con pocos problemas específicos de la raza. Algunos pueden ser propensos a condiciones cardíacas. Los Van completamente blancos con ojos azules pueden ser sordos. Son una raza robusta y natural con esperanza de vida de 12-17 años.",
+    "care": "Su pelaje semilargo y resistente al agua necesita un aseo mínimo: carece de subcapa. Proporciona mucho espacio para trepar y, si es posible, acceso al agua para jugar. Son muy activos y necesitan espacio para correr. No son ideales para apartamentos pequeños."
+  },
+  "somali": {
+    "overview": "El Somalí es un Abisinio de pelo largo, con el mismo pelaje ticked y apariencia de zorro pero con una melena fluida y cola tupida. Son increíblemente activos, curiosos y juguetones, a menudo llamados \"gatos zorro\" por su apariencia y personalidad inteligente.",
+    "health": "Los Somalíes comparten preocupaciones de salud con los Abisinios: Deficiencia de Piruvato Quinasa, Atrofia Progresiva de Retina (PRA) y amiloidosis renal. Los problemas dentales también son comunes. Las pruebas genéticas están disponibles para muchas condiciones. La esperanza de vida es 12-16 años.",
+    "care": "Su pelaje de longitud media necesita cepillado 2-3 veces por semana para prevenir enredos. Necesitan mucho juego, espacio para trepar y estimulación mental. Los alimentadores de rompecabezas son geniales. No les va bien solos: considera tener dos."
+  },
+  "chartreux": {
+    "overview": "El Chartreux es el gato nativo de Francia, conocido por su pelaje azul-gris \"impermeable\" y ojos cobrizos. A menudo llamados \"gatos sonrientes\" por su expresión, son tranquilos, gentiles y observadores. Son excelentes cazadores que se vinculan profundamente con sus familias.",
+    "health": "Los Chartreux pueden ser propensos a la Luxación Rotuliana (problemas de rodilla) y Enfermedad Renal Poliquística. Algunos pueden desarrollar problemas del tracto urinario. Son gatos generalmente saludables y robustos con esperanza de vida de 12-15 años.",
+    "care": "Su pelaje denso y lanudo necesita cepillado semanal, más durante la muda. Son gatos adaptables que manejan bien los viajes. Proporciona juguetes de caza para satisfacer sus instintos naturales. No son exigentes pero disfrutan del juego interactivo."
+  },
+  "ocicat": {
+    "overview": "El Ocicat parece salvaje con su pelaje manchado pero es completamente doméstico: una mezcla de Siamés, Abisinio y Americano de Pelo Corto. Son seguros, extrovertidos y similares a perros en su devoción. Muchos pueden ser entrenados para buscar, caminar con correa y responder a comandos.",
+    "health": "Los Ocicat pueden ser propensos a amiloidosis hepática o renal (heredada del Siamés/Abisinio). Algunos pueden desarrollar Cardiomiopatía Hipertrófica (HCM) o Atrofia Progresiva de Retina. Generalmente saludables con esperanza de vida de 12-18 años.",
+    "care": "Su pelaje corto y manchado solo necesita cepillado semanal. Son muy sociales y necesitan compañía: les va bien con otras mascotas. Proporciona mucho juego interactivo y juguetes de rompecabezas. Pueden ser entrenados como perros con refuerzo positivo."
+  },
+  "egyptian-mau": {
+    "overview": "El Mau Egipcio es el único gato doméstico naturalmente manchado, con ancestros que posiblemente se remontan al antiguo Egipto. ¡Son la raza de gato doméstico más rápida, capaces de correr 48 km/h! Reservados con extraños pero devotos a sus familias, son gatos sensibles y leales.",
+    "health": "Los Mau Egipcios pueden ser propensos a la Leucodistrofia (una condición neurológica) y enfermedades cardíacas. Algunos pueden desarrollar urolitiasis (cálculos en la vejiga). Son sensibles al frío y la anestesia. Los chequeos veterinarios regulares son importantes.",
+    "care": "Su pelaje corto y manchado necesita un aseo mínimo. Son gatos sensibles que prefieren ambientes tranquilos y rutinas consistentes. Proporciona mucho espacio para correr y oportunidades para trepar. Se vinculan profundamente y no les gusta quedarse solos."
+  },
+  "singapura": {
+    "overview": "El Singapura es una de las razas de gatos más pequeñas, pesando solo 2-4 kg. A pesar de su pequeño tamaño, tienen personalidades enormes: curiosos, juguetones y siempre presentes. Sus grandes ojos y pelaje ticked les dan una apariencia de eterno gatito.",
+    "health": "Los Singapura pueden ser propensos a la Deficiencia de Piruvato Quinasa (PKD), inercia uterina en hembras (dificultad para dar a luz) y pueden tener un pool genético más pequeño. Algunos pueden desarrollar distrofia muscular. Generalmente saludables con esperanza de vida de 12-15 años.",
+    "care": "Su pelaje corto y fino necesita un aseo mínimo: el cepillado semanal es suficiente. Son buscadores de calor que aman los lugares cálidos. Proporciona muchas oportunidades para trepar y juego interactivo. Permanecen juguetones y similares a gatitos durante toda la vida."
+  },
+  "manx": {
+    "overview": "El Manx es famoso por no tener cola, aunque pueden tener longitudes de cola variadas desde ninguna hasta completa. Originarios de la Isla de Man, son saltadores poderosos con una apariencia redondeada. Son gatos leales y juguetones a menudo llamados \"similares a perros\" en comportamiento.",
+    "health": "El mismo gen que causa la falta de cola puede causar \"Síndrome Manx\": defectos espinales que llevan a incontinencia o problemas de movilidad. Nunca cruces dos Manx completamente sin cola. Examina para problemas espinales. Generalmente saludable de otro modo.",
+    "care": "Su pelaje doble necesita cepillado semanal, más durante la muda. Son gatos adaptables que les va bien en la mayoría de los ambientes. Proporciona juego interactivo: son cazadores naturales. Observa cualquier signo de problemas espinales, especialmente en gatitos."
+  },
+  "japanese-bobtail": {
+    "overview": "El Bobtail Japonés presenta una distintiva cola de pompón y es considerado de buena suerte en Japón: son el modelo de la famosa figurilla del \"gato que saluda\". Son activos, inteligentes y les encanta \"hablar\" con una voz melódica y chirriante.",
+    "health": "Los Bobtail Japoneses son notablemente saludables con pocos problemas específicos de la raza. Su bobtail es una mutación natural, no relacionada con problemas espinales como el gen Manx. Son una de las razas más saludables con esperanza de vida de 15-18 años.",
+    "care": "Su pelaje sedoso (variedad corta o larga) necesita un aseo mínimo. Son gatos activos que necesitan mucho juego y estimulación mental. Muchos disfrutan del juego con agua y jugar a buscar. Les va bien con otros gatos y forman fuertes vínculos familiares."
+  },
+  "american-curl": {
+    "overview": "El Curl Americano es instantáneamente reconocible por sus orejas únicas curvadas hacia atrás, causadas por una mutación genética espontánea. Descubiertos por primera vez en California en 1981, son gatos amigables y orientados a las personas que retienen su alegría gatuna hasta la edad adulta.",
+    "health": "Los Curl Americanos son generalmente muy saludables. Sus orejas únicas requieren un manejo suave pero no causan problemas de salud. Condiciones raras incluyen canales auditivos estrechos que requieren limpieza regular. Una de las razas más saludables con esperanza de vida de 12-16 años.",
+    "care": "Tanto las variedades de pelo corto como largo necesitan cepillado semanal. Maneja sus orejas distintivas con cuidado: nunca las fuerces a quedar planas. La limpieza regular de orejas previene la acumulación de cera. Son gatos adaptables y tranquilos adecuados para la mayoría de situaciones de vida."
+  },
+  "selkirk-rex": {
+    "overview": "El Selkirk Rex tiene un pelaje rizado distintivo: tanto los pelos de guarda como el subpelo están rizados, dándoles una apariencia de \"gato oveja\". A diferencia de otras razas Rex, son robustos y tienen un temperamento relajado y paciente. Vienen en variedades de pelo largo y corto.",
+    "health": "Los Selkirk Rex pueden ser propensos a la Enfermedad Renal Poliquística (PKD) y Cardiomiopatía Hipertrófica (HCM) debido a la ascendencia Persa/British Shorthair. Algunos pueden desarrollar displasia de cadera. Se recomiendan exámenes de salud regulares.",
+    "care": "Su pelaje rizado necesita cepillado regular para prevenir enredos: más para los de pelo largo. No acicales en exceso ya que puede alisar los rizos. Son gatos relajados que disfrutan los mimos. No tan activos como otras razas Rex pero aún disfrutan del juego."
+  },
+  "laperm": {
+    "overview": "El pelaje rizado del LaPerm varía de ondulado a rizos apretados y provino de una mutación espontánea en Oregón en 1982. Son gatos afectuosos y curiosos que aman estar cerca de sus humanos. Algunos nacen calvos y desarrollan rizos más tarde.",
+    "health": "Los LaPerm son generalmente saludables sin condiciones genéticas específicas de la raza. Son una de las razas de gatos puros más saludables. Ocasionalmente pueden desarrollar sensibilidades de la piel. La esperanza de vida promedio es 12-15 años con el cuidado adecuado.",
+    "care": "Su pelaje único necesita cepillado suave para mantener los rizos: no cepilles cuando esté seco. Algunos dueños prefieren rociar con agua primero. Son gatos adaptables y afectuosos que les va bien en varias situaciones de vida. Disfrutan del juego interactivo."
+  },
+  "korat": {
+    "overview": "El Korat es una de las razas naturales más antiguas, de Tailandia donde son considerados de buena suerte. Su distintivo pelaje azul-plateado y cara en forma de corazón los hacen gatos impresionantes. Son inteligentes, juguetones y forman fuertes vínculos con sus familias.",
+    "health": "Los Korat pueden ser propensos a Gangliosidosis GM1 y GM2 (condiciones neurológicas): las pruebas genéticas están disponibles. También pueden desarrollar bajo porcentaje de grasa corporal. Generalmente saludables con esperanza de vida de 15-20 años. Compra de criadores que realicen pruebas.",
+    "care": "Su pelaje de una sola capa necesita un aseo mínimo: el cepillado semanal es suficiente. No les gustan los ruidos fuertes o el caos: prefieren ambientes tranquilos. Proporciona juego interactivo y juguetes de rompecabezas. Son sociales y les va bien con otras mascotas."
+  },
+  "bombay": {
+    "overview": "El Bombay fue criado para parecer una pantera negra en miniatura, con un pelaje negro elegante y ojos cobrizos. A menudo se les llama \"gatos velcro\" por su amor de estar con sus humanos. Seguros y extrovertidos, son fáciles de entrenar y viajan bien.",
+    "health": "Los Bombay pueden ser propensos a la Cardiomiopatía Hipertrófica (HCM) y defectos craneofaciales similares a los Burmeses. Algunos pueden desarrollar problemas respiratorios. También pueden ser propensos al lagrimeo excesivo. Se recomiendan chequeos veterinarios regulares.",
+    "care": "Su pelaje corto de charol solo necesita cepillado semanal. Son buscadores de calor que aman los lugares cálidos. Muy sociales: no les va bien solos. Proporciona mucho juego interactivo. Pueden ser entrenados para caminar con correa y hacer trucos."
+  },
+  "havana-brown": {
+    "overview": "El Habana Marrón es una raza rara con un rico pelaje caoba y sorprendentes ojos verdes. Nombrados por su color que se asemeja a los puros habanos. Juguetones, inteligentes y orientados a las personas, usan sus patas casi como manos para investigar todo.",
+    "health": "Los Habana Marrón son generalmente saludables pero tienen un pequeño pool genético. Algunos pueden desarrollar problemas del tracto urinario o infecciones respiratorias. Generalmente robustos con esperanza de vida de 12-15 años. Encontrar criadores es muy difícil debido a su rareza.",
+    "care": "Su pelaje corto y brillante necesita un aseo mínimo. Son muy sociales y no les gusta quedarse solos: considera tener dos. Son gatos interactivos que disfrutan los juegos y la exploración. Proporciona alimentadores de rompecabezas y juguetes interactivos."
+  },
+  "burmilla": {
+    "overview": "El Burmilla se originó de un apareamiento accidental entre un Burmés y un Persa Chinchilla en 1981. Tienen un pelaje plateado brillante con sombreado sutil. Juguetones pero menos exigentes que los Burmeses, son afectuosos sin ser pegajosos.",
+    "health": "Los Burmilla pueden heredar problemas de salud de ambas razas parentales: Enfermedad Renal Poliquística del lado Persa y alergias. Algunos pueden desarrollar problemas dentales. Los chequeos veterinarios regulares son importantes. La esperanza de vida es típicamente 12-15 años.",
+    "care": "Su pelaje corto y sedoso necesita cepillado semanal. Son gatos adaptables que les va bien con familias y otras mascotas. Moderadamente activos: disfrutan del juego pero también felices de relajarse. Son sociales pero pueden manejar algo de tiempo solos."
+  },
+  "toyger": {
+    "overview": "El Toyger es una raza de diseño creada para parecerse a un tigre en miniatura con rayas verticales audaces. Desarrollados a partir de gatos Bengalí y tabbys domésticos, combinan una apariencia salvaje con una personalidad gentil y extrovertida. Siguen siendo una raza en desarrollo con estándares evolucionando.",
+    "health": "Los Toyger pueden ser propensos a soplos cardíacos y algunas condiciones cardíacas. Como raza más nueva, los datos de salud aún se están recopilando. Compra de criadores que examinen condiciones cardíacas. Generalmente saludables con esperanza de vida de 12-15 años.",
+    "care": "Su pelaje corto y afelpado necesita un aseo mínimo. Son gatos activos e inteligentes que disfrutan del juego interactivo y juguetes de rompecabezas. Muchos pueden ser entrenados con correa. Son sociales y les va bien con otras mascotas y niños."
+  },
+  "munchkin": {
+    "overview": "El Munchkin es famoso por sus patas cortas, causadas por una mutación genética natural. A pesar de su estatura, son ágiles, juguetones y corren sorprendentemente rápido. Vienen en todos los tipos y colores de pelaje. ¡Sus patas cortas no los frenan!",
+    "health": "Los Munchkin pueden ser propensos a Lordosis (curvatura espinal) y Pectus Excavatum (deformidad del pecho). Sus patas cortas típicamente no causan problemas de movilidad. Existe cierta controversia sobre criar por el rasgo. La esperanza de vida es 12-15 años.",
+    "care": "El aseo depende del tipo de pelaje. Son activos a pesar de las patas cortas: proporciona cajas de arena de entrada baja y opciones accesibles para trepar. Pueden no saltar tan alto pero compensan con velocidad y agilidad a nivel del suelo."
+  },
+  "snowshoe": {
+    "overview": "El Snowshoe es una raza rara que combina colorpoints Siameses con distintivas patas blancas de \"raquetas de nieve\". Son gatos sociales y vocales que se vinculan fuertemente con sus familias. Menos intensos que los Siameses pero igualmente amorosos e interactivos.",
+    "health": "Los Snowshoe pueden heredar problemas de salud del Siamés: ojos cruzados (raro ahora), colas torcidas y problemas dentales. Algunos pueden desarrollar problemas cardíacos. Generalmente saludables con esperanza de vida de 14-20 años. El patrón de pata blanca no afecta la salud.",
+    "care": "Su pelaje corto necesita un aseo mínimo. Son muy sociales y no les va bien solos: considera un compañero. Proporciona mucho juego interactivo y juguetes de rompecabezas. Son buenos con niños y otras mascotas."
+  },
+  "nebelung": {
+    "overview": "El Nebelung es una versión rara de pelo largo del Azul Ruso, con el mismo pelaje azul-plateado y ojos verdes pero con pelo fluido. Su nombre significa \"criatura de la niebla\" en alemán. Son tímidos con extraños pero devotos a sus familias.",
+    "health": "Los Nebelung son generalmente saludables con pocos problemas específicos de la raza. Como los Azul Ruso, pueden ser propensos a cálculos en la vejiga. Algunos pueden desarrollar obesidad. Una de las razas más saludables con esperanza de vida de 15-18 años.",
+    "care": "Su pelaje largo y afelpado necesita cepillado 2-3 veces por semana. Son gatos sensibles que prefieren ambientes tranquilos y consistentes. No son fanáticos del cambio: establece rutinas. Son de bajo alérgeno como los Azul Ruso."
+  },
+  "chausie": {
+    "overview": "El Chausie es una raza híbrida creada cruzando gatos domésticos con el Gato de la Jungla (Felis chaus). Son gatos grandes y atléticos con una apariencia salvaje pero temperamento domesticado. De alta energía e inteligentes, necesitan dueños experimentados.",
+    "health": "Los Chausie pueden tener sistemas digestivos sensibles: muchos no toleran alimentos a base de granos. Algunos pueden desarrollar problemas intestinales. Las generaciones tempranas pueden ser propensas a infertilidad masculina. Encuentra un veterinario con experiencia en gatos híbridos.",
+    "care": "Su pelaje corto necesita un aseo mínimo. Necesitan mucho ejercicio y estimulación mental: ¡no para dueños primerizos! Proporciona árboles para gatos altos, alimentadores de rompecabezas y mucho juego interactivo. Muchos pueden ser entrenados con correa."
+  },
+  "lykoi": {
+    "overview": "El Lykoi, o \"Gato Hombre Lobo\", tiene un pelaje parcialmente sin pelo que les da una apariencia de hombre lobo. Esta mutación natural afecta sus patrones de crecimiento del pelo. A pesar de su aspecto salvaje, son gatos amigables, juguetones y afectuosos.",
+    "health": "Los Lykoi son generalmente saludables pero su pelaje único significa que son propensos a quemaduras solares y sensibilidad al frío. Como raza más nueva, los datos de salud a largo plazo aún se están recopilando. La esperanza de vida se estima en 12-15 años.",
+    "care": "Pueden necesitar baños ocasionales para eliminar aceites de la piel. Protege del sol y el frío extremo. Mudan su pelaje periódicamente, a veces apareciendo casi calvos. Gatos activos e inteligentes que necesitan juego y estimulación."
+  },
+  "pixie-bob": {
+    "overview": "El Pixie-Bob es un gato grande y musculoso criado para parecerse al Lince norteamericano. A pesar de su apariencia salvaje, son gigantes gentiles: leales, similares a perros y a menudo se vinculan con toda la familia. Muchos tienen patas polidáctilas (dedos extra).",
+    "health": "Los Pixie-Bob son generalmente saludables con pocos problemas específicos de la raza. Algunos pueden desarrollar Cardiomiopatía Hipertrófica (HCM). La polidactilia no causa problemas de salud. Raza robusta con esperanza de vida de 13-16 años.",
+    "care": "Su grueso pelaje doble necesita cepillado semanal, más durante la muda. Son gatos adaptables y tranquilos que viajan bien. Proporciona mucho juego interactivo: ¡les encanta buscar! Son vocales con chirridos y parloteos en lugar de maullidos."
+  },
+  "cymric": {
+    "overview": "El Cymric (pronunciado KIM-rick) es la versión de pelo largo del Manx, compartiendo el mismo gen sin cola y apariencia redondeada. Son gatos inteligentes y juguetones que a menudo actúan más como perros: aprendiendo trucos y jugando a buscar.",
+    "health": "Como los Manx, los Cymric pueden desarrollar Síndrome Manx: problemas espinales del gen sin cola. Nunca cruces dos gatos completamente sin cola. Examina para problemas espinales. La esperanza de vida es 9-13 años, menos si hay problemas de salud.",
+    "care": "Su pelaje doble largo necesita cepillado regular para prevenir enredos. Observa cualquier signo de problemas de movilidad o baño que podrían indicar problemas espinales. Son gatos activos e inteligentes que necesitan estimulación mental y juego."
+  },
+  "american-bobtail": {
+    "overview": "El Bobtail Americano es una raza natural con una distintiva cola corta, desarrollada de gatos bobtail aleatorios encontrados en América. Son gatos seguros y adaptables a menudo usados como animales de terapia. Son conocidos por su devoción similar a un perro.",
+    "health": "Los Bobtail Americanos son generalmente saludables: su cola corta es una mutación natural sin problemas de salud asociados. Algunos pueden desarrollar displasia de cadera. Raza robusta con esperanza de vida de 13-18 años. Muy pocos problemas específicos de la raza.",
+    "care": "Tanto las variedades de pelo corto como largo necesitan cepillado regular. Son gatos adaptables que viajan bien y se ajustan a nuevas situaciones. Inteligentes y entrenables: pueden aprender trucos y caminar con correa. Necesitan juego interactivo."
+  },
+  "sokoke": {
+    "overview": "El Sokoke es una raza natural rara del bosque Sokoke de Kenia. Su distintivo patrón \"tabby africano\" y constitución atlética reflejan sus orígenes salvajes. Son gatos activos e inteligentes que se vinculan profundamente con sus familias.",
+    "health": "Los Sokoke son generalmente saludables con pocos problemas específicos de la raza. El pequeño pool genético puede ser una preocupación. Pueden ser sensibles a ciertas vacunas o medicamentos. El cuidado veterinario regular es importante. La esperanza de vida es 12-15 años.",
+    "care": "Su pelaje corto necesita un aseo mínimo. Necesitan mucha actividad y estimulación mental: ¡no son gatos de regazo! Proporciona oportunidades para trepar y juego interactivo. Son sociales y a menudo se vinculan con una persona especialmente."
+  },
+  "australian-mist": {
+    "overview": "El Australian Mist (anteriormente Spotted Mist) es la primera raza de gato pedigrí de Australia. Tienen un distintivo pelaje manchado/marmolado con una apariencia nebulosa. Desarrollados de Abisinio, Burmés y tabbys domésticos, son amigables, adaptables y geniales con familias.",
+    "health": "Los Australian Mist son generalmente muy saludables con pocos problemas específicos de la raza. Algunos pueden desarrollar alergias de la piel. Raza robusta con esperanza de vida de 14-19 años. Uno de los gatos de raza pura más saludables debido a un fondo genético diverso.",
+    "care": "Su pelaje corto necesita un aseo mínimo. Son gatos adaptables y tolerantes que les va bien con niños y otras mascotas. Nivel de actividad moderado: disfrutan del juego pero también felices de relajarse. Pueden ser gatos solo de interior bastante felices."
+  },
+  "peterbald": {
+    "overview": "El Peterbald se originó en Rusia del cruce de un Donskoy con un Oriental de Pelo Corto. Van desde completamente calvos hasta tener un pelaje fino. Elegantes y atléticos con un tipo de cuerpo Oriental, son gatos afectuosos e inteligentes que aman estar con su gente.",
+    "health": "Los Peterbald pueden ser propensos a condiciones de la piel y quemaduras solares si son sin pelo. Algunos pueden desarrollar problemas dentales o condiciones cardíacas. Son sensibles a extremos de temperatura. Los chequeos veterinarios regulares son importantes. La esperanza de vida es 12-15 años.",
+    "care": "Las variedades sin pelo necesitan baños regulares para eliminar aceites de la piel. Protege del sol y el frío. Son muy sociales y necesitan mucha interacción. Proporciona lugares cálidos para dormir y considera suéteres en invierno. Gatos activos que necesitan juego."
+  },
+  "donskoy": {
+    "overview": "El Donskoy (Don Sphynx) es una raza sin pelo rusa, genéticamente distinta del Sphynx. Su falta de pelo es dominante, a diferencia del gen recesivo del Sphynx. Son amigables, inteligentes y aman ser el centro de atención.",
+    "health": "Los Donskoy pueden desarrollar condiciones de la piel y son propensos a problemas dentales. Necesitan protección del sol y el frío. Algunos pueden desarrollar condiciones cardíacas. El cuidado regular de la piel y visitas al veterinario son esenciales. La esperanza de vida es 12-15 años.",
+    "care": "El baño regular (semanal o más) es necesario para prevenir la acumulación de aceite. Limpia las orejas frecuentemente. Protege de extremos de temperatura: pueden necesitar suéteres. Muy sociales y no les va bien solos. Muy activos y juguetones."
+  },
+  "kurilian-bobtail": {
+    "overview": "El Bobtail de las Kuriles viene de las Islas Kuriles de Rusia. Su cola corta de pompón es natural, no relacionada con problemas de salud. Son excelentes cazadores con una personalidad gentil y confiada. Se adaptan bien a familias y otras mascotas.",
+    "health": "Los Bobtail de las Kuriles son notablemente saludables sin condiciones genéticas específicas de la raza. Su bobtail es natural y no causa problemas espinales. Una de las razas de gatos más saludables con esperanza de vida de 15-20 años.",
+    "care": "Tanto las variedades de pelo corto como largo necesitan cepillado semanal. Son gatos activos e inteligentes que disfrutan del juego interactivo y juegos de caza. Se adaptan bien a varias situaciones de vida. A menudo disfrutan del agua."
+  },
+  "american-wirehair": {
+    "overview": "El American Wirehair tiene un pelaje único: cada pelo está rizado o doblado, dándoles una textura áspera y elástica. Esta mutación espontánea apareció en Nueva York en 1966. Son gatos relajados y adaptables con personalidades amorosas.",
+    "health": "Los American Wirehair son generalmente muy saludables con pocos problemas específicos de la raza. Algunos pueden desarrollar sensibilidades de la piel. Raza robusta con esperanza de vida de 14-18 años. Una de las razas americanas más saludables.",
+    "care": "Su pelaje inusual necesita un aseo mínimo: el cepillado excesivo puede dañarlo. Solo aseo suave ocasional. Son gatos adaptables y tranquilos adecuados para la mayoría de situaciones de vida. Nivel de actividad moderado con momentos juguetones."
+  },
+  "european-shorthair": {
+    "overview": "El Europeo de Pelo Corto es el equivalente europeo del Americano de Pelo Corto: una raza natural desarrollada de gatos europeos comunes. Son cazadores independientes e inteligentes que se vinculan con sus familias mientras mantienen una naturaleza autosuficiente.",
+    "health": "Los Europeos de Pelo Corto son extremadamente saludables con virtualmente ninguna condición específica de la raza. Su fondo genético diverso los mantiene robustos. Una de las razas de gatos más saludables con esperanza de vida de 15-20 años.",
+    "care": "Su pelaje corto necesita un aseo mínimo. Son gatos adaptables e independientes que manejan bien el tiempo solo. Proporciona juguetes de caza y oportunidades para trepar. Son buenos cazadores de ratones si tienen acceso al exterior."
+  },
+  "khao-manee": {
+    "overview": "El Khao Manee es una raza tailandesa rara conocida por su pelaje blanco puro y ojos impresionantes, a menudo de colores diferentes, con un ojo azul y uno dorado. En Tailandia, son considerados de buena suerte. Son juguetones, inteligentes y orientados a las personas.",
+    "health": "Los Khao Manee blancos con ojos azules pueden ser sordos: haz una prueba de audición. Pueden ser propensos al cáncer de piel por exposición al sol. De otro modo generalmente saludables con esperanza de vida de 12-16 años. Mantén fuera de la luz solar directa.",
+    "care": "Su pelaje corto necesita un aseo mínimo. Si tiene ojos azules, aprende a comunicarte visualmente con un gato sordo. Mantén en interiores para prevenir quemaduras solares. Son gatos sociales y juguetones que necesitan interacción."
+  },
+  "highlander": {
+    "overview": "El Highlander es una raza más nueva con orejas curvadas y a menudo un bobtail, criado de Desert Lynx y otras razas. Tienen una apariencia salvaje pero una personalidad gentil y juguetona. Son gatos seguros y sociales que aman a sus familias.",
+    "health": "Los Highlander son generalmente saludables, aunque como raza más nueva, los datos de salud a largo plazo son limitados. Sus orejas curvadas necesitan manejo suave y limpieza regular. La esperanza de vida se estima en 10-15 años.",
+    "care": "Tanto las variedades de pelo corto como largo necesitan cepillado regular. Limpia las orejas curvadas cuidadosamente. Son gatos activos y juguetones que disfrutan de juguetes interactivos. Sociales y les va bien con otras mascotas y niños."
+  },
+  "serengeti": {
+    "overview": "El Serengeti fue criado para parecerse al Serval africano sin ninguna sangre salvaje, creado de cruces de Bengalí y Oriental de Pelo Corto. Tienen patas largas, orejas grandes y un pelaje manchado. Activos y seguros, son muy orientados a las personas.",
+    "health": "Los Serengeti son generalmente saludables pero pueden heredar problemas de las razas parentales. Algunos pueden desarrollar cálculos en la vejiga o condiciones cardíacas. Como raza en desarrollo, los datos de salud aún se están acumulando. La esperanza de vida es 12-15 años.",
+    "care": "Su pelaje corto necesita un aseo mínimo. Gatos muy activos que necesitan mucho juego y espacio para trepar. Son sociales y no les gusta estar solos. Muchos pueden ser entrenados para caminar con correa."
+  },
+  "thai": {
+    "overview": "El gato Thai es el Siamés tradicional de tipo moderado, antes de que la cría moderna hiciera al Siamés más extremo. También llamado \"Siamés de estilo antiguo\" o \"Wichien Maat\", tienen los colorpoints clásicos pero una forma corporal más natural.",
+    "health": "Los Thai pueden ser propensos a algunos problemas de salud del Siamés: problemas dentales, problemas respiratorios y condiciones oculares. Generalmente más saludables que los Siameses modernos extremos. La esperanza de vida es 15-20 años.",
+    "care": "Su pelaje corto necesita un aseo mínimo. Menos vocales que los Siameses modernos pero aún habladores. Gatos sociales que necesitan compañía. Inteligentes y entrenables. Les va bien con otras mascotas."
+  },
+  "colorpoint-shorthair": {
+    "overview": "El Colorpoint de Pelo Corto es esencialmente un Siamés en colores no tradicionales: rojo, crema, tortie y tabby points. Comparten la personalidad Siamesa: vocales, inteligentes y exigentes de atención. Se vinculan intensamente con sus dueños.",
+    "health": "Los Colorpoint de Pelo Corto comparten preocupaciones de salud del Siamés: problemas dentales, condiciones cardíacas y problemas respiratorios. Algunos pueden desarrollar problemas oculares. El cuidado veterinario regular es importante. La esperanza de vida es 12-16 años.",
+    "care": "Su pelaje corto necesita un aseo mínimo. Muy sociales: no les gusta estar solos. Vocales y te \"hablarán\" constantemente. Necesitan mucha estimulación mental y juego interactivo. Considera tener dos."
+  },
+  "javanese": {
+    "overview": "El Javanés es un Colorpoint de Pelo Corto de pelo largo (o Balinés en colores no tradicionales). Combinan la personalidad Siamesa con un pelaje sedoso y fluido en colores como rojo, crema y tortie point. Inteligentes, vocales y devotos.",
+    "health": "Los Javaneses pueden desarrollar problemas cardíacos, problemas oculares y condiciones dentales como sus parientes Siameses. Algunos pueden ser propensos a amiloidosis hepática. Los chequeos veterinarios regulares son importantes. La esperanza de vida es 12-15 años.",
+    "care": "Su pelaje de una sola capa no se enreda fácilmente: el cepillado semanal es suficiente. Muy sociales y necesitan mucha interacción. Muy vocales. Proporciona juguetes de rompecabezas y espacios para trepar. No les va bien solos."
+  },
+  "oriental-longhair": {
+    "overview": "El Oriental de Pelo Largo es una versión de pelo largo del Oriental de Pelo Corto, con el mismo cuerpo elegante y gran personalidad pero con pelo fluido. Vienen en más de 300 combinaciones de color y patrón. Increíblemente sociales y vocales.",
+    "health": "Los Oriental de Pelo Largo comparten preocupaciones de salud con los Orientales y Siameses: amiloidosis hepática, enfermedad cardíaca y problemas respiratorios. Algunos pueden desarrollar problemas dentales. El cuidado veterinario regular es esencial. La esperanza de vida es 12-15 años.",
+    "care": "Su pelaje sedoso necesita cepillado 2-3 veces por semana. Extremadamente sociales: se deprimen si se les ignora. Necesitan mucha estimulación mental, juego e interacción. Considera tener dos si trabajas largas horas."
+  },
+  "british-longhair": {
+    "overview": "El Británico de Pelo Largo es la versión de pelo largo del British Shorthair, con el mismo cuerpo robusto y personalidad tranquila pero con un lujoso pelaje fluido. A veces llamados \"Lowlanders\", son compañeros gentiles y tranquilos.",
+    "health": "Los Británico de Pelo Largo pueden ser propensos a la Cardiomiopatía Hipertrófica (HCM) y Enfermedad Renal Poliquística (PKD). Son propensos a la obesidad. Se recomiendan exámenes de salud regulares. La esperanza de vida es 12-15 años.",
+    "care": "Su pelaje largo necesita cepillado 2-3 veces por semana para prevenir enredos. Controla su peso: ganan fácilmente. No son exigentes pero disfrutan del juego gentil. Gatos tranquilos adecuados para hogares más silenciosos."
+  },
+  "dragon-li": {
+    "overview": "El Dragon Li (Chinese Li Hua) es una de las primeras razas de gatos naturales, de China. Tienen un distintivo patrón tabby \"mackerel roto\". Independientes, inteligentes y leales, todavía se usan como gatos de trabajo en China.",
+    "health": "Los Dragon Li son extremadamente saludables sin condiciones genéticas específicas de la raza conocidas. Su desarrollo natural durante miles de años los ha mantenido robustos. La esperanza de vida es 12-15+ años.",
+    "care": "Su pelaje corto necesita un aseo mínimo. Son independientes pero leales a sus familias. Activos e inteligentes: buenos cazadores. Se adaptan a varias situaciones de vida pero aprecian acceso al exterior si es seguro."
+  },
+  "cyprus": {
+    "overview": "El gato de Chipre es una de las razas de gatos domesticados más antiguas del mundo, con evidencia de gatos en Chipre que data de hace 9,500 años. Son una raza natural adaptada al clima mediterráneo. Amigables, inteligentes y excelentes cazadores.",
+    "health": "Los gatos de Chipre son extremadamente saludables sin problemas específicos de la raza. Miles de años de selección natural los han hecho robustos. Uno de los gatos más saludables con esperanza de vida de 15-20 años.",
+    "care": "Su pelaje corto necesita un aseo mínimo. Son gatos adaptables e independientes que son buenos cazadores. Sociales con familias pero autosuficientes. Les va bien en varios climas."
+  },
+  "brazilian-shorthair": {
+    "overview": "El Brasileño de Pelo Corto se desarrolló de gatos callejeros en Brasil y solo fue reconocido como raza en 1998. Son atléticos, inteligentes y afectuosos sin ser exigentes. Se adaptan bien a varias situaciones de vida.",
+    "health": "Los Brasileños de Pelo Corto son generalmente muy saludables debido a su fondo genético diverso. Pocos problemas de salud específicos de la raza. Raza robusta y adaptable con esperanza de vida de 14-20 años.",
+    "care": "Su pelaje corto necesita un aseo mínimo. Son gatos de energía moderada que disfrutan del juego pero no son hiperactivos. Adaptables a la vida en apartamento. Sociales pero no demasiado exigentes de atención."
+  },
+  "chantilly-tiffany": {
+    "overview": "El Chantilly-Tiffany (o Chantilly) es un gato semilargo de color chocolate conocido por su pelaje sedoso y personalidad devota. Una vez se creyó extinto, siguen siendo raros. Son gatos moderados y leales que siguen a sus dueños a todas partes.",
+    "health": "Los Chantilly-Tiffany pueden desarrollar acumulación de cera en las orejas y sensibilidades digestivas. De otro modo generalmente saludables. Su rareza significa preocupaciones de diversidad genética. La esperanza de vida es 12-15 años.",
+    "care": "Su pelaje sedoso necesita cepillado regular para prevenir enredos. Limpia las orejas frecuentemente. Son gatos devotos de energía moderada. No les gusta estar solos por largos períodos. Buenos con niños y otras mascotas."
+  },
+  "york-chocolate": {
+    "overview": "El York Chocolate es una raza americana desarrollada de gatos de granja en Nueva York. Nombrados por su rico pelaje chocolate, son amigables, energéticos y aman estar involucrados en actividades familiares. Desafortunadamente ahora muy raros.",
+    "health": "Los York Chocolate son generalmente saludables sin condiciones relacionadas con la raza específicas. Su fondo genético diverso los mantiene robustos. La esperanza de vida es 13-15 años. Encontrar criadores es muy difícil.",
+    "care": "Su pelaje semilargo necesita cepillado regular. Gatos activos e inteligentes que necesitan juego y estimulación mental. Son sociales y amigables con la familia pero pueden ser reservados con extraños."
+  },
+  "asian": {
+    "overview": "El grupo de gatos Asiáticos incluye variedades como el Burmilla, Asian Smoke y Asian Tabby. Combinan la personalidad Burmesa con diferentes patrones y colores de pelaje. Juguetones, sociales y afectuosos sin ser demasiado exigentes.",
+    "health": "Los gatos Asiáticos pueden heredar problemas de salud del Burmés: diabetes, problemas renales y condiciones dentales. Generalmente saludables con esperanza de vida de 12-15 años. Los chequeos veterinarios regulares son importantes.",
+    "care": "Su pelaje corto necesita un aseo mínimo. Son gatos sociales que disfrutan la interacción familiar pero pueden manejar algo de tiempo solos. Nivel de actividad moderado. Buenos con niños y otras mascotas."
+  },
+  "tiffanie": {
+    "overview": "El Tiffanie es un gato Asiático semilargo, similar al Burmilla pero con un pelaje fluido. Desarrollado en el Reino Unido, no están relacionados con el Chantilly-Tiffany americano a pesar del nombre similar. Juguetones, afectuosos e inteligentes.",
+    "health": "Los Tiffanie pueden heredar preocupaciones de salud del Asiático/Burmés. Algunos pueden desarrollar problemas renales o alergias. El cuidado veterinario regular es importante. La esperanza de vida es 12-15 años.",
+    "care": "Su pelaje sedoso necesita cepillado regular para prevenir enredos. Gatos sociales y juguetones que disfrutan la interacción. Nivel de energía moderado: juguetones pero no hiperactivos. Buenos con familias."
+  },
+  "california-spangled": {
+    "overview": "El California Spangled fue criado en la década de 1980 para parecerse a gatos manchados salvajes y crear conciencia sobre los gatos salvajes en peligro. Son atléticos, inteligentes y devotos a sus familias. Desafortunadamente ahora extremadamente raros o posiblemente extintos.",
+    "health": "Los California Spangled eran generalmente saludables. Encontrar información de salud precisa es difícil debido a su rareza. No se documentaron condiciones específicas de la raza conocidas.",
+    "care": "Su pelaje corto y manchado necesitaba un aseo mínimo. Gatos activos e inteligentes que necesitaban mucho juego y estimulación mental. Eran sociales y se vinculaban fuertemente con las familias."
+  },
+  "suphalak": {
+    "overview": "El Suphalak es una antigua raza tailandesa, descrita en los Poemas del Libro del Gato escritos hace más de 300 años. Tienen un rico pelaje marrón rojizo y ojos dorados. Extremadamente raros, son afectuosos, juguetones y se vinculan fuertemente con sus familias.",
+    "health": "Los Suphalak son generalmente saludables pero tienen un pool genético muy pequeño. Los datos de salud limitados están disponibles debido a la rareza. El cuidado veterinario regular es importante. La esperanza de vida se estima en 12-15 años.",
+    "care": "Su pelaje corto necesita un aseo mínimo. Gatos sociales que disfrutan la compañía humana. Moderadamente activos con personalidades juguetones. Muy raros: encontrar criadores es difícil."
+  },
+  "aphrodite-giant": {
+    "overview": "El Gigante de Afrodita es una raza natural de Chipre, una de las razas de gatos más antiguas del mundo. Son gatos grandes con una constitución muscular adaptada al terreno montañoso. Sociales, inteligentes y buenos con familias.",
+    "health": "Los Gigante de Afrodita son generalmente saludables con pocos problemas específicos de la raza. Su desarrollo natural los ha mantenido robustos. La esperanza de vida es 12-15+ años.",
+    "care": "Existen variedades de pelo corto y largo: las necesidades de aseo varían. Son gatos sociales y activos que disfrutan trepar y jugar. Se adaptan a varias situaciones de vida y son buenos con niños."
+  },
+  "cornish-rex": {
+    "overview": "El Cornish Rex tiene un pelaje rizado distintivo que se siente como terciopelo arrugado. Originario de Cornualles, Inglaterra, tienen un cuerpo elegante y arqueado y cabeza en forma de huevo. Son gatos juguetones y acrobáticos que retienen energía de gatito durante toda su vida.",
+    "health": "Los Cornish Rex pueden ser propensos a la Cardiomiopatía Hipertrófica (HCM), luxación rotuliana y sensibilidad de la piel. Su falta de pelos de guarda los hace sensibles a la temperatura. Pueden desarrollar hernias umbilicales. Generalmente saludables con esperanza de vida de 12-15 años.",
+    "care": "Su pelaje único necesita un aseo mínimo: cepillado suave ocasional. Se enfrían fácilmente y aprecian lugares cálidos y camas con calefacción. Sus orejas grandes necesitan limpieza regular. Alto metabolismo significa que necesitan comida de calidad y pueden comer más de lo esperado."
+  }
+}
