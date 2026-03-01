@@ -3,888 +3,3056 @@
     "id": "persian",
     "name": "Persian",
     "origin": "Iran (Persia)",
-    "size": {"category": "medium", "weight_kg": "3-5"},
-    "coat": {"type": "longhair", "pattern": "various"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-5"
+    },
+    "coat": {
+      "type": "longhair",
+      "pattern": "various"
+    },
     "lifespan": "12-17 years",
-    "temperament": ["calm", "gentle", "affectionate", "quiet"],
-    "ratings": {"affection": 5, "activity": 2, "grooming": 5, "vocality": 1, "independence": 3, "kid_friendly": 3, "dog_friendly": 3, "intelligence": 3},
+    "temperament": [
+      "calm",
+      "gentle",
+      "affectionate",
+      "quiet"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 2,
+      "grooming": 5,
+      "vocality": 1,
+      "independence": 3,
+      "kid_friendly": 3,
+      "dog_friendly": 3,
+      "intelligence": 3
+    },
     "description": "The Persian is one of the oldest and most popular cat breeds, known for its long, luxurious coat and sweet, gentle personality.",
-    "verdict": {"best_for": ["Quiet households", "Seniors", "Apartment living"], "not_ideal": ["Busy families", "Those who dislike grooming"]}
+    "verdict": {
+      "best_for": [
+        "Quiet households",
+        "Seniors",
+        "Apartment living"
+      ],
+      "not_ideal": [
+        "Busy families",
+        "Those who dislike grooming"
+      ]
+    },
+    "overview": "The Persian is one of the oldest and most recognizable cat breeds in the world. With their distinctive flat face, round eyes, and flowing coat, they've been prized companions for centuries. Persians are the epitome of a lap cat\u2014calm, sweet-natured, and content to lounge in comfort.",
+    "health": "Persians are prone to Polycystic Kidney Disease (PKD), respiratory issues due to their flat face (brachycephalic syndrome), and eye conditions like excessive tearing. Regular vet checkups and genetic testing are recommended. Their flat face can also cause dental issues.",
+    "care": "Daily grooming is essential to prevent matting of their long coat. Their eyes need regular cleaning due to tear staining. Keep them indoors as their coat and flat face make them vulnerable. Feed a high-quality diet and monitor weight as they're prone to obesity."
   },
   {
     "id": "maine-coon",
     "name": "Maine Coon",
     "origin": "United States",
-    "size": {"category": "extra-large", "weight_kg": "5-11"},
-    "coat": {"type": "longhair", "pattern": "various"},
+    "size": {
+      "category": "extra-large",
+      "weight_kg": "5-11"
+    },
+    "coat": {
+      "type": "longhair",
+      "pattern": "various"
+    },
     "lifespan": "12-15 years",
-    "temperament": ["friendly", "playful", "gentle", "intelligent"],
-    "ratings": {"affection": 5, "activity": 4, "grooming": 4, "vocality": 3, "independence": 3, "kid_friendly": 5, "dog_friendly": 5, "intelligence": 5},
+    "temperament": [
+      "friendly",
+      "playful",
+      "gentle",
+      "intelligent"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 4,
+      "grooming": 4,
+      "vocality": 3,
+      "independence": 3,
+      "kid_friendly": 5,
+      "dog_friendly": 5,
+      "intelligence": 5
+    },
     "description": "The Maine Coon is one of the largest domestic cat breeds, known as the 'gentle giant' for its friendly, dog-like personality.",
-    "verdict": {"best_for": ["Families with children", "Homes with dogs", "Active households"], "not_ideal": ["Small apartments", "Those wanting a lap cat"]}
+    "verdict": {
+      "best_for": [
+        "Families with children",
+        "Homes with dogs",
+        "Active households"
+      ],
+      "not_ideal": [
+        "Small apartments",
+        "Those wanting a lap cat"
+      ]
+    },
+    "overview": "The Maine Coon is America's native longhaired cat and one of the largest domesticated breeds. Known as 'gentle giants,' they combine impressive size with a friendly, dog-like personality. They're excellent mousers with a rugged appearance suited to harsh New England winters.",
+    "health": "Maine Coons can be prone to Hypertrophic Cardiomyopathy (HCM), hip dysplasia, and Spinal Muscular Atrophy (SMA). Regular cardiac screening is recommended. Despite their size, they're generally healthy cats with proper care and can live 12-15 years.",
+    "care": "Their semi-long coat needs brushing 2-3 times weekly to prevent matting. They enjoy interactive play and need space to climb and explore. Provide sturdy cat trees that can support their weight. They often enjoy water and may 'help' with dishes!"
   },
   {
     "id": "ragdoll",
     "name": "Ragdoll",
     "origin": "United States",
-    "size": {"category": "large", "weight_kg": "4-9"},
-    "coat": {"type": "semi-longhair", "pattern": "colorpoint"},
+    "size": {
+      "category": "large",
+      "weight_kg": "4-9"
+    },
+    "coat": {
+      "type": "semi-longhair",
+      "pattern": "colorpoint"
+    },
     "lifespan": "12-17 years",
-    "temperament": ["docile", "calm", "affectionate", "gentle"],
-    "ratings": {"affection": 5, "activity": 2, "grooming": 3, "vocality": 2, "independence": 2, "kid_friendly": 5, "dog_friendly": 4, "intelligence": 4},
+    "temperament": [
+      "docile",
+      "calm",
+      "affectionate",
+      "gentle"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 2,
+      "grooming": 3,
+      "vocality": 2,
+      "independence": 2,
+      "kid_friendly": 5,
+      "dog_friendly": 4,
+      "intelligence": 4
+    },
     "description": "Ragdolls are known for going limp when picked up, hence their name. They're extremely docile, loving cats that follow their owners around.",
-    "verdict": {"best_for": ["Families", "First-time cat owners", "Indoor living"], "not_ideal": ["Those away often", "Outdoor cat seekers"]}
+    "verdict": {
+      "best_for": [
+        "Families",
+        "First-time cat owners",
+        "Indoor living"
+      ],
+      "not_ideal": [
+        "Those away often",
+        "Outdoor cat seekers"
+      ]
+    },
+    "overview": "Ragdolls are named for their tendency to go limp and relaxed when picked up. Developed in California in the 1960s, they're known for their striking blue eyes, semi-long coat, and incredibly docile temperament. They follow their owners from room to room like puppies.",
+    "health": "Ragdolls can be prone to Hypertrophic Cardiomyopathy (HCM) and bladder stones. They may also develop Feline Infectious Peritonitis (FIP). Regular cardiac screening is recommended. Their laid-back nature means monitoring for obesity is important.",
+    "care": "Their silky coat is easier to maintain than other longhairs\u2014brush 2-3 times weekly. They're strictly indoor cats due to their trusting nature. Provide plenty of soft beds and perches. They thrive on companionship and don't do well left alone for long periods."
   },
   {
     "id": "british-shorthair",
     "name": "British Shorthair",
     "origin": "United Kingdom",
-    "size": {"category": "medium", "weight_kg": "4-8"},
-    "coat": {"type": "shorthair", "pattern": "various"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "4-8"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "various"
+    },
     "lifespan": "12-20 years",
-    "temperament": ["calm", "easygoing", "loyal", "independent"],
-    "ratings": {"affection": 4, "activity": 2, "grooming": 2, "vocality": 1, "independence": 4, "kid_friendly": 4, "dog_friendly": 4, "intelligence": 4},
+    "temperament": [
+      "calm",
+      "easygoing",
+      "loyal",
+      "independent"
+    ],
+    "ratings": {
+      "affection": 4,
+      "activity": 2,
+      "grooming": 2,
+      "vocality": 1,
+      "independence": 4,
+      "kid_friendly": 4,
+      "dog_friendly": 4,
+      "intelligence": 4
+    },
     "description": "The British Shorthair is a pedigreed version of the British domestic cat, known for its chunky body, dense coat, and broad face.",
-    "verdict": {"best_for": ["Working professionals", "Quiet households", "Apartments"], "not_ideal": ["Those wanting a very active cat"]}
+    "verdict": {
+      "best_for": [
+        "Working professionals",
+        "Quiet households",
+        "Apartments"
+      ],
+      "not_ideal": [
+        "Those wanting a very active cat"
+      ]
+    },
+    "overview": "The British Shorthair is one of the oldest English cat breeds, descending from Roman-era cats. Famous for their round face, dense 'crisp' coat, and copper eyes, they're often compared to teddy bears. They're calm, dignified cats that become deeply loyal to their families.",
+    "health": "British Shorthairs can be prone to Hypertrophic Cardiomyopathy (HCM), Polycystic Kidney Disease (PKD), and obesity. They may also develop hemophilia B. Regular health screenings and weight management are important for this stocky breed.",
+    "care": "Their dense coat needs weekly brushing, more during shedding season. They're not demanding of attention but enjoy routine. Monitor food intake as they gain weight easily. Provide interactive toys as they can be less active than other breeds."
   },
   {
     "id": "siamese",
     "name": "Siamese",
     "origin": "Thailand",
-    "size": {"category": "medium", "weight_kg": "3-5"},
-    "coat": {"type": "shorthair", "pattern": "colorpoint"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-5"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "colorpoint"
+    },
     "lifespan": "12-20 years",
-    "temperament": ["vocal", "social", "intelligent", "playful"],
-    "ratings": {"affection": 5, "activity": 5, "grooming": 1, "vocality": 5, "independence": 1, "kid_friendly": 4, "dog_friendly": 4, "intelligence": 5},
+    "temperament": [
+      "vocal",
+      "social",
+      "intelligent",
+      "playful"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 5,
+      "grooming": 1,
+      "vocality": 5,
+      "independence": 1,
+      "kid_friendly": 4,
+      "dog_friendly": 4,
+      "intelligence": 5
+    },
     "description": "Siamese cats are one of the most recognizable breeds with their striking blue eyes and colorpoint coat. They're extremely vocal and social.",
-    "verdict": {"best_for": ["Active households", "Those wanting interaction", "Multi-pet homes"], "not_ideal": ["Quiet households", "Those away often"]}
+    "verdict": {
+      "best_for": [
+        "Active households",
+        "Those wanting interaction",
+        "Multi-pet homes"
+      ],
+      "not_ideal": [
+        "Quiet households",
+        "Those away often"
+      ]
+    },
+    "overview": "The Siamese is one of the most ancient and recognizable cat breeds, originating from Thailand (formerly Siam). With their striking blue almond eyes, pointed coloring, and vocal personality, they're impossible to ignore. Siamese form intense bonds with their chosen humans.",
+    "health": "Siamese cats can be prone to respiratory issues, dental problems, and Progressive Retinal Atrophy (PRA). Some may develop amyloidosis or certain cancers. They're also prone to compulsive behaviors like wool-sucking. Regular vet visits are important.",
+    "care": "Their short coat needs minimal grooming\u2014weekly brushing is enough. They need lots of mental stimulation and interactive play. Consider getting two as they don't like being alone. Be prepared for their vocal nature\u2014they will 'talk' to you constantly!"
   },
   {
     "id": "abyssinian",
     "name": "Abyssinian",
     "origin": "Ethiopia",
-    "size": {"category": "medium", "weight_kg": "3-5"},
-    "coat": {"type": "shorthair", "pattern": "ticked tabby"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-5"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "ticked tabby"
+    },
     "lifespan": "12-15 years",
-    "temperament": ["active", "playful", "curious", "intelligent"],
-    "ratings": {"affection": 4, "activity": 5, "grooming": 1, "vocality": 2, "independence": 3, "kid_friendly": 4, "dog_friendly": 4, "intelligence": 5},
+    "temperament": [
+      "active",
+      "playful",
+      "curious",
+      "intelligent"
+    ],
+    "ratings": {
+      "affection": 4,
+      "activity": 5,
+      "grooming": 1,
+      "vocality": 2,
+      "independence": 3,
+      "kid_friendly": 4,
+      "dog_friendly": 4,
+      "intelligence": 5
+    },
     "description": "Abyssinians are one of the oldest known breeds, known for their ticked coat and extremely active, curious nature.",
-    "verdict": {"best_for": ["Active families", "Those with time to play", "Experienced owners"], "not_ideal": ["Those wanting a calm cat", "Small spaces"]}
+    "verdict": {
+      "best_for": [
+        "Active families",
+        "Those with time to play",
+        "Experienced owners"
+      ],
+      "not_ideal": [
+        "Those wanting a calm cat",
+        "Small spaces"
+      ]
+    },
+    "overview": "The Abyssinian is one of the oldest known cat breeds, with a distinctive 'ticked' coat that gives them a wild appearance. Often called the 'Aby,' they're incredibly active, curious, and intelligent. These cats are natural athletes who love to climb and explore everything.",
+    "health": "Abyssinians can be prone to Pyruvate Kinase Deficiency (PKD), Progressive Retinal Atrophy (PRA), and renal amyloidosis. Dental issues are also common. Genetic testing is available for many conditions. With proper care, they live 12-15 years.",
+    "care": "Their short, ticked coat needs minimal grooming. However, they need lots of play and mental stimulation\u2014puzzle feeders are great. Provide tall cat trees and high perches. They don't do well left alone and may become destructive if bored."
   },
   {
     "id": "bengal",
     "name": "Bengal",
     "origin": "United States",
-    "size": {"category": "medium", "weight_kg": "4-7"},
-    "coat": {"type": "shorthair", "pattern": "spotted/marbled"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "4-7"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "spotted/marbled"
+    },
     "lifespan": "12-16 years",
-    "temperament": ["active", "playful", "intelligent", "confident"],
-    "ratings": {"affection": 4, "activity": 5, "grooming": 1, "vocality": 3, "independence": 3, "kid_friendly": 4, "dog_friendly": 4, "intelligence": 5},
+    "temperament": [
+      "active",
+      "playful",
+      "intelligent",
+      "confident"
+    ],
+    "ratings": {
+      "affection": 4,
+      "activity": 5,
+      "grooming": 1,
+      "vocality": 3,
+      "independence": 3,
+      "kid_friendly": 4,
+      "dog_friendly": 4,
+      "intelligence": 5
+    },
     "description": "Bengals have a wild appearance with their leopard-like spots but are fully domesticated. They're highly active and love water.",
-    "verdict": {"best_for": ["Active households", "Experienced cat owners", "Large homes"], "not_ideal": ["First-time owners", "Quiet households"]}
+    "verdict": {
+      "best_for": [
+        "Active households",
+        "Experienced cat owners",
+        "Large homes"
+      ],
+      "not_ideal": [
+        "First-time owners",
+        "Quiet households"
+      ]
+    },
+    "overview": "Bengals were created by crossing domestic cats with Asian Leopard Cats, giving them their stunning wild appearance. Their spotted or marbled coat resembles a miniature leopard, but they're fully domesticated. They're incredibly athletic, intelligent, and often love water.",
+    "health": "Bengals can be prone to Hypertrophic Cardiomyopathy (HCM), Progressive Retinal Atrophy (PRA), and Flat Chested Kitten Syndrome. Some may have sensitive stomachs. Buy from reputable breeders who test for genetic conditions.",
+    "care": "Their short, luxurious coat needs minimal grooming. However, they need extensive play and exercise\u2014at least 30 minutes of active play daily. Provide climbing structures, puzzle toys, and consider leash training. Many Bengals enjoy playing in water."
   },
   {
     "id": "sphynx",
     "name": "Sphynx",
     "origin": "Canada",
-    "size": {"category": "medium", "weight_kg": "3-5"},
-    "coat": {"type": "hairless", "pattern": "various"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-5"
+    },
+    "coat": {
+      "type": "hairless",
+      "pattern": "various"
+    },
     "lifespan": "12-14 years",
-    "temperament": ["affectionate", "energetic", "social", "curious"],
-    "ratings": {"affection": 5, "activity": 4, "grooming": 3, "vocality": 3, "independence": 1, "kid_friendly": 5, "dog_friendly": 5, "intelligence": 5},
+    "temperament": [
+      "affectionate",
+      "energetic",
+      "social",
+      "curious"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 4,
+      "grooming": 3,
+      "vocality": 3,
+      "independence": 1,
+      "kid_friendly": 5,
+      "dog_friendly": 5,
+      "intelligence": 5
+    },
     "description": "The Sphynx is famous for being hairless, though they have a fine peach-fuzz. They're extremely affectionate and love being warm.",
-    "verdict": {"best_for": ["Allergy sufferers", "Those wanting affection", "Indoor living"], "not_ideal": ["Cold climates without heating", "Those away often"]}
+    "verdict": {
+      "best_for": [
+        "Allergy sufferers",
+        "Those wanting affection",
+        "Indoor living"
+      ],
+      "not_ideal": [
+        "Cold climates without heating",
+        "Those away often"
+      ]
+    },
+    "overview": "The Sphynx appears hairless but actually has a fine peach-fuzz covering. Developed in Canada in the 1960s, they're known for their wrinkled skin, large ears, and incredibly affectionate personality. Don't let their alien appearance fool you\u2014they're total love bugs.",
+    "health": "Sphynx cats can be prone to Hypertrophic Cardiomyopathy (HCM), skin conditions, and respiratory issues. They're also sensitive to temperature extremes. Regular dental care is important as they're prone to gum disease.",
+    "care": "Despite being 'hairless,' they need regular bathing (weekly) as oils build up on their skin. Keep them warm\u2014sweaters may be needed in winter. Clean their large ears regularly. They need to be indoor cats and protected from sunburn."
   },
   {
     "id": "scottish-fold",
     "name": "Scottish Fold",
     "origin": "Scotland",
-    "size": {"category": "medium", "weight_kg": "3-6"},
-    "coat": {"type": "shorthair", "pattern": "various"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-6"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "various"
+    },
     "lifespan": "11-14 years",
-    "temperament": ["sweet", "calm", "adaptable", "loyal"],
-    "ratings": {"affection": 5, "activity": 3, "grooming": 2, "vocality": 2, "independence": 3, "kid_friendly": 5, "dog_friendly": 4, "intelligence": 4},
+    "temperament": [
+      "sweet",
+      "calm",
+      "adaptable",
+      "loyal"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 3,
+      "grooming": 2,
+      "vocality": 2,
+      "independence": 3,
+      "kid_friendly": 5,
+      "dog_friendly": 4,
+      "intelligence": 4
+    },
     "description": "Scottish Folds are known for their unique folded ears and owl-like appearance. They're sweet-natured and adaptable.",
-    "verdict": {"best_for": ["Families", "Apartments", "First-time owners"], "not_ideal": ["Those concerned about genetic health issues"]}
+    "verdict": {
+      "best_for": [
+        "Families",
+        "Apartments",
+        "First-time owners"
+      ],
+      "not_ideal": [
+        "Those concerned about genetic health issues"
+      ]
+    },
+    "overview": "Scottish Folds are instantly recognizable by their folded ears that give them an 'owl-like' appearance. Originating from a barn cat in Scotland in 1961, they're known for their round face and sweet expression. They often sit in unusual positions, including the 'Buddha sit.'",
+    "health": "Scottish Folds can develop Osteochondrodysplasia, a cartilage/bone condition related to the folded ear gene. This can cause painful arthritis. Never breed fold-to-fold. Watch for signs of joint pain or stiffness. Regular vet monitoring is essential.",
+    "care": "Their coat (short or long variety) needs weekly brushing. Handle their ears gently and check for wax buildup. Monitor for any signs of joint discomfort. They're adaptable and easygoing, making them good apartment cats."
   },
   {
     "id": "birman",
     "name": "Birman",
     "origin": "Myanmar (Burma)",
-    "size": {"category": "medium", "weight_kg": "4-6"},
-    "coat": {"type": "semi-longhair", "pattern": "colorpoint"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "4-6"
+    },
+    "coat": {
+      "type": "semi-longhair",
+      "pattern": "colorpoint"
+    },
     "lifespan": "12-16 years",
-    "temperament": ["gentle", "affectionate", "social", "quiet"],
-    "ratings": {"affection": 5, "activity": 3, "grooming": 3, "vocality": 2, "independence": 2, "kid_friendly": 5, "dog_friendly": 4, "intelligence": 4},
+    "temperament": [
+      "gentle",
+      "affectionate",
+      "social",
+      "quiet"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 3,
+      "grooming": 3,
+      "vocality": 2,
+      "independence": 2,
+      "kid_friendly": 5,
+      "dog_friendly": 4,
+      "intelligence": 4
+    },
     "description": "Birmans are known as the 'Sacred Cat of Burma' with their striking blue eyes and white 'gloves' on their paws.",
-    "verdict": {"best_for": ["Families", "Multi-pet homes", "Quiet households"], "not_ideal": ["Those away often"]}
+    "verdict": {
+      "best_for": [
+        "Families",
+        "Multi-pet homes",
+        "Quiet households"
+      ],
+      "not_ideal": [
+        "Those away often"
+      ]
+    }
   },
   {
     "id": "russian-blue",
     "name": "Russian Blue",
     "origin": "Russia",
-    "size": {"category": "medium", "weight_kg": "3-6"},
-    "coat": {"type": "shorthair", "pattern": "solid blue"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-6"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "solid blue"
+    },
     "lifespan": "15-20 years",
-    "temperament": ["gentle", "shy", "loyal", "intelligent"],
-    "ratings": {"affection": 4, "activity": 3, "grooming": 1, "vocality": 1, "independence": 4, "kid_friendly": 3, "dog_friendly": 3, "intelligence": 4},
+    "temperament": [
+      "gentle",
+      "shy",
+      "loyal",
+      "intelligent"
+    ],
+    "ratings": {
+      "affection": 4,
+      "activity": 3,
+      "grooming": 1,
+      "vocality": 1,
+      "independence": 4,
+      "kid_friendly": 3,
+      "dog_friendly": 3,
+      "intelligence": 4
+    },
     "description": "Russian Blues are known for their plush blue-grey coat and striking green eyes. They're shy with strangers but devoted to their family.",
-    "verdict": {"best_for": ["Quiet households", "Singles", "Working professionals"], "not_ideal": ["Busy households with many visitors"]}
+    "verdict": {
+      "best_for": [
+        "Quiet households",
+        "Singles",
+        "Working professionals"
+      ],
+      "not_ideal": [
+        "Busy households with many visitors"
+      ]
+    },
+    "overview": "The Russian Blue is known for their stunning silver-blue coat and vivid green eyes. Believed to originate from the Russian port of Arkhangelsk, they're elegant, reserved cats that form deep bonds with their families while being shy with strangers.",
+    "health": "Russian Blues are generally healthy with few breed-specific issues. They can be prone to obesity and bladder stones. Some may develop eye issues. They're one of the healthier purebred cats with lifespans often reaching 15-20 years.",
+    "care": "Their dense double coat needs weekly brushing. They're creatures of habit and may be stressed by changes. Provide consistent routines and quiet spaces. They're good for people with mild allergies as they produce less Fel d 1 protein."
   },
   {
     "id": "norwegian-forest-cat",
     "name": "Norwegian Forest Cat",
     "origin": "Norway",
-    "size": {"category": "large", "weight_kg": "4-9"},
-    "coat": {"type": "longhair", "pattern": "various"},
+    "size": {
+      "category": "large",
+      "weight_kg": "4-9"
+    },
+    "coat": {
+      "type": "longhair",
+      "pattern": "various"
+    },
     "lifespan": "14-16 years",
-    "temperament": ["friendly", "calm", "independent", "intelligent"],
-    "ratings": {"affection": 4, "activity": 3, "grooming": 4, "vocality": 2, "independence": 4, "kid_friendly": 4, "dog_friendly": 4, "intelligence": 4},
+    "temperament": [
+      "friendly",
+      "calm",
+      "independent",
+      "intelligent"
+    ],
+    "ratings": {
+      "affection": 4,
+      "activity": 3,
+      "grooming": 4,
+      "vocality": 2,
+      "independence": 4,
+      "kid_friendly": 4,
+      "dog_friendly": 4,
+      "intelligence": 4
+    },
     "description": "Norwegian Forest Cats are large, rugged cats with a thick waterproof coat developed to survive Scandinavian winters.",
-    "verdict": {"best_for": ["Families", "Homes with outdoor access", "Cold climates"], "not_ideal": ["Small apartments", "Hot climates"]}
+    "verdict": {
+      "best_for": [
+        "Families",
+        "Homes with outdoor access",
+        "Cold climates"
+      ],
+      "not_ideal": [
+        "Small apartments",
+        "Hot climates"
+      ]
+    }
   },
   {
     "id": "burmese",
     "name": "Burmese",
     "origin": "Myanmar (Burma)",
-    "size": {"category": "medium", "weight_kg": "4-6"},
-    "coat": {"type": "shorthair", "pattern": "solid"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "4-6"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "solid"
+    },
     "lifespan": "16-18 years",
-    "temperament": ["affectionate", "playful", "vocal", "social"],
-    "ratings": {"affection": 5, "activity": 4, "grooming": 1, "vocality": 4, "independence": 1, "kid_friendly": 5, "dog_friendly": 5, "intelligence": 5},
+    "temperament": [
+      "affectionate",
+      "playful",
+      "vocal",
+      "social"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 4,
+      "grooming": 1,
+      "vocality": 4,
+      "independence": 1,
+      "kid_friendly": 5,
+      "dog_friendly": 5,
+      "intelligence": 5
+    },
     "description": "Burmese cats are known for their dog-like personality, following their owners everywhere and being extremely social.",
-    "verdict": {"best_for": ["Families", "Those wanting companionship", "Multi-pet homes"], "not_ideal": ["Those away often", "Those wanting quiet"]}
+    "verdict": {
+      "best_for": [
+        "Families",
+        "Those wanting companionship",
+        "Multi-pet homes"
+      ],
+      "not_ideal": [
+        "Those away often",
+        "Those wanting quiet"
+      ]
+    }
   },
   {
     "id": "oriental-shorthair",
     "name": "Oriental Shorthair",
     "origin": "Thailand/UK",
-    "size": {"category": "medium", "weight_kg": "3-5"},
-    "coat": {"type": "shorthair", "pattern": "various"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-5"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "various"
+    },
     "lifespan": "12-15 years",
-    "temperament": ["vocal", "social", "intelligent", "playful"],
-    "ratings": {"affection": 5, "activity": 5, "grooming": 1, "vocality": 5, "independence": 1, "kid_friendly": 4, "dog_friendly": 4, "intelligence": 5},
+    "temperament": [
+      "vocal",
+      "social",
+      "intelligent",
+      "playful"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 5,
+      "grooming": 1,
+      "vocality": 5,
+      "independence": 1,
+      "kid_friendly": 4,
+      "dog_friendly": 4,
+      "intelligence": 5
+    },
     "description": "Oriental Shorthairs come in over 300 color combinations. They're like Siamese without the colorpoint pattern - very vocal and social.",
-    "verdict": {"best_for": ["Active households", "Those wanting a talkative cat"], "not_ideal": ["Quiet households", "Those away often"]}
+    "verdict": {
+      "best_for": [
+        "Active households",
+        "Those wanting a talkative cat"
+      ],
+      "not_ideal": [
+        "Quiet households",
+        "Those away often"
+      ]
+    }
   },
   {
     "id": "devon-rex",
     "name": "Devon Rex",
     "origin": "England",
-    "size": {"category": "small", "weight_kg": "2-4"},
-    "coat": {"type": "rex", "pattern": "various"},
+    "size": {
+      "category": "small",
+      "weight_kg": "2-4"
+    },
+    "coat": {
+      "type": "rex",
+      "pattern": "various"
+    },
     "lifespan": "10-15 years",
-    "temperament": ["playful", "mischievous", "social", "intelligent"],
-    "ratings": {"affection": 5, "activity": 5, "grooming": 1, "vocality": 3, "independence": 1, "kid_friendly": 5, "dog_friendly": 5, "intelligence": 5},
+    "temperament": [
+      "playful",
+      "mischievous",
+      "social",
+      "intelligent"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 5,
+      "grooming": 1,
+      "vocality": 3,
+      "independence": 1,
+      "kid_friendly": 5,
+      "dog_friendly": 5,
+      "intelligence": 5
+    },
     "description": "Devon Rex cats have large ears, an elfin face, and a wavy coat. They're known as 'pixie cats' for their mischievous personality.",
-    "verdict": {"best_for": ["Active families", "Those wanting entertainment", "Multi-pet homes"], "not_ideal": ["Those wanting a calm cat"]}
+    "verdict": {
+      "best_for": [
+        "Active families",
+        "Those wanting entertainment",
+        "Multi-pet homes"
+      ],
+      "not_ideal": [
+        "Those wanting a calm cat"
+      ]
+    }
   },
   {
     "id": "cornish-rex",
     "name": "Cornish Rex",
     "origin": "England",
-    "size": {"category": "small", "weight_kg": "2-4"},
-    "coat": {"type": "rex", "pattern": "various"},
+    "size": {
+      "category": "small",
+      "weight_kg": "2-4"
+    },
+    "coat": {
+      "type": "rex",
+      "pattern": "various"
+    },
     "lifespan": "12-15 years",
-    "temperament": ["active", "playful", "affectionate", "adventurous"],
-    "ratings": {"affection": 5, "activity": 5, "grooming": 1, "vocality": 3, "independence": 2, "kid_friendly": 5, "dog_friendly": 4, "intelligence": 5},
+    "temperament": [
+      "active",
+      "playful",
+      "affectionate",
+      "adventurous"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 5,
+      "grooming": 1,
+      "vocality": 3,
+      "independence": 2,
+      "kid_friendly": 5,
+      "dog_friendly": 4,
+      "intelligence": 5
+    },
     "description": "Cornish Rex have a distinctive wavy coat and slender body. They're athletic, love to play fetch, and stay kitten-like their whole lives.",
-    "verdict": {"best_for": ["Active households", "Families with children", "Those wanting playful cats"], "not_ideal": ["Those wanting a calm lap cat"]}
+    "verdict": {
+      "best_for": [
+        "Active households",
+        "Families with children",
+        "Those wanting playful cats"
+      ],
+      "not_ideal": [
+        "Those wanting a calm lap cat"
+      ]
+    }
   },
   {
     "id": "exotic-shorthair",
     "name": "Exotic Shorthair",
     "origin": "United States",
-    "size": {"category": "medium", "weight_kg": "3-6"},
-    "coat": {"type": "shorthair", "pattern": "various"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-6"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "various"
+    },
     "lifespan": "12-15 years",
-    "temperament": ["calm", "gentle", "affectionate", "playful"],
-    "ratings": {"affection": 5, "activity": 2, "grooming": 2, "vocality": 1, "independence": 3, "kid_friendly": 4, "dog_friendly": 4, "intelligence": 3},
+    "temperament": [
+      "calm",
+      "gentle",
+      "affectionate",
+      "playful"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 2,
+      "grooming": 2,
+      "vocality": 1,
+      "independence": 3,
+      "kid_friendly": 4,
+      "dog_friendly": 4,
+      "intelligence": 3
+    },
     "description": "Exotic Shorthairs are essentially short-haired Persians - same sweet face and gentle nature but with easier grooming needs.",
-    "verdict": {"best_for": ["Those who love Persians but not grooming", "Apartments", "Quiet households"], "not_ideal": ["Those wanting an active cat"]}
+    "verdict": {
+      "best_for": [
+        "Those who love Persians but not grooming",
+        "Apartments",
+        "Quiet households"
+      ],
+      "not_ideal": [
+        "Those wanting an active cat"
+      ]
+    }
   },
   {
     "id": "himalayan",
     "name": "Himalayan",
     "origin": "United States/UK",
-    "size": {"category": "medium", "weight_kg": "3-6"},
-    "coat": {"type": "longhair", "pattern": "colorpoint"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-6"
+    },
+    "coat": {
+      "type": "longhair",
+      "pattern": "colorpoint"
+    },
     "lifespan": "9-15 years",
-    "temperament": ["calm", "gentle", "sweet", "quiet"],
-    "ratings": {"affection": 5, "activity": 2, "grooming": 5, "vocality": 1, "independence": 3, "kid_friendly": 3, "dog_friendly": 3, "intelligence": 3},
+    "temperament": [
+      "calm",
+      "gentle",
+      "sweet",
+      "quiet"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 2,
+      "grooming": 5,
+      "vocality": 1,
+      "independence": 3,
+      "kid_friendly": 3,
+      "dog_friendly": 3,
+      "intelligence": 3
+    },
     "description": "Himalayans combine Persian features with Siamese colorpoints. They're sweet, calm cats that love peaceful environments.",
-    "verdict": {"best_for": ["Quiet households", "Seniors", "Those with grooming time"], "not_ideal": ["Busy families", "Those disliking grooming"]}
+    "verdict": {
+      "best_for": [
+        "Quiet households",
+        "Seniors",
+        "Those with grooming time"
+      ],
+      "not_ideal": [
+        "Busy families",
+        "Those disliking grooming"
+      ]
+    }
   },
   {
     "id": "american-shorthair",
     "name": "American Shorthair",
     "origin": "United States",
-    "size": {"category": "medium", "weight_kg": "4-6"},
-    "coat": {"type": "shorthair", "pattern": "various"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "4-6"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "various"
+    },
     "lifespan": "15-20 years",
-    "temperament": ["easygoing", "friendly", "adaptable", "playful"],
-    "ratings": {"affection": 4, "activity": 3, "grooming": 1, "vocality": 2, "independence": 4, "kid_friendly": 5, "dog_friendly": 5, "intelligence": 4},
+    "temperament": [
+      "easygoing",
+      "friendly",
+      "adaptable",
+      "playful"
+    ],
+    "ratings": {
+      "affection": 4,
+      "activity": 3,
+      "grooming": 1,
+      "vocality": 2,
+      "independence": 4,
+      "kid_friendly": 5,
+      "dog_friendly": 5,
+      "intelligence": 4
+    },
     "description": "American Shorthairs are the pedigreed version of domestic shorthairs - athletic, adaptable, and great family cats.",
-    "verdict": {"best_for": ["Families", "First-time cat owners", "Any household"], "not_ideal": ["Those wanting exotic looks"]}
+    "verdict": {
+      "best_for": [
+        "Families",
+        "First-time cat owners",
+        "Any household"
+      ],
+      "not_ideal": [
+        "Those wanting exotic looks"
+      ]
+    }
   },
   {
     "id": "tonkinese",
     "name": "Tonkinese",
     "origin": "Canada/United States",
-    "size": {"category": "medium", "weight_kg": "3-5"},
-    "coat": {"type": "shorthair", "pattern": "mink/colorpoint"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-5"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "mink/colorpoint"
+    },
     "lifespan": "15-18 years",
-    "temperament": ["social", "playful", "intelligent", "affectionate"],
-    "ratings": {"affection": 5, "activity": 4, "grooming": 1, "vocality": 4, "independence": 1, "kid_friendly": 5, "dog_friendly": 5, "intelligence": 5},
+    "temperament": [
+      "social",
+      "playful",
+      "intelligent",
+      "affectionate"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 4,
+      "grooming": 1,
+      "vocality": 4,
+      "independence": 1,
+      "kid_friendly": 5,
+      "dog_friendly": 5,
+      "intelligence": 5
+    },
     "description": "Tonkinese are a cross between Siamese and Burmese, combining the best of both - social, playful, and loving.",
-    "verdict": {"best_for": ["Families", "Those wanting a companion", "Multi-pet homes"], "not_ideal": ["Those away often", "Quiet seekers"]}
+    "verdict": {
+      "best_for": [
+        "Families",
+        "Those wanting a companion",
+        "Multi-pet homes"
+      ],
+      "not_ideal": [
+        "Those away often",
+        "Quiet seekers"
+      ]
+    }
   },
   {
     "id": "ragamuffin",
     "name": "Ragamuffin",
     "origin": "United States",
-    "size": {"category": "large", "weight_kg": "4-9"},
-    "coat": {"type": "semi-longhair", "pattern": "various"},
+    "size": {
+      "category": "large",
+      "weight_kg": "4-9"
+    },
+    "coat": {
+      "type": "semi-longhair",
+      "pattern": "various"
+    },
     "lifespan": "12-16 years",
-    "temperament": ["docile", "friendly", "affectionate", "calm"],
-    "ratings": {"affection": 5, "activity": 2, "grooming": 3, "vocality": 2, "independence": 2, "kid_friendly": 5, "dog_friendly": 5, "intelligence": 4},
+    "temperament": [
+      "docile",
+      "friendly",
+      "affectionate",
+      "calm"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 2,
+      "grooming": 3,
+      "vocality": 2,
+      "independence": 2,
+      "kid_friendly": 5,
+      "dog_friendly": 5,
+      "intelligence": 4
+    },
     "description": "Ragamuffins are similar to Ragdolls but come in more colors. They're extremely gentle, patient, and love being held.",
-    "verdict": {"best_for": ["Families with children", "First-time owners", "Those wanting cuddles"], "not_ideal": ["Those wanting an active cat"]}
+    "verdict": {
+      "best_for": [
+        "Families with children",
+        "First-time owners",
+        "Those wanting cuddles"
+      ],
+      "not_ideal": [
+        "Those wanting an active cat"
+      ]
+    }
   },
   {
     "id": "savannah",
     "name": "Savannah",
     "origin": "United States",
-    "size": {"category": "extra-large", "weight_kg": "5-11"},
-    "coat": {"type": "shorthair", "pattern": "spotted"},
+    "size": {
+      "category": "extra-large",
+      "weight_kg": "5-11"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "spotted"
+    },
     "lifespan": "12-20 years",
-    "temperament": ["active", "adventurous", "intelligent", "loyal"],
-    "ratings": {"affection": 4, "activity": 5, "grooming": 1, "vocality": 3, "independence": 3, "kid_friendly": 3, "dog_friendly": 4, "intelligence": 5},
+    "temperament": [
+      "active",
+      "adventurous",
+      "intelligent",
+      "loyal"
+    ],
+    "ratings": {
+      "affection": 4,
+      "activity": 5,
+      "grooming": 1,
+      "vocality": 3,
+      "independence": 3,
+      "kid_friendly": 3,
+      "dog_friendly": 4,
+      "intelligence": 5
+    },
     "description": "Savannahs are a hybrid breed (African Serval x domestic cat). They're tall, athletic, and have a wild appearance.",
-    "verdict": {"best_for": ["Experienced owners", "Large homes", "Active households"], "not_ideal": ["First-time owners", "Small apartments"]}
+    "verdict": {
+      "best_for": [
+        "Experienced owners",
+        "Large homes",
+        "Active households"
+      ],
+      "not_ideal": [
+        "First-time owners",
+        "Small apartments"
+      ]
+    }
   },
   {
     "id": "siberian",
     "name": "Siberian",
     "origin": "Russia",
-    "size": {"category": "large", "weight_kg": "4-9"},
-    "coat": {"type": "longhair", "pattern": "various"},
+    "size": {
+      "category": "large",
+      "weight_kg": "4-9"
+    },
+    "coat": {
+      "type": "longhair",
+      "pattern": "various"
+    },
     "lifespan": "12-15 years",
-    "temperament": ["affectionate", "playful", "intelligent", "adventurous"],
-    "ratings": {"affection": 5, "activity": 4, "grooming": 3, "vocality": 2, "independence": 3, "kid_friendly": 5, "dog_friendly": 5, "intelligence": 5},
+    "temperament": [
+      "affectionate",
+      "playful",
+      "intelligent",
+      "adventurous"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 4,
+      "grooming": 3,
+      "vocality": 2,
+      "independence": 3,
+      "kid_friendly": 5,
+      "dog_friendly": 5,
+      "intelligence": 5
+    },
     "description": "Siberians are Russia's native forest cat with a luxurious triple coat. They're known to produce less Fel d 1 allergen.",
-    "verdict": {"best_for": ["Allergy sufferers", "Families", "Cold climates"], "not_ideal": ["Hot climates", "Those disliking grooming"]}
+    "verdict": {
+      "best_for": [
+        "Allergy sufferers",
+        "Families",
+        "Cold climates"
+      ],
+      "not_ideal": [
+        "Hot climates",
+        "Those disliking grooming"
+      ]
+    }
   },
   {
     "id": "balinese",
     "name": "Balinese",
     "origin": "United States",
-    "size": {"category": "medium", "weight_kg": "3-5"},
-    "coat": {"type": "semi-longhair", "pattern": "colorpoint"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-5"
+    },
+    "coat": {
+      "type": "semi-longhair",
+      "pattern": "colorpoint"
+    },
     "lifespan": "12-20 years",
-    "temperament": ["vocal", "intelligent", "affectionate", "playful"],
-    "ratings": {"affection": 5, "activity": 4, "grooming": 2, "vocality": 5, "independence": 1, "kid_friendly": 4, "dog_friendly": 4, "intelligence": 5},
+    "temperament": [
+      "vocal",
+      "intelligent",
+      "affectionate",
+      "playful"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 4,
+      "grooming": 2,
+      "vocality": 5,
+      "independence": 1,
+      "kid_friendly": 4,
+      "dog_friendly": 4,
+      "intelligence": 5
+    },
     "description": "Balinese are essentially long-haired Siamese - same personality and colorpoints with a silky flowing coat.",
-    "verdict": {"best_for": ["Those who love Siamese", "Active households"], "not_ideal": ["Those wanting a quiet cat"]}
+    "verdict": {
+      "best_for": [
+        "Those who love Siamese",
+        "Active households"
+      ],
+      "not_ideal": [
+        "Those wanting a quiet cat"
+      ]
+    }
   },
   {
     "id": "turkish-angora",
     "name": "Turkish Angora",
     "origin": "Turkey",
-    "size": {"category": "medium", "weight_kg": "3-5"},
-    "coat": {"type": "semi-longhair", "pattern": "various"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-5"
+    },
+    "coat": {
+      "type": "semi-longhair",
+      "pattern": "various"
+    },
     "lifespan": "12-18 years",
-    "temperament": ["playful", "intelligent", "social", "elegant"],
-    "ratings": {"affection": 4, "activity": 5, "grooming": 2, "vocality": 3, "independence": 3, "kid_friendly": 4, "dog_friendly": 4, "intelligence": 5},
+    "temperament": [
+      "playful",
+      "intelligent",
+      "social",
+      "elegant"
+    ],
+    "ratings": {
+      "affection": 4,
+      "activity": 5,
+      "grooming": 2,
+      "vocality": 3,
+      "independence": 3,
+      "kid_friendly": 4,
+      "dog_friendly": 4,
+      "intelligence": 5
+    },
     "description": "Turkish Angoras are one of the ancient natural breeds, known for their elegant silky coat and graceful movements.",
-    "verdict": {"best_for": ["Active households", "Those appreciating elegance"], "not_ideal": ["Those wanting a lap cat"]}
+    "verdict": {
+      "best_for": [
+        "Active households",
+        "Those appreciating elegance"
+      ],
+      "not_ideal": [
+        "Those wanting a lap cat"
+      ]
+    }
   },
   {
     "id": "turkish-van",
     "name": "Turkish Van",
     "origin": "Turkey",
-    "size": {"category": "large", "weight_kg": "4-9"},
-    "coat": {"type": "semi-longhair", "pattern": "van pattern"},
+    "size": {
+      "category": "large",
+      "weight_kg": "4-9"
+    },
+    "coat": {
+      "type": "semi-longhair",
+      "pattern": "van pattern"
+    },
     "lifespan": "12-17 years",
-    "temperament": ["energetic", "playful", "intelligent", "independent"],
-    "ratings": {"affection": 3, "activity": 5, "grooming": 2, "vocality": 3, "independence": 4, "kid_friendly": 4, "dog_friendly": 3, "intelligence": 5},
+    "temperament": [
+      "energetic",
+      "playful",
+      "intelligent",
+      "independent"
+    ],
+    "ratings": {
+      "affection": 3,
+      "activity": 5,
+      "grooming": 2,
+      "vocality": 3,
+      "independence": 4,
+      "kid_friendly": 4,
+      "dog_friendly": 3,
+      "intelligence": 5
+    },
     "description": "Turkish Vans are known as 'swimming cats' for their love of water. They have a distinctive color pattern - white body with colored head/tail.",
-    "verdict": {"best_for": ["Active households", "Those with pools/water", "Experienced owners"], "not_ideal": ["Those wanting a cuddly cat"]}
+    "verdict": {
+      "best_for": [
+        "Active households",
+        "Those with pools/water",
+        "Experienced owners"
+      ],
+      "not_ideal": [
+        "Those wanting a cuddly cat"
+      ]
+    }
   },
   {
     "id": "somali",
     "name": "Somali",
     "origin": "United States",
-    "size": {"category": "medium", "weight_kg": "3-5"},
-    "coat": {"type": "semi-longhair", "pattern": "ticked tabby"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-5"
+    },
+    "coat": {
+      "type": "semi-longhair",
+      "pattern": "ticked tabby"
+    },
     "lifespan": "12-16 years",
-    "temperament": ["active", "playful", "intelligent", "curious"],
-    "ratings": {"affection": 4, "activity": 5, "grooming": 3, "vocality": 2, "independence": 3, "kid_friendly": 4, "dog_friendly": 4, "intelligence": 5},
+    "temperament": [
+      "active",
+      "playful",
+      "intelligent",
+      "curious"
+    ],
+    "ratings": {
+      "affection": 4,
+      "activity": 5,
+      "grooming": 3,
+      "vocality": 2,
+      "independence": 3,
+      "kid_friendly": 4,
+      "dog_friendly": 4,
+      "intelligence": 5
+    },
     "description": "Somalis are long-haired Abyssinians with the same active, curious personality and beautiful ticked coat.",
-    "verdict": {"best_for": ["Active households", "Families with older children"], "not_ideal": ["Those wanting a calm cat"]}
+    "verdict": {
+      "best_for": [
+        "Active households",
+        "Families with older children"
+      ],
+      "not_ideal": [
+        "Those wanting a calm cat"
+      ]
+    }
   },
   {
     "id": "chartreux",
     "name": "Chartreux",
     "origin": "France",
-    "size": {"category": "medium", "weight_kg": "3-7"},
-    "coat": {"type": "shorthair", "pattern": "solid blue"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-7"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "solid blue"
+    },
     "lifespan": "12-15 years",
-    "temperament": ["quiet", "gentle", "loyal", "observant"],
-    "ratings": {"affection": 4, "activity": 3, "grooming": 2, "vocality": 1, "independence": 4, "kid_friendly": 4, "dog_friendly": 4, "intelligence": 4},
+    "temperament": [
+      "quiet",
+      "gentle",
+      "loyal",
+      "observant"
+    ],
+    "ratings": {
+      "affection": 4,
+      "activity": 3,
+      "grooming": 2,
+      "vocality": 1,
+      "independence": 4,
+      "kid_friendly": 4,
+      "dog_friendly": 4,
+      "intelligence": 4
+    },
     "description": "Chartreux are France's native blue cat, known for their quiet nature and sweet 'smiling' expression.",
-    "verdict": {"best_for": ["Quiet households", "Working professionals", "Apartments"], "not_ideal": ["Those wanting a vocal cat"]}
+    "verdict": {
+      "best_for": [
+        "Quiet households",
+        "Working professionals",
+        "Apartments"
+      ],
+      "not_ideal": [
+        "Those wanting a vocal cat"
+      ]
+    }
   },
   {
     "id": "ocicat",
     "name": "Ocicat",
     "origin": "United States",
-    "size": {"category": "medium", "weight_kg": "3-7"},
-    "coat": {"type": "shorthair", "pattern": "spotted"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-7"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "spotted"
+    },
     "lifespan": "12-18 years",
-    "temperament": ["social", "playful", "confident", "dog-like"],
-    "ratings": {"affection": 5, "activity": 5, "grooming": 1, "vocality": 3, "independence": 2, "kid_friendly": 5, "dog_friendly": 5, "intelligence": 5},
+    "temperament": [
+      "social",
+      "playful",
+      "confident",
+      "dog-like"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 5,
+      "grooming": 1,
+      "vocality": 3,
+      "independence": 2,
+      "kid_friendly": 5,
+      "dog_friendly": 5,
+      "intelligence": 5
+    },
     "description": "Ocicats look wild but are completely domestic. They're dog-like in their devotion and can learn tricks.",
-    "verdict": {"best_for": ["Active families", "Those wanting dog-like cats", "Multi-pet homes"], "not_ideal": ["Those wanting a calm cat"]}
+    "verdict": {
+      "best_for": [
+        "Active families",
+        "Those wanting dog-like cats",
+        "Multi-pet homes"
+      ],
+      "not_ideal": [
+        "Those wanting a calm cat"
+      ]
+    }
   },
   {
     "id": "egyptian-mau",
     "name": "Egyptian Mau",
     "origin": "Egypt",
-    "size": {"category": "medium", "weight_kg": "3-5"},
-    "coat": {"type": "shorthair", "pattern": "spotted"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-5"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "spotted"
+    },
     "lifespan": "12-15 years",
-    "temperament": ["loyal", "playful", "active", "shy"],
-    "ratings": {"affection": 4, "activity": 5, "grooming": 1, "vocality": 2, "independence": 3, "kid_friendly": 3, "dog_friendly": 3, "intelligence": 4},
+    "temperament": [
+      "loyal",
+      "playful",
+      "active",
+      "shy"
+    ],
+    "ratings": {
+      "affection": 4,
+      "activity": 5,
+      "grooming": 1,
+      "vocality": 2,
+      "independence": 3,
+      "kid_friendly": 3,
+      "dog_friendly": 3,
+      "intelligence": 4
+    },
     "description": "Egyptian Maus are the fastest domestic cat breed and the only naturally spotted domestic cat. They're loyal but shy with strangers.",
-    "verdict": {"best_for": ["Quiet households", "Those appreciating beauty", "Single-pet homes"], "not_ideal": ["Busy households with visitors"]}
+    "verdict": {
+      "best_for": [
+        "Quiet households",
+        "Those appreciating beauty",
+        "Single-pet homes"
+      ],
+      "not_ideal": [
+        "Busy households with visitors"
+      ]
+    }
   },
   {
     "id": "singapura",
     "name": "Singapura",
     "origin": "Singapore",
-    "size": {"category": "small", "weight_kg": "2-3"},
-    "coat": {"type": "shorthair", "pattern": "ticked"},
+    "size": {
+      "category": "small",
+      "weight_kg": "2-3"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "ticked"
+    },
     "lifespan": "11-15 years",
-    "temperament": ["curious", "playful", "affectionate", "social"],
-    "ratings": {"affection": 5, "activity": 5, "grooming": 1, "vocality": 2, "independence": 2, "kid_friendly": 4, "dog_friendly": 4, "intelligence": 5},
+    "temperament": [
+      "curious",
+      "playful",
+      "affectionate",
+      "social"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 5,
+      "grooming": 1,
+      "vocality": 2,
+      "independence": 2,
+      "kid_friendly": 4,
+      "dog_friendly": 4,
+      "intelligence": 5
+    },
     "description": "Singapuras are the smallest cat breed but have huge personalities. They love being involved in everything.",
-    "verdict": {"best_for": ["Apartments", "Active households", "Those wanting small cats"], "not_ideal": ["Those wanting a calm cat"]}
+    "verdict": {
+      "best_for": [
+        "Apartments",
+        "Active households",
+        "Those wanting small cats"
+      ],
+      "not_ideal": [
+        "Those wanting a calm cat"
+      ]
+    }
   },
   {
     "id": "manx",
     "name": "Manx",
     "origin": "Isle of Man",
-    "size": {"category": "medium", "weight_kg": "4-6"},
-    "coat": {"type": "shorthair", "pattern": "various"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "4-6"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "various"
+    },
     "lifespan": "12-14 years",
-    "temperament": ["playful", "loyal", "gentle", "intelligent"],
-    "ratings": {"affection": 5, "activity": 4, "grooming": 2, "vocality": 2, "independence": 3, "kid_friendly": 5, "dog_friendly": 5, "intelligence": 4},
+    "temperament": [
+      "playful",
+      "loyal",
+      "gentle",
+      "intelligent"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 4,
+      "grooming": 2,
+      "vocality": 2,
+      "independence": 3,
+      "kid_friendly": 5,
+      "dog_friendly": 5,
+      "intelligence": 4
+    },
     "description": "Manx cats are known for their lack of tail (or short tail). They're playful, dog-like, and excellent hunters.",
-    "verdict": {"best_for": ["Families", "Those wanting unusual cats", "Rural homes"], "not_ideal": ["Those concerned about health issues"]}
+    "verdict": {
+      "best_for": [
+        "Families",
+        "Those wanting unusual cats",
+        "Rural homes"
+      ],
+      "not_ideal": [
+        "Those concerned about health issues"
+      ]
+    }
   },
   {
     "id": "japanese-bobtail",
     "name": "Japanese Bobtail",
     "origin": "Japan",
-    "size": {"category": "medium", "weight_kg": "3-5"},
-    "coat": {"type": "shorthair", "pattern": "various"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-5"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "various"
+    },
     "lifespan": "15-18 years",
-    "temperament": ["active", "intelligent", "social", "talkative"],
-    "ratings": {"affection": 5, "activity": 5, "grooming": 1, "vocality": 4, "independence": 2, "kid_friendly": 5, "dog_friendly": 5, "intelligence": 5},
+    "temperament": [
+      "active",
+      "intelligent",
+      "social",
+      "talkative"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 5,
+      "grooming": 1,
+      "vocality": 4,
+      "independence": 2,
+      "kid_friendly": 5,
+      "dog_friendly": 5,
+      "intelligence": 5
+    },
     "description": "Japanese Bobtails have a distinctive pom-pom tail. They're the 'lucky cat' breed featured in the maneki-neko figurine.",
-    "verdict": {"best_for": ["Families", "Multi-pet homes", "Those wanting talkative cats"], "not_ideal": ["Those wanting a quiet cat"]}
+    "verdict": {
+      "best_for": [
+        "Families",
+        "Multi-pet homes",
+        "Those wanting talkative cats"
+      ],
+      "not_ideal": [
+        "Those wanting a quiet cat"
+      ]
+    }
   },
   {
     "id": "american-curl",
     "name": "American Curl",
     "origin": "United States",
-    "size": {"category": "medium", "weight_kg": "3-5"},
-    "coat": {"type": "shorthair/longhair", "pattern": "various"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-5"
+    },
+    "coat": {
+      "type": "shorthair/longhair",
+      "pattern": "various"
+    },
     "lifespan": "12-16 years",
-    "temperament": ["affectionate", "playful", "curious", "gentle"],
-    "ratings": {"affection": 5, "activity": 4, "grooming": 2, "vocality": 2, "independence": 3, "kid_friendly": 5, "dog_friendly": 5, "intelligence": 4},
+    "temperament": [
+      "affectionate",
+      "playful",
+      "curious",
+      "gentle"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 4,
+      "grooming": 2,
+      "vocality": 2,
+      "independence": 3,
+      "kid_friendly": 5,
+      "dog_friendly": 5,
+      "intelligence": 4
+    },
     "description": "American Curls have unique backward-curling ears. They stay kitten-like throughout their lives and are very people-oriented.",
-    "verdict": {"best_for": ["Families", "First-time owners", "Multi-pet homes"], "not_ideal": ["Those disliking unusual features"]}
+    "verdict": {
+      "best_for": [
+        "Families",
+        "First-time owners",
+        "Multi-pet homes"
+      ],
+      "not_ideal": [
+        "Those disliking unusual features"
+      ]
+    }
   },
   {
     "id": "selkirk-rex",
     "name": "Selkirk Rex",
     "origin": "United States",
-    "size": {"category": "medium", "weight_kg": "4-7"},
-    "coat": {"type": "rex", "pattern": "various"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "4-7"
+    },
+    "coat": {
+      "type": "rex",
+      "pattern": "various"
+    },
     "lifespan": "14-15 years",
-    "temperament": ["patient", "loving", "playful", "easygoing"],
-    "ratings": {"affection": 5, "activity": 3, "grooming": 3, "vocality": 2, "independence": 3, "kid_friendly": 5, "dog_friendly": 5, "intelligence": 4},
+    "temperament": [
+      "patient",
+      "loving",
+      "playful",
+      "easygoing"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 3,
+      "grooming": 3,
+      "vocality": 2,
+      "independence": 3,
+      "kid_friendly": 5,
+      "dog_friendly": 5,
+      "intelligence": 4
+    },
     "description": "Selkirk Rex have a curly 'sheep-like' coat. They're the most relaxed of the Rex breeds with a patient, tolerant nature.",
-    "verdict": {"best_for": ["Families with children", "Multi-pet homes", "First-time owners"], "not_ideal": ["Those wanting low grooming"]}
+    "verdict": {
+      "best_for": [
+        "Families with children",
+        "Multi-pet homes",
+        "First-time owners"
+      ],
+      "not_ideal": [
+        "Those wanting low grooming"
+      ]
+    }
   },
   {
     "id": "laperm",
     "name": "LaPerm",
     "origin": "United States",
-    "size": {"category": "medium", "weight_kg": "3-5"},
-    "coat": {"type": "rex", "pattern": "various"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-5"
+    },
+    "coat": {
+      "type": "rex",
+      "pattern": "various"
+    },
     "lifespan": "12-15 years",
-    "temperament": ["affectionate", "gentle", "curious", "active"],
-    "ratings": {"affection": 5, "activity": 4, "grooming": 2, "vocality": 2, "independence": 3, "kid_friendly": 5, "dog_friendly": 4, "intelligence": 4},
+    "temperament": [
+      "affectionate",
+      "gentle",
+      "curious",
+      "active"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 4,
+      "grooming": 2,
+      "vocality": 2,
+      "independence": 3,
+      "kid_friendly": 5,
+      "dog_friendly": 4,
+      "intelligence": 4
+    },
     "description": "LaPerms have a unique curly coat that can range from wavy to ringlet curls. They're affectionate and love being close to people.",
-    "verdict": {"best_for": ["Families", "Those wanting unusual coats", "Lap cat seekers"], "not_ideal": ["Those wanting a very active cat"]}
+    "verdict": {
+      "best_for": [
+        "Families",
+        "Those wanting unusual coats",
+        "Lap cat seekers"
+      ],
+      "not_ideal": [
+        "Those wanting a very active cat"
+      ]
+    }
   },
   {
     "id": "korat",
     "name": "Korat",
     "origin": "Thailand",
-    "size": {"category": "small", "weight_kg": "3-4"},
-    "coat": {"type": "shorthair", "pattern": "solid blue"},
+    "size": {
+      "category": "small",
+      "weight_kg": "3-4"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "solid blue"
+    },
     "lifespan": "15-20 years",
-    "temperament": ["intelligent", "playful", "loyal", "opinionated"],
-    "ratings": {"affection": 5, "activity": 4, "grooming": 1, "vocality": 3, "independence": 2, "kid_friendly": 3, "dog_friendly": 3, "intelligence": 5},
+    "temperament": [
+      "intelligent",
+      "playful",
+      "loyal",
+      "opinionated"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 4,
+      "grooming": 1,
+      "vocality": 3,
+      "independence": 2,
+      "kid_friendly": 3,
+      "dog_friendly": 3,
+      "intelligence": 5
+    },
     "description": "Korats are one of the oldest stable cat breeds, considered good luck in Thailand. They form strong bonds with their chosen person.",
-    "verdict": {"best_for": ["Singles", "Couples", "Those wanting loyal cats"], "not_ideal": ["Busy households", "Families with young children"]}
+    "verdict": {
+      "best_for": [
+        "Singles",
+        "Couples",
+        "Those wanting loyal cats"
+      ],
+      "not_ideal": [
+        "Busy households",
+        "Families with young children"
+      ]
+    }
   },
   {
     "id": "bombay",
     "name": "Bombay",
     "origin": "United States",
-    "size": {"category": "medium", "weight_kg": "3-5"},
-    "coat": {"type": "shorthair", "pattern": "solid black"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-5"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "solid black"
+    },
     "lifespan": "12-18 years",
-    "temperament": ["affectionate", "playful", "social", "intelligent"],
-    "ratings": {"affection": 5, "activity": 4, "grooming": 1, "vocality": 3, "independence": 2, "kid_friendly": 5, "dog_friendly": 5, "intelligence": 5},
+    "temperament": [
+      "affectionate",
+      "playful",
+      "social",
+      "intelligent"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 4,
+      "grooming": 1,
+      "vocality": 3,
+      "independence": 2,
+      "kid_friendly": 5,
+      "dog_friendly": 5,
+      "intelligence": 5
+    },
     "description": "Bombays were bred to look like mini black panthers. They're incredibly affectionate and love being the center of attention.",
-    "verdict": {"best_for": ["Families", "Those wanting black cats", "Multi-pet homes"], "not_ideal": ["Those away often"]}
+    "verdict": {
+      "best_for": [
+        "Families",
+        "Those wanting black cats",
+        "Multi-pet homes"
+      ],
+      "not_ideal": [
+        "Those away often"
+      ]
+    }
   },
   {
     "id": "havana-brown",
     "name": "Havana Brown",
     "origin": "England",
-    "size": {"category": "medium", "weight_kg": "3-5"},
-    "coat": {"type": "shorthair", "pattern": "solid brown"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-5"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "solid brown"
+    },
     "lifespan": "12-15 years",
-    "temperament": ["affectionate", "intelligent", "playful", "curious"],
-    "ratings": {"affection": 5, "activity": 4, "grooming": 1, "vocality": 2, "independence": 2, "kid_friendly": 4, "dog_friendly": 4, "intelligence": 5},
+    "temperament": [
+      "affectionate",
+      "intelligent",
+      "playful",
+      "curious"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 4,
+      "grooming": 1,
+      "vocality": 2,
+      "independence": 2,
+      "kid_friendly": 4,
+      "dog_friendly": 4,
+      "intelligence": 5
+    },
     "description": "Havana Browns are rare cats with a distinctive mahogany brown coat and green eyes. They're charming and love human interaction.",
-    "verdict": {"best_for": ["Those wanting rare breeds", "Interactive households"], "not_ideal": ["Those away often"]}
+    "verdict": {
+      "best_for": [
+        "Those wanting rare breeds",
+        "Interactive households"
+      ],
+      "not_ideal": [
+        "Those away often"
+      ]
+    }
   },
   {
     "id": "burmilla",
     "name": "Burmilla",
     "origin": "United Kingdom",
-    "size": {"category": "medium", "weight_kg": "3-6"},
-    "coat": {"type": "shorthair", "pattern": "shaded/tipped"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-6"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "shaded/tipped"
+    },
     "lifespan": "10-15 years",
-    "temperament": ["gentle", "playful", "affectionate", "sociable"],
-    "ratings": {"affection": 5, "activity": 3, "grooming": 2, "vocality": 2, "independence": 3, "kid_friendly": 5, "dog_friendly": 4, "intelligence": 4},
+    "temperament": [
+      "gentle",
+      "playful",
+      "affectionate",
+      "sociable"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 3,
+      "grooming": 2,
+      "vocality": 2,
+      "independence": 3,
+      "kid_friendly": 5,
+      "dog_friendly": 4,
+      "intelligence": 4
+    },
     "description": "Burmillas are a cross between Burmese and Chinchilla Persian, combining the best of both - sweet nature and beautiful silver coat.",
-    "verdict": {"best_for": ["Families", "Multi-pet homes", "Those wanting beautiful cats"], "not_ideal": ["Those wanting very active cats"]}
+    "verdict": {
+      "best_for": [
+        "Families",
+        "Multi-pet homes",
+        "Those wanting beautiful cats"
+      ],
+      "not_ideal": [
+        "Those wanting very active cats"
+      ]
+    }
   },
   {
     "id": "toyger",
     "name": "Toyger",
     "origin": "United States",
-    "size": {"category": "medium", "weight_kg": "4-6"},
-    "coat": {"type": "shorthair", "pattern": "mackerel tabby"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "4-6"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "mackerel tabby"
+    },
     "lifespan": "12-15 years",
-    "temperament": ["intelligent", "friendly", "outgoing", "relaxed"],
-    "ratings": {"affection": 4, "activity": 3, "grooming": 1, "vocality": 2, "independence": 3, "kid_friendly": 5, "dog_friendly": 5, "intelligence": 5},
+    "temperament": [
+      "intelligent",
+      "friendly",
+      "outgoing",
+      "relaxed"
+    ],
+    "ratings": {
+      "affection": 4,
+      "activity": 3,
+      "grooming": 1,
+      "vocality": 2,
+      "independence": 3,
+      "kid_friendly": 5,
+      "dog_friendly": 5,
+      "intelligence": 5
+    },
     "description": "Toygers are bred to look like toy tigers with their bold striped pattern. Despite wild looks, they're friendly and laid-back.",
-    "verdict": {"best_for": ["Families", "Those wanting tiger-looks", "Any household"], "not_ideal": ["Budget-conscious owners (rare breed)"]}
+    "verdict": {
+      "best_for": [
+        "Families",
+        "Those wanting tiger-looks",
+        "Any household"
+      ],
+      "not_ideal": [
+        "Budget-conscious owners (rare breed)"
+      ]
+    }
   },
   {
     "id": "pixie-bob",
     "name": "Pixie-Bob",
     "origin": "United States",
-    "size": {"category": "large", "weight_kg": "4-8"},
-    "coat": {"type": "shorthair/longhair", "pattern": "spotted tabby"},
+    "size": {
+      "category": "large",
+      "weight_kg": "4-8"
+    },
+    "coat": {
+      "type": "shorthair/longhair",
+      "pattern": "spotted tabby"
+    },
     "lifespan": "13-16 years",
-    "temperament": ["loyal", "social", "intelligent", "dog-like"],
-    "ratings": {"affection": 5, "activity": 4, "grooming": 2, "vocality": 2, "independence": 3, "kid_friendly": 5, "dog_friendly": 5, "intelligence": 5},
+    "temperament": [
+      "loyal",
+      "social",
+      "intelligent",
+      "dog-like"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 4,
+      "grooming": 2,
+      "vocality": 2,
+      "independence": 3,
+      "kid_friendly": 5,
+      "dog_friendly": 5,
+      "intelligence": 5
+    },
     "description": "Pixie-Bobs look like bobcats but are fully domestic. They're known for their dog-like loyalty and can learn to walk on a leash.",
-    "verdict": {"best_for": ["Families", "Those wanting dog-like cats", "Active households"], "not_ideal": ["Small apartments"]}
+    "verdict": {
+      "best_for": [
+        "Families",
+        "Those wanting dog-like cats",
+        "Active households"
+      ],
+      "not_ideal": [
+        "Small apartments"
+      ]
+    }
   },
   {
     "id": "cymric",
     "name": "Cymric",
     "origin": "Canada/Isle of Man",
-    "size": {"category": "medium", "weight_kg": "4-6"},
-    "coat": {"type": "longhair", "pattern": "various"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "4-6"
+    },
+    "coat": {
+      "type": "longhair",
+      "pattern": "various"
+    },
     "lifespan": "8-14 years",
-    "temperament": ["gentle", "playful", "intelligent", "loyal"],
-    "ratings": {"affection": 5, "activity": 4, "grooming": 4, "vocality": 2, "independence": 3, "kid_friendly": 5, "dog_friendly": 5, "intelligence": 4},
+    "temperament": [
+      "gentle",
+      "playful",
+      "intelligent",
+      "loyal"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 4,
+      "grooming": 4,
+      "vocality": 2,
+      "independence": 3,
+      "kid_friendly": 5,
+      "dog_friendly": 5,
+      "intelligence": 4
+    },
     "description": "Cymrics are long-haired Manx cats, sharing the same tailless gene. They're gentle, playful, and bond strongly with their families.",
-    "verdict": {"best_for": ["Families", "Those wanting unusual cats"], "not_ideal": ["Those concerned about health issues"]}
+    "verdict": {
+      "best_for": [
+        "Families",
+        "Those wanting unusual cats"
+      ],
+      "not_ideal": [
+        "Those concerned about health issues"
+      ]
+    }
   },
   {
     "id": "american-bobtail",
     "name": "American Bobtail",
     "origin": "United States",
-    "size": {"category": "medium", "weight_kg": "3-7"},
-    "coat": {"type": "shorthair/longhair", "pattern": "various"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-7"
+    },
+    "coat": {
+      "type": "shorthair/longhair",
+      "pattern": "various"
+    },
     "lifespan": "13-18 years",
-    "temperament": ["intelligent", "friendly", "adaptable", "playful"],
-    "ratings": {"affection": 5, "activity": 4, "grooming": 2, "vocality": 2, "independence": 3, "kid_friendly": 5, "dog_friendly": 5, "intelligence": 5},
+    "temperament": [
+      "intelligent",
+      "friendly",
+      "adaptable",
+      "playful"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 4,
+      "grooming": 2,
+      "vocality": 2,
+      "independence": 3,
+      "kid_friendly": 5,
+      "dog_friendly": 5,
+      "intelligence": 5
+    },
     "description": "American Bobtails have a naturally short tail and wild appearance. They're known as 'golden retrievers of the cat world' for their friendly nature.",
-    "verdict": {"best_for": ["Families", "Therapy situations", "Travel (adaptable)"], "not_ideal": ["Those away often"]}
+    "verdict": {
+      "best_for": [
+        "Families",
+        "Therapy situations",
+        "Travel (adaptable)"
+      ],
+      "not_ideal": [
+        "Those away often"
+      ]
+    }
   },
   {
     "id": "nebelung",
     "name": "Nebelung",
     "origin": "United States",
-    "size": {"category": "medium", "weight_kg": "3-6"},
-    "coat": {"type": "longhair", "pattern": "solid blue"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-6"
+    },
+    "coat": {
+      "type": "longhair",
+      "pattern": "solid blue"
+    },
     "lifespan": "15-18 years",
-    "temperament": ["shy", "gentle", "loyal", "intelligent"],
-    "ratings": {"affection": 4, "activity": 3, "grooming": 3, "vocality": 1, "independence": 4, "kid_friendly": 3, "dog_friendly": 3, "intelligence": 4},
+    "temperament": [
+      "shy",
+      "gentle",
+      "loyal",
+      "intelligent"
+    ],
+    "ratings": {
+      "affection": 4,
+      "activity": 3,
+      "grooming": 3,
+      "vocality": 1,
+      "independence": 4,
+      "kid_friendly": 3,
+      "dog_friendly": 3,
+      "intelligence": 4
+    },
     "description": "Nebelungs are the long-haired version of Russian Blues with the same shy, gentle nature and stunning blue coat.",
-    "verdict": {"best_for": ["Quiet households", "Singles", "Seniors"], "not_ideal": ["Busy households with children"]}
+    "verdict": {
+      "best_for": [
+        "Quiet households",
+        "Singles",
+        "Seniors"
+      ],
+      "not_ideal": [
+        "Busy households with children"
+      ]
+    }
   },
   {
     "id": "snowshoe",
     "name": "Snowshoe",
     "origin": "United States",
-    "size": {"category": "medium", "weight_kg": "3-5"},
-    "coat": {"type": "shorthair", "pattern": "colorpoint with white"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-5"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "colorpoint with white"
+    },
     "lifespan": "14-20 years",
-    "temperament": ["affectionate", "social", "intelligent", "vocal"],
-    "ratings": {"affection": 5, "activity": 4, "grooming": 1, "vocality": 4, "independence": 1, "kid_friendly": 5, "dog_friendly": 5, "intelligence": 5},
+    "temperament": [
+      "affectionate",
+      "social",
+      "intelligent",
+      "vocal"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 4,
+      "grooming": 1,
+      "vocality": 4,
+      "independence": 1,
+      "kid_friendly": 5,
+      "dog_friendly": 5,
+      "intelligence": 5
+    },
     "description": "Snowshoes have Siamese coloring with white 'snowshoe' feet. They're social butterflies who hate being alone.",
-    "verdict": {"best_for": ["Families", "Multi-pet homes", "Those home often"], "not_ideal": ["Those away often"]}
+    "verdict": {
+      "best_for": [
+        "Families",
+        "Multi-pet homes",
+        "Those home often"
+      ],
+      "not_ideal": [
+        "Those away often"
+      ]
+    }
   },
   {
     "id": "chausie",
     "name": "Chausie",
     "origin": "United States",
-    "size": {"category": "large", "weight_kg": "4-10"},
-    "coat": {"type": "shorthair", "pattern": "ticked/solid"},
+    "size": {
+      "category": "large",
+      "weight_kg": "4-10"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "ticked/solid"
+    },
     "lifespan": "12-14 years",
-    "temperament": ["athletic", "intelligent", "loyal", "active"],
-    "ratings": {"affection": 4, "activity": 5, "grooming": 1, "vocality": 2, "independence": 3, "kid_friendly": 3, "dog_friendly": 4, "intelligence": 5},
+    "temperament": [
+      "athletic",
+      "intelligent",
+      "loyal",
+      "active"
+    ],
+    "ratings": {
+      "affection": 4,
+      "activity": 5,
+      "grooming": 1,
+      "vocality": 2,
+      "independence": 3,
+      "kid_friendly": 3,
+      "dog_friendly": 4,
+      "intelligence": 5
+    },
     "description": "Chausies are a hybrid breed (Jungle Cat x domestic). They're tall, athletic, and need lots of space and activity.",
-    "verdict": {"best_for": ["Experienced owners", "Large homes", "Active households"], "not_ideal": ["First-time owners", "Small apartments"]}
+    "verdict": {
+      "best_for": [
+        "Experienced owners",
+        "Large homes",
+        "Active households"
+      ],
+      "not_ideal": [
+        "First-time owners",
+        "Small apartments"
+      ]
+    }
   },
   {
     "id": "sokoke",
     "name": "Sokoke",
     "origin": "Kenya",
-    "size": {"category": "medium", "weight_kg": "3-5"},
-    "coat": {"type": "shorthair", "pattern": "tabby"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-5"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "tabby"
+    },
     "lifespan": "15-20 years",
-    "temperament": ["active", "intelligent", "social", "vocal"],
-    "ratings": {"affection": 4, "activity": 5, "grooming": 1, "vocality": 4, "independence": 2, "kid_friendly": 4, "dog_friendly": 4, "intelligence": 5},
+    "temperament": [
+      "active",
+      "intelligent",
+      "social",
+      "vocal"
+    ],
+    "ratings": {
+      "affection": 4,
+      "activity": 5,
+      "grooming": 1,
+      "vocality": 4,
+      "independence": 2,
+      "kid_friendly": 4,
+      "dog_friendly": 4,
+      "intelligence": 5
+    },
     "description": "Sokokes are a natural breed from Kenya with a distinctive modified tabby pattern. They're athletic and bond strongly with families.",
-    "verdict": {"best_for": ["Active families", "Those wanting rare breeds"], "not_ideal": ["Those wanting calm cats"]}
+    "verdict": {
+      "best_for": [
+        "Active families",
+        "Those wanting rare breeds"
+      ],
+      "not_ideal": [
+        "Those wanting calm cats"
+      ]
+    }
   },
   {
     "id": "australian-mist",
     "name": "Australian Mist",
     "origin": "Australia",
-    "size": {"category": "medium", "weight_kg": "4-6"},
-    "coat": {"type": "shorthair", "pattern": "spotted/marbled"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "4-6"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "spotted/marbled"
+    },
     "lifespan": "15-18 years",
-    "temperament": ["gentle", "tolerant", "affectionate", "playful"],
-    "ratings": {"affection": 5, "activity": 3, "grooming": 1, "vocality": 2, "independence": 3, "kid_friendly": 5, "dog_friendly": 5, "intelligence": 4},
+    "temperament": [
+      "gentle",
+      "tolerant",
+      "affectionate",
+      "playful"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 3,
+      "grooming": 1,
+      "vocality": 2,
+      "independence": 3,
+      "kid_friendly": 5,
+      "dog_friendly": 5,
+      "intelligence": 4
+    },
     "description": "Australian Mists are Australia's first pedigreed breed, developed to be the perfect indoor companion - tolerant, gentle, and low-maintenance.",
-    "verdict": {"best_for": ["Families with children", "Elderly owners", "Apartments"], "not_ideal": ["Those wanting very active cats"]}
+    "verdict": {
+      "best_for": [
+        "Families with children",
+        "Elderly owners",
+        "Apartments"
+      ],
+      "not_ideal": [
+        "Those wanting very active cats"
+      ]
+    }
   },
   {
     "id": "peterbald",
     "name": "Peterbald",
     "origin": "Russia",
-    "size": {"category": "medium", "weight_kg": "3-5"},
-    "coat": {"type": "hairless/shorthair", "pattern": "various"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-5"
+    },
+    "coat": {
+      "type": "hairless/shorthair",
+      "pattern": "various"
+    },
     "lifespan": "12-15 years",
-    "temperament": ["affectionate", "intelligent", "energetic", "social"],
-    "ratings": {"affection": 5, "activity": 5, "grooming": 2, "vocality": 4, "independence": 1, "kid_friendly": 4, "dog_friendly": 5, "intelligence": 5},
+    "temperament": [
+      "affectionate",
+      "intelligent",
+      "energetic",
+      "social"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 5,
+      "grooming": 2,
+      "vocality": 4,
+      "independence": 1,
+      "kid_friendly": 4,
+      "dog_friendly": 5,
+      "intelligence": 5
+    },
     "description": "Peterbalds can range from bald to brush-coated. They're elegant, dog-like in devotion, and love being warm.",
-    "verdict": {"best_for": ["Those wanting hairless cats", "Active households"], "not_ideal": ["Those away often", "Cold homes"]}
+    "verdict": {
+      "best_for": [
+        "Those wanting hairless cats",
+        "Active households"
+      ],
+      "not_ideal": [
+        "Those away often",
+        "Cold homes"
+      ]
+    }
   },
   {
     "id": "donskoy",
     "name": "Donskoy",
     "origin": "Russia",
-    "size": {"category": "medium", "weight_kg": "3-7"},
-    "coat": {"type": "hairless", "pattern": "various"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-7"
+    },
+    "coat": {
+      "type": "hairless",
+      "pattern": "various"
+    },
     "lifespan": "12-15 years",
-    "temperament": ["affectionate", "intelligent", "social", "friendly"],
-    "ratings": {"affection": 5, "activity": 4, "grooming": 3, "vocality": 3, "independence": 1, "kid_friendly": 5, "dog_friendly": 5, "intelligence": 5},
+    "temperament": [
+      "affectionate",
+      "intelligent",
+      "social",
+      "friendly"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 4,
+      "grooming": 3,
+      "vocality": 3,
+      "independence": 1,
+      "kid_friendly": 5,
+      "dog_friendly": 5,
+      "intelligence": 5
+    },
     "description": "Donskoys are Russian hairless cats with a different gene than the Sphynx. They're extremely social and can even have 'winter coats'.",
-    "verdict": {"best_for": ["Those wanting hairless cats", "Families", "Multi-pet homes"], "not_ideal": ["Cold environments"]}
+    "verdict": {
+      "best_for": [
+        "Those wanting hairless cats",
+        "Families",
+        "Multi-pet homes"
+      ],
+      "not_ideal": [
+        "Cold environments"
+      ]
+    }
   },
   {
     "id": "kurilian-bobtail",
     "name": "Kurilian Bobtail",
     "origin": "Russia/Japan",
-    "size": {"category": "medium", "weight_kg": "3-7"},
-    "coat": {"type": "shorthair/longhair", "pattern": "various"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-7"
+    },
+    "coat": {
+      "type": "shorthair/longhair",
+      "pattern": "various"
+    },
     "lifespan": "15-20 years",
-    "temperament": ["gentle", "intelligent", "independent", "playful"],
-    "ratings": {"affection": 4, "activity": 4, "grooming": 2, "vocality": 2, "independence": 4, "kid_friendly": 5, "dog_friendly": 4, "intelligence": 5},
+    "temperament": [
+      "gentle",
+      "intelligent",
+      "independent",
+      "playful"
+    ],
+    "ratings": {
+      "affection": 4,
+      "activity": 4,
+      "grooming": 2,
+      "vocality": 2,
+      "independence": 4,
+      "kid_friendly": 5,
+      "dog_friendly": 4,
+      "intelligence": 5
+    },
     "description": "Kurilian Bobtails come from the Kuril Islands. They're excellent fishers with a pom-pom tail and gentle, trusting nature.",
-    "verdict": {"best_for": ["Families", "Those wanting unusual breeds", "Rural homes"], "not_ideal": ["Small apartments"]}
+    "verdict": {
+      "best_for": [
+        "Families",
+        "Those wanting unusual breeds",
+        "Rural homes"
+      ],
+      "not_ideal": [
+        "Small apartments"
+      ]
+    }
   },
   {
     "id": "american-wirehair",
     "name": "American Wirehair",
     "origin": "United States",
-    "size": {"category": "medium", "weight_kg": "3-6"},
-    "coat": {"type": "wirehair", "pattern": "various"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-6"
+    },
+    "coat": {
+      "type": "wirehair",
+      "pattern": "various"
+    },
     "lifespan": "14-18 years",
-    "temperament": ["easygoing", "affectionate", "playful", "quiet"],
-    "ratings": {"affection": 4, "activity": 3, "grooming": 1, "vocality": 1, "independence": 4, "kid_friendly": 5, "dog_friendly": 5, "intelligence": 4},
+    "temperament": [
+      "easygoing",
+      "affectionate",
+      "playful",
+      "quiet"
+    ],
+    "ratings": {
+      "affection": 4,
+      "activity": 3,
+      "grooming": 1,
+      "vocality": 1,
+      "independence": 4,
+      "kid_friendly": 5,
+      "dog_friendly": 5,
+      "intelligence": 4
+    },
     "description": "American Wirehairs have a unique springy, crimped coat. They're adaptable, quiet, and make excellent companions.",
-    "verdict": {"best_for": ["Any household", "First-time owners", "Apartments"], "not_ideal": ["Those wanting exotic looks"]}
+    "verdict": {
+      "best_for": [
+        "Any household",
+        "First-time owners",
+        "Apartments"
+      ],
+      "not_ideal": [
+        "Those wanting exotic looks"
+      ]
+    }
   },
   {
     "id": "european-shorthair",
     "name": "European Shorthair",
     "origin": "Europe",
-    "size": {"category": "medium", "weight_kg": "4-6"},
-    "coat": {"type": "shorthair", "pattern": "various"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "4-6"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "various"
+    },
     "lifespan": "15-20 years",
-    "temperament": ["adaptable", "intelligent", "friendly", "independent"],
-    "ratings": {"affection": 4, "activity": 3, "grooming": 1, "vocality": 2, "independence": 4, "kid_friendly": 4, "dog_friendly": 4, "intelligence": 4},
+    "temperament": [
+      "adaptable",
+      "intelligent",
+      "friendly",
+      "independent"
+    ],
+    "ratings": {
+      "affection": 4,
+      "activity": 3,
+      "grooming": 1,
+      "vocality": 2,
+      "independence": 4,
+      "kid_friendly": 4,
+      "dog_friendly": 4,
+      "intelligence": 4
+    },
     "description": "European Shorthairs are the pedigreed version of European domestic cats - hardy, healthy, and versatile.",
-    "verdict": {"best_for": ["Any household", "Those wanting healthy breeds"], "not_ideal": ["Those wanting exotic breeds"]}
+    "verdict": {
+      "best_for": [
+        "Any household",
+        "Those wanting healthy breeds"
+      ],
+      "not_ideal": [
+        "Those wanting exotic breeds"
+      ]
+    }
   },
   {
     "id": "brazilian-shorthair",
     "name": "Brazilian Shorthair",
     "origin": "Brazil",
-    "size": {"category": "medium", "weight_kg": "4-6"},
-    "coat": {"type": "shorthair", "pattern": "various"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "4-6"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "various"
+    },
     "lifespan": "14-20 years",
-    "temperament": ["affectionate", "playful", "intelligent", "social"],
-    "ratings": {"affection": 5, "activity": 4, "grooming": 1, "vocality": 3, "independence": 3, "kid_friendly": 5, "dog_friendly": 4, "intelligence": 4},
+    "temperament": [
+      "affectionate",
+      "playful",
+      "intelligent",
+      "social"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 4,
+      "grooming": 1,
+      "vocality": 3,
+      "independence": 3,
+      "kid_friendly": 5,
+      "dog_friendly": 4,
+      "intelligence": 4
+    },
     "description": "Brazilian Shorthairs are Brazil's first pedigreed breed, developed from street cats of Brazil. They're friendly and adaptable.",
-    "verdict": {"best_for": ["Families", "Multi-pet homes"], "not_ideal": ["Those wanting rare/exotic breeds"]}
+    "verdict": {
+      "best_for": [
+        "Families",
+        "Multi-pet homes"
+      ],
+      "not_ideal": [
+        "Those wanting rare/exotic breeds"
+      ]
+    }
   },
   {
     "id": "khao-manee",
     "name": "Khao Manee",
     "origin": "Thailand",
-    "size": {"category": "medium", "weight_kg": "3-5"},
-    "coat": {"type": "shorthair", "pattern": "solid white"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-5"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "solid white"
+    },
     "lifespan": "10-12 years",
-    "temperament": ["intelligent", "active", "curious", "social"],
-    "ratings": {"affection": 5, "activity": 5, "grooming": 1, "vocality": 4, "independence": 2, "kid_friendly": 4, "dog_friendly": 4, "intelligence": 5},
+    "temperament": [
+      "intelligent",
+      "active",
+      "curious",
+      "social"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 5,
+      "grooming": 1,
+      "vocality": 4,
+      "independence": 2,
+      "kid_friendly": 4,
+      "dog_friendly": 4,
+      "intelligence": 5
+    },
     "description": "Khao Manees are ancient Thai cats, known as 'White Gem'. Many have odd-colored eyes (one blue, one gold).",
-    "verdict": {"best_for": ["Those wanting rare breeds", "Active households"], "not_ideal": ["Budget-conscious (very rare)"]}
+    "verdict": {
+      "best_for": [
+        "Those wanting rare breeds",
+        "Active households"
+      ],
+      "not_ideal": [
+        "Budget-conscious (very rare)"
+      ]
+    }
   },
   {
     "id": "lykoi",
     "name": "Lykoi",
     "origin": "United States",
-    "size": {"category": "medium", "weight_kg": "3-5"},
-    "coat": {"type": "shorthair (partial)", "pattern": "roan"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-5"
+    },
+    "coat": {
+      "type": "shorthair (partial)",
+      "pattern": "roan"
+    },
     "lifespan": "12-15 years",
-    "temperament": ["intelligent", "friendly", "playful", "dog-like"],
-    "ratings": {"affection": 4, "activity": 4, "grooming": 1, "vocality": 2, "independence": 3, "kid_friendly": 4, "dog_friendly": 5, "intelligence": 5},
+    "temperament": [
+      "intelligent",
+      "friendly",
+      "playful",
+      "dog-like"
+    ],
+    "ratings": {
+      "affection": 4,
+      "activity": 4,
+      "grooming": 1,
+      "vocality": 2,
+      "independence": 3,
+      "kid_friendly": 4,
+      "dog_friendly": 5,
+      "intelligence": 5
+    },
     "description": "Lykoi, or 'Werewolf Cat', has a unique partially hairless coat. Despite spooky looks, they're friendly and dog-like.",
-    "verdict": {"best_for": ["Those wanting unique looks", "Active households"], "not_ideal": ["Those wanting fluffy cats"]}
+    "verdict": {
+      "best_for": [
+        "Those wanting unique looks",
+        "Active households"
+      ],
+      "not_ideal": [
+        "Those wanting fluffy cats"
+      ]
+    }
   },
   {
     "id": "munchkin",
     "name": "Munchkin",
     "origin": "United States",
-    "size": {"category": "small", "weight_kg": "2-4"},
-    "coat": {"type": "shorthair/longhair", "pattern": "various"},
+    "size": {
+      "category": "small",
+      "weight_kg": "2-4"
+    },
+    "coat": {
+      "type": "shorthair/longhair",
+      "pattern": "various"
+    },
     "lifespan": "12-15 years",
-    "temperament": ["playful", "social", "curious", "confident"],
-    "ratings": {"affection": 5, "activity": 4, "grooming": 2, "vocality": 2, "independence": 2, "kid_friendly": 5, "dog_friendly": 5, "intelligence": 4},
+    "temperament": [
+      "playful",
+      "social",
+      "curious",
+      "confident"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 4,
+      "grooming": 2,
+      "vocality": 2,
+      "independence": 2,
+      "kid_friendly": 5,
+      "dog_friendly": 5,
+      "intelligence": 4
+    },
     "description": "Munchkins have naturally short legs but are just as active as other cats. They're playful and love to collect shiny things.",
-    "verdict": {"best_for": ["Families", "Apartments", "Those wanting unique cats"], "not_ideal": ["Those concerned about genetic issues"]}
+    "verdict": {
+      "best_for": [
+        "Families",
+        "Apartments",
+        "Those wanting unique cats"
+      ],
+      "not_ideal": [
+        "Those concerned about genetic issues"
+      ]
+    }
   },
   {
     "id": "highlander",
     "name": "Highlander",
     "origin": "United States",
-    "size": {"category": "large", "weight_kg": "5-9"},
-    "coat": {"type": "shorthair/longhair", "pattern": "various"},
+    "size": {
+      "category": "large",
+      "weight_kg": "5-9"
+    },
+    "coat": {
+      "type": "shorthair/longhair",
+      "pattern": "various"
+    },
     "lifespan": "10-15 years",
-    "temperament": ["playful", "confident", "social", "energetic"],
-    "ratings": {"affection": 5, "activity": 5, "grooming": 2, "vocality": 3, "independence": 3, "kid_friendly": 5, "dog_friendly": 5, "intelligence": 5},
+    "temperament": [
+      "playful",
+      "confident",
+      "social",
+      "energetic"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 5,
+      "grooming": 2,
+      "vocality": 3,
+      "independence": 3,
+      "kid_friendly": 5,
+      "dog_friendly": 5,
+      "intelligence": 5
+    },
     "description": "Highlanders have curled ears and often a bobbed tail. They're confident, clownish, and love being the center of attention.",
-    "verdict": {"best_for": ["Families", "Active households", "Those wanting entertainment"], "not_ideal": ["Small apartments"]}
+    "verdict": {
+      "best_for": [
+        "Families",
+        "Active households",
+        "Those wanting entertainment"
+      ],
+      "not_ideal": [
+        "Small apartments"
+      ]
+    }
   },
   {
     "id": "serengeti",
     "name": "Serengeti",
     "origin": "United States",
-    "size": {"category": "medium", "weight_kg": "4-7"},
-    "coat": {"type": "shorthair", "pattern": "spotted"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "4-7"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "spotted"
+    },
     "lifespan": "10-15 years",
-    "temperament": ["active", "confident", "friendly", "vocal"],
-    "ratings": {"affection": 4, "activity": 5, "grooming": 1, "vocality": 4, "independence": 3, "kid_friendly": 4, "dog_friendly": 4, "intelligence": 5},
+    "temperament": [
+      "active",
+      "confident",
+      "friendly",
+      "vocal"
+    ],
+    "ratings": {
+      "affection": 4,
+      "activity": 5,
+      "grooming": 1,
+      "vocality": 4,
+      "independence": 3,
+      "kid_friendly": 4,
+      "dog_friendly": 4,
+      "intelligence": 5
+    },
     "description": "Serengetis were bred to look like wild Servals but are fully domestic. They're tall, spotted, and very active.",
-    "verdict": {"best_for": ["Active households", "Those wanting wild looks"], "not_ideal": ["Small apartments", "Quiet households"]}
+    "verdict": {
+      "best_for": [
+        "Active households",
+        "Those wanting wild looks"
+      ],
+      "not_ideal": [
+        "Small apartments",
+        "Quiet households"
+      ]
+    }
   },
   {
     "id": "thai",
     "name": "Thai",
     "origin": "Thailand",
-    "size": {"category": "medium", "weight_kg": "3-5"},
-    "coat": {"type": "shorthair", "pattern": "colorpoint"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-5"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "colorpoint"
+    },
     "lifespan": "12-16 years",
-    "temperament": ["affectionate", "intelligent", "vocal", "social"],
-    "ratings": {"affection": 5, "activity": 4, "grooming": 1, "vocality": 5, "independence": 1, "kid_friendly": 4, "dog_friendly": 4, "intelligence": 5},
+    "temperament": [
+      "affectionate",
+      "intelligent",
+      "vocal",
+      "social"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 4,
+      "grooming": 1,
+      "vocality": 5,
+      "independence": 1,
+      "kid_friendly": 4,
+      "dog_friendly": 4,
+      "intelligence": 5
+    },
     "description": "Thai cats are the traditional, old-style Siamese with a less extreme body type. They're social, vocal, and loving.",
-    "verdict": {"best_for": ["Those who love Siamese", "Active households"], "not_ideal": ["Quiet households"]}
+    "verdict": {
+      "best_for": [
+        "Those who love Siamese",
+        "Active households"
+      ],
+      "not_ideal": [
+        "Quiet households"
+      ]
+    }
   },
   {
     "id": "chantilly-tiffany",
     "name": "Chantilly-Tiffany",
     "origin": "United States",
-    "size": {"category": "medium", "weight_kg": "3-5"},
-    "coat": {"type": "semi-longhair", "pattern": "solid/tabby"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-5"
+    },
+    "coat": {
+      "type": "semi-longhair",
+      "pattern": "solid/tabby"
+    },
     "lifespan": "14-16 years",
-    "temperament": ["gentle", "devoted", "moderate", "affectionate"],
-    "ratings": {"affection": 5, "activity": 3, "grooming": 3, "vocality": 2, "independence": 2, "kid_friendly": 4, "dog_friendly": 4, "intelligence": 4},
+    "temperament": [
+      "gentle",
+      "devoted",
+      "moderate",
+      "affectionate"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 3,
+      "grooming": 3,
+      "vocality": 2,
+      "independence": 2,
+      "kid_friendly": 4,
+      "dog_friendly": 4,
+      "intelligence": 4
+    },
     "description": "Chantilly-Tiffanies have a gorgeous silky coat and devoted personality. They're moderate in energy and very loyal.",
-    "verdict": {"best_for": ["Families", "Those wanting loyal cats"], "not_ideal": ["Those disliking grooming"]}
+    "verdict": {
+      "best_for": [
+        "Families",
+        "Those wanting loyal cats"
+      ],
+      "not_ideal": [
+        "Those disliking grooming"
+      ]
+    }
   },
   {
     "id": "york-chocolate",
     "name": "York Chocolate",
     "origin": "United States",
-    "size": {"category": "medium", "weight_kg": "4-7"},
-    "coat": {"type": "longhair", "pattern": "solid chocolate/lavender"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "4-7"
+    },
+    "coat": {
+      "type": "longhair",
+      "pattern": "solid chocolate/lavender"
+    },
     "lifespan": "13-15 years",
-    "temperament": ["friendly", "curious", "energetic", "affectionate"],
-    "ratings": {"affection": 5, "activity": 4, "grooming": 3, "vocality": 2, "independence": 3, "kid_friendly": 5, "dog_friendly": 4, "intelligence": 4},
+    "temperament": [
+      "friendly",
+      "curious",
+      "energetic",
+      "affectionate"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 4,
+      "grooming": 3,
+      "vocality": 2,
+      "independence": 3,
+      "kid_friendly": 5,
+      "dog_friendly": 4,
+      "intelligence": 4
+    },
     "description": "York Chocolates are a rare American breed with rich chocolate or lavender colored coats. They're friendly farm-cat types.",
-    "verdict": {"best_for": ["Families", "Farms", "Those wanting rare breeds"], "not_ideal": ["Those wanting low grooming"]}
+    "verdict": {
+      "best_for": [
+        "Families",
+        "Farms",
+        "Those wanting rare breeds"
+      ],
+      "not_ideal": [
+        "Those wanting low grooming"
+      ]
+    }
   },
   {
     "id": "colorpoint-shorthair",
     "name": "Colorpoint Shorthair",
     "origin": "United States/UK",
-    "size": {"category": "medium", "weight_kg": "3-5"},
-    "coat": {"type": "shorthair", "pattern": "colorpoint"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-5"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "colorpoint"
+    },
     "lifespan": "12-16 years",
-    "temperament": ["vocal", "affectionate", "intelligent", "social"],
-    "ratings": {"affection": 5, "activity": 5, "grooming": 1, "vocality": 5, "independence": 1, "kid_friendly": 4, "dog_friendly": 4, "intelligence": 5},
+    "temperament": [
+      "vocal",
+      "affectionate",
+      "intelligent",
+      "social"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 5,
+      "grooming": 1,
+      "vocality": 5,
+      "independence": 1,
+      "kid_friendly": 4,
+      "dog_friendly": 4,
+      "intelligence": 5
+    },
     "description": "Colorpoint Shorthairs are essentially Siamese in non-traditional colors (red, cream, tortie, lynx points).",
-    "verdict": {"best_for": ["Those who love Siamese", "Active households"], "not_ideal": ["Quiet households"]}
+    "verdict": {
+      "best_for": [
+        "Those who love Siamese",
+        "Active households"
+      ],
+      "not_ideal": [
+        "Quiet households"
+      ]
+    }
   },
   {
     "id": "javanese",
     "name": "Javanese",
     "origin": "United States",
-    "size": {"category": "medium", "weight_kg": "3-5"},
-    "coat": {"type": "semi-longhair", "pattern": "colorpoint"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-5"
+    },
+    "coat": {
+      "type": "semi-longhair",
+      "pattern": "colorpoint"
+    },
     "lifespan": "10-15 years",
-    "temperament": ["vocal", "intelligent", "athletic", "devoted"],
-    "ratings": {"affection": 5, "activity": 5, "grooming": 2, "vocality": 5, "independence": 1, "kid_friendly": 4, "dog_friendly": 4, "intelligence": 5},
+    "temperament": [
+      "vocal",
+      "intelligent",
+      "athletic",
+      "devoted"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 5,
+      "grooming": 2,
+      "vocality": 5,
+      "independence": 1,
+      "kid_friendly": 4,
+      "dog_friendly": 4,
+      "intelligence": 5
+    },
     "description": "Javanese are long-haired Colorpoint Shorthairs - same Siamese personality with a silky coat in various point colors.",
-    "verdict": {"best_for": ["Active households", "Those wanting vocal cats"], "not_ideal": ["Quiet households"]}
+    "verdict": {
+      "best_for": [
+        "Active households",
+        "Those wanting vocal cats"
+      ],
+      "not_ideal": [
+        "Quiet households"
+      ]
+    }
   },
   {
     "id": "oriental-longhair",
     "name": "Oriental Longhair",
     "origin": "United Kingdom",
-    "size": {"category": "medium", "weight_kg": "3-5"},
-    "coat": {"type": "semi-longhair", "pattern": "various"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-5"
+    },
+    "coat": {
+      "type": "semi-longhair",
+      "pattern": "various"
+    },
     "lifespan": "12-15 years",
-    "temperament": ["vocal", "social", "intelligent", "playful"],
-    "ratings": {"affection": 5, "activity": 5, "grooming": 2, "vocality": 5, "independence": 1, "kid_friendly": 4, "dog_friendly": 4, "intelligence": 5},
+    "temperament": [
+      "vocal",
+      "social",
+      "intelligent",
+      "playful"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 5,
+      "grooming": 2,
+      "vocality": 5,
+      "independence": 1,
+      "kid_friendly": 4,
+      "dog_friendly": 4,
+      "intelligence": 5
+    },
     "description": "Oriental Longhairs are the long-haired version of Oriental Shorthairs - elegant, vocal, and extremely social.",
-    "verdict": {"best_for": ["Active households", "Those wanting talkative cats"], "not_ideal": ["Quiet households"]}
+    "verdict": {
+      "best_for": [
+        "Active households",
+        "Those wanting talkative cats"
+      ],
+      "not_ideal": [
+        "Quiet households"
+      ]
+    }
   },
   {
     "id": "british-longhair",
     "name": "British Longhair",
     "origin": "United Kingdom",
-    "size": {"category": "medium", "weight_kg": "4-8"},
-    "coat": {"type": "longhair", "pattern": "various"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "4-8"
+    },
+    "coat": {
+      "type": "longhair",
+      "pattern": "various"
+    },
     "lifespan": "12-15 years",
-    "temperament": ["calm", "easygoing", "affectionate", "independent"],
-    "ratings": {"affection": 4, "activity": 2, "grooming": 4, "vocality": 1, "independence": 4, "kid_friendly": 4, "dog_friendly": 4, "intelligence": 4},
+    "temperament": [
+      "calm",
+      "easygoing",
+      "affectionate",
+      "independent"
+    ],
+    "ratings": {
+      "affection": 4,
+      "activity": 2,
+      "grooming": 4,
+      "vocality": 1,
+      "independence": 4,
+      "kid_friendly": 4,
+      "dog_friendly": 4,
+      "intelligence": 4
+    },
     "description": "British Longhairs are the long-haired version of British Shorthairs - same calm nature with a luxurious fluffy coat.",
-    "verdict": {"best_for": ["Quiet households", "Working professionals"], "not_ideal": ["Those disliking grooming"]}
+    "verdict": {
+      "best_for": [
+        "Quiet households",
+        "Working professionals"
+      ],
+      "not_ideal": [
+        "Those disliking grooming"
+      ]
+    }
   },
   {
     "id": "asian",
     "name": "Asian",
     "origin": "United Kingdom",
-    "size": {"category": "medium", "weight_kg": "3-6"},
-    "coat": {"type": "shorthair", "pattern": "various"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-6"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "various"
+    },
     "lifespan": "12-18 years",
-    "temperament": ["curious", "intelligent", "affectionate", "playful"],
-    "ratings": {"affection": 5, "activity": 4, "grooming": 1, "vocality": 3, "independence": 2, "kid_friendly": 5, "dog_friendly": 4, "intelligence": 5},
+    "temperament": [
+      "curious",
+      "intelligent",
+      "affectionate",
+      "playful"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 4,
+      "grooming": 1,
+      "vocality": 3,
+      "independence": 2,
+      "kid_friendly": 5,
+      "dog_friendly": 4,
+      "intelligence": 5
+    },
     "description": "Asian cats are Burmese-type cats in non-traditional colors and patterns. They share the loving Burmese personality.",
-    "verdict": {"best_for": ["Families", "Those wanting Burmese-type"], "not_ideal": ["Those away often"]}
+    "verdict": {
+      "best_for": [
+        "Families",
+        "Those wanting Burmese-type"
+      ],
+      "not_ideal": [
+        "Those away often"
+      ]
+    }
   },
   {
     "id": "tiffanie",
     "name": "Tiffanie",
     "origin": "United Kingdom",
-    "size": {"category": "medium", "weight_kg": "3-6"},
-    "coat": {"type": "semi-longhair", "pattern": "shaded/tipped"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-6"
+    },
+    "coat": {
+      "type": "semi-longhair",
+      "pattern": "shaded/tipped"
+    },
     "lifespan": "12-16 years",
-    "temperament": ["gentle", "affectionate", "playful", "social"],
-    "ratings": {"affection": 5, "activity": 3, "grooming": 3, "vocality": 2, "independence": 2, "kid_friendly": 5, "dog_friendly": 4, "intelligence": 4},
+    "temperament": [
+      "gentle",
+      "affectionate",
+      "playful",
+      "social"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 3,
+      "grooming": 3,
+      "vocality": 2,
+      "independence": 2,
+      "kid_friendly": 5,
+      "dog_friendly": 4,
+      "intelligence": 4
+    },
     "description": "Tiffanies are the semi-longhaired version of the Burmilla, combining the beautiful silver coat with a gentle nature.",
-    "verdict": {"best_for": ["Families", "Those wanting beautiful cats"], "not_ideal": ["Those disliking grooming"]}
+    "verdict": {
+      "best_for": [
+        "Families",
+        "Those wanting beautiful cats"
+      ],
+      "not_ideal": [
+        "Those disliking grooming"
+      ]
+    }
   },
   {
     "id": "california-spangled",
     "name": "California Spangled",
     "origin": "United States",
-    "size": {"category": "medium", "weight_kg": "4-7"},
-    "coat": {"type": "shorthair", "pattern": "spotted"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "4-7"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "spotted"
+    },
     "lifespan": "9-16 years",
-    "temperament": ["athletic", "curious", "social", "affectionate"],
-    "ratings": {"affection": 4, "activity": 5, "grooming": 1, "vocality": 2, "independence": 3, "kid_friendly": 4, "dog_friendly": 4, "intelligence": 5},
+    "temperament": [
+      "athletic",
+      "curious",
+      "social",
+      "affectionate"
+    ],
+    "ratings": {
+      "affection": 4,
+      "activity": 5,
+      "grooming": 1,
+      "vocality": 2,
+      "independence": 3,
+      "kid_friendly": 4,
+      "dog_friendly": 4,
+      "intelligence": 5
+    },
     "description": "California Spangled cats were bred to resemble wild leopards. They're athletic, curious, and love to hunt and play.",
-    "verdict": {"best_for": ["Active households", "Those wanting wild looks"], "not_ideal": ["Small apartments"]}
+    "verdict": {
+      "best_for": [
+        "Active households",
+        "Those wanting wild looks"
+      ],
+      "not_ideal": [
+        "Small apartments"
+      ]
+    }
   },
   {
     "id": "dragon-li",
     "name": "Dragon Li",
     "origin": "China",
-    "size": {"category": "medium", "weight_kg": "4-6"},
-    "coat": {"type": "shorthair", "pattern": "mackerel tabby"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "4-6"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "mackerel tabby"
+    },
     "lifespan": "12-15 years",
-    "temperament": ["intelligent", "loyal", "active", "independent"],
-    "ratings": {"affection": 3, "activity": 4, "grooming": 1, "vocality": 2, "independence": 4, "kid_friendly": 3, "dog_friendly": 3, "intelligence": 5},
+    "temperament": [
+      "intelligent",
+      "loyal",
+      "active",
+      "independent"
+    ],
+    "ratings": {
+      "affection": 3,
+      "activity": 4,
+      "grooming": 1,
+      "vocality": 2,
+      "independence": 4,
+      "kid_friendly": 3,
+      "dog_friendly": 3,
+      "intelligence": 5
+    },
     "description": "Dragon Li (Chinese Li Hua) is China's only recognized native breed. They're intelligent, independent, and make good hunters.",
-    "verdict": {"best_for": ["Experienced owners", "Those wanting rare breeds"], "not_ideal": ["Those wanting very affectionate cats"]}
+    "verdict": {
+      "best_for": [
+        "Experienced owners",
+        "Those wanting rare breeds"
+      ],
+      "not_ideal": [
+        "Those wanting very affectionate cats"
+      ]
+    }
   },
   {
     "id": "suphalak",
     "name": "Suphalak",
     "origin": "Thailand",
-    "size": {"category": "medium", "weight_kg": "3-5"},
-    "coat": {"type": "shorthair", "pattern": "solid brown"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "3-5"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "solid brown"
+    },
     "lifespan": "12-16 years",
-    "temperament": ["affectionate", "intelligent", "playful", "loyal"],
-    "ratings": {"affection": 5, "activity": 4, "grooming": 1, "vocality": 3, "independence": 2, "kid_friendly": 4, "dog_friendly": 4, "intelligence": 5},
+    "temperament": [
+      "affectionate",
+      "intelligent",
+      "playful",
+      "loyal"
+    ],
+    "ratings": {
+      "affection": 5,
+      "activity": 4,
+      "grooming": 1,
+      "vocality": 3,
+      "independence": 2,
+      "kid_friendly": 4,
+      "dog_friendly": 4,
+      "intelligence": 5
+    },
     "description": "Suphalaks are ancient Thai cats, mentioned in the Cat Book Poems. They have a unique copper/brown coat and loving nature.",
-    "verdict": {"best_for": ["Those wanting rare breeds", "Families"], "not_ideal": ["Budget-conscious (extremely rare)"]}
+    "verdict": {
+      "best_for": [
+        "Those wanting rare breeds",
+        "Families"
+      ],
+      "not_ideal": [
+        "Budget-conscious (extremely rare)"
+      ]
+    }
   },
   {
     "id": "aphrodite-giant",
     "name": "Aphrodite Giant",
     "origin": "Cyprus",
-    "size": {"category": "large", "weight_kg": "5-11"},
-    "coat": {"type": "shorthair/longhair", "pattern": "various"},
+    "size": {
+      "category": "large",
+      "weight_kg": "5-11"
+    },
+    "coat": {
+      "type": "shorthair/longhair",
+      "pattern": "various"
+    },
     "lifespan": "12-15 years",
-    "temperament": ["gentle", "social", "intelligent", "playful"],
-    "ratings": {"affection": 4, "activity": 4, "grooming": 2, "vocality": 2, "independence": 3, "kid_friendly": 5, "dog_friendly": 4, "intelligence": 4},
+    "temperament": [
+      "gentle",
+      "social",
+      "intelligent",
+      "playful"
+    ],
+    "ratings": {
+      "affection": 4,
+      "activity": 4,
+      "grooming": 2,
+      "vocality": 2,
+      "independence": 3,
+      "kid_friendly": 5,
+      "dog_friendly": 4,
+      "intelligence": 4
+    },
     "description": "Aphrodite Giants are a natural breed from Cyprus, known for their large size and gentle nature. They're one of the oldest breeds.",
-    "verdict": {"best_for": ["Families", "Those wanting large cats"], "not_ideal": ["Small apartments"]}
+    "verdict": {
+      "best_for": [
+        "Families",
+        "Those wanting large cats"
+      ],
+      "not_ideal": [
+        "Small apartments"
+      ]
+    }
   },
   {
     "id": "cyprus",
     "name": "Cyprus",
     "origin": "Cyprus",
-    "size": {"category": "medium", "weight_kg": "4-6"},
-    "coat": {"type": "shorthair", "pattern": "various"},
+    "size": {
+      "category": "medium",
+      "weight_kg": "4-6"
+    },
+    "coat": {
+      "type": "shorthair",
+      "pattern": "various"
+    },
     "lifespan": "12-15 years",
-    "temperament": ["friendly", "adaptable", "intelligent", "social"],
-    "ratings": {"affection": 4, "activity": 4, "grooming": 1, "vocality": 2, "independence": 3, "kid_friendly": 5, "dog_friendly": 4, "intelligence": 4},
+    "temperament": [
+      "friendly",
+      "adaptable",
+      "intelligent",
+      "social"
+    ],
+    "ratings": {
+      "affection": 4,
+      "activity": 4,
+      "grooming": 1,
+      "vocality": 2,
+      "independence": 3,
+      "kid_friendly": 5,
+      "dog_friendly": 4,
+      "intelligence": 4
+    },
     "description": "Cyprus cats are the domestic cats native to the island of Cyprus, with a history going back thousands of years.",
-    "verdict": {"best_for": ["Families", "Any household"], "not_ideal": ["Those wanting exotic breeds"]}
+    "verdict": {
+      "best_for": [
+        "Families",
+        "Any household"
+      ],
+      "not_ideal": [
+        "Those wanting exotic breeds"
+      ]
+    }
   }
 ]
