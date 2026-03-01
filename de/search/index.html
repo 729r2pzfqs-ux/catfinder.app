@@ -271,6 +271,43 @@
     </footer>
 
     <script>
+        // German breed name translations
+        const BREED_NAMES_DE = {
+            "persian": "Perserkatze", "maine-coon": "Maine Coon", "ragdoll": "Ragdoll",
+            "british-shorthair": "Britisch Kurzhaar", "siamese": "Siamkatze",
+            "abyssinian": "Abessinierkatze", "bengal": "Bengalkatze", "sphynx": "Sphynx",
+            "scottish-fold": "Scottish Fold", "russian-blue": "Russisch Blau",
+            "norwegian-forest-cat": "Norwegische Waldkatze", "burmese": "Burmakatze",
+            "oriental-shorthair": "Orientalisch Kurzhaar", "devon-rex": "Devon Rex",
+            "cornish-rex": "Cornish Rex", "exotic-shorthair": "Exotisch Kurzhaar",
+            "himalayan": "Himalayakatze", "american-shorthair": "Amerikanisch Kurzhaar",
+            "tonkinese": "Tonkanese", "ragamuffin": "RagaMuffin", "savannah": "Savannah",
+            "siberian": "Sibirische Katze", "balinese": "Balinesenkatze", "turkish-angora": "Türkisch Angora",
+            "turkish-van": "Türkisch Van", "somali": "Somalikatze", "chartreux": "Kartäuser",
+            "ocicat": "Ocicat", "egyptian-mau": "Ägyptische Mau", "birman": "Heilige Birma",
+            "singapura": "Singapura", "manx": "Manx", "japanese-bobtail": "Japanische Stummelschwanzkatze",
+            "american-curl": "American Curl", "selkirk-rex": "Selkirk Rex", "laperm": "LaPerm",
+            "korat": "Korat", "bombay": "Bombay", "havana-brown": "Havana-Braun",
+            "burmilla": "Burmilla", "toyger": "Toyger", "pixie-bob": "Pixie-Bob",
+            "cymric": "Cymric", "american-bobtail": "Amerikanische Stummelschwanzkatze", "nebelung": "Nebelung",
+            "snowshoe": "Snowshoe", "chausie": "Chausie", "sokoke": "Sokoke",
+            "australian-mist": "Australian Mist", "peterbald": "Peterbald", "donskoy": "Don Sphynx",
+            "kurilian-bobtail": "Kurilen-Bobtail", "american-wirehair": "Amerikanische Drahthaarkatze",
+            "european-shorthair": "Europäisch Kurzhaar", "brazilian-shorthair": "Brasilianisch Kurzhaar",
+            "khao-manee": "Khao Manee", "lykoi": "Lykoi", "munchkin": "Munchkin",
+            "highlander": "Highlander", "serengeti": "Serengeti", "thai": "Thaikatze",
+            "chantilly-tiffany": "Chantilly-Tiffany", "york-chocolate": "York Chocolate",
+            "colorpoint-shorthair": "Colorpoint Kurzhaar", "javanese": "Javanese",
+            "oriental-longhair": "Orientalisch Langhaar", "british-longhair": "Britisch Langhaar",
+            "asian": "Asian", "tiffanie": "Tiffanie", "california-spangled": "California Spangled",
+            "dragon-li": "Dragon Li", "suphalak": "Suphalak", "aphrodite-giant": "Aphrodite-Riesenkatze",
+            "cyprus": "Zypernkatze"
+        };
+        
+        function getBreedNameDE(id, fallback) {
+            return BREED_NAMES_DE[id] || fallback;
+        }
+        
         // State
         let allBreeds = [];
         let fuse = null;
@@ -485,9 +522,13 @@
                 return;
             }
             
-            const matches = allBreeds.filter(b => 
-                b.name.toLowerCase().includes(query.toLowerCase())
-            ).slice(0, 8);
+            // Search both English and German names
+            const matches = allBreeds.filter(b => {
+                const deName = getBreedNameDE(b.id, b.name).toLowerCase();
+                const enName = b.name.toLowerCase();
+                const q = query.toLowerCase();
+                return deName.includes(q) || enName.includes(q);
+            }).slice(0, 8);
             
             if (matches.length === 0) {
                 searchDropdown.classList.add('hidden');
@@ -501,15 +542,17 @@
                 'extra-large': 'Sehr groß'
             };
             
-            searchDropdown.innerHTML = matches.map(b => `
+            searchDropdown.innerHTML = matches.map(b => {
+                const deName = getBreedNameDE(b.id, b.name);
+                return `
                 <a href="/de/breeds/${b.id}/" class="flex items-center gap-3 px-4 py-3 hover:bg-slate-50 transition first:rounded-t-2xl last:rounded-b-2xl border-b border-slate-100 last:border-0">
-                    <img src="/images/heads/${b.id}.webp" alt="${b.name}" class="w-10 h-10 rounded-xl object-cover object-top" onerror="this.style.display='none'">
+                    <img src="/images/heads/${b.id}.webp" alt="${deName}" class="w-10 h-10 rounded-xl object-cover object-top" onerror="this.style.display='none'">
                     <div>
-                        <div class="font-medium text-slate-800">${b.name}</div>
+                        <div class="font-medium text-slate-800">${deName}</div>
                         <div class="text-sm text-slate-600">${b.origin} · ${sizeLabels[b.size.category] || b.size.category}</div>
                     </div>
                 </a>
-            `).join('');
+            `}).join('');
             searchDropdown.classList.remove('hidden');
         }
         
