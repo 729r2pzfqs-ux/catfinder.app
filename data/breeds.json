@@ -441,7 +441,10 @@
       "not_ideal": [
         "Those away often"
       ]
-    }
+    },
+    "overview": "The Birman, or 'Sacred Cat of Burma,' is a striking cat with a long silky coat, deep blue eyes, and distinctive white 'gloves' on their paws. Legend says they gained their coloring from a temple goddess. They're gentle, affectionate cats who love being with their families.",
+    "health": "Birmans can be prone to Hypertrophic Cardiomyopathy (HCM), kidney disease, and a condition called Feline Audiogenic Reflex Seizures (triggered by certain sounds). Some may develop corneal dermoids. Regular vet checkups are important.",
+    "care": "Their silky single-layer coat doesn't mat easily\u2014brush 2-3 times weekly. They're social cats who do well with other pets. They're not overly demanding but enjoy interactive play. Keep them indoors as they're too trusting for outdoor life."
   },
   {
     "id": "russian-blue",
@@ -1365,7 +1368,10 @@
       "not_ideal": [
         "Those wanting a calm cat"
       ]
-    }
+    },
+    "overview": "The Singapura is one of the smallest cat breeds, weighing only 4-8 pounds. Despite their tiny size, they have huge personalities\u2014curious, playful, and always underfoot. Their large eyes and ticked coat give them an eternal kitten appearance.",
+    "health": "Singapuras can be prone to Pyruvate Kinase Deficiency (PKD), uterine inertia in females (difficulty giving birth), and may have a smaller gene pool. Some may develop muscular dystrophy. Generally healthy with 12-15 year lifespans.",
+    "care": "Their short, fine coat needs minimal grooming\u2014weekly brushing is enough. They're heat-seekers who love warm spots. Provide lots of climbing opportunities and interactive play. They remain kitten-like and playful throughout life."
   },
   {
     "id": "manx",
@@ -1406,7 +1412,10 @@
       "not_ideal": [
         "Those concerned about health issues"
       ]
-    }
+    },
+    "overview": "The Manx is famous for being tailless, though they can have varying tail lengths from none to full. Originating from the Isle of Man, they're powerful jumpers with a rounded appearance. They're loyal, playful cats often called 'dog-like' in behavior.",
+    "health": "The same gene causing taillessness can cause 'Manx Syndrome'\u2014spinal defects leading to incontinence or mobility issues. Never breed two completely tailless Manx together. Screen for spinal issues. Generally healthy otherwise.",
+    "care": "Their double coat needs weekly brushing, more during shedding. They're adaptable cats who do well in most environments. Provide interactive play\u2014they're natural hunters. Watch for any signs of spinal issues, especially in kittens."
   },
   {
     "id": "japanese-bobtail",
@@ -1447,7 +1456,10 @@
       "not_ideal": [
         "Those wanting a quiet cat"
       ]
-    }
+    },
+    "overview": "The Japanese Bobtail features a distinctive pom-pom tail and is considered lucky in Japan\u2014they're the model for the famous 'beckoning cat' figurine. They're active, intelligent, and love to 'talk' with a melodic, chirping voice.",
+    "health": "Japanese Bobtails are remarkably healthy with few breed-specific issues. Their bobtail is a natural mutation, not linked to spinal problems like the Manx gene. They're one of the healthiest purebred cats with 15-18 year lifespans.",
+    "care": "Their silky coat (short or long variety) needs minimal grooming. They're active cats who need lots of play and mental stimulation. Many enjoy water play and playing fetch. They do well with other cats and form strong family bonds."
   },
   {
     "id": "american-curl",
@@ -1488,7 +1500,10 @@
       "not_ideal": [
         "Those disliking unusual features"
       ]
-    }
+    },
+    "overview": "The American Curl is instantly recognizable by their uniquely curved-back ears, caused by a spontaneous genetic mutation. First discovered in California in 1981, they're friendly, people-oriented cats who retain kitten-like playfulness into adulthood.",
+    "health": "American Curls are generally very healthy. Their unique ears require gentle handling but don't cause health issues. Rare conditions include narrow ear canals requiring regular cleaning. One of the healthier breeds with 12-16 year lifespans.",
+    "care": "Both short and longhaired varieties need weekly brushing. Handle their distinctive ears gently\u2014never force them flat. Regular ear cleaning prevents wax buildup. They're adaptable, easygoing cats suited to most living situations."
   },
   {
     "id": "selkirk-rex",
@@ -1529,7 +1544,10 @@
       "not_ideal": [
         "Those wanting low grooming"
       ]
-    }
+    },
+    "overview": "The Selkirk Rex has a distinctive curly coat\u2014both guard hairs and undercoat are curled, giving them a 'sheepcat' appearance. Unlike other Rex breeds, they're stocky and have a laid-back, patient temperament. They come in both longhair and shorthair varieties.",
+    "health": "Selkirk Rex can be prone to Polycystic Kidney Disease (PKD) and Hypertrophic Cardiomyopathy (HCM) due to Persian/British Shorthair ancestry. Some may develop hip dysplasia. Regular health screenings are recommended.",
+    "care": "Their curly coat needs regular brushing to prevent matting\u2014more for longhairs. Don't over-groom as it can straighten the curls. They're relaxed cats who enjoy cuddles. Not as active as other Rex breeds but still enjoy play."
   },
   {
     "id": "laperm",
@@ -1570,7 +1588,10 @@
       "not_ideal": [
         "Those wanting a very active cat"
       ]
-    }
+    },
+    "overview": "The LaPerm's curly coat ranges from wavy to tight ringlets and came from a spontaneous mutation in Oregon in 1982. They're affectionate, curious cats who love being close to their humans. Some are born bald and develop curls later.",
+    "health": "LaPerms are generally healthy with no breed-specific genetic conditions. They're one of the healthier purebred cats. May occasionally develop skin sensitivities. Average lifespan is 12-15 years with proper care.",
+    "care": "Their unique coat needs gentle brushing to maintain curls\u2014don't brush when dry. Some owners prefer to spritz with water first. They're adaptable, affectionate cats who do well in various living situations. They enjoy interactive play."
   },
   {
     "id": "korat",
@@ -1612,7 +1633,10 @@
         "Busy households",
         "Families with young children"
       ]
-    }
+    },
+    "overview": "The Korat is one of the oldest natural breeds, from Thailand where they're considered good luck. Their distinctive silver-blue coat and heart-shaped face make them striking cats. They're intelligent, playful, and form strong bonds with their families.",
+    "health": "Korats can be prone to GM1 and GM2 Gangliosidosis (neurological conditions)\u2014genetic testing is available. They may also develop low body fat percentage. Generally healthy with 15-20 year lifespans. Buy from tested breeders.",
+    "care": "Their single-layer coat needs minimal grooming\u2014weekly brushing is enough. They don't like loud noises or chaos\u2014prefer calm environments. Provide interactive play and puzzle toys. They're social and do well with other pets."
   },
   {
     "id": "bombay",
@@ -1653,7 +1677,10 @@
       "not_ideal": [
         "Those away often"
       ]
-    }
+    },
+    "overview": "The Bombay was bred to look like a miniature black panther, with a sleek black coat and copper eyes. They're often called 'velcro cats' for their love of being with their humans. Confident and outgoing, they're easy to train and travel well.",
+    "health": "Bombays can be prone to Hypertrophic Cardiomyopathy (HCM) and craniofacial defects similar to Burmese. Some may develop breathing issues. They may also be prone to excessive tearing. Regular vet checkups are recommended.",
+    "care": "Their short, patent-leather coat needs only weekly brushing. They're heat-seekers who love warm spots. Highly social\u2014they don't do well alone. Provide lots of interactive play. They can be trained to walk on a leash and do tricks."
   },
   {
     "id": "havana-brown",
@@ -1693,7 +1720,10 @@
       "not_ideal": [
         "Those away often"
       ]
-    }
+    },
+    "overview": "The Havana Brown is a rare breed with a rich mahogany coat and striking green eyes. They're named for their color resembling Havana cigars. Playful, intelligent, and people-oriented, they use their paws almost like hands to investigate everything.",
+    "health": "Havana Browns are generally healthy but have a small gene pool. Some may develop urinary tract issues or respiratory infections. Generally robust with 12-15 year lifespans. Their rarity means finding good breeders is important.",
+    "care": "Their short, glossy coat needs minimal grooming. They're very social and don't like being left alone\u2014consider getting two. They're interactive cats who enjoy games and exploration. Provide puzzle feeders and interactive toys."
   },
   {
     "id": "burmilla",
@@ -1734,7 +1764,10 @@
       "not_ideal": [
         "Those wanting very active cats"
       ]
-    }
+    },
+    "overview": "The Burmilla originated from an accidental mating between a Burmese and a Chinchilla Persian in 1981. They have a shimmering silver coat with subtle shading. Playful but less demanding than Burmese, they're affectionate without being clingy.",
+    "health": "Burmillas can inherit health issues from both parent breeds: Polycystic Kidney Disease from Persian side and allergies. Some may develop dental issues. Regular vet checkups are important. Lifespan is typically 12-15 years.",
+    "care": "Their short, silky coat needs weekly brushing. They're adaptable cats who do well with families and other pets. Moderately active\u2014enjoy play but also happy to relax. They're social but can handle some alone time."
   },
   {
     "id": "toyger",
@@ -1775,7 +1808,10 @@
       "not_ideal": [
         "Budget-conscious owners (rare breed)"
       ]
-    }
+    },
+    "overview": "The Toyger is a designer breed created to resemble a miniature tiger with bold vertical stripes. Developed from Bengal cats and domestic tabbies, they combine wild looks with a gentle, outgoing personality. They're still a developing breed with standards evolving.",
+    "health": "Toygers can be prone to heart murmurs and some cardiac conditions. As a newer breed, health data is still being collected. Buy from breeders who screen for heart conditions. Generally healthy with 12-15 year lifespans.",
+    "care": "Their short, plush coat needs minimal grooming. They're active, intelligent cats who enjoy interactive play and puzzle toys. Many can be leash trained. They're social and do well with other pets and children."
   },
   {
     "id": "pixie-bob",
@@ -1816,7 +1852,10 @@
       "not_ideal": [
         "Small apartments"
       ]
-    }
+    },
+    "overview": "The Pixie-Bob is a large, muscular cat bred to resemble the North American Bobcat. Despite their wild appearance, they're gentle giants\u2014loyal, dog-like, and often bond with the whole family. Many have polydactyl paws (extra toes).",
+    "health": "Pixie-Bobs are generally healthy with few breed-specific issues. Some may develop Hypertrophic Cardiomyopathy (HCM). Polydactyly doesn't cause health problems. Robust breed with 13-16 year lifespans.",
+    "care": "Their thick double coat needs weekly brushing, more during shedding. They're adaptable, easygoing cats who travel well. Provide lots of interactive play\u2014they love fetch! They're vocal with chirps and chatters rather than meows."
   },
   {
     "id": "cymric",
@@ -1856,7 +1895,10 @@
       "not_ideal": [
         "Those concerned about health issues"
       ]
-    }
+    },
+    "overview": "The Cymric (pronounced KIM-rick) is the longhaired version of the Manx, sharing the same tailless gene and rounded appearance. They're intelligent, playful cats who often act more like dogs\u2014learning tricks and playing fetch.",
+    "health": "Like Manx, Cymrics can develop Manx Syndrome\u2014spinal issues from the tailless gene. Never breed two completely tailless cats together. Screen for spinal problems. Lifespan is 9-13 years, less if health issues present.",
+    "care": "Their long double coat needs regular brushing to prevent matting. Watch for any signs of mobility or bathroom issues that could indicate spinal problems. They're active, intelligent cats who need mental stimulation and play."
   },
   {
     "id": "american-bobtail",
@@ -1897,7 +1939,10 @@
       "not_ideal": [
         "Those away often"
       ]
-    }
+    },
+    "overview": "The American Bobtail is a naturally occurring breed with a distinctive short tail, developed from random bobtailed cats found in America. They're confident, adaptable cats often used as therapy animals. They're known for their dog-like devotion.",
+    "health": "American Bobtails are generally healthy\u2014their short tail is a natural mutation without associated health problems. Some may develop hip dysplasia. Robust breed with 13-18 year lifespans. Very few breed-specific issues.",
+    "care": "Both short and longhaired varieties need regular brushing. They're adaptable cats who travel well and adjust to new situations. Intelligent and trainable\u2014they can learn tricks and walk on leash. They need interactive play."
   },
   {
     "id": "nebelung",
@@ -1938,7 +1983,10 @@
       "not_ideal": [
         "Busy households with children"
       ]
-    }
+    },
+    "overview": "The Nebelung is a rare, longhaired version of the Russian Blue, with the same silver-blue coat and green eyes but with flowing fur. Their name means 'creature of the mist' in German. They're shy with strangers but devoted to their families.",
+    "health": "Nebelungs are generally healthy with few breed-specific issues. Like Russian Blues, they may be prone to bladder stones. Some may develop obesity. One of the healthier breeds with 15-18 year lifespans.",
+    "care": "Their long, plush coat needs brushing 2-3 times weekly. They're sensitive cats who prefer quiet, consistent environments. Not fans of change\u2014establish routines. They're low-allergen like Russian Blues."
   },
   {
     "id": "snowshoe",
@@ -1979,7 +2027,10 @@
       "not_ideal": [
         "Those away often"
       ]
-    }
+    },
+    "overview": "The Snowshoe is a rare breed combining Siamese colorpoints with distinctive white 'snowshoe' paws. They're social, vocal cats who bond strongly with their families. Less intense than Siamese but equally loving and interactive.",
+    "health": "Snowshoes may inherit Siamese health issues: crossed eyes (rare now), kinked tails, and dental problems. Some may develop heart issues. Generally healthy with 14-20 year lifespans. The white paw pattern doesn't affect health.",
+    "care": "Their short coat needs minimal grooming. They're very social and don't do well alone\u2014consider a companion. Provide lots of interactive play and puzzle toys. They're good with children and other pets."
   },
   {
     "id": "chausie",
@@ -2021,7 +2072,10 @@
         "First-time owners",
         "Small apartments"
       ]
-    }
+    },
+    "overview": "The Chausie is a hybrid breed created from crossing domestic cats with the Jungle Cat (Felis chaus). They're large, athletic cats with a wild appearance but domesticated temperament. High-energy and intelligent, they need experienced owners.",
+    "health": "Chausies can have sensitive digestive systems\u2014many don't tolerate grain-based foods. Some may develop intestinal issues. Early generations may be prone to male infertility. Find a vet experienced with hybrid cats.",
+    "care": "Their short coat needs minimal grooming. They need lots of exercise and mental stimulation\u2014not for first-time owners! Provide tall cat trees, puzzle feeders, and lots of interactive play. Many can be leash trained."
   },
   {
     "id": "sokoke",
@@ -2061,7 +2115,10 @@
       "not_ideal": [
         "Those wanting calm cats"
       ]
-    }
+    },
+    "overview": "The Sokoke is a rare natural breed from Kenya's Sokoke forest. Their distinctive 'African tabby' pattern and athletic build reflect their wild origins. They're active, intelligent cats who bond deeply with their families.",
+    "health": "Sokokes are generally healthy with few breed-specific issues. Small gene pool may be a concern. They may be sensitive to certain vaccines or medications. Regular vet care is important. Lifespan is 12-15 years.",
+    "care": "Their short coat needs minimal grooming. They need lots of activity and mental stimulation\u2014they're not lap cats! Provide climbing opportunities and interactive play. They're social and often bond with one person especially."
   },
   {
     "id": "australian-mist",
@@ -2102,7 +2159,10 @@
       "not_ideal": [
         "Those wanting very active cats"
       ]
-    }
+    },
+    "overview": "The Australian Mist (formerly Spotted Mist) is Australia's first pedigree cat breed. They have a distinctive spotted/marbled coat with a misty appearance. Developed from Abyssinian, Burmese, and domestic tabbies, they're friendly, adaptable, and great with families.",
+    "health": "Australian Mists are generally very healthy with few breed-specific issues. Some may develop skin allergies. Robust breed with 14-19 year lifespans. One of the healthier purebred cats due to diverse genetic background.",
+    "care": "Their short coat needs minimal grooming. They're adaptable, tolerant cats who do well with children and other pets. Moderate activity level\u2014enjoy play but also happy to relax. They can be indoor-only cats quite happily."
   },
   {
     "id": "peterbald",
