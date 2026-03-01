@@ -143,7 +143,63 @@
     </footer>
 
     <script>
-        // Spanish breed name translations
+        // Spanish translations
+        const ORIGINS_ES = {
+            "United States": "Estados Unidos", "United Kingdom": "Reino Unido",
+            "France": "Francia", "Russia": "Rusia", "Thailand": "Tailandia",
+            "Egypt": "Egipto", "Iran": "Irán", "Norway": "Noruega", "Turkey": "Turquía",
+            "Japan": "Japón", "Burma": "Birmania", "Ethiopia": "Etiopía",
+            "Canada": "Canadá", "Germany": "Alemania", "Singapore": "Singapur",
+            "Isle of Man": "Isla de Man", "Cuba": "Cuba", "Australia": "Australia",
+            "Kenya": "Kenia", "Brazil": "Brasil", "Cyprus": "Chipre", "China": "China"
+        };
+        
+        const SIZES_ES = {
+            "small": "pequeño", "small-medium": "pequeño-mediano",
+            "medium": "mediano", "medium-large": "mediano-grande",
+            "large": "grande", "extra-large": "extra grande"
+        };
+        
+        const COAT_TYPES_ES = {
+            "shorthair": "pelo corto", "longhair": "pelo largo",
+            "semi-longhair": "semi-largo", "hairless": "sin pelo",
+            "curly": "rizado", "wirehair": "pelo áspero", "rex": "rex"
+        };
+        
+        function translateOrigin(origin) {
+            return ORIGINS_ES[origin] || origin;
+        }
+        
+        function translateSize(size) {
+            return SIZES_ES[size] || size;
+        }
+        
+        function translateCoatType(type) {
+            return COAT_TYPES_ES[type] || type;
+        }
+        
+        function translateLifespan(lifespan) {
+            if (!lifespan) return '—';
+            return lifespan.replace(' years', ' años').replace(' year', ' año');
+        }
+        
+        const TEMPERAMENTS_ES = {
+            "Affectionate": "Cariñoso", "Playful": "Juguetón", "Gentle": "Gentil",
+            "Intelligent": "Inteligente", "Curious": "Curioso", "Active": "Activo",
+            "Calm": "Tranquilo", "Social": "Social", "Loyal": "Leal",
+            "Independent": "Independiente", "Friendly": "Amigable", "Quiet": "Silencioso",
+            "Vocal": "Vocal", "Energetic": "Enérgico", "Adaptable": "Adaptable",
+            "Easygoing": "Relajado", "Sweet": "Dulce", "Devoted": "Devoto",
+            "Sensitive": "Sensible", "Mischievous": "Travieso", "Bold": "Audaz",
+            "Athletic": "Atlético", "Agile": "Ágil", "Reserved": "Reservado",
+            "Docile": "Dócil", "Patient": "Paciente", "Loving": "Amoroso"
+        };
+        
+        function translateTemperament(temps) {
+            if (!temps || !temps.length) return '—';
+            return temps.slice(0, 3).map(t => TEMPERAMENTS_ES[t] || t).join(', ');
+        }
+        
         const BREED_NAMES_ES = {
             "persian": "Persa", "maine-coon": "Maine Coon", "ragdoll": "Ragdoll",
             "british-shorthair": "Británico de Pelo Corto", "siamese": "Siamés",
@@ -252,11 +308,11 @@
             const body = document.getElementById('comparison-body');
             
             const rows = [
-                { label: 'Origen', key: 'origin' },
-                { label: 'Tamaño', render: b => b.size?.category || '—' },
+                { label: 'Origen', render: b => translateOrigin(b.origin) || '—' },
+                { label: 'Tamaño', render: b => translateSize(b.size?.category) || '—' },
                 { label: 'Peso', render: b => b.size?.weight_kg ? `${b.size.weight_kg} kg` : '—' },
-                { label: 'Esperanza de vida', key: 'lifespan' },
-                { label: 'Tipo de pelaje', render: b => b.coat?.type || '—' },
+                { label: 'Esperanza de vida', render: b => translateLifespan(b.lifespan) },
+                { label: 'Tipo de pelaje', render: b => translateCoatType(b.coat?.type) || '—' },
                 { label: 'Afectuosidad', render: b => renderRating(b.ratings?.affection) },
                 { label: 'Nivel de actividad', render: b => renderRating(b.ratings?.activity) },
                 { label: 'Necesidades de aseo', render: b => renderRating(b.ratings?.grooming) },
@@ -265,7 +321,7 @@
                 { label: 'Apto para niños', render: b => renderRating(b.ratings?.kid_friendly) },
                 { label: 'Apto para perros', render: b => renderRating(b.ratings?.dog_friendly) },
                 { label: 'Inteligencia', render: b => renderRating(b.ratings?.intelligence) },
-                { label: 'Temperamento', render: b => (b.temperament || []).slice(0, 3).join(', ') || '—' }
+                { label: 'Temperamento', render: b => translateTemperament(b.temperament) }
             ];
 
             body.innerHTML = rows.map((row, i) => `
