@@ -146,6 +146,30 @@
     <script>
         let breeds = [];
 
+        // German breed name translations
+        const BREED_NAMES_DE = {
+            "persian": "Perserkatze", "maine-coon": "Maine Coon", "ragdoll": "Ragdoll",
+            "british-shorthair": "Britisch Kurzhaar", "siamese": "Siamkatze",
+            "abyssinian": "Abessinierkatze", "bengal": "Bengalkatze", "sphynx": "Sphynx",
+            "scottish-fold": "Scottish Fold", "russian-blue": "Russisch Blau",
+            "norwegian-forest-cat": "Norwegische Waldkatze", "burmese": "Burmakatze",
+            "oriental-shorthair": "Orientalisch Kurzhaar", "devon-rex": "Devon Rex",
+            "cornish-rex": "Cornish Rex", "exotic-shorthair": "Exotisch Kurzhaar",
+            "himalayan": "Himalayakatze", "american-shorthair": "Amerikanisch Kurzhaar",
+            "tonkinese": "Tonkanese", "ragamuffin": "RagaMuffin", "savannah": "Savannah",
+            "siberian": "Sibirische Katze", "balinese": "Balinesenkatze", "turkish-angora": "Türkisch Angora",
+            "turkish-van": "Türkisch Van", "somali": "Somalikatze", "chartreux": "Kartäuser",
+            "ocicat": "Ocicat", "egyptian-mau": "Ägyptische Mau", "birman": "Heilige Birma",
+            "singapura": "Singapura", "manx": "Manx", "japanese-bobtail": "Japanische Stummelschwanzkatze",
+            "american-curl": "American Curl", "selkirk-rex": "Selkirk Rex", "laperm": "LaPerm",
+            "korat": "Korat", "bombay": "Bombay", "havana-brown": "Havana-Braun",
+            "burmilla": "Burmilla", "toyger": "Toyger", "pixie-bob": "Pixie-Bob",
+            "cymric": "Cymric", "american-bobtail": "Amerikanische Stummelschwanzkatze", "nebelung": "Nebelung",
+            "snowshoe": "Snowshoe", "chausie": "Chausie", "sokoke": "Sokoke",
+            "munchkin": "Munchkin", "british-longhair": "Britisch Langhaar"
+        };
+        function getBreedNameDE(id, fallback) { return BREED_NAMES_DE[id] || fallback; }
+
         // Load breeds from JSON
         fetch('../../data/breeds.json')
             .then(r => r.json())
@@ -162,7 +186,7 @@
                 breeds.forEach(breed => {
                     const option = document.createElement('option');
                     option.value = breed.id;
-                    option.textContent = breed.name;
+                    option.textContent = getBreedNameDE(breed.id, breed.name);
                     select.appendChild(option);
                 });
             });
@@ -204,8 +228,8 @@
                     ${selectedBreeds.map(breed => `
                         <th class="p-4 text-center">
                             <a href="../../breeds/${breed.id}/" class="group">
-                                <img src="../../images/heads/${breed.id}.webp" alt="${breed.name}" class="w-16 h-16 rounded-xl mx-auto mb-2 object-cover object-top shadow-md group-hover:shadow-lg transition" onerror="this.style.display='none'">
-                                <div class="font-bold text-slate-800 group-hover:text-fuchsia-600 transition">${breed.name}</div>
+                                <img src="../../images/heads/${breed.id}.webp" alt="${getBreedNameDE(breed.id, breed.name)}" class="w-16 h-16 rounded-xl mx-auto mb-2 object-cover object-top shadow-md group-hover:shadow-lg transition" onerror="this.style.display='none'">
+                                <div class="font-bold text-slate-800 group-hover:text-fuchsia-600 transition">${getBreedNameDE(breed.id, breed.name)}</div>
                             </a>
                         </th>
                     `).join('')}
