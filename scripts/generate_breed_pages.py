@@ -97,7 +97,7 @@ def generate_breed_html(breed):
                     <span class="font-bold text-xl bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent">CatFinder</span>
                 </a>
                 <div class="flex items-center gap-6">
-                    <a href="/breeds/" class="text-slate-600 hover:text-slate-900 font-medium hidden sm:block">Breeds</a>
+                    <a href="/search/" class="text-slate-600 hover:text-slate-900 font-medium hidden sm:block">Breeds</a>
                     <a href="/quiz/" class="text-slate-600 hover:text-slate-900 font-medium hidden sm:block">Quiz</a>
                     <a href="/compare/" class="text-slate-600 hover:text-slate-900 font-medium hidden sm:block">Compare</a>
                     <a href="/search/" class="text-slate-600 hover:text-slate-900 font-medium">Search</a>
@@ -110,7 +110,7 @@ def generate_breed_html(breed):
         <nav class="text-sm text-slate-500 mb-6">
             <a href="/" class="hover:text-fuchsia-600">Home</a>
             <span class="mx-2">/</span>
-            <a href="/breeds/" class="hover:text-fuchsia-600">Breeds</a>
+            <a href="/search/" class="hover:text-fuchsia-600">Breeds</a>
             <span class="mx-2">/</span>
             <span class="text-slate-700">{name}</span>
         </nav>
@@ -250,7 +250,7 @@ def generate_breed_html(breed):
                     <span class="font-bold text-white">CatFinder</span>
                 </div>
                 <div class="flex gap-6 text-sm">
-                    <a href="/breeds/" class="hover:text-white">Breeds</a>
+                    <a href="/search/" class="hover:text-white">Breeds</a>
                     <a href="/quiz/" class="hover:text-white">Quiz</a>
                     <a href="/compare/" class="hover:text-white">Compare</a>
                     <a href="/about/" class="hover:text-white">About</a>
