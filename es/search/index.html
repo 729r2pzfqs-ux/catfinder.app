@@ -531,9 +531,13 @@
                 return;
             }
             
-            const matches = allBreeds.filter(b => 
-                b.name.toLowerCase().includes(query.toLowerCase())
-            ).slice(0, 8);
+            // Search both English and Spanish names
+            const matches = allBreeds.filter(b => {
+                const esName = getBreedNameES(b.id, b.name).toLowerCase();
+                const enName = b.name.toLowerCase();
+                const q = query.toLowerCase();
+                return esName.includes(q) || enName.includes(q);
+            }).slice(0, 8);
             
             if (matches.length === 0) {
                 searchDropdown.classList.add('hidden');
@@ -547,15 +551,17 @@
                 'extra-large': 'extra grande'
             };
             
-            searchDropdown.innerHTML = matches.map(b => `
+            searchDropdown.innerHTML = matches.map(b => {
+                const esName = getBreedNameES(b.id, b.name);
+                return `
                 <a href="/es/breeds/${b.id}/" class="flex items-center gap-3 px-4 py-3 hover:bg-slate-50 transition first:rounded-t-2xl last:rounded-b-2xl border-b border-slate-100 last:border-0">
-                    <img src="/images/heads/${b.id}.webp" alt="${b.name}" class="w-10 h-10 rounded-xl object-cover object-top" onerror="this.style.display='none'">
+                    <img src="/images/heads/${b.id}.webp" alt="${esName}" class="w-10 h-10 rounded-xl object-cover object-top" onerror="this.style.display='none'">
                     <div>
-                        <div class="font-medium text-slate-800">${b.name}</div>
+                        <div class="font-medium text-slate-800">${esName}</div>
                         <div class="text-sm text-slate-600">${b.origin} · ${sizeLabels[b.size.category] || b.size.category}</div>
                     </div>
                 </a>
-            `).join('');
+            `}).join('');
             searchDropdown.classList.remove('hidden');
         }
         
