@@ -143,6 +143,43 @@
     </footer>
 
     <script>
+        // Spanish breed name translations
+        const BREED_NAMES_ES = {
+            "persian": "Persa", "maine-coon": "Maine Coon", "ragdoll": "Ragdoll",
+            "british-shorthair": "Británico de Pelo Corto", "siamese": "Siamés",
+            "abyssinian": "Abisinio", "bengal": "Bengalí", "sphynx": "Sphynx",
+            "scottish-fold": "Scottish Fold", "russian-blue": "Azul Ruso",
+            "norwegian-forest-cat": "Bosque de Noruega", "burmese": "Burmés",
+            "oriental-shorthair": "Oriental de Pelo Corto", "devon-rex": "Devon Rex",
+            "cornish-rex": "Cornish Rex", "exotic-shorthair": "Exótico de Pelo Corto",
+            "himalayan": "Himalayo", "american-shorthair": "Americano de Pelo Corto",
+            "tonkinese": "Tonkinés", "ragamuffin": "RagaMuffin", "savannah": "Savannah",
+            "siberian": "Siberiano", "balinese": "Balinés", "turkish-angora": "Angora Turco",
+            "turkish-van": "Van Turco", "somali": "Somalí", "chartreux": "Chartreux",
+            "ocicat": "Ocicat", "egyptian-mau": "Mau Egipcio", "birman": "Birmano",
+            "singapura": "Singapura", "manx": "Manx", "japanese-bobtail": "Bobtail Japonés",
+            "american-curl": "Curl Americano", "selkirk-rex": "Selkirk Rex", "laperm": "LaPerm",
+            "korat": "Korat", "bombay": "Bombay", "havana-brown": "Habana Marrón",
+            "burmilla": "Burmilla", "toyger": "Toyger", "pixie-bob": "Pixie-Bob",
+            "cymric": "Cymric", "american-bobtail": "Bobtail Americano", "nebelung": "Nebelung",
+            "snowshoe": "Snowshoe", "chausie": "Chausie", "sokoke": "Sokoke",
+            "australian-mist": "Mist Australiano", "peterbald": "Peterbald", "donskoy": "Donskoy",
+            "kurilian-bobtail": "Bobtail de las Kuriles", "american-wirehair": "Americano de Pelo Áspero",
+            "european-shorthair": "Europeo de Pelo Corto", "brazilian-shorthair": "Brasileño de Pelo Corto",
+            "khao-manee": "Khao Manee", "lykoi": "Lykoi", "munchkin": "Munchkin",
+            "highlander": "Highlander", "serengeti": "Serengeti", "thai": "Thai",
+            "chantilly-tiffany": "Chantilly-Tiffany", "york-chocolate": "York Chocolate",
+            "colorpoint-shorthair": "Colorpoint de Pelo Corto", "javanese": "Javanés",
+            "oriental-longhair": "Oriental de Pelo Largo", "british-longhair": "Británico de Pelo Largo",
+            "asian": "Asiático", "tiffanie": "Tiffanie", "california-spangled": "California Spangled",
+            "dragon-li": "Dragon Li", "suphalak": "Suphalak", "aphrodite-giant": "Gigante de Afrodita",
+            "cyprus": "Chipriota"
+        };
+        
+        function getBreedNameES(id, fallback) {
+            return BREED_NAMES_ES[id] || fallback;
+        }
+
         let breeds = [];
 
         // Load breeds from JSON
@@ -161,7 +198,7 @@
                 breeds.forEach(breed => {
                     const option = document.createElement('option');
                     option.value = breed.id;
-                    option.textContent = breed.name;
+                    option.textContent = getBreedNameES(breed.id, breed.name);
                     select.appendChild(option);
                 });
             });
@@ -203,8 +240,8 @@
                     ${selectedBreeds.map(breed => `
                         <th class="p-4 text-center">
                             <a href="../breeds/${breed.id}/" class="group">
-                                <img src="../../images/heads/${breed.id}.webp" alt="${breed.name}" class="w-16 h-16 rounded-xl mx-auto mb-2 object-cover object-top shadow-md group-hover:shadow-lg transition" onerror="this.style.display='none'">
-                                <div class="font-bold text-slate-800 group-hover:text-fuchsia-600 transition">${breed.name}</div>
+                                <img src="../../images/heads/${breed.id}.webp" alt="${getBreedNameES(breed.id, breed.name)}" class="w-16 h-16 rounded-xl mx-auto mb-2 object-cover object-top shadow-md group-hover:shadow-lg transition" onerror="this.style.display='none'">
+                                <div class="font-bold text-slate-800 group-hover:text-fuchsia-600 transition">${getBreedNameES(breed.id, breed.name)}</div>
                             </a>
                         </th>
                     `).join('')}
