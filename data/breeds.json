@@ -2203,7 +2203,10 @@
         "Those away often",
         "Cold homes"
       ]
-    }
+    },
+    "overview": "The Peterbald originated in Russia from crossing a Donskoy with an Oriental Shorthair. They range from completely bald to having a fine coat. Elegant and athletic with an Oriental body type, they're affectionate, intelligent cats who love being with their people.",
+    "health": "Peterbalds may be prone to skin conditions and sunburn if hairless. Some may develop dental issues or heart conditions. They're sensitive to temperature extremes. Regular vet checkups are important. Lifespan is 12-15 years.",
+    "care": "Hairless varieties need regular bathing to remove skin oils. Protect from sun and cold. They're highly social and need lots of interaction. Provide warm sleeping spots and consider sweaters in winter. Active cats who need play."
   },
   {
     "id": "donskoy",
@@ -2244,7 +2247,10 @@
       "not_ideal": [
         "Cold environments"
       ]
-    }
+    },
+    "overview": "The Donskoy (Don Sphynx) is a Russian hairless breed, genetically distinct from the Sphynx. Their hairlessness is dominant, unlike the Sphynx's recessive gene. They're friendly, intelligent, and love being the center of attention.",
+    "health": "Donskoys can develop skin conditions and are prone to dental issues. They need protection from sun and cold. Some may develop heart conditions. Regular skin care and vet visits are essential. Lifespan is 12-15 years.",
+    "care": "Regular bathing (weekly or more) is necessary to prevent oil buildup. Clean ears frequently. Protect from temperature extremes\u2014they may need sweaters. Highly social and don't do well alone. Very active and playful."
   },
   {
     "id": "kurilian-bobtail",
@@ -2285,7 +2291,10 @@
       "not_ideal": [
         "Small apartments"
       ]
-    }
+    },
+    "overview": "The Kurilian Bobtail comes from Russia's Kuril Islands. Their short, pom-pom tail is natural, not related to health issues. They're excellent hunters with a gentle, trusting personality. They adapt well to families and other pets.",
+    "health": "Kurilian Bobtails are remarkably healthy with no breed-specific genetic conditions. Their bobtail is natural and doesn't cause spinal problems. One of the healthiest cat breeds with lifespans of 15-20 years.",
+    "care": "Both short and longhaired varieties need weekly brushing. They're active, intelligent cats who enjoy interactive play and hunting games. They adapt well to various living situations. They often enjoy water."
   },
   {
     "id": "american-wirehair",
@@ -2326,7 +2335,10 @@
       "not_ideal": [
         "Those wanting exotic looks"
       ]
-    }
+    },
+    "overview": "The American Wirehair has a unique coat\u2014each hair is crimped or bent, giving them a wiry, springy texture. This spontaneous mutation appeared in New York in 1966. They're relaxed, adaptable cats with loving personalities.",
+    "health": "American Wirehairs are generally very healthy with few breed-specific issues. Some may develop skin sensitivities. Robust breed with 14-18 year lifespans. One of the healthier American breeds.",
+    "care": "Their unusual coat needs minimal grooming\u2014over-brushing can damage it. Just occasional gentle grooming. They're adaptable, easygoing cats suited to most living situations. Moderate activity level with playful moments."
   },
   {
     "id": "european-shorthair",
@@ -2366,7 +2378,10 @@
       "not_ideal": [
         "Those wanting exotic breeds"
       ]
-    }
+    },
+    "overview": "The European Shorthair is Europe's equivalent of the American Shorthair\u2014a natural breed developed from ordinary European cats. They're independent, intelligent hunters who bond with their families while maintaining a self-sufficient nature.",
+    "health": "European Shorthairs are extremely healthy with virtually no breed-specific conditions. Their diverse genetic background keeps them robust. One of the healthiest cat breeds with 15-20 year lifespans.",
+    "care": "Their short coat needs minimal grooming. They're adaptable, independent cats who handle alone time well. Provide hunting toys and climbing opportunities. They're good mousers if given outdoor access."
   },
   {
     "id": "brazilian-shorthair",
@@ -2406,7 +2421,10 @@
       "not_ideal": [
         "Those wanting rare/exotic breeds"
       ]
-    }
+    },
+    "overview": "The Brazilian Shorthair developed from street cats in Brazil and was only recognized as a breed in 1998. They're athletic, intelligent, and affectionate without being demanding. They adapt well to various living situations.",
+    "health": "Brazilian Shorthairs are generally very healthy due to their diverse genetic background. Few breed-specific health issues. Robust, adaptable breed with 14-20 year lifespans.",
+    "care": "Their short coat needs minimal grooming. They're moderate-energy cats who enjoy play but aren't hyperactive. Adaptable to apartment living. Social but not overly demanding of attention."
   },
   {
     "id": "khao-manee",
@@ -2446,7 +2464,10 @@
       "not_ideal": [
         "Budget-conscious (very rare)"
       ]
-    }
+    },
+    "overview": "The Khao Manee is a rare Thai breed known for their pure white coat and striking eyes\u2014often odd-colored, with one blue and one gold eye. In Thailand, they're considered good luck. They're playful, intelligent, and people-oriented.",
+    "health": "White Khao Manees with blue eyes may be deaf\u2014get hearing tested. They can be prone to skin cancer from sun exposure. Otherwise generally healthy with 12-16 year lifespans. Keep out of direct sunlight.",
+    "care": "Their short coat needs minimal grooming. If blue-eyed, learn to communicate visually with a deaf cat. Keep indoors to prevent sunburn. They're social, playful cats who need interaction."
   },
   {
     "id": "lykoi",
@@ -2486,7 +2507,10 @@
       "not_ideal": [
         "Those wanting fluffy cats"
       ]
-    }
+    },
+    "overview": "The Lykoi, or 'Werewolf Cat,' has a partially hairless coat giving them a werewolf-like appearance. This natural mutation affects their hair growth patterns. Despite their wild looks, they're friendly, playful, and affectionate cats.",
+    "health": "Lykoi are generally healthy but their unique coat means they're prone to sunburn and cold sensitivity. As a newer breed, long-term health data is still being collected. Lifespan is estimated at 12-15 years.",
+    "care": "They may need occasional bathing to remove skin oils. Protect from sun and extreme cold. They shed their coat periodically, sometimes appearing nearly bald. Active, intelligent cats who need play and stimulation."
   },
   {
     "id": "munchkin",
@@ -2527,7 +2551,10 @@
       "not_ideal": [
         "Those concerned about genetic issues"
       ]
-    }
+    },
+    "overview": "The Munchkin is famous for their short legs, caused by a natural genetic mutation. Despite their stature, they're agile, playful, and run surprisingly fast. They come in all coat types and colors. Their short legs don't slow them down!",
+    "health": "Munchkins may be prone to Lordosis (spinal curvature) and Pectus Excavatum (chest deformity). Their short legs don't typically cause mobility issues. Some controversy exists about breeding for the trait. Lifespan is 12-15 years.",
+    "care": "Grooming depends on coat type. They're active despite short legs\u2014provide low-entry litter boxes and accessible climbing options. They may not jump as high but compensate with speed and ground-level agility."
   },
   {
     "id": "highlander",
@@ -2568,7 +2595,10 @@
       "not_ideal": [
         "Small apartments"
       ]
-    }
+    },
+    "overview": "The Highlander is a newer breed with curled ears and often a bobtail, bred from Desert Lynx and other breeds. They have a wild appearance but a gentle, playful personality. They're confident, social cats who love their families.",
+    "health": "Highlanders are generally healthy, though as a newer breed, long-term health data is limited. Their curled ears need gentle handling and regular cleaning. Lifespan is estimated at 10-15 years.",
+    "care": "Both short and longhaired varieties need regular brushing. Clean curled ears carefully. They're active, playful cats who enjoy interactive toys. Social and do well with other pets and children."
   },
   {
     "id": "serengeti",
@@ -2609,7 +2639,10 @@
         "Small apartments",
         "Quiet households"
       ]
-    }
+    },
+    "overview": "The Serengeti was bred to resemble the African Serval without any wild blood\u2014created from Bengal and Oriental Shorthair crosses. They have long legs, large ears, and a spotted coat. Active and confident, they're very people-oriented.",
+    "health": "Serengetis are generally healthy but may inherit issues from parent breeds. Some may develop bladder stones or heart conditions. As a developing breed, health data is still accumulating. Lifespan is 12-15 years.",
+    "care": "Their short coat needs minimal grooming. Very active cats who need lots of play and climbing space. They're social and don't like being alone. Many can be trained to walk on a leash."
   },
   {
     "id": "thai",
@@ -2649,7 +2682,10 @@
       "not_ideal": [
         "Quiet households"
       ]
-    }
+    },
+    "overview": "The Thai cat is the traditional, moderate-type Siamese\u2014before modern breeding made Siamese more extreme. Also called 'Old-Style Siamese' or 'Wichien Maat,' they have the classic colorpoints but a more natural body shape.",
+    "health": "Thais may be prone to some Siamese health issues: dental problems, respiratory issues, and eye conditions. Generally healthier than modern extreme Siamese. Lifespan is 15-20 years.",
+    "care": "Their short coat needs minimal grooming. Less vocal than modern Siamese but still talkative. Social cats who need companionship. Intelligent and trainable. They do well with other pets."
   },
   {
     "id": "chantilly-tiffany",
@@ -2689,7 +2725,10 @@
       "not_ideal": [
         "Those disliking grooming"
       ]
-    }
+    },
+    "overview": "The Chantilly-Tiffany (or Chantilly) is a semi-longhaired chocolate-colored cat known for their silky coat and devoted personality. Once thought extinct, they're still rare. They're moderate, loyal cats who follow their owners everywhere.",
+    "health": "Chantilly-Tiffanies may develop ear wax buildup and digestive sensitivities. Otherwise generally healthy. Their rarity means genetic diversity concerns. Lifespan is 12-15 years.",
+    "care": "Their silky coat needs regular brushing to prevent matting. Clean ears frequently. They're devoted, moderate-energy cats. Don't like being alone for long periods. Good with children and other pets."
   },
   {
     "id": "york-chocolate",
@@ -2730,7 +2769,10 @@
       "not_ideal": [
         "Those wanting low grooming"
       ]
-    }
+    },
+    "overview": "The York Chocolate is an American breed developed from farm cats in New York. Named for their rich chocolate coat, they're friendly, energetic, and love to be involved in family activities. Unfortunately now very rare.",
+    "health": "York Chocolates are generally healthy with no specific breed-related conditions. Their diverse genetic background keeps them robust. Lifespan is 13-15 years. Finding breeders is very difficult.",
+    "care": "Their semi-long coat needs regular brushing. Active, intelligent cats who need play and mental stimulation. They're social and friendly with family but may be reserved with strangers."
   },
   {
     "id": "colorpoint-shorthair",
@@ -2770,7 +2812,10 @@
       "not_ideal": [
         "Quiet households"
       ]
-    }
+    },
+    "overview": "The Colorpoint Shorthair is essentially a Siamese in non-traditional colors\u2014red, cream, tortie, and tabby points. They share the Siamese personality: vocal, intelligent, and demanding of attention. They bond intensely with their owners.",
+    "health": "Colorpoint Shorthairs share Siamese health concerns: dental issues, heart conditions, and respiratory problems. Some may develop eye issues. Regular vet care is important. Lifespan is 12-16 years.",
+    "care": "Their short coat needs minimal grooming. Very social\u2014don't like being alone. Vocal and will 'talk' to you constantly. Need lots of mental stimulation and interactive play. Consider getting two."
   },
   {
     "id": "javanese",
@@ -2810,7 +2855,10 @@
       "not_ideal": [
         "Quiet households"
       ]
-    }
+    },
+    "overview": "The Javanese is a longhaired Colorpoint Shorthair (or Balinese in non-traditional colors). They combine Siamese personality with a silky flowing coat in colors like red, cream, and tortie point. Intelligent, vocal, and devoted.",
+    "health": "Javanese may develop heart issues, eye problems, and dental conditions like their Siamese relatives. Some may be prone to liver amyloidosis. Regular vet checkups are important. Lifespan is 12-15 years.",
+    "care": "Their single-layer coat doesn't mat easily\u2014weekly brushing is enough. Very social and need lots of interaction. Highly vocal. Provide puzzle toys and climbing spaces. Don't do well alone."
   },
   {
     "id": "oriental-longhair",
@@ -2850,7 +2898,10 @@
       "not_ideal": [
         "Quiet households"
       ]
-    }
+    },
+    "overview": "The Oriental Longhair is a longhaired version of the Oriental Shorthair, with the same elegant body and huge personality but with flowing fur. They come in over 300 color and pattern combinations. Incredibly social and vocal.",
+    "health": "Oriental Longhairs share health concerns with Orientals and Siamese: liver amyloidosis, heart disease, and respiratory issues. Some may develop dental problems. Regular vet care is essential. Lifespan is 12-15 years.",
+    "care": "Their silky coat needs brushing 2-3 times weekly. Extremely social\u2014they get depressed if ignored. Need lots of mental stimulation, play, and interaction. Consider getting two if you work long hours."
   },
   {
     "id": "british-longhair",
@@ -2890,7 +2941,10 @@
       "not_ideal": [
         "Those disliking grooming"
       ]
-    }
+    },
+    "overview": "The British Longhair is the longhaired version of the British Shorthair, with the same chunky body and calm personality but with a luxurious flowing coat. Sometimes called 'Lowlanders,' they're gentle, easygoing companions.",
+    "health": "British Longhairs can be prone to Hypertrophic Cardiomyopathy (HCM) and Polycystic Kidney Disease (PKD). They're prone to obesity. Regular health screenings are recommended. Lifespan is 12-15 years.",
+    "care": "Their long coat needs brushing 2-3 times weekly to prevent matting. Watch their weight\u2014they gain easily. They're not demanding but enjoy gentle play. Calm cats suited to quieter households."
   },
   {
     "id": "asian",
@@ -2930,7 +2984,10 @@
       "not_ideal": [
         "Those away often"
       ]
-    }
+    },
+    "overview": "The Asian cat group includes varieties like the Burmilla, Asian Smoke, and Asian Tabby. They combine Burmese personality with different coat patterns and colors. Playful, social, and affectionate without being overly demanding.",
+    "health": "Asian cats may inherit Burmese health issues: diabetes, kidney problems, and dental conditions. Generally healthy with 12-15 year lifespans. Regular vet checkups are important.",
+    "care": "Their short coat needs minimal grooming. They're social cats who enjoy family interaction but can handle some alone time. Moderate activity level. Good with children and other pets."
   },
   {
     "id": "tiffanie",
@@ -2970,7 +3027,10 @@
       "not_ideal": [
         "Those disliking grooming"
       ]
-    }
+    },
+    "overview": "The Tiffanie is a semi-longhaired Asian cat, similar to the Burmilla but with a flowing coat. Developed in the UK, they're not related to the American Chantilly-Tiffany despite the similar name. Playful, affectionate, and intelligent.",
+    "health": "Tiffanies may inherit Asian/Burmese health concerns. Some may develop kidney issues or allergies. Regular vet care is important. Lifespan is 12-15 years.",
+    "care": "Their silky coat needs regular brushing to prevent matting. Social, playful cats who enjoy interaction. Moderate energy level\u2014playful but not hyperactive. Good with families."
   },
   {
     "id": "california-spangled",
@@ -3010,7 +3070,10 @@
       "not_ideal": [
         "Small apartments"
       ]
-    }
+    },
+    "overview": "The California Spangled was bred in the 1980s to resemble wild spotted cats and raise awareness about endangered wild cats. They're athletic, intelligent, and devoted to their families. Unfortunately now extremely rare or possibly extinct.",
+    "health": "California Spangled cats were generally healthy. Finding accurate health information is difficult due to their rarity. No known breed-specific conditions were documented.",
+    "care": "Their short spotted coat needed minimal grooming. Active, intelligent cats who needed lots of play and mental stimulation. They were social and bonded strongly with families."
   },
   {
     "id": "dragon-li",
@@ -3050,7 +3113,10 @@
       "not_ideal": [
         "Those wanting very affectionate cats"
       ]
-    }
+    },
+    "overview": "The Dragon Li (Chinese Li Hua) is one of the earliest natural cat breeds, from China. They have a distinctive 'broken mackerel' tabby pattern. Independent, intelligent, and loyal, they're still used as working cats in China.",
+    "health": "Dragon Li cats are extremely healthy with no known breed-specific conditions. Their natural development over thousands of years has kept them robust. Lifespan is 12-15+ years.",
+    "care": "Their short coat needs minimal grooming. They're independent but loyal to their families. Active and intelligent\u2014good hunters. They adapt to various living situations but appreciate outdoor access if safe."
   },
   {
     "id": "suphalak",
@@ -3090,7 +3156,10 @@
       "not_ideal": [
         "Budget-conscious (extremely rare)"
       ]
-    }
+    },
+    "overview": "The Suphalak is an ancient Thai breed, described in the Cat-Book Poems written 300+ years ago. They have a rich reddish-brown coat and golden eyes. Extremely rare, they're affectionate, playful, and bond strongly with their families.",
+    "health": "Suphalaks are generally healthy but have a very small gene pool. Limited health data is available due to rarity. Regular vet care is important. Lifespan is estimated at 12-15 years.",
+    "care": "Their short coat needs minimal grooming. Social cats who enjoy human company. Moderately active with playful personalities. Very rare\u2014finding breeders is difficult."
   },
   {
     "id": "aphrodite-giant",
@@ -3130,7 +3199,10 @@
       "not_ideal": [
         "Small apartments"
       ]
-    }
+    },
+    "overview": "The Aphrodite Giant is a natural breed from Cyprus, one of the oldest cat breeds in the world. They're large cats with a muscular build adapted to mountainous terrain. Social, intelligent, and good with families.",
+    "health": "Aphrodite Giants are generally healthy with few breed-specific issues. Their natural development has kept them robust. Lifespan is 12-15+ years.",
+    "care": "Both short and longhaired varieties exist\u2014grooming needs vary. They're social, active cats who enjoy climbing and play. They adapt to various living situations and are good with children."
   },
   {
     "id": "cyprus",
@@ -3170,6 +3242,9 @@
       "not_ideal": [
         "Those wanting exotic breeds"
       ]
-    }
+    },
+    "overview": "The Cyprus cat is one of the world's oldest domesticated cat breeds, with evidence of cats on Cyprus dating back 9,500 years. They're a natural landrace adapted to the Mediterranean climate. Friendly, intelligent, and excellent hunters.",
+    "health": "Cyprus cats are extremely healthy with no breed-specific issues. Thousands of years of natural selection has made them robust. One of the healthiest cats with 15-20 year lifespans.",
+    "care": "Their short coat needs minimal grooming. They're adaptable, independent cats who are good hunters. Social with families but self-sufficient. They do well in various climates."
   }
 ]
