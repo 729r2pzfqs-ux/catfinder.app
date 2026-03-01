@@ -173,9 +173,20 @@ def generate_es_breed_page(breed):
     coat_pattern = breed['coat']['pattern']
     
     description = breed.get('description', '')
-    overview = breed.get('overview', description)
-    health = breed.get('health', 'Se recomiendan chequeos veterinarios regulares para esta raza.')
-    care = breed.get('care', 'El aseo regular y una dieta equilibrada son importantes para esta raza.')
+    
+    # Load Spanish translations
+    breed_id = breed['id']
+    try:
+        with open('data/breeds_es.json', 'r') as f:
+            es_translations = json.load(f)
+        es_content = es_translations.get(breed_id, {})
+        overview = es_content.get('overview', description)
+        health = es_content.get('health', 'Se recomiendan chequeos veterinarios regulares para esta raza.')
+        care = es_content.get('care', 'El aseo regular y una dieta equilibrada son importantes para esta raza.')
+    except:
+        overview = description
+        health = 'Se recomiendan chequeos veterinarios regulares para esta raza.'
+        care = 'El aseo regular y una dieta equilibrada son importantes para esta raza.'
     
     ratings = breed.get('ratings', {})
     temperament = breed.get('temperament', [])
