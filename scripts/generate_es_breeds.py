@@ -132,6 +132,62 @@ COAT_ES = {
     "rex": "Rex"
 }
 
+# Origin translations
+ORIGIN_ES = {
+    "United States": "Estados Unidos",
+    "United Kingdom": "Reino Unido",
+    "England": "Inglaterra",
+    "France": "Francia",
+    "Russia": "Rusia",
+    "Thailand": "Tailandia",
+    "Iran": "Irán",
+    "Persia": "Persia",
+    "Egypt": "Egipto",
+    "Turkey": "Turquía",
+    "Japan": "Japón",
+    "Canada": "Canadá",
+    "Australia": "Australia",
+    "Germany": "Alemania",
+    "Norway": "Noruega",
+    "Burma": "Birmania",
+    "Myanmar": "Myanmar",
+    "Ethiopia": "Etiopía",
+    "Singapore": "Singapur",
+    "Isle of Man": "Isla de Man",
+    "Scotland": "Escocia",
+    "Kenya": "Kenia",
+    "Brazil": "Brasil",
+    "Cyprus": "Chipre",
+    "China": "China",
+    "Unknown": "Desconocido"
+}
+
+# Coat pattern translations
+PATTERN_ES = {
+    "various": "Varios",
+    "solid": "Sólido",
+    "solid black": "Negro sólido",
+    "solid blue": "Azul sólido",
+    "solid brown": "Marrón sólido",
+    "solid white": "Blanco sólido",
+    "solid chocolate/lavender": "Chocolate/Lavanda",
+    "solid/tabby": "Sólido/Atigrado",
+    "tabby": "Atigrado",
+    "mackerel tabby": "Atigrado caballa",
+    "ticked tabby": "Atigrado ticked",
+    "spotted tabby": "Atigrado manchado",
+    "spotted": "Manchado",
+    "spotted/marbled": "Manchado/Marmoleado",
+    "ticked": "Ticked",
+    "ticked/solid": "Ticked/Sólido",
+    "colorpoint": "Colorpoint",
+    "colorpoint with white": "Colorpoint con blanco",
+    "mink/colorpoint": "Mink/Colorpoint",
+    "shaded/tipped": "Sombreado/Tipped",
+    "van pattern": "Patrón Van",
+    "roan": "Ruano"
+}
+
 # Temperament translations
 TEMPERAMENT_ES = {
     "calm": "Tranquilo",
@@ -163,16 +219,19 @@ def generate_es_breed_page(breed):
     name_en = breed['name']
     name_es = BREED_NAMES_ES.get(breed_id, name_en)
     
-    origin = breed.get('origin', 'Unknown')
-    lifespan = breed.get('lifespan', '12-15 years')
+    origin_en = breed.get('origin', 'Unknown')
+    origin = ORIGIN_ES.get(origin_en, origin_en)
+    lifespan_en = breed.get('lifespan', '12-15 years')
+    lifespan = lifespan_en.replace(' years', ' años').replace(' year', ' año')
     weight = breed['size'].get('weight_kg', '4-6')
     size_cat = breed['size']['category']
     size_es = SIZE_ES.get(size_cat, size_cat.capitalize())
     coat_type = breed['coat']['type']
     coat_es = COAT_ES.get(coat_type, coat_type.capitalize())
-    coat_pattern = breed['coat']['pattern']
+    coat_pattern_en = breed['coat']['pattern']
+    coat_pattern = PATTERN_ES.get(coat_pattern_en, coat_pattern_en)
     
-    description = breed.get('description', '')
+    description_en = breed.get('description', '')
     
     # Load Spanish translations
     breed_id = breed['id']
@@ -180,11 +239,14 @@ def generate_es_breed_page(breed):
         with open('data/breeds_es.json', 'r') as f:
             es_translations = json.load(f)
         es_content = es_translations.get(breed_id, {})
-        overview = es_content.get('overview', description)
+        overview = es_content.get('overview', description_en)
         health = es_content.get('health', 'Se recomiendan chequeos veterinarios regulares para esta raza.')
         care = es_content.get('care', 'El aseo regular y una dieta equilibrada son importantes para esta raza.')
+        # Use first sentence of overview as short description
+        description = overview.split('.')[0] + '.' if overview else description_en
     except:
-        overview = description
+        overview = description_en
+        description = description_en
         health = 'Se recomiendan chequeos veterinarios regulares para esta raza.'
         care = 'El aseo regular y una dieta equilibrada son importantes para esta raza.'
     
@@ -326,7 +388,7 @@ def generate_es_breed_page(breed):
                             <svg class="w-6 h-6 text-fuchsia-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
                             <div>
                                 <p class="text-xs text-slate-500">Pelaje</p>
-                                <p class="font-semibold text-slate-700">{coat_pattern.capitalize()}</p>
+                                <p class="font-semibold text-slate-700">{coat_pattern}</p>
                             </div>
                         </div>
                     </div>
