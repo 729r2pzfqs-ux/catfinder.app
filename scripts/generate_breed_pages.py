@@ -17,6 +17,9 @@ def generate_breed_html(breed):
     coat_type = breed['coat']['type']
     coat_pattern = breed['coat']['pattern']
     description = breed.get('description', '')
+    overview = breed.get('overview', description)  # Fall back to description if no overview
+    health = breed.get('health', 'Regular veterinary checkups are recommended for this breed. Consult your vet about breed-specific health concerns.')
+    care = breed.get('care', 'Regular grooming and a balanced diet are important for this breed. Provide appropriate exercise and mental stimulation.')
     
     ratings = breed.get('ratings', {})
     temperament = breed.get('temperament', [])
@@ -171,10 +174,47 @@ def generate_breed_html(breed):
             </div>
         </section>
 
-        <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 md:p-8 mb-8">
-            <h2 class="text-xl font-bold text-slate-900 mb-4">About the {name}</h2>
-            <p class="text-slate-600 leading-relaxed">{description}</p>
-        </section>
+        <!-- Accordion Sections -->
+        <div class="space-y-4 mb-8">
+            <details class="bg-white rounded-2xl shadow-sm border border-slate-200 group" open>
+                <summary class="p-6 cursor-pointer flex items-center justify-between">
+                    <h2 class="text-xl font-bold text-slate-900 flex items-center gap-3">
+                        <svg class="w-5 h-5 text-fuchsia-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                        Overview
+                    </h2>
+                    <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </summary>
+                <div class="px-6 pb-6">
+                    <p class="text-slate-600 leading-relaxed">{overview}</p>
+                </div>
+            </details>
+
+            <details class="bg-white rounded-2xl shadow-sm border border-slate-200 group">
+                <summary class="p-6 cursor-pointer flex items-center justify-between">
+                    <h2 class="text-xl font-bold text-slate-900 flex items-center gap-3">
+                        <svg class="w-5 h-5 text-fuchsia-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                        Health
+                    </h2>
+                    <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </summary>
+                <div class="px-6 pb-6">
+                    <p class="text-slate-600 leading-relaxed">{health}</p>
+                </div>
+            </details>
+
+            <details class="bg-white rounded-2xl shadow-sm border border-slate-200 group">
+                <summary class="p-6 cursor-pointer flex items-center justify-between">
+                    <h2 class="text-xl font-bold text-slate-900 flex items-center gap-3">
+                        <svg class="w-5 h-5 text-fuchsia-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
+                        Care & Grooming
+                    </h2>
+                    <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </summary>
+                <div class="px-6 pb-6">
+                    <p class="text-slate-600 leading-relaxed">{care}</p>
+                </div>
+            </details>
+        </div>
 
         <section class="bg-gradient-to-br from-fuchsia-50 via-purple-50 to-pink-50 rounded-2xl p-6 md:p-8 mb-8">
             <h2 class="text-xl font-bold text-slate-900 mb-6">Is This Breed Right for You?</h2>
