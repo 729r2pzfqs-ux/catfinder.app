@@ -1,39 +1,252 @@
-<!DOCTYPE html>
+#!/usr/bin/env python3
+"""Generate Spanish cat breed pages from English data."""
+import json
+import os
+
+# Load English breed data (has expanded content)
+with open('data/breeds.json', 'r') as f:
+    breeds = json.load(f)
+
+# Spanish translations for breed names
+BREED_NAMES_ES = {
+    "persian": "Persa",
+    "maine-coon": "Maine Coon",
+    "ragdoll": "Ragdoll",
+    "british-shorthair": "Británico de Pelo Corto",
+    "siamese": "Siamés",
+    "abyssinian": "Abisinio",
+    "bengal": "Bengalí",
+    "sphynx": "Sphynx",
+    "scottish-fold": "Scottish Fold",
+    "russian-blue": "Azul Ruso",
+    "norwegian-forest-cat": "Bosque de Noruega",
+    "burmese": "Burmés",
+    "oriental-shorthair": "Oriental de Pelo Corto",
+    "devon-rex": "Devon Rex",
+    "cornish-rex": "Cornish Rex",
+    "exotic-shorthair": "Exótico de Pelo Corto",
+    "himalayan": "Himalayo",
+    "american-shorthair": "Americano de Pelo Corto",
+    "tonkinese": "Tonkinés",
+    "ragamuffin": "RagaMuffin",
+    "savannah": "Savannah",
+    "siberian": "Siberiano",
+    "balinese": "Balinés",
+    "turkish-angora": "Angora Turco",
+    "turkish-van": "Van Turco",
+    "somali": "Somalí",
+    "chartreux": "Chartreux",
+    "ocicat": "Ocicat",
+    "egyptian-mau": "Mau Egipcio",
+    "birman": "Birmano",
+    "singapura": "Singapura",
+    "manx": "Manx",
+    "japanese-bobtail": "Bobtail Japonés",
+    "american-curl": "Curl Americano",
+    "selkirk-rex": "Selkirk Rex",
+    "laperm": "LaPerm",
+    "korat": "Korat",
+    "bombay": "Bombay",
+    "havana-brown": "Habana Marrón",
+    "burmilla": "Burmilla",
+    "toyger": "Toyger",
+    "pixie-bob": "Pixie-Bob",
+    "cymric": "Cymric",
+    "american-bobtail": "Bobtail Americano",
+    "nebelung": "Nebelung",
+    "snowshoe": "Snowshoe",
+    "chausie": "Chausie",
+    "sokoke": "Sokoke",
+    "australian-mist": "Mist Australiano",
+    "peterbald": "Peterbald",
+    "donskoy": "Donskoy",
+    "kurilian-bobtail": "Bobtail de las Kuriles",
+    "american-wirehair": "Americano de Pelo Áspero",
+    "european-shorthair": "Europeo de Pelo Corto",
+    "brazilian-shorthair": "Brasileño de Pelo Corto",
+    "khao-manee": "Khao Manee",
+    "lykoi": "Lykoi",
+    "munchkin": "Munchkin",
+    "highlander": "Highlander",
+    "serengeti": "Serengeti",
+    "thai": "Thai",
+    "chantilly-tiffany": "Chantilly-Tiffany",
+    "york-chocolate": "York Chocolate",
+    "colorpoint-shorthair": "Colorpoint de Pelo Corto",
+    "javanese": "Javanés",
+    "oriental-longhair": "Oriental de Pelo Largo",
+    "british-longhair": "Británico de Pelo Largo",
+    "asian": "Asiático",
+    "tiffanie": "Tiffanie",
+    "california-spangled": "California Spangled",
+    "dragon-li": "Dragon Li",
+    "suphalak": "Suphalak",
+    "aphrodite-giant": "Gigante de Afrodita",
+    "cyprus": "Chipriota"
+}
+
+# UI translations
+UI_ES = {
+    "Origin": "Origen",
+    "Lifespan": "Esperanza de vida",
+    "Weight": "Peso",
+    "Coat": "Pelaje",
+    "Breed Ratings": "Puntuaciones de la Raza",
+    "Affection": "Afecto",
+    "Activity Level": "Nivel de Actividad",
+    "Grooming Needs": "Necesidades de Aseo",
+    "Vocality": "Vocalización",
+    "Independence": "Independencia",
+    "Kid Friendly": "Apto para Niños",
+    "Dog Friendly": "Apto para Perros",
+    "Intelligence": "Inteligencia",
+    "Temperament": "Temperamento",
+    "Overview": "Descripción General",
+    "Health": "Salud",
+    "Care & Grooming": "Cuidados y Aseo",
+    "Is This Breed Right for You?": "¿Es Esta Raza Adecuada para Ti?",
+    "Best For": "Ideal Para",
+    "Not Ideal For": "No Recomendado Para",
+    "Home": "Inicio",
+    "Breeds": "Razas",
+    "Quiz": "Test",
+    "Compare": "Comparar",
+    "Search": "Buscar",
+    "About": "Acerca de"
+}
+
+# Size translations
+SIZE_ES = {
+    "small": "Pequeño",
+    "medium": "Mediano",
+    "large": "Grande",
+    "extra-large": "Extra Grande"
+}
+
+# Coat type translations
+COAT_ES = {
+    "longhair": "Pelo Largo",
+    "shorthair": "Pelo Corto",
+    "semi-longhair": "Pelo Semilargo",
+    "hairless": "Sin Pelo",
+    "rex": "Rex"
+}
+
+# Temperament translations
+TEMPERAMENT_ES = {
+    "calm": "Tranquilo",
+    "gentle": "Gentil",
+    "affectionate": "Cariñoso",
+    "quiet": "Silencioso",
+    "friendly": "Amigable",
+    "playful": "Juguetón",
+    "intelligent": "Inteligente",
+    "docile": "Dócil",
+    "easygoing": "Relajado",
+    "loyal": "Leal",
+    "independent": "Independiente",
+    "vocal": "Vocal",
+    "social": "Social",
+    "active": "Activo",
+    "curious": "Curioso",
+    "confident": "Seguro",
+    "energetic": "Enérgico",
+    "reserved": "Reservado",
+    "devoted": "Devoto",
+    "mischievous": "Travieso",
+    "outgoing": "Extrovertido"
+}
+
+def generate_es_breed_page(breed):
+    """Generate Spanish breed page."""
+    breed_id = breed['id']
+    name_en = breed['name']
+    name_es = BREED_NAMES_ES.get(breed_id, name_en)
+    
+    origin = breed.get('origin', 'Unknown')
+    lifespan = breed.get('lifespan', '12-15 years')
+    weight = breed['size'].get('weight_kg', '4-6')
+    size_cat = breed['size']['category']
+    size_es = SIZE_ES.get(size_cat, size_cat.capitalize())
+    coat_type = breed['coat']['type']
+    coat_es = COAT_ES.get(coat_type, coat_type.capitalize())
+    coat_pattern = breed['coat']['pattern']
+    
+    description = breed.get('description', '')
+    overview = breed.get('overview', description)
+    health = breed.get('health', 'Se recomiendan chequeos veterinarios regulares para esta raza.')
+    care = breed.get('care', 'El aseo regular y una dieta equilibrada son importantes para esta raza.')
+    
+    ratings = breed.get('ratings', {})
+    temperament = breed.get('temperament', [])
+    verdict = breed.get('verdict', {})
+    best_for = verdict.get('best_for', [])
+    not_ideal = verdict.get('not_ideal', [])
+    
+    # Generate ratings HTML
+    rating_labels = {
+        'affection': 'Afecto',
+        'activity': 'Nivel de Actividad',
+        'grooming': 'Necesidades de Aseo',
+        'vocality': 'Vocalización',
+        'independence': 'Independencia',
+        'kid_friendly': 'Apto para Niños',
+        'dog_friendly': 'Apto para Perros',
+        'intelligence': 'Inteligencia'
+    }
+    
+    ratings_html = ''
+    for key, label in rating_labels.items():
+        value = ratings.get(key, 3)
+        ratings_html += f'''
+                <div>
+                    <div class="flex justify-between mb-2"><span class="text-slate-600">{label}</span><span class="font-medium">{value}/5</span></div>
+                    <div class="rating-bar rating-{value}"></div>
+                </div>'''
+    
+    # Temperament HTML
+    temp_html = ''.join([f'<span class="bg-gradient-to-r from-fuchsia-100 to-purple-100 text-slate-700 px-4 py-2 rounded-full text-sm font-medium">{TEMPERAMENT_ES.get(t, t.capitalize())}</span>' for t in temperament[:6]])
+    
+    # Best for / Not ideal HTML
+    best_for_html = ''.join([f'<li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>{item}</span></li>' for item in best_for])
+    not_ideal_html = ''.join([f'<li class="flex items-start gap-2"><svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg><span>{item}</span></li>' for item in not_ideal])
+    
+    html = f'''<!DOCTYPE html>
 <html lang="es">
 <head>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JVFQHMFD3"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag(){{dataLayer.push(arguments);}}
       gtag('js', new Date());
       gtag('config', 'G-8JVFQHMFD3');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abisinio - Guía de Raza | CatFinder</title>
-    <meta name="description" content="Guía completa del Abisinio: temperamento, cuidados, salud y más. Descubre si esta raza es adecuada para ti.">
-    <link rel="canonical" href="https://catfinder.app/es/breeds/abyssinian/">
-    <link rel="alternate" hreflang="en" href="https://catfinder.app/breeds/abyssinian/">
-    <link rel="alternate" hreflang="es" href="https://catfinder.app/es/breeds/abyssinian/">
-    <link rel="alternate" hreflang="de" href="https://catfinder.app/de/breeds/abyssinian/">
-    <meta property="og:title" content="Abisinio - Guía de Raza | CatFinder">
-    <meta property="og:description" content="Todo sobre el Abisinio: personalidad, cuidados, necesidades de aseo y más.">
-    <meta property="og:image" content="https://catfinder.app/images/breeds/abyssinian.webp">
-    <meta property="og:url" content="https://catfinder.app/es/breeds/abyssinian/">
+    <title>{name_es} - Guía de Raza | CatFinder</title>
+    <meta name="description" content="Guía completa del {name_es}: temperamento, cuidados, salud y más. Descubre si esta raza es adecuada para ti.">
+    <link rel="canonical" href="https://catfinder.app/es/breeds/{breed_id}/">
+    <link rel="alternate" hreflang="en" href="https://catfinder.app/breeds/{breed_id}/">
+    <link rel="alternate" hreflang="es" href="https://catfinder.app/es/breeds/{breed_id}/">
+    <link rel="alternate" hreflang="de" href="https://catfinder.app/de/breeds/{breed_id}/">
+    <meta property="og:title" content="{name_es} - Guía de Raza | CatFinder">
+    <meta property="og:description" content="Todo sobre el {name_es}: personalidad, cuidados, necesidades de aseo y más.">
+    <meta property="og:image" content="https://catfinder.app/images/breeds/{breed_id}.webp">
+    <meta property="og:url" content="https://catfinder.app/es/breeds/{breed_id}/">
     <meta property="og:type" content="article">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .rating-bar { height: 8px; background: #e2e8f0; border-radius: 4px; overflow: hidden; }
-        .rating-bar::after { content: ''; display: block; height: 100%; border-radius: 4px; background: linear-gradient(90deg, #d946ef, #a855f7); }
-        .rating-1::after { width: 20%; }
-        .rating-2::after { width: 40%; }
-        .rating-3::after { width: 60%; }
-        .rating-4::after { width: 80%; }
-        .rating-5::after { width: 100%; }
+        body {{ font-family: 'Plus Jakarta Sans', sans-serif; }}
+        .rating-bar {{ height: 8px; background: #e2e8f0; border-radius: 4px; overflow: hidden; }}
+        .rating-bar::after {{ content: ''; display: block; height: 100%; border-radius: 4px; background: linear-gradient(90deg, #d946ef, #a855f7); }}
+        .rating-1::after {{ width: 20%; }}
+        .rating-2::after {{ width: 40%; }}
+        .rating-3::after {{ width: 60%; }}
+        .rating-4::after {{ width: 80%; }}
+        .rating-5::after {{ width: 100%; }}
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
@@ -62,51 +275,51 @@
             <span class="mx-2">/</span>
             <a href="/es/search/" class="hover:text-fuchsia-600">Razas</a>
             <span class="mx-2">/</span>
-            <span class="text-slate-700">Abisinio</span>
+            <span class="text-slate-700">{name_es}</span>
         </nav>
 
         <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden mb-8">
             <div class="md:flex">
                 <div class="md:w-2/5">
-                    <img src="/images/breeds/abyssinian.webp" alt="Abisinio" class="w-full h-full object-cover">
+                    <img src="/images/breeds/{breed_id}.webp" alt="{name_es}" class="w-full h-full object-cover">
                 </div>
                 <div class="md:w-3/5 p-6 md:p-8">
                     <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-fuchsia-100 text-fuchsia-700 px-3 py-1 rounded-full text-sm font-medium">Pelo Corto</span>
-                        <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium">Mediano</span>
+                        <span class="bg-fuchsia-100 text-fuchsia-700 px-3 py-1 rounded-full text-sm font-medium">{coat_es}</span>
+                        <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium">{size_es}</span>
                     </div>
-                    <h1 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Abisinio</h1>
+                    <h1 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{name_es}</h1>
                     <div class="grid grid-cols-2 gap-4">
                         <div class="flex items-center gap-3 p-3 bg-slate-50 rounded-xl">
                             <svg class="w-6 h-6 text-fuchsia-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                             <div>
                                 <p class="text-xs text-slate-500">Origen</p>
-                                <p class="font-semibold text-slate-700">Ethiopia</p>
+                                <p class="font-semibold text-slate-700">{origin}</p>
                             </div>
                         </div>
                         <div class="flex items-center gap-3 p-3 bg-slate-50 rounded-xl">
                             <svg class="w-6 h-6 text-fuchsia-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                             <div>
                                 <p class="text-xs text-slate-500">Esperanza de vida</p>
-                                <p class="font-semibold text-slate-700">12-15 years</p>
+                                <p class="font-semibold text-slate-700">{lifespan}</p>
                             </div>
                         </div>
                         <div class="flex items-center gap-3 p-3 bg-slate-50 rounded-xl">
                             <svg class="w-6 h-6 text-fuchsia-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
                             <div>
                                 <p class="text-xs text-slate-500">Peso</p>
-                                <p class="font-semibold text-slate-700">3-5 kg</p>
+                                <p class="font-semibold text-slate-700">{weight} kg</p>
                             </div>
                         </div>
                         <div class="flex items-center gap-3 p-3 bg-slate-50 rounded-xl">
                             <svg class="w-6 h-6 text-fuchsia-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
                             <div>
                                 <p class="text-xs text-slate-500">Pelaje</p>
-                                <p class="font-semibold text-slate-700">Ticked tabby</p>
+                                <p class="font-semibold text-slate-700">{coat_pattern.capitalize()}</p>
                             </div>
                         </div>
                     </div>
-                    <p class="mt-4 text-slate-600 leading-relaxed">Abyssinians are one of the oldest known breeds, known for their ticked coat and extremely active, curious nature.</p>
+                    <p class="mt-4 text-slate-600 leading-relaxed">{description}</p>
                 </div>
             </div>
         </div>
@@ -114,46 +327,14 @@
         <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 md:p-8 mb-8">
             <h2 class="text-xl font-bold text-slate-900 mb-6">Puntuaciones de la Raza</h2>
             <div class="grid md:grid-cols-2 gap-x-12 gap-y-4">
-                
-                <div>
-                    <div class="flex justify-between mb-2"><span class="text-slate-600">Afecto</span><span class="font-medium">4/5</span></div>
-                    <div class="rating-bar rating-4"></div>
-                </div>
-                <div>
-                    <div class="flex justify-between mb-2"><span class="text-slate-600">Nivel de Actividad</span><span class="font-medium">5/5</span></div>
-                    <div class="rating-bar rating-5"></div>
-                </div>
-                <div>
-                    <div class="flex justify-between mb-2"><span class="text-slate-600">Necesidades de Aseo</span><span class="font-medium">1/5</span></div>
-                    <div class="rating-bar rating-1"></div>
-                </div>
-                <div>
-                    <div class="flex justify-between mb-2"><span class="text-slate-600">Vocalización</span><span class="font-medium">2/5</span></div>
-                    <div class="rating-bar rating-2"></div>
-                </div>
-                <div>
-                    <div class="flex justify-between mb-2"><span class="text-slate-600">Independencia</span><span class="font-medium">3/5</span></div>
-                    <div class="rating-bar rating-3"></div>
-                </div>
-                <div>
-                    <div class="flex justify-between mb-2"><span class="text-slate-600">Apto para Niños</span><span class="font-medium">4/5</span></div>
-                    <div class="rating-bar rating-4"></div>
-                </div>
-                <div>
-                    <div class="flex justify-between mb-2"><span class="text-slate-600">Apto para Perros</span><span class="font-medium">4/5</span></div>
-                    <div class="rating-bar rating-4"></div>
-                </div>
-                <div>
-                    <div class="flex justify-between mb-2"><span class="text-slate-600">Inteligencia</span><span class="font-medium">5/5</span></div>
-                    <div class="rating-bar rating-5"></div>
-                </div>
+                {ratings_html}
             </div>
         </section>
 
         <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 md:p-8 mb-8">
             <h2 class="text-xl font-bold text-slate-900 mb-4">Temperamento</h2>
             <div class="flex flex-wrap gap-2">
-                <span class="bg-gradient-to-r from-fuchsia-100 to-purple-100 text-slate-700 px-4 py-2 rounded-full text-sm font-medium">Activo</span><span class="bg-gradient-to-r from-fuchsia-100 to-purple-100 text-slate-700 px-4 py-2 rounded-full text-sm font-medium">Juguetón</span><span class="bg-gradient-to-r from-fuchsia-100 to-purple-100 text-slate-700 px-4 py-2 rounded-full text-sm font-medium">Curioso</span><span class="bg-gradient-to-r from-fuchsia-100 to-purple-100 text-slate-700 px-4 py-2 rounded-full text-sm font-medium">Inteligente</span>
+                {temp_html}
             </div>
         </section>
 
@@ -168,7 +349,7 @@
                     <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </summary>
                 <div class="px-6 pb-6">
-                    <p class="text-slate-600 leading-relaxed">The Abyssinian is one of the oldest known cat breeds, with a distinctive 'ticked' coat that gives them a wild appearance. Often called the 'Aby,' they're incredibly active, curious, and intelligent. These cats are natural athletes who love to climb and explore everything.</p>
+                    <p class="text-slate-600 leading-relaxed">{overview}</p>
                 </div>
             </details>
 
@@ -181,7 +362,7 @@
                     <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </summary>
                 <div class="px-6 pb-6">
-                    <p class="text-slate-600 leading-relaxed">Abyssinians can be prone to Pyruvate Kinase Deficiency (PKD), Progressive Retinal Atrophy (PRA), and renal amyloidosis. Dental issues are also common. Genetic testing is available for many conditions. With proper care, they live 12-15 years.</p>
+                    <p class="text-slate-600 leading-relaxed">{health}</p>
                 </div>
             </details>
 
@@ -194,7 +375,7 @@
                     <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </summary>
                 <div class="px-6 pb-6">
-                    <p class="text-slate-600 leading-relaxed">Their short, ticked coat needs minimal grooming. However, they need lots of play and mental stimulation—puzzle feeders are great. Provide tall cat trees and high perches. They don't do well left alone and may become destructive if bored.</p>
+                    <p class="text-slate-600 leading-relaxed">{care}</p>
                 </div>
             </details>
         </div>
@@ -208,7 +389,7 @@
                         Ideal Para
                     </h3>
                     <ul class="space-y-2 text-slate-600">
-                        <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Active families</span></li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Those with time to play</span></li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Experienced owners</span></li>
+                        {best_for_html}
                     </ul>
                 </div>
                 <div class="bg-white rounded-xl p-5 shadow-sm">
@@ -217,7 +398,7 @@
                         No Recomendado Para
                     </h3>
                     <ul class="space-y-2 text-slate-600">
-                        <li class="flex items-start gap-2"><svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg><span>Those wanting a calm cat</span></li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg><span>Small spaces</span></li>
+                        {not_ideal_html}
                     </ul>
                 </div>
             </div>
@@ -244,4 +425,26 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>lucide.createIcons();</script>
 </body>
-</html>
+</html>'''
+    
+    return html
+
+# Generate all Spanish breed pages
+os.makedirs('es/breeds', exist_ok=True)
+
+print("Generating Spanish breed pages...")
+for breed in breeds:
+    breed_id = breed['id']
+    html = generate_es_breed_page(breed)
+    
+    # Create breed directory
+    breed_dir = f'es/breeds/{breed_id}'
+    os.makedirs(breed_dir, exist_ok=True)
+    
+    # Write HTML file
+    with open(f'{breed_dir}/index.html', 'w') as f:
+        f.write(html)
+    
+    print(f"  ✓ {BREED_NAMES_ES.get(breed_id, breed['name'])}")
+
+print(f"\n✅ Generated {len(breeds)} Spanish breed pages")
