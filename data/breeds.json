@@ -527,7 +527,10 @@
         "Small apartments",
         "Hot climates"
       ]
-    }
+    },
+    "overview": "The Norwegian Forest Cat, or 'Wegie,' is a natural breed from Scandinavia built for harsh winters. With their thick double coat, tufted ears, and bushy tail, they're perfectly adapted to cold climates. These gentle giants are independent yet affectionate with their families.",
+    "health": "Norwegian Forest Cats can be prone to Glycogen Storage Disease IV (GSD IV), Hip Dysplasia, and Hypertrophic Cardiomyopathy (HCM). Reputable breeders test for these conditions. They're generally healthy cats with lifespans of 14-16 years.",
+    "care": "Their thick double coat needs brushing 2-3 times weekly, daily during shedding season. They're natural climbers and need tall cat trees. Despite their wild appearance, they adapt well to indoor living. Keep them mentally stimulated with puzzle toys."
   },
   {
     "id": "burmese",
@@ -569,7 +572,10 @@
         "Those away often",
         "Those wanting quiet"
       ]
-    }
+    },
+    "overview": "The Burmese is a compact, muscular cat with a silky coat and expressive golden eyes. Originally from Burma (Myanmar), they're known for their dog-like personality and unwavering devotion to their humans. They're often called 'velcro cats' for how closely they stick to their owners.",
+    "health": "Burmese can be prone to Diabetes Mellitus, Hypokalemia (low potassium), and cranial deformities in some lines. They may also develop eye conditions. Regular vet checkups are important. With good care, they live 15-18 years.",
+    "care": "Their short, satin coat needs minimal grooming\u2014weekly brushing is enough. They're highly social and don't do well alone; consider getting two. They remain playful well into adulthood and need daily interactive play. Watch their diet as they can gain weight."
   },
   {
     "id": "oriental-shorthair",
@@ -610,7 +616,10 @@
         "Quiet households",
         "Those away often"
       ]
-    }
+    },
+    "overview": "The Oriental Shorthair is essentially a Siamese in a rainbow of colors and patterns\u2014over 300 combinations! With their large ears, almond eyes, and sleek body, they're strikingly elegant. Like their Siamese cousins, they're extremely vocal and form intense bonds with their humans.",
+    "health": "Orientals can be prone to Progressive Retinal Atrophy (PRA), liver amyloidosis, and heart issues. Some may develop asthma or bronchial disease. They're also prone to dental issues. Regular vet visits and dental care are important.",
+    "care": "Their short coat needs minimal grooming. However, they need lots of attention and mental stimulation\u2014they get depressed if ignored. Provide puzzle feeders, interactive toys, and plenty of playtime. They do best with a companion cat or very attentive owner."
   },
   {
     "id": "devon-rex",
@@ -651,7 +660,10 @@
       "not_ideal": [
         "Those wanting a calm cat"
       ]
-    }
+    },
+    "overview": "The Devon Rex is an elfin-looking cat with huge ears, large eyes, and a curly coat. Discovered in Devon, England in 1960, they're often called 'pixie cats' or 'alien cats.' They're mischievous, playful, and love being the center of attention.",
+    "health": "Devon Rex can be prone to Hereditary Myopathy (muscle weakness), Patellar Luxation, and Hip Dysplasia. Some develop skin conditions. They may also be prone to yeast infections in their ears. Regular health screenings are recommended.",
+    "care": "Their wavy coat needs gentle weekly wiping rather than brushing. Clean their large ears regularly. They get cold easily and may need sweaters. They're food-obsessed and will steal from plates\u2014monitor their diet carefully!"
   },
   {
     "id": "cornish-rex",
@@ -692,7 +704,10 @@
       "not_ideal": [
         "Those wanting a calm lap cat"
       ]
-    }
+    },
+    "overview": "The Cornish Rex has a distinctive curly coat that feels like crushed velvet. Originating from Cornwall, England, they have an elegant, arched body and egg-shaped head. They're playful, acrobatic cats that retain kitten-like energy throughout their lives.",
+    "health": "Cornish Rex can be prone to Hypertrophic Cardiomyopathy (HCM), Patellar Luxation, and skin sensitivity. Their lack of guard hairs makes them sensitive to temperature. They may develop umbilical hernias. Generally healthy with 12-15 year lifespans.",
+    "care": "Their unique coat needs minimal grooming\u2014occasional gentle brushing. They get cold easily and appreciate warm spots and heated beds. Their large ears need regular cleaning. High metabolism means they need quality food and may eat more than expected."
   },
   {
     "id": "exotic-shorthair",
@@ -733,7 +748,10 @@
       "not_ideal": [
         "Those wanting an active cat"
       ]
-    }
+    },
+    "overview": "The Exotic Shorthair is essentially a short-haired Persian\u2014same sweet face and calm personality, but with an easier-to-maintain coat. Often called 'the lazy man's Persian,' they combine the Persian's gentle nature with lower grooming needs.",
+    "health": "Exotics share Persian health issues: Polycystic Kidney Disease (PKD), respiratory problems from their flat face, and eye conditions. They may also develop Hypertrophic Cardiomyopathy (HCM). Regular vet checkups and PKD screening are important.",
+    "care": "Their dense coat needs brushing 2-3 times weekly. Their flat face requires daily eye cleaning to prevent staining. Keep them cool in summer as they can overheat. They're content with moderate play and lots of lap time."
   },
   {
     "id": "himalayan",
@@ -775,7 +793,10 @@
         "Busy families",
         "Those disliking grooming"
       ]
-    }
+    },
+    "overview": "The Himalayan combines the Persian's luxurious coat with Siamese colorpoint markings. These stunning cats have the Persian's calm, sweet temperament but may show occasional Siamese playfulness. They're gentle, devoted companions who prefer serene environments.",
+    "health": "Himalayans are prone to the same issues as Persians: PKD, respiratory problems, eye conditions, and dental issues from their flat face. They may also develop skin fold dermatitis. Regular grooming and vet care are essential.",
+    "care": "Daily grooming is essential to prevent matting of their long coat. Clean their eyes daily. Keep them in air-conditioned spaces during hot weather. They're indoor-only cats who prefer quiet, predictable routines."
   },
   {
     "id": "american-shorthair",
@@ -816,7 +837,10 @@
       "not_ideal": [
         "Those wanting exotic looks"
       ]
-    }
+    },
+    "overview": "The American Shorthair descended from cats brought to America on the Mayflower. They're the 'working cats' of the breed world\u2014hardy, adaptable, and excellent mousers. With their muscular build and variety of colors, they're quintessentially American cats.",
+    "health": "American Shorthairs are generally very healthy with few breed-specific issues. Some may be prone to Hypertrophic Cardiomyopathy (HCM). They can gain weight easily, so diet management is important. Lifespan is typically 15-20 years.",
+    "care": "Weekly brushing keeps their dense coat healthy. They're low-maintenance cats who adapt to various living situations. Provide opportunities for hunting play to satisfy their natural instincts. Monitor food intake as they love to eat."
   },
   {
     "id": "tonkinese",
@@ -858,7 +882,10 @@
         "Those away often",
         "Quiet seekers"
       ]
-    }
+    },
+    "overview": "The Tonkinese is a cross between Siamese and Burmese, combining the best of both breeds. They have aqua eyes, a medium build, and a silky coat. Playful, social, and talkative (but less than Siamese), they're the perfect middle ground.",
+    "health": "Tonkinese can inherit health issues from both parent breeds: respiratory infections, dental problems, and crossed eyes (rare). They may also be prone to inflammatory bowel disease. Generally healthy with 12-16 year lifespans.",
+    "care": "Their silky coat needs only weekly brushing. They're highly social and need companionship\u2014they don't do well alone. Provide lots of interactive toys and climbing opportunities. They remain playful and curious throughout life."
   },
   {
     "id": "ragamuffin",
@@ -899,7 +926,10 @@
       "not_ideal": [
         "Those wanting an active cat"
       ]
-    }
+    },
+    "overview": "The RagaMuffin is closely related to the Ragdoll but comes in more colors and patterns. These large, cuddly cats are known for their docile temperament and tendency to go limp when held. They're often described as 'puppy-like' in their devotion.",
+    "health": "RagaMuffins can be prone to Hypertrophic Cardiomyopathy (HCM) and Polycystic Kidney Disease (PKD). They may also develop obesity if overfed. Genetic testing is available. With proper care, they live 12-16 years.",
+    "care": "Their silky coat resists matting but benefits from weekly brushing. They're not demanding but love attention. Provide sturdy furniture\u2014they're large cats! Keep them indoors as their trusting nature makes them vulnerable outside."
   },
   {
     "id": "savannah",
@@ -941,7 +971,10 @@
         "First-time owners",
         "Small apartments"
       ]
-    }
+    },
+    "overview": "The Savannah is a hybrid between a domestic cat and an African Serval, resulting in a tall, spotted, wild-looking cat. They're highly active, intelligent, and bond strongly with their owners. Early generations (F1-F3) retain more wild characteristics.",
+    "health": "Savannahs are generally healthy but may be prone to Hypertrophic Cardiomyopathy (HCM). Some have sensitive stomachs. Note: They may react differently to certain medications and anesthetics. Find a vet experienced with hybrid cats.",
+    "care": "They need lots of space and exercise\u2014not apartment cats! Provide tall cat trees, puzzle feeders, and interactive play. Many can be leash trained. They may learn to open doors and turn on faucets. Secure your home well!"
   },
   {
     "id": "siberian",
@@ -983,7 +1016,10 @@
         "Hot climates",
         "Those disliking grooming"
       ]
-    }
+    },
+    "overview": "The Siberian is Russia's native forest cat, known for their thick triple coat and powerful build. Despite their size, they're agile jumpers and playful hunters. They're also notable for producing less Fel d 1 allergen, making them better for some allergy sufferers.",
+    "health": "Siberians can be prone to Hypertrophic Cardiomyopathy (HCM) and PKD. Some lines have hereditary cancer. They're generally robust cats, well-adapted to harsh conditions. Regular cardiac screening is recommended. Lifespan is 12-15 years.",
+    "care": "Their thick coat needs brushing 2-3 times weekly, daily during shedding season. They love water and may join you in the shower! Provide opportunities for climbing and hunting play. They're adaptable to various living situations."
   },
   {
     "id": "balinese",
@@ -1023,7 +1059,10 @@
       "not_ideal": [
         "Those wanting a quiet cat"
       ]
-    }
+    },
+    "overview": "The Balinese is essentially a long-haired Siamese, with the same striking blue eyes and colorpoint pattern but with a silky, flowing coat. Named for their graceful movements reminiscent of Balinese dancers, they're intelligent, vocal, and deeply affectionate.",
+    "health": "Balinese share health concerns with Siamese: Progressive Retinal Atrophy (PRA), liver amyloidosis, and respiratory issues. They may also be prone to dental problems. Regular vet checkups and dental care are important.",
+    "care": "Their single-layer coat doesn't mat easily\u2014weekly brushing is enough. They need lots of mental stimulation and interaction. Provide puzzle toys and climbing spaces. They don't like being alone and may become destructive if bored."
   },
   {
     "id": "turkish-angora",
@@ -1063,7 +1102,10 @@
       "not_ideal": [
         "Those wanting a lap cat"
       ]
-    }
+    },
+    "overview": "The Turkish Angora is an ancient, natural breed from Turkey, known for their silky white coat and graceful appearance. Contrary to their delicate looks, they're energetic, mischievous, and highly intelligent. They often bond most closely with one person.",
+    "health": "White Turkish Angoras with blue eyes may be deaf. They can be prone to Hypertrophic Cardiomyopathy (HCM) and Hereditary Ataxia. Some may develop sensitivity to anesthetics. Get hearing tested if buying a white kitten.",
+    "care": "Their single-layer coat doesn't mat easily\u2014weekly brushing is sufficient. They're active cats who need lots of play and climbing opportunities. They can be trained to fetch and walk on a leash. Supervise around water\u2014they're fascinated by it!"
   },
   {
     "id": "turkish-van",
@@ -1104,7 +1146,10 @@
       "not_ideal": [
         "Those wanting a cuddly cat"
       ]
-    }
+    },
+    "overview": "The Turkish Van is famous for loving water\u2014they're often called 'the swimming cats.' Originating from Turkey's Lake Van region, they have a distinctive pattern with color only on their head and tail. They're energetic, athletic, and love to climb.",
+    "health": "Turkish Vans are generally healthy with few breed-specific issues. Some may be prone to heart conditions. All-white Vans with blue eyes may be deaf. They're a robust, natural breed with lifespans of 12-17 years.",
+    "care": "Their semi-long, water-resistant coat needs minimal grooming\u2014it lacks an undercoat. Provide lots of climbing space and, if possible, access to water for play. They're highly active and need space to run. Not ideal for small apartments."
   },
   {
     "id": "somali",
@@ -1144,7 +1189,10 @@
       "not_ideal": [
         "Those wanting a calm cat"
       ]
-    }
+    },
+    "overview": "The Somali is a long-haired Abyssinian, with the same ticked coat and fox-like appearance but with a flowing mane and bushy tail. They're incredibly active, curious, and playful\u2014often called 'fox cats' for their appearance and clever personality.",
+    "health": "Somalis share Abyssinian health concerns: Pyruvate Kinase Deficiency, Progressive Retinal Atrophy (PRA), and renal amyloidosis. Dental issues are also common. Genetic testing is available for many conditions. Lifespan is 12-16 years.",
+    "care": "Their medium-length coat needs brushing 2-3 times weekly to prevent matting. They need lots of play, climbing space, and mental stimulation. Puzzle feeders are great. They don't do well alone\u2014consider getting two."
   },
   {
     "id": "chartreux",
@@ -1185,7 +1233,10 @@
       "not_ideal": [
         "Those wanting a vocal cat"
       ]
-    }
+    },
+    "overview": "The Chartreux is France's native cat, known for their blue-gray 'waterproof' coat and copper eyes. Often called 'smiling cats' for their expression, they're quiet, gentle, and observant. They're excellent hunters who bond deeply with their families.",
+    "health": "Chartreux can be prone to Patellar Luxation (knee issues) and Polycystic Kidney Disease. Some may develop urinary tract issues. They're generally healthy, robust cats with lifespans of 12-15 years.",
+    "care": "Their dense, woolly coat needs weekly brushing, more during shedding. They're adaptable cats who handle travel well. Provide hunting toys to satisfy their natural instincts. They're not demanding but enjoy interactive play."
   },
   {
     "id": "ocicat",
@@ -1226,7 +1277,10 @@
       "not_ideal": [
         "Those wanting a calm cat"
       ]
-    }
+    },
+    "overview": "The Ocicat looks wild with their spotted coat but is entirely domestic\u2014a mix of Siamese, Abyssinian, and American Shorthair. They're confident, outgoing, and dog-like in their devotion. Many can be trained to fetch, walk on a leash, and respond to commands.",
+    "health": "Ocicats can be prone to liver or renal amyloidosis (inherited from Siamese/Abyssinian). Some may develop Hypertrophic Cardiomyopathy (HCM) or Progressive Retinal Atrophy. Generally healthy with 12-18 year lifespans.",
+    "care": "Their short, spotted coat needs only weekly brushing. They're highly social and need companionship\u2014they do well with other pets. Provide lots of interactive play and puzzle toys. They can be trained like dogs with positive reinforcement."
   },
   {
     "id": "egyptian-mau",
@@ -1267,7 +1321,10 @@
       "not_ideal": [
         "Busy households with visitors"
       ]
-    }
+    },
+    "overview": "The Egyptian Mau is the only naturally spotted domestic cat, with ancestry possibly tracing to ancient Egypt. They're the fastest domestic cat breed, capable of running 30 mph! Reserved with strangers but devoted to their families, they're sensitive, loyal cats.",
+    "health": "Egyptian Maus can be prone to Leukodystrophy (a neurological condition) and heart disease. Some may develop urolithiasis (bladder stones). They're sensitive to cold and anesthesia. Regular vet checkups are important.",
+    "care": "Their short, spotted coat needs minimal grooming. They're sensitive cats who prefer calm environments and consistent routines. Provide lots of running space and climbing opportunities. They bond deeply and don't like being left alone."
   },
   {
     "id": "singapura",
