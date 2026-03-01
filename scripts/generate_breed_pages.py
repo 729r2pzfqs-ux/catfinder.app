@@ -156,6 +156,7 @@ def generate_breed_html(breed):
                             </div>
                         </div>
                     </div>
+                    <p class="mt-4 text-slate-600 leading-relaxed">{description}</p>
                 </div>
             </div>
         </div>
