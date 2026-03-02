@@ -102,55 +102,77 @@
     }
     </script>
     
-    <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] }
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Instrument Serif', 'Georgia', 'serif']
+                    },
+                    colors: {
+                        cream: {
+                            50: '#faf9f6',
+                            100: '#f7f6f2',
+                            200: '#f3f0ec',
+                            300: '#edeae5',
+                            400: '#dcd9d5',
+                        },
+                        teal: {
+                            50: '#eef8f8',
+                            100: '#d5eded',
+                            200: '#aadada',
+                            300: '#6fbfc0',
+                            400: '#3da0a3',
+                            500: '#01696f',
+                            600: '#0c4e54',
+                            700: '#0f3638',
+                        }
+                    }
                 }
             }
         }
     </script>
     <style>
         .card-shadow {
-            box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);
+            box-shadow: 0 1px 3px rgba(40,37,29,0.04), 0 4px 12px rgba(40,37,29,0.03);
         }
         .card-shadow:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.06), 0 8px 24px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 12px rgba(40,37,29,0.06), 0 8px 24px rgba(40,37,29,0.05);
         }
         .hero-gradient {
-            background: linear-gradient(135deg, #fdf4ff 0%, #faf5ff 50%, #f0fdf4 100%);
+            background: linear-gradient(135deg, #f7f6f2 0%, #f3f0ec 50%, #eef8f8 100%);
         }
     </style>
 </head>
-<body class="bg-white min-h-screen text-slate-800">
+<body class="bg-cream-100 min-h-screen text-slate-800">
     <!-- Header -->
-    <header class="bg-white/80 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50">
+    <header class="bg-cream-100/80 backdrop-blur-md border-b border-cream-400/50 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
             <a href="./" class="flex items-center gap-2">
-                <div class="w-10 h-10 bg-gradient-to-br from-fuchsia-500 to-purple-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-fuchsia-500/20">
+                <div class="w-10 h-10 bg-teal-500 rounded-xl flex items-center justify-center text-white shadow-lg shadow-teal-500/20">
                     <i data-lucide="cat" class="w-6 h-6"></i>
                 </div>
-                <span class="text-xl font-bold bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent">CatFinder</span>
+                <span class="text-xl font-bold font-display text-slate-900">CatFinder</span>
             </a>
             <nav class="flex items-center gap-4 md:gap-6 text-sm font-medium">
-                <a href="search/" class="text-slate-600 hover:text-fuchsia-600 transition ml-2 md:ml-0">Rassen durchsuchen</a>
-                <a href="quiz/" class="bg-gradient-to-r from-fuchsia-500 to-purple-600 text-white px-5 py-2.5 rounded-xl font-semibold hover:shadow-lg hover:shadow-fuchsia-500/25 transition">Quiz starten</a>
+                <a href="search/" class="text-slate-600 hover:text-teal-600 transition ml-2 md:ml-0">Rassen durchsuchen</a>
+                <a href="quiz/" class="bg-teal-500 text-white px-5 py-2.5 rounded-xl font-semibold hover:shadow-lg hover:shadow-teal-500/25 transition">Quiz starten</a>
                 <!-- Language selector -->
                 <div class="relative group">
-                    <button class="flex items-center gap-1 text-slate-600 hover:text-fuchsia-600 py-2">
+                    <button class="flex items-center gap-1 text-slate-600 hover:text-teal-600 py-2">
                         <i data-lucide="globe" class="w-4 h-4"></i>
                         <span>DE</span>
                     </button>
-                    <div class="absolute right-0 top-full bg-white border border-slate-200 rounded-xl shadow-xl hidden group-hover:block min-w-[120px] py-2 z-50">
-                        <a href="../" class="block px-4 py-2 hover:bg-slate-100 text-slate-600">English</a>
-                        <a href="../es/" class="block px-4 py-2 hover:bg-slate-100 text-slate-600">Español</a>
-                        <a href="./" class="block px-4 py-2 hover:bg-slate-100 font-semibold text-fuchsia-600">Deutsch</a>
+                    <div class="absolute right-0 top-full bg-white border border-cream-400 rounded-xl shadow-xl hidden group-hover:block min-w-[120px] py-2 z-50">
+                        <a href="../" class="block px-4 py-2 hover:bg-cream-200 text-slate-600">English</a>
+                        <a href="../es/" class="block px-4 py-2 hover:bg-cream-200 text-slate-600">Español</a>
+                        <a href="./" class="block px-4 py-2 hover:bg-cream-200 font-semibold text-teal-600">Deutsch</a>
                     </div>
                 </div>
             </nav>
@@ -161,14 +183,14 @@
         <!-- Hero -->
         <section class="hero-gradient py-20 px-4">
             <div class="max-w-4xl mx-auto text-center">
-                <div class="inline-flex items-center gap-2 bg-white/80 backdrop-blur px-4 py-2 rounded-full text-sm font-medium text-slate-600 mb-6 border border-slate-200/50">
-                    <i data-lucide="sparkles" class="w-4 h-4 text-fuchsia-500"></i>
+                <div class="inline-flex items-center gap-2 bg-white/80 backdrop-blur px-4 py-2 rounded-full text-sm font-medium text-slate-600 mb-6 border border-cream-400/50">
+                    <i data-lucide="sparkles" class="w-4 h-4 text-teal-500"></i>
                     Über 70 Katzenrassen zum Entdecken
                 </div>
                 
-                <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
+                <h1 class="text-5xl md:text-6xl font-display text-slate-900 mb-6 leading-tight">
                     Finde deine<br>
-                    <span class="bg-gradient-to-r from-fuchsia-500 via-purple-500 to-emerald-500 bg-clip-text text-transparent">perfekte Katzenrasse</span>
+                    <span class="bg-gradient-to-r bg-teal-500 via-teal-500 to-emerald-500 bg-clip-text text-transparent">perfekte Katzenrasse</span>
                 </h1>
                 
                 <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
@@ -178,22 +200,22 @@
                 <!-- Search -->
                 <div class="max-w-xl mx-auto mb-8">
                     <div class="relative">
-                        <input type="text" id="home-search" placeholder="Rassen suchen..." autocomplete="off" class="w-full bg-white border border-slate-200 rounded-2xl px-6 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-fuchsia-500/20 focus:border-fuchsia-400 shadow-sm">
-                        <button aria-label="Search" class="absolute right-2 top-1/2 -translate-y-1/2 bg-slate-100 hover:bg-slate-200 p-3 rounded-xl transition">
+                        <input type="text" id="home-search" placeholder="Rassen suchen..." autocomplete="off" class="w-full bg-white border border-cream-400 rounded-2xl px-6 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-400 shadow-sm">
+                        <button aria-label="Search" class="absolute right-2 top-1/2 -translate-y-1/2 bg-cream-200 hover:bg-cream-300 p-3 rounded-xl transition">
                             <i data-lucide="search" class="w-5 h-5 text-slate-600"></i>
                         </button>
                         <!-- Autocomplete dropdown -->
-                        <div id="search-dropdown" class="absolute top-full left-0 right-0 mt-2 bg-white border border-slate-200 rounded-2xl shadow-xl z-50 hidden max-h-80 overflow-y-auto">
+                        <div id="search-dropdown" class="absolute top-full left-0 right-0 mt-2 bg-white border border-cream-400 rounded-2xl shadow-xl z-50 hidden max-h-80 overflow-y-auto">
                         </div>
                     </div>
                 </div>
 
                 <div class="flex flex-wrap justify-center gap-4">
-                    <a href="quiz/" class="inline-flex items-center gap-2 bg-gradient-to-r from-fuchsia-500 to-purple-600 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:shadow-xl hover:shadow-fuchsia-500/25 transition transform hover:-translate-y-0.5">
+                    <a href="quiz/" class="inline-flex items-center gap-2 bg-teal-500 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:shadow-xl hover:shadow-teal-500/25 transition transform hover:-translate-y-0.5">
                         <i data-lucide="target" class="w-5 h-5"></i>
                         Rassen-Quiz starten
                     </a>
-                    <a href="compare/" class="inline-flex items-center gap-2 bg-white text-slate-700 border border-slate-200 px-8 py-4 rounded-2xl font-semibold text-lg hover:border-slate-300 hover:shadow-lg transition transform hover:-translate-y-0.5">
+                    <a href="compare/" class="inline-flex items-center gap-2 bg-white text-slate-700 border border-cream-400 px-8 py-4 rounded-2xl font-semibold text-lg hover:border-cream-400 hover:shadow-lg transition transform hover:-translate-y-0.5">
                         <i data-lucide="scale" class="w-5 h-5"></i>
                         Rassen vergleichen
                     </a>
@@ -208,56 +230,56 @@
                 <p class="text-slate-600 mb-8">Die beliebtesten Katzenrassen weltweit</p>
                 
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
-                    <a href="breeds/persian/" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
+                    <a href="breeds/persian/" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-teal-300 transition group">
                         <div class="w-16 h-16 rounded-2xl mx-auto mb-3 overflow-hidden">
                             <img src="../images/heads/persian.webp" alt="Perser" class="w-full h-full object-cover object-top">
                         </div>
                         <div class="font-semibold text-slate-800 text-center">Perser</div>
                         <div class="text-xs text-slate-600 text-center mt-1">Sanft • Ruhig • Flauschig</div>
                     </a>
-                    <a href="breeds/maine-coon/" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
+                    <a href="breeds/maine-coon/" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-teal-300 transition group">
                         <div class="w-16 h-16 rounded-2xl mx-auto mb-3 overflow-hidden">
                             <img src="../images/heads/maine-coon.webp" alt="Maine Coon" class="w-full h-full object-cover object-top">
                         </div>
                         <div class="font-semibold text-slate-800 text-center">Maine Coon</div>
                         <div class="text-xs text-slate-600 text-center mt-1">Sanfter Riese • Freundlich</div>
                     </a>
-                    <a href="breeds/ragdoll/" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
+                    <a href="breeds/ragdoll/" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-teal-300 transition group">
                         <div class="w-16 h-16 rounded-2xl mx-auto mb-3 overflow-hidden">
                             <img src="../images/heads/ragdoll.webp" alt="Ragdoll" class="w-full h-full object-cover object-top">
                         </div>
                         <div class="font-semibold text-slate-800 text-center">Ragdoll</div>
                         <div class="text-xs text-slate-600 text-center mt-1">Sanftmütig • Anhänglich</div>
                     </a>
-                    <a href="breeds/british-shorthair/" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
+                    <a href="breeds/british-shorthair/" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-teal-300 transition group">
                         <div class="w-16 h-16 rounded-2xl mx-auto mb-3 overflow-hidden">
                             <img src="../images/heads/british-shorthair.webp" alt="Britisch Kurzhaar" class="w-full h-full object-cover object-top">
                         </div>
                         <div class="font-semibold text-slate-800 text-center">Britisch Kurzhaar</div>
                         <div class="text-xs text-slate-600 text-center mt-1">Gelassen • Treu</div>
                     </a>
-                    <a href="breeds/siamese/" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
+                    <a href="breeds/siamese/" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-teal-300 transition group">
                         <div class="w-16 h-16 rounded-2xl mx-auto mb-3 overflow-hidden">
                             <img src="../images/heads/siamese.webp" alt="Siamese" class="w-full h-full object-cover object-top">
                         </div>
                         <div class="font-semibold text-slate-800 text-center">Siamese</div>
                         <div class="text-xs text-slate-600 text-center mt-1">Gesprächig • Sozial • Klug</div>
                     </a>
-                    <a href="breeds/bengal/" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
+                    <a href="breeds/bengal/" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-teal-300 transition group">
                         <div class="w-16 h-16 rounded-2xl mx-auto mb-3 overflow-hidden">
                             <img src="../images/heads/bengal.webp" alt="Bengal" class="w-full h-full object-cover object-top">
                         </div>
                         <div class="font-semibold text-slate-800 text-center">Bengal</div>
                         <div class="text-xs text-slate-600 text-center mt-1">Athletisch • Wildlook</div>
                     </a>
-                    <a href="breeds/sphynx/" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
+                    <a href="breeds/sphynx/" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-teal-300 transition group">
                         <div class="w-16 h-16 rounded-2xl mx-auto mb-3 overflow-hidden">
                             <img src="../images/heads/sphynx.webp" alt="Sphynx" class="w-full h-full object-cover object-top">
                         </div>
                         <div class="font-semibold text-slate-800 text-center">Sphynx</div>
                         <div class="text-xs text-slate-600 text-center mt-1">Haarlos • Verschmust</div>
                     </a>
-                    <a href="breeds/russian-blue/" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
+                    <a href="breeds/russian-blue/" class="bg-white rounded-2xl p-5 card-shadow border border-slate-100 hover:border-teal-300 transition group">
                         <div class="w-16 h-16 rounded-2xl mx-auto mb-3 overflow-hidden">
                             <img src="../images/heads/russian-blue.webp" alt="Russisch Blau" class="w-full h-full object-cover object-top">
                         </div>
@@ -267,7 +289,7 @@
                 </div>
                 
                 <div class="text-center mt-8">
-                    <a href="search/" class="inline-flex items-center gap-2 text-fuchsia-600 font-semibold hover:text-fuchsia-700 transition">
+                    <a href="search/" class="inline-flex items-center gap-2 text-teal-600 font-semibold hover:text-teal-700 transition">
                         Alle 70+ Rassen ansehen
                         <i data-lucide="arrow-right" class="w-4 h-4"></i>
                     </a>
@@ -282,30 +304,30 @@
                 <p class="text-slate-600 mb-8">Finde Katzen, die zu deinem Lebensstil passen</p>
                 
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <a href="search/?lap=1" class="bg-fuchsia-50 hover:bg-fuchsia-100 rounded-2xl p-6 text-center transition border border-fuchsia-200 group">
+                    <a href="search/?lap=1" class="bg-teal-50 hover:bg-teal-100 rounded-2xl p-6 text-center transition border border-teal-200 group">
                         <div class="w-12 h-12 bg-white rounded-xl mx-auto mb-3 flex items-center justify-center shadow-sm group-hover:scale-110 transition">
-                            <i data-lucide="heart" class="w-6 h-6 text-fuchsia-500"></i>
+                            <i data-lucide="heart" class="w-6 h-6 text-teal-500"></i>
                         </div>
                         <div class="font-semibold text-slate-800">Schoßkatzen</div>
                         <div class="text-sm text-slate-600">Lieben es zu kuscheln</div>
                     </a>
-                    <a href="search/?shedding=low" class="bg-fuchsia-50 hover:bg-fuchsia-100 rounded-2xl p-6 text-center transition border border-fuchsia-200 group">
+                    <a href="search/?shedding=low" class="bg-teal-50 hover:bg-teal-100 rounded-2xl p-6 text-center transition border border-teal-200 group">
                         <div class="w-12 h-12 bg-white rounded-xl mx-auto mb-3 flex items-center justify-center shadow-sm group-hover:scale-110 transition">
-                            <i data-lucide="sparkles" class="w-6 h-6 text-fuchsia-500"></i>
+                            <i data-lucide="sparkles" class="w-6 h-6 text-teal-500"></i>
                         </div>
                         <div class="font-semibold text-slate-800">Wenig Haaren</div>
                         <div class="text-sm text-slate-600">Weniger Fell, weniger Chaos</div>
                     </a>
-                    <a href="search/?quiet=1" class="bg-fuchsia-50 hover:bg-fuchsia-100 rounded-2xl p-6 text-center transition border border-fuchsia-200 group">
+                    <a href="search/?quiet=1" class="bg-teal-50 hover:bg-teal-100 rounded-2xl p-6 text-center transition border border-teal-200 group">
                         <div class="w-12 h-12 bg-white rounded-xl mx-auto mb-3 flex items-center justify-center shadow-sm group-hover:scale-110 transition">
-                            <i data-lucide="volume-x" class="w-6 h-6 text-fuchsia-500"></i>
+                            <i data-lucide="volume-x" class="w-6 h-6 text-teal-500"></i>
                         </div>
                         <div class="font-semibold text-slate-800">Ruhige Rassen</div>
                         <div class="text-sm text-slate-600">Nicht zu gesprächig</div>
                     </a>
-                    <a href="search/?independent=1" class="bg-fuchsia-50 hover:bg-fuchsia-100 rounded-2xl p-6 text-center transition border border-fuchsia-200 group">
+                    <a href="search/?independent=1" class="bg-teal-50 hover:bg-teal-100 rounded-2xl p-6 text-center transition border border-teal-200 group">
                         <div class="w-12 h-12 bg-white rounded-xl mx-auto mb-3 flex items-center justify-center shadow-sm group-hover:scale-110 transition">
-                            <i data-lucide="sun" class="w-6 h-6 text-fuchsia-500"></i>
+                            <i data-lucide="sun" class="w-6 h-6 text-teal-500"></i>
                         </div>
                         <div class="font-semibold text-slate-800">Unabhängig</div>
                         <div class="text-sm text-slate-600">Gut allein zurecht</div>
@@ -323,21 +345,21 @@
                 </div>
                 
                 <div class="grid md:grid-cols-3 gap-6">
-                    <a href="articles/best-cats-for-apartments/" class="bg-white rounded-2xl p-6 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
-                        <div class="w-12 h-12 bg-fuchsia-100 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                    <a href="articles/best-cats-for-apartments/" class="bg-white rounded-2xl p-6 card-shadow border border-slate-100 hover:border-teal-300 transition group">
+                        <div class="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition">
                             <span class="text-2xl">🏢</span>
                         </div>
                         <h3 class="font-bold text-slate-800 mb-2">Beste Katzen für Wohnungen</h3>
                         <p class="text-sm text-slate-600">Ruhige, leise Rassen, die in kleineren Räumen gedeihen</p>
                     </a>
-                    <a href="articles/best-cats-for-families/" class="bg-white rounded-2xl p-6 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
-                        <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                    <a href="articles/best-cats-for-families/" class="bg-white rounded-2xl p-6 card-shadow border border-slate-100 hover:border-teal-300 transition group">
+                        <div class="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition">
                             <span class="text-2xl">👨‍👩‍👧‍👦</span>
                         </div>
                         <h3 class="font-bold text-slate-800 mb-2">Beste Katzen für Familien</h3>
                         <p class="text-sm text-slate-600">Geduldige, verspielte Rassen, ideal für Kinder</p>
                     </a>
-                    <a href="articles/hypoallergenic-cats/" class="bg-white rounded-2xl p-6 card-shadow border border-slate-100 hover:border-fuchsia-200 transition group">
+                    <a href="articles/hypoallergenic-cats/" class="bg-white rounded-2xl p-6 card-shadow border border-slate-100 hover:border-teal-300 transition group">
                         <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition">
                             <span class="text-2xl">🌿</span>
                         </div>
@@ -347,7 +369,7 @@
                 </div>
                 
                 <div class="text-center mt-8">
-                    <a href="articles/" class="inline-flex items-center gap-2 text-fuchsia-600 font-semibold hover:text-fuchsia-700 transition">
+                    <a href="articles/" class="inline-flex items-center gap-2 text-teal-600 font-semibold hover:text-teal-700 transition">
                         Alle Ratgeber ansehen
                         <i data-lucide="arrow-right" class="w-4 h-4"></i>
                     </a>
@@ -362,27 +384,27 @@
                 <div class="space-y-4">
                     <div class="bg-white rounded-xl p-6 card-shadow border border-slate-100">
                         <h3 class="font-semibold text-slate-900 text-lg">Wie wähle ich die richtige Katzenrasse für meinen Lebensstil?</h3>
-                        <p class="text-slate-600 mt-2">Berücksichtige deinen Wohnraum, dein Aktivitätsniveau, Zeit für die Pflege und deine Familiensituation. Unser <a href="quiz/" class="text-fuchsia-600 underline">Rassen-Quiz</a> stellt diese Fragen und findet kompatible Rassen basierend auf deinen Antworten.</p>
+                        <p class="text-slate-600 mt-2">Berücksichtige deinen Wohnraum, dein Aktivitätsniveau, Zeit für die Pflege und deine Familiensituation. Unser <a href="quiz/" class="text-teal-600 underline">Rassen-Quiz</a> stellt diese Fragen und findet kompatible Rassen basierend auf deinen Antworten.</p>
                     </div>
                     <div class="bg-white rounded-xl p-6 card-shadow border border-slate-100">
                         <h3 class="font-semibold text-slate-900 text-lg">Welche Katzenrassen eignen sich am besten für Wohnungen?</h3>
-                        <p class="text-slate-600 mt-2"><a href="breeds/persian/" class="text-fuchsia-600 underline">Perser</a>, <a href="breeds/ragdoll/" class="text-fuchsia-600 underline">Ragdoll</a>, <a href="breeds/british-shorthair/" class="text-fuchsia-600 underline">Britisch Kurzhaar</a>, <a href="breeds/russian-blue/" class="text-fuchsia-600 underline">Russisch Blau</a> und <a href="breeds/scottish-fold/" class="text-fuchsia-600 underline">Scottish Fold</a> sind ausgezeichnete Wohnungskatzen. Sie sind ruhig, leise und passen sich gut an kleinere Räume an.</p>
+                        <p class="text-slate-600 mt-2"><a href="breeds/persian/" class="text-teal-600 underline">Perser</a>, <a href="breeds/ragdoll/" class="text-teal-600 underline">Ragdoll</a>, <a href="breeds/british-shorthair/" class="text-teal-600 underline">Britisch Kurzhaar</a>, <a href="breeds/russian-blue/" class="text-teal-600 underline">Russisch Blau</a> und <a href="breeds/scottish-fold/" class="text-teal-600 underline">Scottish Fold</a> sind ausgezeichnete Wohnungskatzen. Sie sind ruhig, leise und passen sich gut an kleinere Räume an.</p>
                     </div>
                     <div class="bg-white rounded-xl p-6 card-shadow border border-slate-100">
                         <h3 class="font-semibold text-slate-900 text-lg">Gibt es hypoallergene Katzenrassen?</h3>
-                        <p class="text-slate-600 mt-2">Keine Katze ist 100% hypoallergen, aber einige produzieren weniger Fel d 1-Protein, das Allergien auslöst. <a href="breeds/siberian/" class="text-fuchsia-600 underline">Sibirische</a>, <a href="breeds/balinese/" class="text-fuchsia-600 underline">Balinesen</a>, <a href="breeds/russian-blue/" class="text-fuchsia-600 underline">Russisch Blau</a> und <a href="breeds/sphynx/" class="text-fuchsia-600 underline">Sphynx</a> werden für Allergiker empfohlen.</p>
+                        <p class="text-slate-600 mt-2">Keine Katze ist 100% hypoallergen, aber einige produzieren weniger Fel d 1-Protein, das Allergien auslöst. <a href="breeds/siberian/" class="text-teal-600 underline">Sibirische</a>, <a href="breeds/balinese/" class="text-teal-600 underline">Balinesen</a>, <a href="breeds/russian-blue/" class="text-teal-600 underline">Russisch Blau</a> und <a href="breeds/sphynx/" class="text-teal-600 underline">Sphynx</a> werden für Allergiker empfohlen.</p>
                     </div>
                     <div class="bg-white rounded-xl p-6 card-shadow border border-slate-100">
                         <h3 class="font-semibold text-slate-900 text-lg">Welche Katzenrassen eignen sich am besten für Familien mit Kindern?</h3>
-                        <p class="text-slate-600 mt-2"><a href="breeds/ragdoll/" class="text-fuchsia-600 underline">Ragdoll</a>, <a href="breeds/maine-coon/" class="text-fuchsia-600 underline">Maine Coon</a>, <a href="breeds/birman/" class="text-fuchsia-600 underline">Birma</a> und <a href="breeds/burmese/" class="text-fuchsia-600 underline">Burma</a> sind ausgezeichnete Familienkatzen. Sie sind geduldig, verspielt und in der Regel gut mit Kindern.</p>
+                        <p class="text-slate-600 mt-2"><a href="breeds/ragdoll/" class="text-teal-600 underline">Ragdoll</a>, <a href="breeds/maine-coon/" class="text-teal-600 underline">Maine Coon</a>, <a href="breeds/birman/" class="text-teal-600 underline">Birma</a> und <a href="breeds/burmese/" class="text-teal-600 underline">Burma</a> sind ausgezeichnete Familienkatzen. Sie sind geduldig, verspielt und in der Regel gut mit Kindern.</p>
                     </div>
                     <div class="bg-white rounded-xl p-6 card-shadow border border-slate-100">
                         <h3 class="font-semibold text-slate-900 text-lg">Welche Katzen haaren am wenigsten?</h3>
-                        <p class="text-slate-600 mt-2"><a href="breeds/sphynx/" class="text-fuchsia-600 underline">Sphynx</a> (haarlos), <a href="breeds/cornish-rex/" class="text-fuchsia-600 underline">Cornish Rex</a>, <a href="breeds/devon-rex/" class="text-fuchsia-600 underline">Devon Rex</a>, <a href="breeds/siamese/" class="text-fuchsia-600 underline">Siamese</a> und <a href="breeds/bengal/" class="text-fuchsia-600 underline">Bengal</a> sind Rassen mit geringem Haarausfall. Regelmäßiges Bürsten hilft bei allen Rassen.</p>
+                        <p class="text-slate-600 mt-2"><a href="breeds/sphynx/" class="text-teal-600 underline">Sphynx</a> (haarlos), <a href="breeds/cornish-rex/" class="text-teal-600 underline">Cornish Rex</a>, <a href="breeds/devon-rex/" class="text-teal-600 underline">Devon Rex</a>, <a href="breeds/siamese/" class="text-teal-600 underline">Siamese</a> und <a href="breeds/bengal/" class="text-teal-600 underline">Bengal</a> sind Rassen mit geringem Haarausfall. Regelmäßiges Bürsten hilft bei allen Rassen.</p>
                     </div>
                 </div>
                 <div class="text-center mt-8">
-                    <a href="faq/" class="inline-flex items-center gap-2 text-fuchsia-600 font-semibold hover:text-fuchsia-700 transition">
+                    <a href="faq/" class="inline-flex items-center gap-2 text-teal-600 font-semibold hover:text-teal-700 transition">
                         Alle häufigen Fragen ansehen
                         <i data-lucide="arrow-right" class="w-4 h-4"></i>
                     </a>
@@ -392,14 +414,14 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-300 py-12 px-4">
+    <footer class="bg-teal-700 text-cream-200 py-12 px-4">
         <div class="max-w-6xl mx-auto">
             <div class="flex flex-col md:flex-row items-center justify-between gap-6">
                 <div class="flex items-center gap-2">
-                    <svg class="w-8 h-8 text-fuchsia-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3-9-7.56c0-1.25.5-2.4 1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z"/><path d="M8 14v.5"/><path d="M16 14v.5"/><path d="M11.25 16.25h1.5L12 17l-.75-.75Z"/></svg>
+                    <svg class="w-8 h-8 text-teal-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3-9-7.56c0-1.25.5-2.4 1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z"/><path d="M8 14v.5"/><path d="M16 14v.5"/><path d="M11.25 16.25h1.5L12 17l-.75-.75Z"/></svg>
                     <span class="text-xl font-bold">CatFinder</span>
                 </div>
-                <div class="flex gap-8 text-sm text-slate-400">
+                <div class="flex gap-8 text-sm text-teal-200">
                     <a href="quiz/" class="hover:text-white transition">Rassen-Quiz</a>
                     <a href="compare/" class="hover:text-white transition">Vergleichen</a>
                     <a href="articles/" class="hover:text-white transition">Ratgeber</a>
@@ -407,7 +429,7 @@
                     <a href="about/" class="hover:text-white transition">Über uns</a>
                 </div>
             </div>
-            <div class="border-t border-slate-800 mt-8 pt-8 text-center text-sm text-slate-400">
+            <div class="border-t border-slate-800 mt-8 pt-8 text-center text-sm text-teal-200">
                 <p>© 2026 CatFinder. Mit 😻 gemacht für Katzenliebhaber überall.</p>
             </div>
         </div>
@@ -489,7 +511,7 @@
                 dropdown.innerHTML = matches.map(b => {
                     const deName = getBreedNameDE(b.slug, b.name);
                     return `
-                    <a href="breeds/${b.slug}/" class="flex items-center gap-3 px-4 py-3 hover:bg-slate-50 transition first:rounded-t-2xl last:rounded-b-2xl">
+                    <a href="breeds/${b.slug}/" class="flex items-center gap-3 px-4 py-3 hover:bg-cream-100 transition first:rounded-t-2xl last:rounded-b-2xl">
                         <img src="../images/heads/${b.slug}.webp" alt="${deName}" class="w-10 h-10 rounded-xl object-cover object-top" onerror="this.style.display='none'">
                         <span class="font-medium text-slate-800">${deName}</span>
                     </a>
