@@ -133,9 +133,18 @@ def get_de_name(breed_id):
 def get_de_temperament(temps):
     return [TEMPERAMENT_DE.get(t.lower(), t) for t in temps]
 
+# Full German translations for all breeds (overview/health/care/description)
+try:
+    with open('data/breeds_de.json', 'r') as f:
+        CONTENT_DE_FILE = json.load(f)
+except FileNotFoundError:
+    CONTENT_DE_FILE = {}
+
 def get_de_content(breed_id, field, default):
     if breed_id in CONTENT_DE and field in CONTENT_DE[breed_id]:
         return CONTENT_DE[breed_id][field]
+    if breed_id in CONTENT_DE_FILE and CONTENT_DE_FILE[breed_id].get(field):
+        return CONTENT_DE_FILE[breed_id][field]
     # Fallback to English
     return default
 
@@ -281,7 +290,7 @@ def generate_breed_page(breed):
                         </div>
                         <div class="flex items-center gap-3 p-3 bg-cream-50 rounded-xl">
                             <svg class="w-6 h-6 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            <div><p class="text-xs text-slate-500">Lebenserwartung</p><p class="font-semibold text-slate-700">{breed.get('lifespan', '12-15 Jahre')}</p></div>
+                            <div><p class="text-xs text-slate-500">Lebenserwartung</p><p class="font-semibold text-slate-700">{breed.get('lifespan', '12-15 Jahre').replace(' years', ' Jahre')}</p></div>
                         </div>
                         <div class="flex items-center gap-3 p-3 bg-cream-50 rounded-xl">
                             <svg class="w-6 h-6 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>

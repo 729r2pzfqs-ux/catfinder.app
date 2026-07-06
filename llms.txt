@@ -1,7 +1,14 @@
 # catfinder.app
 
 ## About
-CatFinder helps you identify and learn about cat breeds. Browse 70+ cat breeds with photos, characteristics, temperament, and care information.
+CatFinder helps you identify and learn about cat breeds. Browse 74 cat breeds with photos, characteristics, temperament, and care information. Available in English, Spanish (/es/), and German (/de/).
 
 ## URLs
 - Homepage: https://catfinder.app/
+- Browse all breeds: https://catfinder.app/search/
+- Breed quiz: https://catfinder.app/quiz/
+- Compare breeds: https://catfinder.app/compare/
+- Guides: https://catfinder.app/articles/
+- FAQ: https://catfinder.app/faq/
+- Breed pages: https://catfinder.app/breeds/<breed-slug>/ (e.g. https://catfinder.app/breeds/maine-coon/)
+- Breed data (JSON): https://catfinder.app/data/breeds.json

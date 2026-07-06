@@ -2,6 +2,5 @@ User-agent: *
 Allow: /
 Disallow: /*?q=
 Disallow: /*?search=
-Disallow: /search/
 
 Sitemap: https://catfinder.app/sitemap.xml

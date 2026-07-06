@@ -357,8 +357,8 @@ def generate_es_breed_page(breed):
         overview = es_content.get('overview', description_en)
         health = es_content.get('health', 'Se recomiendan chequeos veterinarios regulares para esta raza.')
         care = es_content.get('care', 'El aseo regular y una dieta equilibrada son importantes para esta raza.')
-        # Use first sentence of overview as short description
-        description = overview.split('.')[0] + '.' if overview else description_en
+        # Use translated description, else first sentence of overview
+        description = es_content.get('description') or (overview.split('.')[0] + '.' if overview else description_en)
     except:
         overview = description_en
         description = description_en

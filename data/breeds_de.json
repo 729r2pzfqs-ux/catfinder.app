@@ -1,0 +1,446 @@
+{
+ "persian": {
+  "description": "Die Perserkatze ist eine der ältesten und beliebtesten Katzenrassen, bekannt für ihr langes, luxuriöses Fell und ihr süßes, sanftes Wesen.",
+  "overview": "Die Perserkatze ist eine der ältesten und bekanntesten Katzenrassen der Welt. Mit ihrem charakteristischen flachen Gesicht, den runden Augen und dem fließenden Fell sind sie seit Jahrhunderten geschätzte Begleiter. Perser sind der Inbegriff einer Schoßkatze – ruhig, sanftmütig und zufrieden damit, bequem zu faulenzen.",
+  "health": "Perser sind anfällig für Polyzystische Nierenerkrankung (PKD), Atemprobleme aufgrund ihres flachen Gesichts (brachyzephales Syndrom) und Augenerkrankungen wie übermäßiges Tränen. Regelmäßige Tierarztuntersuchungen und Gentests werden empfohlen. Ihr flaches Gesicht kann auch zu Zahnproblemen führen.",
+  "care": "Tägliche Fellpflege ist unerlässlich, um Verfilzungen im langen Fell zu verhindern. Ihre Augen müssen regelmäßig gereinigt werden, da sie zu Tränenflecken neigen. Halten Sie sie drinnen, da ihr Fell und flaches Gesicht sie anfällig machen. Füttern Sie hochwertiges Futter und überwachen Sie das Gewicht, da sie zu Übergewicht neigen."
+ },
+ "maine-coon": {
+  "description": "Die Maine Coon ist eine der größten Hauskatzenrassen und wird wegen ihres freundlichen, hundeähnlichen Wesens als „sanfter Riese\" bezeichnet.",
+  "overview": "Die Maine Coon ist Amerikas einheimische Langhaarkatze und eine der größten domestizierten Rassen. Als 'sanfte Riesen' bekannt, verbinden sie beeindruckende Größe mit einer freundlichen, hundeähnlichen Persönlichkeit. Sie sind ausgezeichnete Mäusejäger mit einem robusten Aussehen, das für die harten Winter Neuenglands geeignet ist.",
+  "health": "Maine Coons können anfällig für Hypertrophe Kardiomyopathie (HCM), Hüftdysplasie und Spinale Muskelatrophie (SMA) sein. Regelmäßige Herzuntersuchungen werden empfohlen. Trotz ihrer Größe sind sie bei richtiger Pflege generell gesunde Katzen und können 12-15 Jahre alt werden.",
+  "care": "Ihr halblanges Fell muss 2-3 mal wöchentlich gebürstet werden, um Verfilzungen zu verhindern. Sie genießen interaktives Spielen und brauchen Platz zum Klettern und Erkunden. Stellen Sie stabile Kratzbäume bereit, die ihr Gewicht tragen können. Sie mögen oft Wasser und 'helfen' gerne beim Abwaschen!"
+ },
+ "ragdoll": {
+  "description": "Ragdolls sind dafür bekannt, beim Hochheben schlaff zu werden – daher ihr Name. Sie sind äußerst sanftmütige, liebevolle Katzen, die ihren Besitzern überallhin folgen.",
+  "overview": "Die Ragdoll erhielt ihren Namen von ihrer Tendenz, beim Hochheben schlaff zu werden wie eine Stoffpuppe. Diese sanften Riesen sind für ihr ruhiges Temperament und ihre wunderschönen blauen Augen bekannt. Sie folgen ihren Besitzern oft von Raum zu Raum und sind bemerkenswert gutmütig.",
+  "health": "Ragdolls können anfällig für Hypertrophe Kardiomyopathie (HCM) und Blasensteine sein. Regelmäßige Herzuntersuchungen werden empfohlen. Sie sind im Allgemeinen gesund und leben typischerweise 12-17 Jahre bei richtiger Pflege.",
+  "care": "Ihr seidiges Fell verfilzt weniger als bei anderen Langhaarkatzen, aber wöchentliches Bürsten wird empfohlen. Halten Sie sie drinnen, da sie sehr vertrauensvoll und schlecht auf der Straße sind. Bieten Sie interaktives Spielzeug und Kletttermöglichkeiten."
+ },
+ "british-shorthair": {
+  "description": "Die Britisch Kurzhaar ist die Rassekatzen-Version der britischen Hauskatze, bekannt für ihren stämmigen Körper, ihr dichtes Fell und ihr breites Gesicht.",
+  "overview": "Die Britisch Kurzhaar ist eine der ältesten englischen Katzenrassen mit einem robusten, musku lösen Körperbau und einem dichten, plüschigen Fell. Sie sind für ihr ruhiges, ausgeglichenes Temperament bekannt und werden oft als 'Teddy-Bär-Katzen' bezeichnet.",
+  "health": "Britisch Kurzhaar können anfällig für Hypertrophe Kardiomyopathie (HCM) und Polyzystische Nierenerkrankung (PKD) sein. Regelmäßige Gesundheitsuntersuchungen werden empfohlen. Sie neigen zu Übergewicht, daher ist eine kontrollierte Ernährung wichtig.",
+  "care": "Wöchentliches Bürsten reicht aus, um ihr dichtes Fell in gutem Zustand zu halten. Sie sind relativ pflegeleicht, brauchen aber regelmäßige Bewegung, um ein gesundes Gewicht zu halten. Bieten Sie interaktives Spielzeug und Kratzmöglichkeiten."
+ },
+ "siamese": {
+  "description": "Siamkatzen gehören mit ihren leuchtend blauen Augen und ihrem Colorpoint-Fell zu den bekanntesten Rassen. Sie sind äußerst gesprächig und gesellig.",
+  "overview": "Die Siamkatze ist eine der ältesten und bekanntesten Katzenrassen, berühmt für ihre auffälligen blauen Augen, ihr Points-Muster und ihre gesprächige Natur. Sie sind äußerst sozial und bilden starke Bindungen zu ihren Menschen.",
+  "health": "Siamesen können anfällig für Amyloidose, Asthma und bestimmte Herzerkrankungen sein. Regelmäßige Tierarztbesuche sind wichtig. Sie sind im Allgemeinen langlebig und können 15-20 Jahre alt werden.",
+  "care": "Ihr kurzes Fell braucht minimale Pflege – wöchentliches Bürsten reicht aus. Sie brauchen viel geistige Stimulation und soziale Interaktion. Einsamkeit tolerieren sie schlecht, daher ist ein Spielkamerad oder viel menschliche Gesellschaft ideal."
+ },
+ "abyssinian": {
+  "description": "Abessinier gehören zu den ältesten bekannten Rassen und sind für ihr getticktes Fell und ihr äußerst aktives, neugieriges Wesen bekannt.",
+  "overview": "Die Abessinierkatze ist eine der ältesten bekannten Katzenrassen, mit einem charakteristischen getickten Fell, das ihr ein wildes Aussehen verleiht. Oft liebevoll 'Aby' genannt, ist sie unglaublich aktiv, neugierig und intelligent. Diese Katzen sind geborene Athleten, die es lieben, zu klettern und alles zu erkunden.",
+  "health": "Abessinier können zu Pyruvatkinase-Mangel (PK-Defizienz), Progressiver Retinaatrophie (PRA) und renaler Amyloidose neigen. Auch Zahnprobleme sind häufig. Für viele Erkrankungen gibt es Gentests. Bei guter Pflege werden sie 12–15 Jahre alt.",
+  "care": "Ihr kurzes, getikteltes Fell braucht nur minimale Pflege. Sie benötigen jedoch viel Spiel und geistige Anregung — Futterpuzzles sind ideal. Stellen Sie hohe Kratzbäume und erhöhte Liegeplätze bereit. Alleinsein vertragen sie schlecht und können bei Langeweile destruktiv werden."
+ },
+ "bengal": {
+  "description": "Bengalkatzen wirken mit ihren leopardenartigen Flecken wild, sind aber vollständig domestiziert. Sie sind sehr aktiv und lieben Wasser.",
+  "overview": "Die Bengalkatze ist eine domestizierte Rasse mit dem exotischen Aussehen eines Wildkatzen-Vorfahren. Ihr auffälliges geflecktes oder marmoriertes Fell und ihre athletische Figur machen sie zu einer der schönsten Katzenrassen.",
+  "health": "Bengalen können anfällig für Progressive Retinaatrophie und Hypertrophe Kardiomyopathie sein. Regelmäßige Gesundheitsuntersuchungen sind wichtig.",
+  "care": "Bengalen brauchen viel körperliche und geistige Stimulation. Sie sind sehr aktiv und lieben es zu klettern und zu spielen. Ein großer Kratzbaum und interaktives Spielzeug sind unerlässlich."
+ },
+ "sphynx": {
+  "description": "Die Sphynx ist berühmt für ihre Haarlosigkeit, obwohl sie einen feinen Pfirsichflaum besitzt. Sie ist äußerst anhänglich und liebt Wärme.",
+  "overview": "Die Sphynx ist vielleicht die bekannteste haarlose Katzenrasse. Trotz ihres ungewöhnlichen Aussehens sind sie äußerst liebevoll und suchen ständig menschliche Gesellschaft.",
+  "health": "Sphynx benötigen besondere Hautpflege und sind anfällig für Sonnenbrand und Kälte. Sie können auch zu Herzproblemen neigen.",
+  "care": "Regelmäßiges Baden ist notwendig, da ihre Haut natürliche Öle produziert. Halten Sie sie warm und schützen Sie sie vor direkter Sonneneinstrahlung."
+ },
+ "scottish-fold": {
+  "description": "Scottish Folds sind für ihre einzigartigen Faltohren und ihr eulenartiges Aussehen bekannt. Sie sind liebenswürdig und anpassungsfähig.",
+  "overview": "Die Scottish Fold ist eine unverwechselbare Rasse mit nach vorne gefalteten Ohren, die ihr ein eulenähnliches Aussehen verleihen. Sie sind ruhig, anhänglich und passen sich gut an verschiedene Lebensumstände an.",
+  "health": "Scottish Folds können anfällig für Gelenkprobleme sein, die mit dem Gen verbunden sind, das ihre gefalteten Ohren verursacht. Achten Sie auf Anzeichen von Steifheit.",
+  "care": "Wöchentliches Bürsten und regelmäßige Ohrenreinigung sind ausreichend. Sie sind pflegeleicht und anpassungsfähig."
+ },
+ "birman": {
+  "description": "Birmakatzen sind als „Heilige Katze von Burma\" bekannt und bestechen durch ihre strahlend blauen Augen und die weißen „Handschuhe\" an ihren Pfoten.",
+  "overview": "Die Birma, auch 'Heilige Birma' genannt, ist eine auffallende Katze mit langem, seidigem Fell, tiefblauen Augen und den charakteristischen weißen 'Handschuhen' an den Pfoten. Der Legende nach erhielt sie ihre Färbung von einer Tempelgöttin. Es sind sanfte, anhängliche Katzen, die es lieben, bei ihrer Familie zu sein.",
+  "health": "Birmakatzen können zu Hypertropher Kardiomyopathie (HCM), Nierenerkrankungen und den sogenannten Felinen Audiogenen Reflexanfällen (ausgelöst durch bestimmte Geräusche) neigen. Manche entwickeln korneale Dermoide. Regelmäßige Tierarztkontrollen sind wichtig.",
+  "care": "Ihr seidiges Fell ohne Unterwolle verfilzt kaum — bürsten Sie es 2–3 Mal pro Woche. Es sind soziale Katzen, die sich gut mit anderen Haustieren verstehen. Sie sind nicht übermäßig anspruchsvoll, genießen aber interaktives Spiel. Halten Sie sie im Haus, da sie für ein Leben draußen zu vertrauensselig sind."
+ },
+ "russian-blue": {
+  "description": "Russisch Blau sind für ihr plüschiges blaugraues Fell und ihre auffallend grünen Augen bekannt. Fremden gegenüber sind sie scheu, ihrer Familie jedoch treu ergeben.",
+  "overview": "Die Russisch Blau ist eine elegante Katze mit einem kurzen, dichten, silberblau schimmernden Fell. Sie sind für ihre Intelligenz, Loyalität und ihr sanftes Wesen bekannt.",
+  "health": "Russisch Blau sind generell eine gesunde Rasse mit wenigen erblichen Gesundheitsproblemen. Regelmäßige Vorsorgeuntersuchungen werden empfohlen.",
+  "care": "Ihr dichtes Fell braucht nur wöchentliches Bürsten. Sie sind etwas schüchtern gegenüber Fremden, aber sehr anhänglich gegenüber ihrer Familie."
+ },
+ "norwegian-forest-cat": {
+  "description": "Norwegische Waldkatzen sind große, robuste Katzen mit einem dichten, wasserabweisenden Fell, das sie für skandinavische Winter gerüstet hat.",
+  "overview": "Die Norwegische Waldkatze ist eine natürliche Rasse, die sich an das raue skandinavische Klima angepasst hat. Sie sind groß, musku lös und haben ein prächtiges, dichtes Fell.",
+  "health": "Diese Rasse kann anfällig für Glykogenspeicherkrankheit und Hypertrophe Kardiomyopathie sein. Genetische Tests werden empfohlen.",
+  "care": "Ihr langes Fell muss regelmäßig gebürstet werden, besonders während des Fellwechsels. Sie sind aktiv und genießen es zu klettern."
+ },
+ "burmese": {
+  "description": "Burmakatzen sind für ihr hundeähnliches Wesen bekannt: Sie folgen ihren Besitzern überallhin und sind äußerst gesellig.",
+  "overview": "Die Burma ist eine kompakte, muskulöse Katze mit seidigem Fell und ausdrucksstarken goldenen Augen. Ursprünglich aus Birma (Myanmar) stammend, ist sie für ihre hundeähnliche Persönlichkeit und ihre unerschütterliche Hingabe an ihre Menschen bekannt. Wegen ihrer Anhänglichkeit wird sie oft als 'Klettkatze' bezeichnet.",
+  "health": "Burmakatzen können zu Diabetes mellitus, Hypokaliämie (Kaliummangel) und in manchen Linien zu Schädeldeformationen neigen. Auch Augenerkrankungen können auftreten. Regelmäßige Tierarztkontrollen sind wichtig. Bei guter Pflege werden sie 15–18 Jahre alt.",
+  "care": "Ihr kurzes, satinartiges Fell braucht nur minimale Pflege — wöchentliches Bürsten genügt. Sie sind sehr sozial und vertragen Alleinsein schlecht; überlegen Sie, gleich zwei anzuschaffen. Sie bleiben bis weit ins Erwachsenenalter verspielt und brauchen täglich interaktives Spiel. Achten Sie auf ihre Ernährung, da sie zu Übergewicht neigen."
+ },
+ "oriental-shorthair": {
+  "description": "Orientalisch Kurzhaar gibt es in über 300 Farbkombinationen. Sie sind wie Siamkatzen ohne Colorpoint-Zeichnung – sehr gesprächig und gesellig.",
+  "overview": "Die Orientalisch Kurzhaar ist im Grunde eine Siamkatze in einem Regenbogen aus Farben und Mustern — über 300 Kombinationen! Mit ihren großen Ohren, mandelförmigen Augen und dem schlanken Körper wirkt sie auffallend elegant. Wie ihre siamesischen Verwandten ist sie äußerst gesprächig und baut intensive Bindungen zu ihren Menschen auf.",
+  "health": "Orientalen können zu Progressiver Retinaatrophie (PRA), Leber-Amyloidose und Herzproblemen neigen. Manche entwickeln Asthma oder Bronchialerkrankungen. Sie neigen zudem zu Zahnproblemen. Regelmäßige Tierarztbesuche und Zahnpflege sind wichtig.",
+  "care": "Ihr kurzes Fell braucht nur minimale Pflege. Sie benötigen jedoch viel Aufmerksamkeit und geistige Anregung — werden sie ignoriert, können sie depressiv werden. Bieten Sie Futterpuzzles, interaktives Spielzeug und viel Spielzeit an. Am wohlsten fühlen sie sich mit einer zweiten Katze oder einem sehr aufmerksamen Besitzer."
+ },
+ "devon-rex": {
+  "description": "Devon-Rex-Katzen haben große Ohren, ein elfenhaftes Gesicht und ein gewelltes Fell. Wegen ihres schelmischen Wesens werden sie „Pixie-Katzen\" genannt.",
+  "overview": "Die Devon Rex ist eine elfenhaft aussehende Katze mit riesigen Ohren, großen Augen und gelocktem Fell. 1960 in Devon, England, entdeckt, wird sie oft 'Pixie-Katze' oder 'Alien-Katze' genannt. Sie ist verschmitzt, verspielt und liebt es, im Mittelpunkt zu stehen.",
+  "health": "Devon Rex können zu Hereditärer Myopathie (Muskelschwäche), Patellaluxation und Hüftdysplasie (HD) neigen. Manche entwickeln Hauterkrankungen. Auch Hefepilzinfektionen in den Ohren können auftreten. Regelmäßige Gesundheitsuntersuchungen werden empfohlen.",
+  "care": "Ihr gewelltes Fell sollte wöchentlich sanft abgewischt statt gebürstet werden. Reinigen Sie ihre großen Ohren regelmäßig. Sie frieren schnell und brauchen eventuell Pullover. Sie sind futterbesessen und stibitzen vom Teller — behalten Sie ihre Ernährung genau im Blick!"
+ },
+ "cornish-rex": {
+  "description": "Cornish Rex haben ein charakteristisches gewelltes Fell und einen schlanken Körper. Sie sind athletisch, apportieren gern und bleiben ihr Leben lang kätzchenhaft.",
+  "overview": "Die Cornish Rex hat ein unverwechselbares gelocktes Fell, das sich wie zerknitterter Samt anfühlt. Ursprünglich aus Cornwall, England, hat sie einen eleganten, gebogenen Körper und einen eiförmigen Kopf. Es sind verspielte, akrobatische Katzen, die sich ihr kätzchenhaftes Temperament ein Leben lang bewahren.",
+  "health": "Cornish Rex können zu Hypertropher Kardiomyopathie (HCM), Patellaluxation und empfindlicher Haut neigen. Das Fehlen der Deckhaare macht sie temperaturempfindlich. Auch Nabelbrüche können auftreten. Insgesamt gesund mit einer Lebenserwartung von 12–15 Jahren.",
+  "care": "Ihr besonderes Fell braucht nur minimale Pflege — gelegentliches sanftes Bürsten genügt. Sie frieren schnell und schätzen warme Plätze und beheizte Betten. Ihre großen Ohren müssen regelmäßig gereinigt werden. Wegen ihres hohen Stoffwechsels brauchen sie hochwertiges Futter und fressen oft mehr als erwartet."
+ },
+ "exotic-shorthair": {
+  "description": "Exotic Shorthairs sind im Grunde kurzhaarige Perser – dasselbe süße Gesicht und sanfte Wesen, aber mit deutlich geringerem Pflegeaufwand.",
+  "overview": "Die Exotic Shorthair ist im Grunde eine kurzhaarige Perserkatze — dasselbe süße Gesicht und ruhige Wesen, aber mit pflegeleichterem Fell. Oft 'die Perserkatze für Bequeme' genannt, verbindet sie das sanfte Naturell der Perser mit geringerem Pflegeaufwand.",
+  "health": "Exotics teilen die Gesundheitsprobleme der Perser: Polyzystische Nierenerkrankung (PKD), Atemprobleme durch das flache Gesicht und Augenerkrankungen. Auch Hypertrophe Kardiomyopathie (HCM) kann auftreten. Regelmäßige Tierarztkontrollen und ein PKD-Screening sind wichtig.",
+  "care": "Ihr dichtes Fell sollte 2–3 Mal pro Woche gebürstet werden. Wegen des flachen Gesichts müssen die Augen täglich gereinigt werden, um Verfärbungen vorzubeugen. Halten Sie sie im Sommer kühl, da sie leicht überhitzen. Sie sind mit mäßigem Spiel und viel Schmusezeit auf dem Schoß zufrieden."
+ },
+ "himalayan": {
+  "description": "Himalaya-Katzen vereinen Perser-Merkmale mit siamesischen Colorpoints. Es sind süße, ruhige Katzen, die friedliche Umgebungen lieben.",
+  "overview": "Die Himalaya-Katze vereint das luxuriöse Fell der Perser mit den Colorpoint-Abzeichen der Siam. Diese atemberaubenden Katzen haben das ruhige, sanfte Temperament der Perser, zeigen aber gelegentlich siamesische Verspieltheit. Es sind sanfte, treue Gefährten, die ruhige Umgebungen bevorzugen.",
+  "health": "Himalaya-Katzen neigen zu denselben Problemen wie Perser: Polyzystische Nierenerkrankung (PKD), Atemprobleme, Augenerkrankungen und Zahnprobleme durch das flache Gesicht. Auch Hautfaltendermatitis kann auftreten. Regelmäßige Fellpflege und tierärztliche Betreuung sind unerlässlich.",
+  "care": "Tägliche Fellpflege ist unerlässlich, um Verfilzungen des langen Fells zu verhindern. Reinigen Sie täglich die Augen. Halten Sie sie bei heißem Wetter in klimatisierten Räumen. Es sind reine Wohnungskatzen, die ruhige, vorhersehbare Abläufe bevorzugen."
+ },
+ "american-shorthair": {
+  "description": "American Shorthairs sind die Rassekatzen-Version der Hauskatze – athletisch, anpassungsfähig und großartige Familienkatzen.",
+  "overview": "Die American Shorthair stammt von Katzen ab, die mit der Mayflower nach Amerika kamen. Sie sind die 'Arbeitskatzen' unter den Rassen — robust, anpassungsfähig und ausgezeichnete Mäusejäger. Mit ihrem muskulösen Körperbau und der Farbenvielfalt sind sie durch und durch amerikanische Katzen.",
+  "health": "American Shorthairs sind im Allgemeinen sehr gesund und haben nur wenige rassespezifische Probleme. Manche können zu Hypertropher Kardiomyopathie (HCM) neigen. Sie nehmen leicht zu, daher ist ein gutes Ernährungsmanagement wichtig. Die Lebenserwartung beträgt typischerweise 15–20 Jahre.",
+  "care": "Wöchentliches Bürsten hält ihr dichtes Fell gesund. Es sind pflegeleichte Katzen, die sich an verschiedenste Lebenssituationen anpassen. Bieten Sie Jagdspiele an, um ihren natürlichen Instinkten gerecht zu werden. Kontrollieren Sie die Futtermenge, denn sie fressen für ihr Leben gern."
+ },
+ "tonkinese": {
+  "description": "Tonkinesen sind eine Kreuzung aus Siam und Burma und vereinen das Beste aus beiden – gesellig, verspielt und liebevoll.",
+  "overview": "Die Tonkanese ist eine Kreuzung aus Siam und Burma und vereint das Beste beider Rassen. Sie hat aquamarinfarbene Augen, einen mittelkräftigen Körperbau und ein seidiges Fell. Verspielt, sozial und gesprächig (aber weniger als die Siam) ist sie der perfekte Mittelweg.",
+  "health": "Tonkanesen können Gesundheitsprobleme beider Elternrassen erben: Atemwegsinfektionen, Zahnprobleme und (selten) Schielen. Auch eine Neigung zu chronisch-entzündlichen Darmerkrankungen (IBD) kann bestehen. Insgesamt gesund mit einer Lebenserwartung von 12–16 Jahren.",
+  "care": "Ihr seidiges Fell braucht nur wöchentliches Bürsten. Sie sind sehr sozial und brauchen Gesellschaft — Alleinsein vertragen sie schlecht. Bieten Sie viel interaktives Spielzeug und Klettermöglichkeiten an. Sie bleiben ihr Leben lang verspielt und neugierig."
+ },
+ "ragamuffin": {
+  "description": "Ragamuffins ähneln Ragdolls, gibt es aber in mehr Farben. Sie sind äußerst sanft, geduldig und lassen sich gern auf den Arm nehmen.",
+  "overview": "Die RagaMuffin ist eng mit der Ragdoll verwandt, gibt es aber in mehr Farben und Mustern. Diese großen, verschmusten Katzen sind für ihr sanftmütiges Temperament bekannt und dafür, dass sie sich beim Hochheben entspannt hängen lassen. Ihre Hingabe wird oft als 'hundeähnlich' beschrieben.",
+  "health": "RagaMuffins können zu Hypertropher Kardiomyopathie (HCM) und Polyzystischer Nierenerkrankung (PKD) neigen. Bei Überfütterung kann sich Übergewicht entwickeln. Gentests sind verfügbar. Bei guter Pflege werden sie 12–16 Jahre alt.",
+  "care": "Ihr seidiges Fell verfilzt kaum, profitiert aber von wöchentlichem Bürsten. Sie sind nicht anspruchsvoll, lieben aber Aufmerksamkeit. Sorgen Sie für stabile Möbel — es sind große Katzen! Halten Sie sie im Haus, da ihre vertrauensselige Art sie draußen verwundbar macht."
+ },
+ "savannah": {
+  "description": "Savannahs sind eine Hybridrasse (Afrikanischer Serval x Hauskatze). Sie sind hochbeinig, athletisch und haben ein wildes Erscheinungsbild.",
+  "overview": "Die Savannah ist eine Hybride aus Hauskatze und afrikanischem Serval — das Ergebnis ist eine hochgewachsene, gefleckte, wild aussehende Katze. Sie ist hochaktiv, intelligent und bindet sich stark an ihre Besitzer. Frühe Generationen (F1–F3) behalten mehr wilde Eigenschaften.",
+  "health": "Savannahs sind im Allgemeinen gesund, können aber zu Hypertropher Kardiomyopathie (HCM) neigen. Manche haben einen empfindlichen Magen. Hinweis: Sie können auf bestimmte Medikamente und Narkosemittel anders reagieren. Suchen Sie einen Tierarzt mit Erfahrung mit Hybridkatzen.",
+  "care": "Sie brauchen viel Platz und Bewegung — keine Wohnungskatzen! Stellen Sie hohe Kratzbäume, Futterpuzzles und interaktives Spiel bereit. Viele lassen sich an die Leine gewöhnen. Sie lernen mitunter, Türen zu öffnen und Wasserhähne aufzudrehen. Sichern Sie Ihr Zuhause gut ab!"
+ },
+ "siberian": {
+  "description": "Sibirische Katzen sind Russlands heimische Waldkatzen mit einem luxuriösen dreischichtigen Fell. Sie sind dafür bekannt, weniger Fel-d1-Allergen zu produzieren.",
+  "overview": "Die Sibirische Katze ist Russlands ursprüngliche Waldkatze, bekannt für ihr dichtes dreischichtiges Fell und ihren kraftvollen Körperbau. Trotz ihrer Größe ist sie eine wendige Springerin und verspielte Jägerin. Bemerkenswert ist auch, dass sie weniger vom Allergen Fel d 1 produziert und daher für manche Allergiker besser geeignet ist.",
+  "health": "Sibirische Katzen können zu Hypertropher Kardiomyopathie (HCM) und Polyzystischer Nierenerkrankung (PKD) neigen. In manchen Linien tritt erblicher Krebs auf. Insgesamt sind es robuste, an raue Bedingungen angepasste Katzen. Regelmäßige Herzuntersuchungen werden empfohlen. Die Lebenserwartung beträgt 12–15 Jahre.",
+  "care": "Ihr dichtes Fell sollte 2–3 Mal pro Woche gebürstet werden, im Fellwechsel täglich. Sie lieben Wasser und leisten Ihnen vielleicht sogar unter der Dusche Gesellschaft! Bieten Sie Kletter- und Jagdspielmöglichkeiten an. Sie passen sich verschiedensten Lebenssituationen an."
+ },
+ "balinese": {
+  "description": "Balinesen sind im Grunde langhaarige Siamkatzen – dieselbe Persönlichkeit und dieselben Colorpoints, aber mit einem seidigen, fließenden Fell.",
+  "overview": "Die Balinese ist im Grunde eine langhaarige Siamkatze, mit denselben markanten blauen Augen und dem Colorpoint-Muster, aber mit seidigem, fließendem Fell. Benannt nach ihren anmutigen Bewegungen, die an balinesische Tänzerinnen erinnern, ist sie intelligent, gesprächig und zutiefst anhänglich.",
+  "health": "Balinesen teilen die Gesundheitsprobleme der Siam: Progressive Retinaatrophie (PRA), Leber-Amyloidose und Atemwegsprobleme. Auch eine Neigung zu Zahnproblemen kann bestehen. Regelmäßige Tierarztkontrollen und Zahnpflege sind wichtig.",
+  "care": "Ihr Fell ohne Unterwolle verfilzt kaum — wöchentliches Bürsten genügt. Sie brauchen viel geistige Anregung und Zuwendung. Bieten Sie Denkspielzeug und Klettermöglichkeiten an. Alleinsein mögen sie nicht und können bei Langeweile destruktiv werden."
+ },
+ "turkish-angora": {
+  "description": "Türkisch Angora gehören zu den alten Naturrassen und sind für ihr elegantes, seidiges Fell und ihre anmutigen Bewegungen bekannt.",
+  "overview": "Die Türkisch Angora ist eine alte, natürliche Rasse aus der Türkei, bekannt für ihr seidiges weißes Fell und ihre anmutige Erscheinung. Entgegen ihrem zarten Aussehen ist sie energiegeladen, verschmitzt und hochintelligent. Oft bindet sie sich am engsten an eine einzige Person.",
+  "health": "Weiße Türkisch Angoras mit blauen Augen können taub sein. Sie können zu Hypertropher Kardiomyopathie (HCM) und Hereditärer Ataxie neigen. Manche entwickeln eine Empfindlichkeit gegenüber Narkosemitteln. Lassen Sie beim Kauf eines weißen Kätzchens das Gehör testen.",
+  "care": "Ihr Fell ohne Unterwolle verfilzt kaum — wöchentliches Bürsten genügt. Es sind aktive Katzen, die viel Spiel und Klettermöglichkeiten brauchen. Sie lassen sich zum Apportieren und für Spaziergänge an der Leine trainieren. Beaufsichtigen Sie sie in der Nähe von Wasser — es fasziniert sie!"
+ },
+ "turkish-van": {
+  "description": "Türkisch Van sind wegen ihrer Liebe zum Wasser als „schwimmende Katzen\" bekannt. Sie haben eine markante Fellzeichnung – weißer Körper mit farbigem Kopf und Schwanz.",
+  "overview": "Die Türkisch Van ist berühmt für ihre Liebe zum Wasser — sie wird oft 'die schwimmende Katze' genannt. Ursprünglich aus der Region um den Vansee in der Türkei, hat sie ein unverwechselbares Muster mit Farbe nur an Kopf und Schwanz. Sie ist energiegeladen, athletisch und liebt das Klettern.",
+  "health": "Türkisch Vans sind im Allgemeinen gesund und haben nur wenige rassespezifische Probleme. Manche können zu Herzerkrankungen neigen. Rein weiße Vans mit blauen Augen können taub sein. Es ist eine robuste, natürliche Rasse mit einer Lebenserwartung von 12–17 Jahren.",
+  "care": "Ihr halblanges, wasserabweisendes Fell braucht nur minimale Pflege — es hat keine Unterwolle. Bieten Sie viel Kletterraum und, wenn möglich, Zugang zu Wasser zum Spielen an. Sie sind hochaktiv und brauchen Platz zum Rennen. Für kleine Wohnungen nicht ideal."
+ },
+ "somali": {
+  "description": "Somalis sind langhaarige Abessinier mit demselben aktiven, neugierigen Wesen und dem wunderschönen gettickten Fell.",
+  "overview": "Die Somali ist eine langhaarige Abessinierkatze, mit demselben getickten Fell und fuchsähnlichen Aussehen, aber mit wallender Mähne und buschigem Schwanz. Sie ist unglaublich aktiv, neugierig und verspielt — wegen ihres Aussehens und ihres cleveren Wesens wird sie oft 'Fuchskatze' genannt.",
+  "health": "Somalis teilen die Gesundheitsprobleme der Abessinier: Pyruvatkinase-Mangel (PK-Defizienz), Progressive Retinaatrophie (PRA) und renale Amyloidose. Auch Zahnprobleme sind häufig. Für viele Erkrankungen gibt es Gentests. Die Lebenserwartung beträgt 12–16 Jahre.",
+  "care": "Ihr mittellanges Fell sollte 2–3 Mal pro Woche gebürstet werden, um Verfilzungen vorzubeugen. Sie brauchen viel Spiel, Kletterraum und geistige Anregung. Futterpuzzles sind ideal. Alleinsein vertragen sie schlecht — überlegen Sie, gleich zwei anzuschaffen."
+ },
+ "chartreux": {
+  "description": "Chartreux sind Frankreichs heimische blaue Katzen, bekannt für ihr ruhiges Wesen und ihren süßen, „lächelnden\" Gesichtsausdruck.",
+  "overview": "Die Chartreux ist Frankreichs ursprüngliche Katze, bekannt für ihr blaugraues, 'wasserdichtes' Fell und ihre kupferfarbenen Augen. Wegen ihres Gesichtsausdrucks oft 'lächelnde Katze' genannt, ist sie ruhig, sanft und aufmerksam. Es sind ausgezeichnete Jägerinnen, die sich eng an ihre Familie binden.",
+  "health": "Chartreux können zu Patellaluxation (Kniescheibenprobleme) und Polyzystischer Nierenerkrankung (PKD) neigen. Manche entwickeln Harnwegsprobleme. Insgesamt sind es gesunde, robuste Katzen mit einer Lebenserwartung von 12–15 Jahren.",
+  "care": "Ihr dichtes, wolliges Fell sollte wöchentlich gebürstet werden, im Fellwechsel öfter. Es sind anpassungsfähige Katzen, die Reisen gut vertragen. Bieten Sie Jagdspielzeug an, um ihren natürlichen Instinkten gerecht zu werden. Sie sind nicht anspruchsvoll, genießen aber interaktives Spiel."
+ },
+ "ocicat": {
+  "description": "Ocicats sehen wild aus, sind aber vollständig domestiziert. Sie sind in ihrer Ergebenheit hundeähnlich und können Kunststücke lernen.",
+  "overview": "Die Ocicat sieht mit ihrem gefleckten Fell wild aus, ist aber eine reine Hauskatze — eine Mischung aus Siam, Abessinier und American Shorthair. Sie ist selbstbewusst, aufgeschlossen und in ihrer Hingabe hundeähnlich. Viele lassen sich trainieren, zu apportieren, an der Leine zu laufen und auf Kommandos zu reagieren.",
+  "health": "Ocicats können zu Leber- oder renaler Amyloidose neigen (geerbt von Siam/Abessinier). Manche entwickeln Hypertrophe Kardiomyopathie (HCM) oder Progressive Retinaatrophie (PRA). Insgesamt gesund mit einer Lebenserwartung von 12–18 Jahren.",
+  "care": "Ihr kurzes, geflecktes Fell braucht nur wöchentliches Bürsten. Sie sind sehr sozial und brauchen Gesellschaft — mit anderen Haustieren kommen sie gut zurecht. Bieten Sie viel interaktives Spiel und Denkspielzeug an. Mit positiver Verstärkung lassen sie sich wie Hunde trainieren."
+ },
+ "egyptian-mau": {
+  "description": "Ägyptische Mau sind die schnellste Hauskatzenrasse und die einzige natürlich gefleckte Hauskatze. Sie sind treu, aber scheu gegenüber Fremden.",
+  "overview": "Die Ägyptische Mau ist die einzige natürlich gefleckte Hauskatze, deren Abstammung möglicherweise bis ins alte Ägypten zurückreicht. Sie ist die schnellste Hauskatzenrasse und erreicht bis zu 48 km/h! Fremden gegenüber zurückhaltend, aber ihrer Familie ergeben, sind es sensible, loyale Katzen.",
+  "health": "Ägyptische Maus können zu Leukodystrophie (einer neurologischen Erkrankung) und Herzerkrankungen neigen. Manche entwickeln Urolithiasis (Blasensteine). Sie sind empfindlich gegenüber Kälte und Narkosemitteln. Regelmäßige Tierarztkontrollen sind wichtig.",
+  "care": "Ihr kurzes, geflecktes Fell braucht nur minimale Pflege. Es sind sensible Katzen, die ruhige Umgebungen und feste Abläufe bevorzugen. Bieten Sie viel Platz zum Rennen und Klettermöglichkeiten an. Sie binden sich eng und mögen es nicht, allein gelassen zu werden."
+ },
+ "singapura": {
+  "description": "Singapuras sind die kleinste Katzenrasse, haben aber eine riesige Persönlichkeit. Sie lieben es, in alles einbezogen zu werden.",
+  "overview": "Die Singapura ist eine der kleinsten Katzenrassen und wiegt nur 2–4 kg. Trotz ihrer winzigen Größe hat sie eine riesige Persönlichkeit — neugierig, verspielt und immer mittendrin. Ihre großen Augen und das getickte Fell verleihen ihr ein ewiges Kätzchengesicht.",
+  "health": "Singapuras können zu Pyruvatkinase-Mangel (PK-Defizienz) und bei Kätzinnen zu Wehenschwäche (Geburtsschwierigkeiten) neigen; zudem ist der Genpool relativ klein. Manche entwickeln Muskeldystrophie. Insgesamt gesund mit einer Lebenserwartung von 12–15 Jahren.",
+  "care": "Ihr kurzes, feines Fell braucht nur minimale Pflege — wöchentliches Bürsten genügt. Sie sind Wärmesucher, die warme Plätze lieben. Bieten Sie viele Klettermöglichkeiten und interaktives Spiel an. Sie bleiben ihr Leben lang kätzchenhaft und verspielt."
+ },
+ "manx": {
+  "description": "Manx-Katzen sind für ihre fehlende (oder kurze) Rute bekannt. Sie sind verspielt, hundeähnlich und ausgezeichnete Jäger.",
+  "overview": "Die Manx ist berühmt für ihre Schwanzlosigkeit, wobei die Schwanzlänge von gar keinem bis zum vollständigen Schwanz variieren kann. Ursprünglich von der Isle of Man stammend, sind es kraftvolle Springer mit rundlicher Erscheinung. Es sind loyale, verspielte Katzen, deren Verhalten oft als 'hundeähnlich' beschrieben wird.",
+  "health": "Dasselbe Gen, das die Schwanzlosigkeit verursacht, kann das 'Manx-Syndrom' auslösen — Wirbelsäulendefekte, die zu Inkontinenz oder Mobilitätsproblemen führen. Verpaaren Sie niemals zwei völlig schwanzlose Manx miteinander. Lassen Sie auf Wirbelsäulenprobleme untersuchen. Ansonsten im Allgemeinen gesund.",
+  "care": "Ihr doppeltes Fell sollte wöchentlich gebürstet werden, im Fellwechsel öfter. Es sind anpassungsfähige Katzen, die in den meisten Umgebungen gut zurechtkommen. Bieten Sie interaktives Spiel an — sie sind geborene Jäger. Achten Sie auf Anzeichen von Wirbelsäulenproblemen, besonders bei Kätzchen."
+ },
+ "japanese-bobtail": {
+  "description": "Japanese Bobtails haben einen charakteristischen Pompon-Schwanz. Sie sind die „Glückskatzen\"-Rasse, die die Maneki-Neko-Figur inspiriert hat.",
+  "overview": "Die Japanese Bobtail besitzt einen charakteristischen Pompon-Schwanz und gilt in Japan als Glücksbringer — sie ist das Vorbild für die berühmte 'Winkekatze'-Figur. Sie ist aktiv, intelligent und liebt es, mit einer melodischen, zwitschernden Stimme zu 'plaudern'.",
+  "health": "Japanese Bobtails sind bemerkenswert gesund und haben nur wenige rassespezifische Probleme. Ihr Stummelschwanz ist eine natürliche Mutation und nicht wie beim Manx-Gen mit Wirbelsäulenproblemen verbunden. Sie gehören zu den gesündesten Rassekatzen mit einer Lebenserwartung von 15–18 Jahren.",
+  "care": "Ihr seidiges Fell (in kurzer oder langer Variante) braucht nur minimale Pflege. Es sind aktive Katzen, die viel Spiel und geistige Anregung brauchen. Viele spielen gern mit Wasser und apportieren. Sie kommen gut mit anderen Katzen zurecht und bauen starke Familienbindungen auf."
+ },
+ "american-curl": {
+  "description": "American Curls haben einzigartige, nach hinten gebogene Ohren. Sie bleiben ihr Leben lang kätzchenhaft und sind sehr menschenbezogen.",
+  "overview": "Die American Curl ist an ihren einzigartig nach hinten gebogenen Ohren sofort zu erkennen, die auf eine spontane Genmutation zurückgehen. 1981 in Kalifornien erstmals entdeckt, sind es freundliche, menschenbezogene Katzen, die sich ihre kätzchenhafte Verspieltheit bis ins Erwachsenenalter bewahren.",
+  "health": "American Curls sind im Allgemeinen sehr gesund. Ihre besonderen Ohren erfordern behutsamen Umgang, verursachen aber keine Gesundheitsprobleme. Zu den seltenen Besonderheiten gehören enge Gehörgänge, die regelmäßige Reinigung erfordern. Eine der gesünderen Rassen mit einer Lebenserwartung von 12–16 Jahren.",
+  "care": "Sowohl die kurz- als auch die langhaarige Variante sollte wöchentlich gebürstet werden. Behandeln Sie die charakteristischen Ohren behutsam — drücken Sie sie niemals flach. Regelmäßige Ohrenreinigung beugt Wachsablagerungen vor. Es sind anpassungsfähige, unkomplizierte Katzen, die für die meisten Lebenssituationen geeignet sind."
+ },
+ "selkirk-rex": {
+  "description": "Selkirk Rex haben ein lockiges, „schafähnliches\" Fell. Sie sind die entspannteste der Rex-Rassen mit einem geduldigen, toleranten Wesen.",
+  "overview": "Die Selkirk Rex hat ein unverwechselbares gelocktes Fell — sowohl Deckhaare als auch Unterwolle sind gelockt, was ihr ein 'Schafskatzen'-Aussehen verleiht. Anders als andere Rex-Rassen ist sie stämmig gebaut und hat ein gelassenes, geduldiges Temperament. Es gibt sie in Langhaar- und Kurzhaarvarianten.",
+  "health": "Selkirk Rex können aufgrund ihrer Perser-/Britisch-Kurzhaar-Abstammung zu Polyzystischer Nierenerkrankung (PKD) und Hypertropher Kardiomyopathie (HCM) neigen. Manche entwickeln Hüftdysplasie (HD). Regelmäßige Gesundheitsuntersuchungen werden empfohlen.",
+  "care": "Ihr gelocktes Fell muss regelmäßig gebürstet werden, um Verfilzungen zu verhindern — bei Langhaartieren öfter. Bürsten Sie nicht zu viel, da sich die Locken sonst glätten können. Es sind entspannte Katzen, die Kuscheln genießen. Weniger aktiv als andere Rex-Rassen, aber dennoch spielfreudig."
+ },
+ "laperm": {
+  "description": "LaPerms haben ein einzigartiges lockiges Fell, das von Wellen bis zu Korkenzieherlocken reicht. Sie sind anhänglich und lieben die Nähe zu Menschen.",
+  "overview": "Das gelockte Fell der LaPerm reicht von gewellt bis zu engen Ringellocken und entstand 1982 durch eine spontane Mutation in Oregon. Es sind anhängliche, neugierige Katzen, die die Nähe ihrer Menschen lieben. Manche kommen nackt zur Welt und entwickeln ihre Locken erst später.",
+  "health": "LaPerms sind im Allgemeinen gesund und haben keine rassespezifischen genetischen Erkrankungen. Sie gehören zu den gesünderen Rassekatzen. Gelegentlich können Hautempfindlichkeiten auftreten. Die durchschnittliche Lebenserwartung beträgt bei guter Pflege 12–15 Jahre.",
+  "care": "Ihr besonderes Fell braucht sanftes Bürsten, um die Locken zu erhalten — bürsten Sie nicht im trockenen Zustand. Manche Besitzer besprühen es vorher leicht mit Wasser. Es sind anpassungsfähige, anhängliche Katzen, die in verschiedensten Lebenssituationen gut zurechtkommen. Sie genießen interaktives Spiel."
+ },
+ "korat": {
+  "description": "Korats gehören zu den ältesten stabilen Katzenrassen und gelten in Thailand als Glücksbringer. Sie bauen eine enge Bindung zu ihrer Bezugsperson auf.",
+  "overview": "Die Korat ist eine der ältesten natürlichen Rassen und stammt aus Thailand, wo sie als Glücksbringer gilt. Ihr charakteristisches silberblaues Fell und das herzförmige Gesicht machen sie zu auffallenden Katzen. Sie ist intelligent, verspielt und baut starke Bindungen zu ihrer Familie auf.",
+  "health": "Korats können zu GM1- und GM2-Gangliosidose (neurologische Erkrankungen) neigen — Gentests sind verfügbar. Zudem können sie einen niedrigen Körperfettanteil entwickeln. Insgesamt gesund mit einer Lebenserwartung von 15–20 Jahren. Kaufen Sie nur bei Züchtern, die testen lassen.",
+  "care": "Ihr Fell ohne Unterwolle braucht nur minimale Pflege — wöchentliches Bürsten genügt. Laute Geräusche und Trubel mögen sie nicht — sie bevorzugen ruhige Umgebungen. Bieten Sie interaktives Spiel und Denkspielzeug an. Sie sind sozial und kommen gut mit anderen Haustieren zurecht."
+ },
+ "bombay": {
+  "description": "Bombays wurden gezüchtet, um wie kleine schwarze Panther auszusehen. Sie sind unglaublich anhänglich und stehen gern im Mittelpunkt.",
+  "overview": "Die Bombay wurde gezüchtet, um wie ein Miniatur-Schwarzer-Panther auszusehen, mit glänzend schwarzem Fell und kupferfarbenen Augen. Wegen ihrer Liebe zur Nähe ihrer Menschen wird sie oft als 'Klettkatze' bezeichnet. Selbstbewusst und aufgeschlossen, ist sie leicht zu trainieren und reist gut.",
+  "health": "Bombays können zu Hypertropher Kardiomyopathie (HCM) und kraniofazialen Defekten ähnlich der Burma neigen. Manche entwickeln Atemprobleme. Auch übermäßiger Tränenfluss kann auftreten. Regelmäßige Tierarztkontrollen werden empfohlen.",
+  "care": "Ihr kurzes Fell mit Lacklederglanz braucht nur wöchentliches Bürsten. Sie sind Wärmesucher, die warme Plätze lieben. Sehr sozial — Alleinsein vertragen sie schlecht. Bieten Sie viel interaktives Spiel an. Sie lassen sich für Spaziergänge an der Leine und für Kunststücke trainieren."
+ },
+ "havana-brown": {
+  "description": "Havana Browns sind seltene Katzen mit einem markanten mahagonibraunen Fell und grünen Augen. Sie sind charmant und lieben den Kontakt zu Menschen.",
+  "overview": "Die Havana Brown ist eine seltene Rasse mit sattem mahagonifarbenem Fell und markanten grünen Augen. Ihren Namen verdankt sie ihrer Farbe, die an Havanna-Zigarren erinnert. Verspielt, intelligent und menschenbezogen, benutzt sie ihre Pfoten fast wie Hände, um alles zu untersuchen.",
+  "health": "Havana Browns sind im Allgemeinen gesund, haben aber einen kleinen Genpool. Manche entwickeln Harnwegsprobleme oder Atemwegsinfektionen. Insgesamt robust mit einer Lebenserwartung von 12–15 Jahren. Wegen ihrer Seltenheit ist es wichtig, gute Züchter zu finden.",
+  "care": "Ihr kurzes, glänzendes Fell braucht nur minimale Pflege. Sie sind sehr sozial und mögen es nicht, allein gelassen zu werden — überlegen Sie, gleich zwei anzuschaffen. Es sind interaktive Katzen, die Spiele und Erkundungen genießen. Bieten Sie Futterpuzzles und interaktives Spielzeug an."
+ },
+ "burmilla": {
+  "description": "Burmillas sind eine Kreuzung aus Burma und Chinchilla-Perser und vereinen das Beste aus beiden – ein süßes Wesen und ein wunderschönes silbernes Fell.",
+  "overview": "Die Burmilla entstand 1981 aus einer zufälligen Verpaarung einer Burma mit einem Chinchilla-Perser. Sie hat ein schimmerndes silbernes Fell mit dezenter Schattierung. Verspielt, aber weniger fordernd als die Burma, ist sie anhänglich, ohne aufdringlich zu sein.",
+  "health": "Burmillas können Gesundheitsprobleme beider Elternrassen erben: Polyzystische Nierenerkrankung (PKD) von der Perser-Seite sowie Allergien. Manche entwickeln Zahnprobleme. Regelmäßige Tierarztkontrollen sind wichtig. Die Lebenserwartung beträgt typischerweise 12–15 Jahre.",
+  "care": "Ihr kurzes, seidiges Fell sollte wöchentlich gebürstet werden. Es sind anpassungsfähige Katzen, die gut mit Familien und anderen Haustieren zurechtkommen. Mäßig aktiv — sie spielen gern, entspannen aber ebenso gern. Sie sind sozial, kommen aber auch eine Weile allein zurecht."
+ },
+ "toyger": {
+  "description": "Toyger werden gezüchtet, um mit ihrem kräftigen Streifenmuster wie Spielzeugtiger auszusehen. Trotz des wilden Aussehens sind sie freundlich und entspannt.",
+  "overview": "Die Toyger ist eine Designer-Rasse, die gezüchtet wurde, um einem Miniatur-Tiger mit kräftigen vertikalen Streifen zu ähneln. Entwickelt aus Bengalkatzen und getigerten Hauskatzen, vereint sie wildes Aussehen mit einem sanften, aufgeschlossenen Wesen. Die Rasse befindet sich noch in der Entwicklung, und die Standards entwickeln sich weiter.",
+  "health": "Toyger können zu Herzgeräuschen und einigen Herzerkrankungen neigen. Da es eine jüngere Rasse ist, werden Gesundheitsdaten noch gesammelt. Kaufen Sie nur bei Züchtern, die auf Herzerkrankungen untersuchen lassen. Insgesamt gesund mit einer Lebenserwartung von 12–15 Jahren.",
+  "care": "Ihr kurzes, plüschiges Fell braucht nur minimale Pflege. Es sind aktive, intelligente Katzen, die interaktives Spiel und Denkspielzeug genießen. Viele lassen sich an die Leine gewöhnen. Sie sind sozial und kommen gut mit anderen Haustieren und Kindern zurecht."
+ },
+ "pixie-bob": {
+  "description": "Pixie-Bobs sehen aus wie Rotluchse, sind aber vollständig domestiziert. Sie sind für ihre hundeähnliche Treue bekannt und können lernen, an der Leine zu laufen.",
+  "overview": "Die Pixie-Bob ist eine große, muskulöse Katze, die gezüchtet wurde, um dem nordamerikanischen Rotluchs zu ähneln. Trotz ihres wilden Aussehens sind es sanfte Riesen — loyal, hundeähnlich und oft der ganzen Familie zugetan. Viele haben polydaktyle Pfoten (zusätzliche Zehen).",
+  "health": "Pixie-Bobs sind im Allgemeinen gesund und haben nur wenige rassespezifische Probleme. Manche entwickeln Hypertrophe Kardiomyopathie (HCM). Die Polydaktylie verursacht keine Gesundheitsprobleme. Eine robuste Rasse mit einer Lebenserwartung von 13–16 Jahren.",
+  "care": "Ihr dichtes doppeltes Fell sollte wöchentlich gebürstet werden, im Fellwechsel öfter. Es sind anpassungsfähige, unkomplizierte Katzen, die gut reisen. Bieten Sie viel interaktives Spiel an — sie lieben Apportieren! Statt zu miauen, äußern sie sich mit Zwitschern und Schnattern."
+ },
+ "cymric": {
+  "description": "Cymrics sind langhaarige Manx-Katzen mit demselben Schwanzlosigkeits-Gen. Sie sind sanft, verspielt und binden sich eng an ihre Familie.",
+  "overview": "Die Cymric (ausgesprochen KIM-rick) ist die langhaarige Variante der Manx und teilt mit ihr dasselbe Schwanzlosigkeits-Gen und die rundliche Erscheinung. Es sind intelligente, verspielte Katzen, die sich oft eher wie Hunde verhalten – sie lernen Tricks und apportieren.",
+  "health": "Wie die Manx können Cymrics das Manx-Syndrom entwickeln – Wirbelsäulenprobleme durch das Schwanzlosigkeits-Gen. Verpaaren Sie niemals zwei völlig schwanzlose Katzen miteinander. Lassen Sie auf Wirbelsäulenprobleme untersuchen. Die Lebenserwartung beträgt 9–13 Jahre, bei gesundheitlichen Problemen weniger.",
+  "care": "Ihr langes, doppeltes Fell braucht regelmäßiges Bürsten, um Verfilzungen zu vermeiden. Achten Sie auf Anzeichen von Bewegungs- oder Toilettenproblemen, die auf Wirbelsäulenprobleme hindeuten könnten. Es sind aktive, intelligente Katzen, die geistige Anregung und Spiel brauchen."
+ },
+ "american-bobtail": {
+  "description": "American Bobtails haben eine natürlich kurze Rute und ein wildes Aussehen. Wegen ihres freundlichen Wesens gelten sie als „Golden Retriever der Katzenwelt\".",
+  "overview": "Die American Bobtail ist eine natürlich entstandene Rasse mit charakteristischem Kurzschwanz, entwickelt aus zufällig gefundenen Stummelschwanzkatzen in Amerika. Es sind selbstbewusste, anpassungsfähige Katzen, die oft als Therapietiere eingesetzt werden. Sie sind für ihre hundeähnliche Anhänglichkeit bekannt.",
+  "health": "American Bobtails sind im Allgemeinen gesund – ihr kurzer Schwanz ist eine natürliche Mutation ohne damit verbundene Gesundheitsprobleme. Manche können eine Hüftdysplasie entwickeln. Robuste Rasse mit einer Lebenserwartung von 13–18 Jahren. Nur sehr wenige rassespezifische Probleme.",
+  "care": "Sowohl die kurz- als auch die langhaarige Variante braucht regelmäßiges Bürsten. Es sind anpassungsfähige Katzen, die gut reisen und sich auf neue Situationen einstellen. Intelligent und lernfähig – sie können Tricks lernen und an der Leine laufen. Sie brauchen interaktives Spiel."
+ },
+ "nebelung": {
+  "description": "Nebelungs sind die langhaarige Version der Russisch Blau mit demselben scheuen, sanften Wesen und dem atemberaubenden blauen Fell.",
+  "overview": "Die Nebelung ist eine seltene, langhaarige Variante der Russisch Blau mit demselben silberblauen Fell und grünen Augen, aber mit fließendem Haar. Ihr Name bedeutet auf Deutsch „Geschöpf des Nebels\". Fremden gegenüber sind sie scheu, ihrer Familie aber treu ergeben.",
+  "health": "Nebelungs sind im Allgemeinen gesund und haben nur wenige rassespezifische Probleme. Wie Russisch Blau können sie zu Blasensteinen neigen. Manche können Übergewicht entwickeln. Eine der gesünderen Rassen mit einer Lebenserwartung von 15–18 Jahren.",
+  "care": "Ihr langes, plüschiges Fell sollte 2–3 Mal pro Woche gebürstet werden. Es sind sensible Katzen, die ruhige, beständige Umgebungen bevorzugen. Veränderungen mögen sie nicht – etablieren Sie feste Routinen. Wie Russisch Blau sind sie allergikerfreundlich."
+ },
+ "snowshoe": {
+  "description": "Snowshoes haben Siam-Färbung mit weißen „Schneeschuh\"-Pfoten. Sie sind gesellige Katzen, die es hassen, allein zu sein.",
+  "overview": "Die Snowshoe ist eine seltene Rasse, die Siam-Colorpoints mit charakteristischen weißen „Schneeschuh\"-Pfoten kombiniert. Es sind soziale, gesprächige Katzen, die eine enge Bindung zu ihrer Familie aufbauen. Weniger intensiv als Siamkatzen, aber ebenso liebevoll und interaktiv.",
+  "health": "Snowshoes können gesundheitliche Probleme der Siamkatze erben: Schielen (heute selten), Knickschwänze und Zahnprobleme. Manche können Herzprobleme entwickeln. Im Allgemeinen gesund mit einer Lebenserwartung von 14–20 Jahren. Die weiße Pfotenzeichnung hat keinen Einfluss auf die Gesundheit.",
+  "care": "Ihr kurzes Fell braucht nur minimale Pflege. Sie sind sehr sozial und kommen mit Alleinsein schlecht zurecht – ziehen Sie einen Artgenossen in Betracht. Bieten Sie viel interaktives Spiel und Intelligenzspielzeug. Sie vertragen sich gut mit Kindern und anderen Haustieren."
+ },
+ "chausie": {
+  "description": "Chausies sind eine Hybridrasse (Rohrkatze x Hauskatze). Sie sind hochbeinig, athletisch und brauchen viel Platz und Beschäftigung.",
+  "overview": "Die Chausie ist eine Hybridrasse, die aus der Kreuzung von Hauskatzen mit der Rohrkatze (Felis chaus) entstand. Es sind große, athletische Katzen mit wildem Aussehen, aber domestiziertem Temperament. Energiegeladen und intelligent, brauchen sie erfahrene Halter.",
+  "health": "Chausies können ein empfindliches Verdauungssystem haben – viele vertragen getreidehaltiges Futter nicht. Manche können Darmprobleme entwickeln. Frühe Generationen können zu Unfruchtbarkeit bei Katern neigen. Suchen Sie einen Tierarzt mit Erfahrung mit Hybridkatzen.",
+  "care": "Ihr kurzes Fell braucht nur minimale Pflege. Sie brauchen viel Bewegung und geistige Anregung – nichts für Erstbesitzer! Bieten Sie hohe Kratzbäume, Futterpuzzles und viel interaktives Spiel. Viele lassen sich an die Leine gewöhnen."
+ },
+ "sokoke": {
+  "description": "Sokokes sind eine Naturrasse aus Kenia mit einem markanten, modifizierten Tabby-Muster. Sie sind athletisch und binden sich eng an ihre Familie.",
+  "overview": "Die Sokoke ist eine seltene Naturrasse aus dem Sokoke-Wald in Kenia. Ihr charakteristisches „afrikanisches Tabby\"-Muster und ihr athletischer Körperbau spiegeln ihre wilde Herkunft wider. Es sind aktive, intelligente Katzen, die eine tiefe Bindung zu ihrer Familie aufbauen.",
+  "health": "Sokokes sind im Allgemeinen gesund und haben nur wenige rassespezifische Probleme. Der kleine Genpool kann ein Problem darstellen. Sie können empfindlich auf bestimmte Impfstoffe oder Medikamente reagieren. Regelmäßige tierärztliche Betreuung ist wichtig. Die Lebenserwartung beträgt 12–15 Jahre.",
+  "care": "Ihr kurzes Fell braucht nur minimale Pflege. Sie brauchen viel Aktivität und geistige Anregung – Schoßkatzen sind sie nicht! Bieten Sie Klettermöglichkeiten und interaktives Spiel. Sie sind sozial und binden sich oft besonders an eine Person."
+ },
+ "australian-mist": {
+  "description": "Australian Mists sind Australiens erste Rassekatzen, gezüchtet als perfekte Wohnungsgefährten – tolerant, sanft und pflegeleicht.",
+  "overview": "Die Australian Mist (früher Spotted Mist) ist Australiens erste Rassekatze. Sie hat ein charakteristisch getupftes/marmoriertes Fell mit nebelartigem Erscheinungsbild. Entwickelt aus Abessinier, Burma und Hauskatzen mit Tabby-Zeichnung, ist sie freundlich, anpassungsfähig und ideal für Familien.",
+  "health": "Australian Mists sind im Allgemeinen sehr gesund und haben nur wenige rassespezifische Probleme. Manche können Hautallergien entwickeln. Robuste Rasse mit einer Lebenserwartung von 14–19 Jahren. Dank ihres vielfältigen genetischen Hintergrunds eine der gesünderen Rassekatzen.",
+  "care": "Ihr kurzes Fell braucht nur minimale Pflege. Es sind anpassungsfähige, tolerante Katzen, die gut mit Kindern und anderen Haustieren zurechtkommen. Moderates Aktivitätsniveau – sie spielen gern, entspannen aber ebenso gern. Als reine Wohnungskatzen fühlen sie sich durchaus wohl."
+ },
+ "peterbald": {
+  "description": "Peterbalds reichen von völlig nackt bis bürstenhaarig. Sie sind elegant, hundeähnlich ergeben und lieben Wärme.",
+  "overview": "Die Peterbald stammt aus Russland und entstand aus der Kreuzung einer Donskoy mit einer Orientalisch Kurzhaar. Ihr Erscheinungsbild reicht von völlig haarlos bis zu feinem Fell. Elegant und athletisch mit orientalischem Körpertyp, sind sie anhängliche, intelligente Katzen, die die Nähe ihrer Menschen lieben.",
+  "health": "Peterbalds können zu Hauterkrankungen und, wenn haarlos, zu Sonnenbrand neigen. Manche können Zahnprobleme oder Herzerkrankungen entwickeln. Sie sind empfindlich gegenüber extremen Temperaturen. Regelmäßige tierärztliche Kontrollen sind wichtig. Die Lebenserwartung beträgt 12–15 Jahre.",
+  "care": "Haarlose Varianten brauchen regelmäßige Bäder, um Hautfett zu entfernen. Schützen Sie sie vor Sonne und Kälte. Sie sind sehr sozial und brauchen viel Zuwendung. Bieten Sie warme Schlafplätze und ziehen Sie im Winter Pullover in Betracht. Aktive Katzen, die Spiel brauchen."
+ },
+ "donskoy": {
+  "description": "Donskoys sind russische Nacktkatzen mit einem anderen Gen als die Sphynx. Sie sind äußerst gesellig und können sogar ein „Winterfell\" entwickeln.",
+  "overview": "Die Donskoy (Don Sphynx) ist eine russische Nacktkatzenrasse, genetisch verschieden von der Sphynx. Ihre Haarlosigkeit wird dominant vererbt, im Gegensatz zum rezessiven Gen der Sphynx. Sie sind freundlich, intelligent und stehen gern im Mittelpunkt.",
+  "health": "Donskoys können Hauterkrankungen entwickeln und neigen zu Zahnproblemen. Sie brauchen Schutz vor Sonne und Kälte. Manche können Herzerkrankungen entwickeln. Regelmäßige Hautpflege und Tierarztbesuche sind unerlässlich. Die Lebenserwartung beträgt 12–15 Jahre.",
+  "care": "Regelmäßiges Baden (wöchentlich oder öfter) ist nötig, um Fettablagerungen auf der Haut zu vermeiden. Reinigen Sie die Ohren häufig. Schützen Sie sie vor Temperaturextremen – sie brauchen eventuell Pullover. Sehr sozial und kommen mit Alleinsein schlecht zurecht. Sehr aktiv und verspielt."
+ },
+ "kurilian-bobtail": {
+  "description": "Kurilen-Bobtails stammen von den Kurilen. Sie sind ausgezeichnete Fischer mit einem Pompon-Schwanz und einem sanften, zutraulichen Wesen.",
+  "overview": "Die Kurilian Bobtail stammt von den russischen Kurilen-Inseln. Ihr kurzer Pompon-Schwanz ist natürlich und nicht mit Gesundheitsproblemen verbunden. Es sind ausgezeichnete Jäger mit sanftem, zutraulichem Wesen. Sie passen sich gut an Familien und andere Haustiere an.",
+  "health": "Kurilian Bobtails sind bemerkenswert gesund und haben keine rassespezifischen genetischen Erkrankungen. Ihr Stummelschwanz ist natürlich und verursacht keine Wirbelsäulenprobleme. Eine der gesündesten Katzenrassen mit einer Lebenserwartung von 15–20 Jahren.",
+  "care": "Sowohl die kurz- als auch die langhaarige Variante braucht wöchentliches Bürsten. Es sind aktive, intelligente Katzen, die interaktives Spiel und Jagdspiele genießen. Sie passen sich gut an verschiedene Wohnsituationen an. Oft haben sie Freude an Wasser."
+ },
+ "american-wirehair": {
+  "description": "American Wirehairs haben ein einzigartiges federnd-gekräuseltes Fell. Sie sind anpassungsfähig, ruhig und ausgezeichnete Gefährten.",
+  "overview": "Die American Wirehair hat ein einzigartiges Fell – jedes Haar ist gekräuselt oder gebogen, was eine drahtige, federnde Textur ergibt. Diese Spontanmutation trat 1966 in New York auf. Es sind entspannte, anpassungsfähige Katzen mit liebevollem Wesen.",
+  "health": "American Wirehairs sind im Allgemeinen sehr gesund und haben nur wenige rassespezifische Probleme. Manche können Hautempfindlichkeiten entwickeln. Robuste Rasse mit einer Lebenserwartung von 14–18 Jahren. Eine der gesünderen amerikanischen Rassen.",
+  "care": "Ihr ungewöhnliches Fell braucht nur minimale Pflege – zu häufiges Bürsten kann es beschädigen. Nur gelegentliche sanfte Fellpflege. Es sind anpassungsfähige, unkomplizierte Katzen, die für die meisten Wohnsituationen geeignet sind. Moderates Aktivitätsniveau mit verspielten Momenten."
+ },
+ "european-shorthair": {
+  "description": "Europäisch Kurzhaar sind die Rassekatzen-Version der europäischen Hauskatze – robust, gesund und vielseitig.",
+  "overview": "Die Europäisch Kurzhaar ist Europas Gegenstück zur Amerikanisch Kurzhaar – eine Naturrasse, die aus gewöhnlichen europäischen Katzen entwickelt wurde. Es sind unabhängige, intelligente Jäger, die sich an ihre Familie binden, dabei aber ihre Eigenständigkeit bewahren.",
+  "health": "Europäisch Kurzhaar sind äußerst gesund und haben praktisch keine rassespezifischen Erkrankungen. Ihr vielfältiger genetischer Hintergrund hält sie robust. Eine der gesündesten Katzenrassen mit einer Lebenserwartung von 15–20 Jahren.",
+  "care": "Ihr kurzes Fell braucht nur minimale Pflege. Es sind anpassungsfähige, unabhängige Katzen, die gut mit Alleinsein zurechtkommen. Bieten Sie Jagdspielzeug und Klettermöglichkeiten. Bei Freigang sind sie gute Mäusejäger."
+ },
+ "brazilian-shorthair": {
+  "description": "Brazilian Shorthairs sind Brasiliens erste Rassekatzen, entwickelt aus den Straßenkatzen Brasiliens. Sie sind freundlich und anpassungsfähig.",
+  "overview": "Die Brazilian Shorthair entwickelte sich aus Straßenkatzen in Brasilien und wurde erst 1998 als Rasse anerkannt. Sie ist athletisch, intelligent und anhänglich, ohne fordernd zu sein. Sie passt sich gut an verschiedene Wohnsituationen an.",
+  "health": "Brazilian Shorthairs sind dank ihres vielfältigen genetischen Hintergrunds im Allgemeinen sehr gesund. Nur wenige rassespezifische Gesundheitsprobleme. Robuste, anpassungsfähige Rasse mit einer Lebenserwartung von 14–20 Jahren.",
+  "care": "Ihr kurzes Fell braucht nur minimale Pflege. Es sind Katzen mit moderatem Energielevel, die gern spielen, aber nicht hyperaktiv sind. Für Wohnungshaltung geeignet. Sozial, aber nicht übermäßig aufmerksamkeitsbedürftig."
+ },
+ "khao-manee": {
+  "description": "Khao Manees sind alte thailändische Katzen, bekannt als „Weißer Edelstein\". Viele haben verschiedenfarbige Augen (eines blau, eines gold).",
+  "overview": "Die Khao Manee ist eine seltene thailändische Rasse, bekannt für ihr reinweißes Fell und ihre auffälligen Augen – oft verschiedenfarbig, mit einem blauen und einem goldenen Auge. In Thailand gelten sie als Glücksbringer. Sie sind verspielt, intelligent und menschenbezogen.",
+  "health": "Weiße Khao Manees mit blauen Augen können taub sein – lassen Sie das Gehör testen. Sie können durch Sonneneinstrahlung zu Hautkrebs neigen. Ansonsten im Allgemeinen gesund mit einer Lebenserwartung von 12–16 Jahren. Halten Sie sie von direkter Sonneneinstrahlung fern.",
+  "care": "Ihr kurzes Fell braucht nur minimale Pflege. Lernen Sie bei blauäugigen Tieren, visuell mit einer tauben Katze zu kommunizieren. Halten Sie sie im Haus, um Sonnenbrand zu vermeiden. Es sind soziale, verspielte Katzen, die Zuwendung brauchen."
+ },
+ "lykoi": {
+  "description": "Die Lykoi oder „Werwolfkatze\" hat ein einzigartiges, teilweise haarloses Fell. Trotz ihres gruseligen Aussehens ist sie freundlich und hundeähnlich.",
+  "overview": "Die Lykoi, auch „Werwolfkatze\" genannt, hat ein teilweise haarloses Fell, das ihr ein werwolfähnliches Aussehen verleiht. Diese natürliche Mutation beeinflusst ihr Haarwachstum. Trotz ihres wilden Aussehens sind sie freundliche, verspielte und anhängliche Katzen.",
+  "health": "Lykoi sind im Allgemeinen gesund, doch ihr besonderes Fell macht sie anfällig für Sonnenbrand und Kälteempfindlichkeit. Als jüngere Rasse werden Langzeitdaten zur Gesundheit noch gesammelt. Die Lebenserwartung wird auf 12–15 Jahre geschätzt.",
+  "care": "Sie brauchen eventuell gelegentliche Bäder, um Hautfett zu entfernen. Schützen Sie sie vor Sonne und extremer Kälte. Sie verlieren ihr Fell periodisch und wirken dann manchmal fast kahl. Aktive, intelligente Katzen, die Spiel und Anregung brauchen."
+ },
+ "munchkin": {
+  "description": "Munchkins haben von Natur aus kurze Beine, sind aber genauso aktiv wie andere Katzen. Sie sind verspielt und sammeln gern glänzende Dinge.",
+  "overview": "Die Munchkin ist berühmt für ihre kurzen Beine, die durch eine natürliche Genmutation verursacht werden. Trotz ihrer Statur sind sie wendig, verspielt und laufen erstaunlich schnell. Es gibt sie in allen Felltypen und Farben. Ihre kurzen Beine bremsen sie nicht aus!",
+  "health": "Munchkins können zu Lordose (Wirbelsäulenkrümmung) und Pectus excavatum (Trichterbrust) neigen. Ihre kurzen Beine verursachen in der Regel keine Mobilitätsprobleme. Die Zucht auf dieses Merkmal ist umstritten. Die Lebenserwartung beträgt 12–15 Jahre.",
+  "care": "Die Fellpflege hängt vom Felltyp ab. Sie sind trotz kurzer Beine aktiv – bieten Sie Katzentoiletten mit niedrigem Einstieg und leicht zugängliche Klettermöglichkeiten. Sie springen vielleicht nicht so hoch, gleichen das aber mit Schnelligkeit und Wendigkeit am Boden aus."
+ },
+ "highlander": {
+  "description": "Highlander haben gebogene Ohren und oft einen Stummelschwanz. Sie sind selbstbewusst, clownesk und stehen gern im Mittelpunkt.",
+  "overview": "Die Highlander ist eine jüngere Rasse mit gebogenen Ohren und oft einem Stummelschwanz, gezüchtet aus der Desert Lynx und anderen Rassen. Sie hat ein wildes Aussehen, aber ein sanftes, verspieltes Wesen. Es sind selbstbewusste, soziale Katzen, die ihre Familie lieben.",
+  "health": "Highlander sind im Allgemeinen gesund, allerdings sind Langzeitdaten zur Gesundheit als jüngere Rasse begrenzt. Ihre gebogenen Ohren brauchen behutsame Handhabung und regelmäßige Reinigung. Die Lebenserwartung wird auf 10–15 Jahre geschätzt.",
+  "care": "Sowohl die kurz- als auch die langhaarige Variante braucht regelmäßiges Bürsten. Reinigen Sie die gebogenen Ohren vorsichtig. Es sind aktive, verspielte Katzen, die interaktives Spielzeug genießen. Sozial und gut verträglich mit anderen Haustieren und Kindern."
+ },
+ "serengeti": {
+  "description": "Serengetis wurden gezüchtet, um wie wilde Servale auszusehen, sind aber vollständig domestiziert. Sie sind hochbeinig, gefleckt und sehr aktiv.",
+  "overview": "Die Serengeti wurde gezüchtet, um dem afrikanischen Serval zu ähneln – ganz ohne Wildblut, aus Kreuzungen von Bengal und Orientalisch Kurzhaar. Sie hat lange Beine, große Ohren und ein geflecktes Fell. Aktiv und selbstbewusst, ist sie sehr menschenbezogen.",
+  "health": "Serengetis sind im Allgemeinen gesund, können aber Probleme der Elternrassen erben. Manche können Blasensteine oder Herzerkrankungen entwickeln. Als sich entwickelnde Rasse werden Gesundheitsdaten noch gesammelt. Die Lebenserwartung beträgt 12–15 Jahre.",
+  "care": "Ihr kurzes Fell braucht nur minimale Pflege. Sehr aktive Katzen, die viel Spiel und Kletterraum brauchen. Sie sind sozial und mögen es nicht, allein zu sein. Viele lassen sich an die Leine gewöhnen."
+ },
+ "thai": {
+  "description": "Thai-Katzen sind die traditionellen Siamkatzen alten Typs mit einem weniger extremen Körperbau. Sie sind gesellig, gesprächig und liebevoll.",
+  "overview": "Die Thai ist die traditionelle, moderate Form der Siamkatze – bevor die moderne Zucht die Siam extremer machte. Auch „Old-Style Siamese\" oder „Wichien Maat\" genannt, hat sie die klassischen Colorpoints, aber eine natürlichere Körperform.",
+  "health": "Thais können zu einigen gesundheitlichen Problemen der Siamkatze neigen: Zahnprobleme, Atemwegsprobleme und Augenerkrankungen. Im Allgemeinen gesünder als moderne, extrem gezüchtete Siamkatzen. Die Lebenserwartung beträgt 15–20 Jahre.",
+  "care": "Ihr kurzes Fell braucht nur minimale Pflege. Weniger gesprächig als moderne Siamkatzen, aber immer noch mitteilsam. Soziale Katzen, die Gesellschaft brauchen. Intelligent und lernfähig. Sie vertragen sich gut mit anderen Haustieren."
+ },
+ "chantilly-tiffany": {
+  "description": "Chantilly-Tiffanys haben ein wunderschönes seidiges Fell und ein ergebenes Wesen. Sie sind mäßig aktiv und sehr treu.",
+  "overview": "Die Chantilly-Tiffany (oder Chantilly) ist eine halblanghaarige, schokoladenfarbene Katze, bekannt für ihr seidiges Fell und ihr treues Wesen. Einst für ausgestorben gehalten, ist sie noch immer selten. Es sind ausgeglichene, loyale Katzen, die ihren Haltern überallhin folgen.",
+  "health": "Chantilly-Tiffanys können vermehrte Ohrenschmalzbildung und Verdauungsempfindlichkeiten entwickeln. Ansonsten im Allgemeinen gesund. Ihre Seltenheit wirft Fragen zur genetischen Vielfalt auf. Die Lebenserwartung beträgt 12–15 Jahre.",
+  "care": "Ihr seidiges Fell braucht regelmäßiges Bürsten, um Verfilzungen zu vermeiden. Reinigen Sie die Ohren häufig. Es sind treue Katzen mit moderatem Energielevel. Längeres Alleinsein mögen sie nicht. Gut verträglich mit Kindern und anderen Haustieren."
+ },
+ "york-chocolate": {
+  "description": "York Chocolates sind eine seltene amerikanische Rasse mit sattem schokoladen- oder lavendelfarbenem Fell. Sie sind freundliche Katzen vom Bauernhoftyp.",
+  "overview": "Die York Chocolate ist eine amerikanische Rasse, die aus Bauernhofkatzen im Bundesstaat New York entwickelt wurde. Benannt nach ihrem satten schokoladenfarbenen Fell, ist sie freundlich, energiegeladen und liebt es, am Familienleben teilzunehmen. Leider ist sie heute sehr selten.",
+  "health": "York Chocolates sind im Allgemeinen gesund und haben keine spezifischen rassebedingten Erkrankungen. Ihr vielfältiger genetischer Hintergrund hält sie robust. Die Lebenserwartung beträgt 13–15 Jahre. Züchter zu finden ist sehr schwierig.",
+  "care": "Ihr halblanges Fell braucht regelmäßiges Bürsten. Aktive, intelligente Katzen, die Spiel und geistige Anregung brauchen. Sie sind sozial und freundlich zur Familie, Fremden gegenüber aber mitunter zurückhaltend."
+ },
+ "colorpoint-shorthair": {
+  "description": "Colorpoint Shorthairs sind im Grunde Siamkatzen in nicht-traditionellen Farben (Rot-, Creme-, Schildpatt- und Lynx-Points).",
+  "overview": "Die Colorpoint Shorthair ist im Grunde eine Siamkatze in nicht-traditionellen Farben – Red, Creme, Tortie und Tabby Points. Sie teilt das Wesen der Siam: gesprächig, intelligent und aufmerksamkeitsfordernd. Sie bindet sich intensiv an ihre Halter.",
+  "health": "Colorpoint Shorthairs teilen die gesundheitlichen Probleme der Siamkatze: Zahnprobleme, Herzerkrankungen und Atemwegsprobleme. Manche können Augenprobleme entwickeln. Regelmäßige tierärztliche Betreuung ist wichtig. Die Lebenserwartung beträgt 12–16 Jahre.",
+  "care": "Ihr kurzes Fell braucht nur minimale Pflege. Sehr sozial – Alleinsein mögen sie nicht. Gesprächig und wird ständig mit Ihnen „reden\". Sie brauchen viel geistige Anregung und interaktives Spiel. Ziehen Sie in Betracht, gleich zwei zu holen."
+ },
+ "javanese": {
+  "description": "Javanesen sind langhaarige Colorpoint Shorthairs – dieselbe Siam-Persönlichkeit mit einem seidigen Fell in verschiedenen Point-Farben.",
+  "overview": "Die Javanese ist eine langhaarige Colorpoint Shorthair (bzw. eine Balinese in nicht-traditionellen Farben). Sie vereint das Siam-Wesen mit einem seidigen, fließenden Fell in Farben wie Red, Creme und Tortie Point. Intelligent, gesprächig und treu ergeben.",
+  "health": "Javanesen können wie ihre Siam-Verwandten Herzprobleme, Augenprobleme und Zahnerkrankungen entwickeln. Manche können zu Leber-Amyloidose neigen. Regelmäßige tierärztliche Kontrollen sind wichtig. Die Lebenserwartung beträgt 12–15 Jahre.",
+  "care": "Ihr einschichtiges Fell verfilzt kaum – wöchentliches Bürsten genügt. Sehr sozial und brauchen viel Zuwendung. Sehr gesprächig. Bieten Sie Intelligenzspielzeug und Klettermöglichkeiten. Alleinsein bekommt ihnen nicht."
+ },
+ "oriental-longhair": {
+  "description": "Orientalisch Langhaar sind die langhaarige Version der Orientalisch Kurzhaar – elegant, gesprächig und äußerst gesellig.",
+  "overview": "Die Orientalisch Langhaar ist die langhaarige Variante der Orientalisch Kurzhaar, mit demselben eleganten Körper und der großen Persönlichkeit, aber mit fließendem Fell. Es gibt sie in über 300 Farb- und Musterkombinationen. Unglaublich sozial und gesprächig.",
+  "health": "Orientalisch Langhaar teilen gesundheitliche Probleme mit Orientalen und Siamkatzen: Leber-Amyloidose, Herzerkrankungen und Atemwegsprobleme. Manche können Zahnprobleme entwickeln. Regelmäßige tierärztliche Betreuung ist unerlässlich. Die Lebenserwartung beträgt 12–15 Jahre.",
+  "care": "Ihr seidiges Fell sollte 2–3 Mal pro Woche gebürstet werden. Extrem sozial – wenn man sie ignoriert, werden sie depressiv. Sie brauchen viel geistige Anregung, Spiel und Zuwendung. Ziehen Sie zwei Katzen in Betracht, wenn Sie lange arbeiten."
+ },
+ "british-longhair": {
+  "description": "Britisch Langhaar sind die langhaarige Version der Britisch Kurzhaar – dasselbe ruhige Wesen mit einem luxuriösen, flauschigen Fell.",
+  "overview": "Die Britisch Langhaar ist die langhaarige Variante der Britisch Kurzhaar, mit demselben stämmigen Körper und ruhigen Wesen, aber mit luxuriösem, fließendem Fell. Manchmal „Lowlander\" genannt, sind sie sanfte, unkomplizierte Gefährten.",
+  "health": "Britisch Langhaar können zu Hypertropher Kardiomyopathie (HCM) und Polyzystischer Nierenerkrankung (PKD) neigen. Sie neigen zu Übergewicht. Regelmäßige Gesundheitsuntersuchungen werden empfohlen. Die Lebenserwartung beträgt 12–15 Jahre.",
+  "care": "Ihr langes Fell sollte 2–3 Mal pro Woche gebürstet werden, um Verfilzungen zu vermeiden. Achten Sie auf ihr Gewicht – sie nehmen leicht zu. Sie sind nicht fordernd, genießen aber sanftes Spiel. Ruhige Katzen, die für ruhigere Haushalte geeignet sind."
+ },
+ "asian": {
+  "description": "Asian-Katzen sind Katzen vom Burma-Typ in nicht-traditionellen Farben und Mustern. Sie teilen das liebevolle Wesen der Burma.",
+  "overview": "Die Gruppe der Asian-Katzen umfasst Varietäten wie die Burmilla, Asian Smoke und Asian Tabby. Sie kombinieren das Wesen der Burma mit verschiedenen Fellmustern und -farben. Verspielt, sozial und anhänglich, ohne übermäßig fordernd zu sein.",
+  "health": "Asian-Katzen können gesundheitliche Probleme der Burma erben: Diabetes, Nierenprobleme und Zahnerkrankungen. Im Allgemeinen gesund mit einer Lebenserwartung von 12–15 Jahren. Regelmäßige tierärztliche Kontrollen sind wichtig.",
+  "care": "Ihr kurzes Fell braucht nur minimale Pflege. Es sind soziale Katzen, die den Familienanschluss genießen, aber auch etwas Alleinsein verkraften. Moderates Aktivitätsniveau. Gut verträglich mit Kindern und anderen Haustieren."
+ },
+ "tiffanie": {
+  "description": "Tiffanies sind die halblanghaarige Version der Burmilla und vereinen das wunderschöne silberne Fell mit einem sanften Wesen.",
+  "overview": "Die Tiffanie ist eine halblanghaarige Asian-Katze, ähnlich der Burmilla, aber mit fließendem Fell. In Großbritannien entwickelt, ist sie trotz des ähnlichen Namens nicht mit der amerikanischen Chantilly-Tiffany verwandt. Verspielt, anhänglich und intelligent.",
+  "health": "Tiffanies können gesundheitliche Probleme der Asian/Burma erben. Manche können Nierenprobleme oder Allergien entwickeln. Regelmäßige tierärztliche Betreuung ist wichtig. Die Lebenserwartung beträgt 12–15 Jahre.",
+  "care": "Ihr seidiges Fell braucht regelmäßiges Bürsten, um Verfilzungen zu vermeiden. Soziale, verspielte Katzen, die Zuwendung genießen. Moderates Energielevel – verspielt, aber nicht hyperaktiv. Gut für Familien geeignet."
+ },
+ "california-spangled": {
+  "description": "California Spangled Cats wurden gezüchtet, um wilden Leoparden zu ähneln. Sie sind athletisch, neugierig und lieben es, zu jagen und zu spielen.",
+  "overview": "Die California Spangled wurde in den 1980er Jahren gezüchtet, um wilden gefleckten Katzen zu ähneln und auf bedrohte Wildkatzen aufmerksam zu machen. Sie waren athletisch, intelligent und ihrer Familie treu ergeben. Leider ist die Rasse heute extrem selten oder möglicherweise ausgestorben.",
+  "health": "California Spangled-Katzen waren im Allgemeinen gesund. Genaue Gesundheitsinformationen zu finden ist aufgrund ihrer Seltenheit schwierig. Es wurden keine bekannten rassespezifischen Erkrankungen dokumentiert.",
+  "care": "Ihr kurzes, geflecktes Fell brauchte nur minimale Pflege. Aktive, intelligente Katzen, die viel Spiel und geistige Anregung brauchten. Sie waren sozial und banden sich stark an ihre Familien."
+ },
+ "dragon-li": {
+  "description": "Die Dragon Li (Chinesische Li Hua) ist Chinas einzige anerkannte einheimische Rasse. Sie sind intelligent, unabhängig und gute Jäger.",
+  "overview": "Die Dragon Li (Chinesische Li Hua) ist eine der ältesten natürlichen Katzenrassen und stammt aus China. Sie hat ein charakteristisches „gebrochenes Makrelen\"-Tabby-Muster. Unabhängig, intelligent und loyal, wird sie in China noch immer als Arbeitskatze eingesetzt.",
+  "health": "Dragon Li-Katzen sind äußerst gesund und haben keine bekannten rassespezifischen Erkrankungen. Ihre natürliche Entwicklung über Jahrtausende hat sie robust gehalten. Die Lebenserwartung beträgt 12–15+ Jahre.",
+  "care": "Ihr kurzes Fell braucht nur minimale Pflege. Sie sind unabhängig, ihrer Familie aber treu. Aktiv und intelligent – gute Jäger. Sie passen sich an verschiedene Wohnsituationen an, schätzen aber Freigang, sofern er sicher ist."
+ },
+ "suphalak": {
+  "description": "Suphalaks sind alte thailändische Katzen, die in den Katzenbuch-Gedichten erwähnt werden. Sie haben ein einzigartiges kupferbraunes Fell und ein liebevolles Wesen.",
+  "overview": "Die Suphalak ist eine uralte thailändische Rasse, die in den vor über 300 Jahren verfassten Katzengedichten (Cat-Book Poems) beschrieben wird. Sie hat ein sattes rotbraunes Fell und goldene Augen. Extrem selten, ist sie anhänglich, verspielt und bindet sich stark an ihre Familie.",
+  "health": "Suphalaks sind im Allgemeinen gesund, haben aber einen sehr kleinen Genpool. Aufgrund ihrer Seltenheit sind nur begrenzte Gesundheitsdaten verfügbar. Regelmäßige tierärztliche Betreuung ist wichtig. Die Lebenserwartung wird auf 12–15 Jahre geschätzt.",
+  "care": "Ihr kurzes Fell braucht nur minimale Pflege. Soziale Katzen, die menschliche Gesellschaft genießen. Mäßig aktiv mit verspieltem Wesen. Sehr selten – Züchter zu finden ist schwierig."
+ },
+ "aphrodite-giant": {
+  "description": "Aphrodite-Riesen sind eine Naturrasse aus Zypern, bekannt für ihre Größe und ihr sanftes Wesen. Sie gehören zu den ältesten Rassen.",
+  "overview": "Die Aphrodite Giant ist eine Naturrasse aus Zypern und eine der ältesten Katzenrassen der Welt. Es sind große Katzen mit muskulösem Körperbau, angepasst an bergiges Gelände. Sozial, intelligent und gut für Familien geeignet.",
+  "health": "Aphrodite Giants sind im Allgemeinen gesund und haben nur wenige rassespezifische Probleme. Ihre natürliche Entwicklung hat sie robust gehalten. Die Lebenserwartung beträgt 12–15+ Jahre.",
+  "care": "Es gibt sowohl kurz- als auch langhaarige Varianten – der Pflegeaufwand variiert entsprechend. Es sind soziale, aktive Katzen, die Klettern und Spielen genießen. Sie passen sich an verschiedene Wohnsituationen an und sind gut verträglich mit Kindern."
+ },
+ "cyprus": {
+  "description": "Zypern-Katzen sind die auf der Insel Zypern heimischen Hauskatzen mit einer Geschichte, die Tausende von Jahren zurückreicht.",
+  "overview": "Die Zypern-Katze ist eine der ältesten domestizierten Katzenrassen der Welt – Nachweise für Katzen auf Zypern reichen 9.500 Jahre zurück. Sie ist eine natürliche Landrasse, angepasst an das Mittelmeerklima. Freundlich, intelligent und ein ausgezeichneter Jäger.",
+  "health": "Zypern-Katzen sind äußerst gesund und haben keine rassespezifischen Probleme. Jahrtausende natürlicher Selektion haben sie robust gemacht. Eine der gesündesten Katzen mit einer Lebenserwartung von 15–20 Jahren.",
+  "care": "Ihr kurzes Fell braucht nur minimale Pflege. Es sind anpassungsfähige, unabhängige Katzen und gute Jäger. Sozial mit der Familie, aber eigenständig. Sie kommen mit verschiedenen Klimazonen gut zurecht."
+ }
+}
